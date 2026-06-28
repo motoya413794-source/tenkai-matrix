@@ -52,7 +52,7 @@ function buildTweet(data) {
     for (const venue of jraVenues) {
       const v = venueVerdict(venues[venue])
       const parts = Object.entries(v).map(([course, d]) =>
-        `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}`
+        `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}(${Math.round(d.counts[d.verdict] / d.total * 100)}%)`
       )
       if (parts.length > 0) text += `${venue} ${parts.join(' ')}\n`
     }
@@ -66,7 +66,7 @@ function buildTweet(data) {
     for (const venue of allNarVenues) {
       const v = venueVerdict(venues[venue])
       const parts = Object.entries(v).map(([course, d]) =>
-        `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}`
+        `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}(${Math.round(d.counts[d.verdict] / d.total * 100)}%)`
       )
       if (parts.length > 0) text += `${venue} ${parts.join(' ')}\n`
     }

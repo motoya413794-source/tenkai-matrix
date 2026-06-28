@@ -331,6 +331,136 @@ function DayView({ data }) {
   )
 }
 
+// ── History Chart ─────────────────────────────────────────
+function BiasBar({ counts, date }) {
+  const total = counts.front + counts.flat + counts.diff
+  if (total === 0) return <div className="bias-bar-empty" title={date}>-</div>
+  const frontPct = Math.round(counts.front / total * 100)
+  const flatPct  = Math.round(counts.flat  / total * 100)
+  const diffPct  = 100 - frontPct - flatPct
+  const label = `${date}\n前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
+  return (
+    <div className="bias-bar" title={label}>
+      {frontPct > 0 && <div className="bias-seg front" style={{ height: `${frontPct}%` }} />}
+      {flatPct  > 0 && <div className="bias-seg flat"  style={{ height: `${flatPct}%` }} />}
+      {diffPct  > 0 && <div className="bias-seg diff"  style={{ height: `${diffPct}%` }} />}
+    </div>
+  )
+}
+
+function HistoryView({ dates }) {
+  const [allData, setAllData] = useState({}) // { dateISO: venuesObj }
+  const [loadingHistory, setLoadingHistory] = useState(true)
+  const [selectedVenue, setSelectedVenue] = useState(null)
+  const [selectedCourse, setSelectedCourse] = useState('ダート')
+
+  useEffect(() => {
+    Promise.all(
+      dates.map(d => fetch(`/data/${d}.json`).then(r => r.json()).catch(() => null))
+    ).then(results => {
+      const map = {}
+      results.forEach((data, i) => { if (data) map[dates[i]] = data.venues || {} })
+      setAllData(map)
+      setLoadingHistory(false)
+    })
+  }, [dates])
+
+  if (loadingHistory) return <div className="history-loading">読み込み中…</div>
+
+  // 全会場を収集
+  const venueSet = new Set()
+  Object.values(allData).forEach(venues => Object.keys(venues).forEach(v => venueSet.add(v)))
+  const allVenues = [...JRA_VENUES, ...NAR_VENUES].filter(v => venueSet.has(v))
+
+  const venue = selectedVenue || allVenues[0]
+
+  // 各日付でこの会場・コースのcountsを計算
+  const chartData = dates.map(d => {
+    const venues = allData[d] || {}
+    const races = (venues[venue] || []).filter(r => r.course === selectedCourse && !isDominant(r))
+    const counts = { front: 0, flat: 0, diff: 0 }
+    races.forEach(r => {
+      const t = predictTenkai(r.horses, r.totalGroups, isNAR(r))
+      if (t && t !== 'pack') counts[t]++
+    })
+    const label = `${parseInt(d.slice(5,7))}/${parseInt(d.slice(8,10))}`
+    return { date: d, label, counts }
+  }).filter(({ counts }) => counts.front + counts.flat + counts.diff > 0)
+
+  // コースの選択肢（この会場で実際にあるもの）
+  const availableCourses = ['芝', 'ダート'].filter(c =>
+    dates.some(d => (allData[d]?.[venue] || []).some(r => r.course === c))
+  )
+
+  return (
+    <div className="history-view">
+      {/* 会場選択 */}
+      <div className="history-controls">
+        <div className="history-venue-scroll">
+          {allVenues.map(v => (
+            <button
+              key={v}
+              className={`history-venue-btn ${v === venue ? 'active' : ''}`}
+              onClick={() => { setSelectedVenue(v); setSelectedCourse(availableCourses[0] || 'ダート') }}
+            >{v}</button>
+          ))}
+        </div>
+        <div className="history-course-tabs">
+          {availableCourses.map(c => (
+            <button
+              key={c}
+              className={`history-course-btn ${c === selectedCourse ? 'active' : ''}`}
+              onClick={() => setSelectedCourse(c)}
+            >{c}</button>
+          ))}
+        </div>
+      </div>
+
+      {/* グラフ */}
+      <div className="history-chart">
+        <div className="history-legend">
+          <span className="legend-item front">前残り</span>
+          <span className="legend-item flat">フラット</span>
+          <span className="legend-item diff">差し有利</span>
+        </div>
+        {chartData.length === 0
+          ? <div className="history-nodata">データなし</div>
+          : (
+            <div className="history-bars">
+              {chartData.map(({ date, label, counts }) => (
+                <div key={date} className="history-col">
+                  <BiasBar counts={counts} date={label} />
+                  <div className="history-date-label">{label}</div>
+                </div>
+              ))}
+            </div>
+          )
+        }
+      </div>
+
+      {/* 数値テーブル */}
+      {chartData.length > 0 && (
+        <div className="history-table">
+          <div className="history-table-head">
+            <span>日付</span><span>前残り</span><span>フラット</span><span>差し</span>
+          </div>
+          {chartData.map(({ date, label, counts }) => {
+            const total = counts.front + counts.flat + counts.diff
+            return (
+              <div key={date} className="history-table-row">
+                <span>{label}</span>
+                <span className="front-text">{counts.front}R ({Math.round(counts.front/total*100)}%)</span>
+                <span className="flat-text">{counts.flat}R ({Math.round(counts.flat/total*100)}%)</span>
+                <span className="diff-text">{counts.diff}R ({Math.round(counts.diff/total*100)}%)</span>
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ── Main App ──────────────────────────────────────────────
 export default function App() {
   const [dates, setDates] = useState([])
@@ -338,6 +468,7 @@ export default function App() {
   const [dayData, setDayData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [mainTab, setMainTab] = useState('today') // 'today' | 'history'
 
   // Load date index
   useEffect(() => {
@@ -379,40 +510,52 @@ export default function App() {
         <div className="sub">当日の展開傾向をレース結果から分析</div>
       </header>
 
-      {/* 日付タブ */}
-      {dates.length > 1 && (
-        <div className="date-tab-bar">
-          {dates.map(d => {
-            const label = `${parseInt(d.slice(5, 7))}/${parseInt(d.slice(8, 10))}`
-            return (
-              <button
-                key={d}
-                className={`date-tab-btn ${d === selectedDate ? 'active' : ''}`}
-                onClick={() => setSelectedDate(d)}
-              >
-                {label}
-              </button>
-            )
-          })}
-        </div>
+      {/* メインタブ */}
+      <div className="tab-bar" style={{ marginTop: '16px' }}>
+        <button className={`tab-btn ${mainTab === 'today' ? 'active' : ''}`} onClick={() => setMainTab('today')}>当日バイアス</button>
+        <button className={`tab-btn ${mainTab === 'history' ? 'active' : ''}`} onClick={() => setMainTab('history')}>履歴グラフ</button>
+      </div>
+
+      {mainTab === 'history' && dates.length > 0 && (
+        <HistoryView dates={dates} />
       )}
 
-      {loading && (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
-          読み込み中…
-        </div>
-      )}
-      {error && (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
-          {error}
-        </div>
-      )}
-      {dayData && !loading && (
-        <>
-          <div className="date-section-head">{dayData.dateDisplay || selectedDate}</div>
-          <DayView data={dayData} />
-        </>
-      )}
+      {mainTab === 'today' && <>
+        {/* 日付タブ */}
+        {dates.length > 1 && (
+          <div className="date-tab-bar">
+            {dates.map(d => {
+              const label = `${parseInt(d.slice(5, 7))}/${parseInt(d.slice(8, 10))}`
+              return (
+                <button
+                  key={d}
+                  className={`date-tab-btn ${d === selectedDate ? 'active' : ''}`}
+                  onClick={() => setSelectedDate(d)}
+                >
+                  {label}
+                </button>
+              )
+            })}
+          </div>
+        )}
+
+        {loading && (
+          <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
+            読み込み中…
+          </div>
+        )}
+        {error && (
+          <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
+            {error}
+          </div>
+        )}
+        {dayData && !loading && (
+          <>
+            <div className="date-section-head">{dayData.dateDisplay || selectedDate}</div>
+            <DayView data={dayData} />
+          </>
+        )}
+      </>}
     </div>
   )
 }

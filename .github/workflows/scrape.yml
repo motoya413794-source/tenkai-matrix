@@ -44,3 +44,18 @@ jobs:
           git add public/data/
           git diff --staged --quiet || git commit -m "chore: scrape race data $(TZ=Asia/Tokyo date +%Y-%m-%d)"
           git push
+
+      - name: Post to X
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then
+            DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          else
+            DATE="${DATE:0:4}-${DATE:4:2}-${DATE:6:2}"
+          fi
+          node scripts/post-x.js $DATE

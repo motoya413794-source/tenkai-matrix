@@ -355,9 +355,19 @@ function HistoryView({ dates }) {
   const [selectedCourse, setSelectedCourse] = useState('ダート')
 
   useEffect(() => {
-    Promise.all(
-      dates.map(d => fetch(`/data/${d}.json`).then(r => r.json()).catch(() => null))
-    ).then(results => {
+    const fetchOne = async (url, retries = 3) => {
+      for (let i = 0; i < retries; i++) {
+        try {
+          const r = await fetch(url)
+          if (!r.ok) throw new Error(`HTTP ${r.status}`)
+          return await r.json()
+        } catch {
+          if (i === retries - 1) return null
+          await new Promise(res => setTimeout(res, 800 * (i + 1)))
+        }
+      }
+    }
+    Promise.all(dates.map(d => fetchOne(`/data/${d}.json`))).then(results => {
       const map = {}
       results.forEach((data, i) => { if (data) map[dates[i]] = data.venues || {} })
       setAllData(map)
@@ -470,10 +480,23 @@ export default function App() {
   const [error, setError] = useState(null)
   const [mainTab, setMainTab] = useState('today') // 'today' | 'history'
 
+  // fetch with retry
+  const fetchWithRetry = async (url, retries = 3) => {
+    for (let i = 0; i < retries; i++) {
+      try {
+        const r = await fetch(url)
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return await r.json()
+      } catch (e) {
+        if (i === retries - 1) throw e
+        await new Promise(res => setTimeout(res, 1000 * (i + 1)))
+      }
+    }
+  }
+
   // Load date index
   useEffect(() => {
-    fetch('/data/index.json')
-      .then(r => r.json())
+    fetchWithRetry('/data/index.json')
       .then(list => {
         setDates(list)
         if (list.length > 0) setSelectedDate(list[0])
@@ -489,9 +512,9 @@ export default function App() {
   useEffect(() => {
     if (!selectedDate) return
     setLoading(true)
+    setError(null)
     setDayData(null)
-    fetch(`/data/${selectedDate}.json`)
-      .then(r => r.json())
+    fetchWithRetry(`/data/${selectedDate}.json`)
       .then(data => {
         setDayData(data)
         setLoading(false)
@@ -546,7 +569,11 @@ export default function App() {
         )}
         {error && (
           <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
-            {error}
+            <div>{error}</div>
+            <button
+              onClick={() => { setError(null); setSelectedDate(d => d) }}
+              style={{ marginTop: '12px', padding: '8px 20px', borderRadius: '20px', border: '1px solid var(--line)', background: 'var(--paper-card)', cursor: 'pointer', fontSize: '13px' }}
+            >再読み込み</button>
           </div>
         )}
         {dayData && !loading && (

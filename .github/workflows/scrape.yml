@@ -45,12 +45,10 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: scrape race data $(TZ=Asia/Tokyo date +%Y-%m-%d)"
           git push
 
-      - name: Post to X
+      - name: Send email summary
         env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
           DATE="${{ github.event.inputs.date }}"
           if [ -z "$DATE" ]; then
@@ -58,4 +56,20 @@ jobs:
           else
             DATE="${DATE:0:4}-${DATE:4:2}-${DATE:6:2}"
           fi
-          node scripts/post-x.js $DATE
+          node scripts/post-x.js $DATE > /tmp/tweet.txt 2>&1 || true
+          TWEET=$(grep -A 20 "Tweet preview" /tmp/tweet.txt | grep -v "Tweet preview" | grep -v "chars" | grep -v "credentials")
+          node -e "
+          const nodemailer = require('nodemailer')
+          const fs = require('fs')
+          const tweet = fs.readFileSync('/tmp/tweet.txt','utf8').match(/---\n([\s\S]+?)\n---/)?.[1] || '取得失敗'
+          const t = nodemailer.createTransport({
+            service: 'gmail',
+            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD }
+          })
+          t.sendMail({
+            from: process.env.GMAIL_USER,
+            to: process.env.GMAIL_USER,
+            subject: '🏇 本日のトラックバイアス ツイート文',
+            text: tweet + '\n\n---\nこの文をコピーしてXに投稿してください'
+          }, (e,i) => { if(e) { console.error(e); process.exit(1) } console.log('Sent:', i.messageId) })
+          "

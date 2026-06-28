@@ -1,0 +1,418 @@
+import { useState, useEffect } from 'react'
+import {
+  predictTenkai,
+  TENKAI_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
+  parseTimeStr, calcTrackVariant,
+} from './tenkai.js'
+
+// ── Helpers ───────────────────────────────────────────────
+function gradeInfo(grade) {
+  if (!grade) return { label: '', cls: '' }
+  if (grade === 'GI'  || grade === 'G1')  return { label: 'GI',     cls: 'g1' }
+  if (grade === 'GII' || grade === 'G2')  return { label: 'GII',    cls: 'g2' }
+  if (grade === 'GIII'|| grade === 'G3')  return { label: 'GIII',   cls: 'g3' }
+  if (grade === 'OP'  || grade === 'L')   return { label: 'OP',     cls: 'op' }
+  if (grade === '3勝') return { label: '3勝クラス', cls: 'sannsho' }
+  if (grade === '2勝') return { label: '2勝クラス', cls: 'nishoo' }
+  if (grade === '1勝') return { label: '1勝クラス', cls: 'issho' }
+  if (grade === '未勝利') return { label: '未勝利',  cls: 'mishouuri' }
+  if (grade === '新馬')   return { label: '新馬',    cls: 'shinma' }
+  return { label: grade, cls: 'tokubetsu' }
+}
+
+function trackLabel(variant) {
+  if (variant == null) return null
+  if (variant <= -0.5) return { label: 'スピード馬場', cls: 'fast' }
+  if (variant >= 0.5)  return { label: 'タフ馬場',    cls: 'slow' }
+  return                      { label: '標準馬場',    cls: 'even' }
+}
+
+const NAR_PATTERN = /^(門別|盛岡|水沢|船橋|大井|川崎|金沢|笠松|名古屋|園田|姫路|高知|佐賀)/
+const JRA_VENUES = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
+const NAR_VENUES = ['門別','盛岡','水沢','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
+
+function isNAR(race) { return NAR_PATTERN.test(race.name) }
+
+function isDominant(race) {
+  return race.margin != null && race.margin >= 5
+}
+
+// ── Day bias logic ────────────────────────────────────────
+function dayCourseVerdict(races, course) {
+  const filtered = races.filter(r => r.course === course && !isDominant(r))
+  if (filtered.length === 0) return null
+  const counts = { front: 0, flat: 0, diff: 0 }
+  const variants = []
+  filtered.forEach(r => {
+    const t = predictTenkai(r.horses, r.totalGroups, isNAR(r))
+    if (t && t !== 'pack') counts[t]++
+    if (r.winTime && r.distance) {
+      const sec = parseTimeStr(r.winTime)
+      const v = calcTrackVariant(course, r.distance, sec, r.grade)
+      if (v != null) variants.push(v)
+    }
+  })
+  const total = counts.front + counts.flat + counts.diff
+  if (total === 0) return { verdict: null, counts, avgVariant: null }
+  let verdict = 'flat'
+  if (counts.front / total >= 0.5) verdict = 'front'
+  else if (counts.diff / total >= 0.5) verdict = 'diff'
+  const avgVariant = variants.length > 0
+    ? Math.round(variants.reduce((a, b) => a + b, 0) / variants.length * 10) / 10
+    : null
+  return { verdict, counts, avgVariant }
+}
+
+// ── DaySummary ────────────────────────────────────────────
+function DaySummary({ races, compact = false, onCardClick }) {
+  return (
+    <div className="day-summary">
+      {['芝', 'ダート'].map(course => {
+        const data = dayCourseVerdict(races, course)
+        if (!data) return null
+        const { verdict, counts, avgVariant } = data
+        const total = counts.front + counts.flat + counts.diff
+        const courseKey = course === '芝' ? 'turf' : 'dirt'
+        const t = trackLabel(avgVariant)
+        if (compact) {
+          return (
+            <div key={course} className={`day-summary-card compact ${courseKey}`} onClick={onCardClick} role="button">
+              <span className={`day-course-label ${courseKey}`}>{course}</span>
+              <div className="compact-badges">
+                {verdict
+                  ? <span className={`tenkai-badge ${verdict}`}>{TENKAI_LABEL[verdict]}</span>
+                  : <span className="tenkai-badge none">判定不能</span>
+                }
+                {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
+              </div>
+            </div>
+          )
+        }
+        return (
+          <div key={course} className={`day-summary-card ${courseKey}`}>
+            <div className="day-summary-head">
+              <span className={`day-course-label ${courseKey}`}>{course}</span>
+              {verdict
+                ? <span className={`tenkai-badge ${verdict}`}>{TENKAI_LABEL[verdict]}</span>
+                : <span className="tenkai-badge none">判定不能</span>
+              }
+              {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
+            </div>
+            <div className="day-summary-bars">
+              {[['front','前残り'], ['flat','フラット'], ['diff','差し有利']].map(([key, label]) => (
+                <div key={key} className="day-bar-row">
+                  <span className="day-bar-label">{label}</span>
+                  <div className="day-bar-track">
+                    <div className={`day-bar-fill ${key}`} style={{ width: total > 0 ? `${counts[key]/total*100}%` : '0%' }} />
+                  </div>
+                  <span className="day-bar-count">{counts[key]}R {total > 0 ? `${Math.round(counts[key]/total*100)}%` : ''}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+// ── 展開不利馬 ─────────────────────────────────────────────
+function UnfavRaceGroup({ race, tenkai, horses, raceNum, onNavigate }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="unfav-race-group">
+      <div className="unfav-race-head" style={{ cursor: 'pointer' }} onClick={() => setOpen(o => !o)}>
+        {raceNum && <span className="unfav-race-num">{raceNum}</span>}
+        <span className="unfav-race-name">{race.raceName || race.name}</span>
+        <span className={`tenkai-badge ${tenkai}`}>{TENKAI_LABEL[tenkai]}</span>
+        <span className="unfav-race-arrow">{open ? '▲' : '▼'}</span>
+      </div>
+      {open && (
+        <div className="unfav-horse-list">
+          {horses.map((h, i) => {
+            const fin = parseInt(h.finish)
+            let comment, commentCls
+            if (fin === 1) {
+              comment = '展開不利の中でも勝利で、高く評価できる'
+              commentCls = 'unfav-comment top'
+            } else if (fin <= 3) {
+              comment = '展開不利の中でも好走しており、評価できる'
+              commentCls = 'unfav-comment good'
+            } else {
+              comment = tenkai === 'front' ? '後方から不発' : '先行して不発'
+              commentCls = 'unfav-comment'
+            }
+            return (
+              <div key={i} className="unfav-horse-row">
+                <span className="unfav-finish">{h.finish}着</span>
+                <span className="unfav-name">{h.name}</span>
+                <span className={commentCls}>{comment}</span>
+              </div>
+            )
+          })}
+          <button className="unfav-nav-btn" onClick={onNavigate}>詳細を見る →</button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function UnfavorableList({ races, onRaceClick }) {
+  const [open, setOpen] = useState(false)
+  const groups = []
+
+  races.forEach(race => {
+    if (isDominant(race)) return
+    const nar = isNAR(race)
+    const tenkai = predictTenkai(race.horses, race.totalGroups, nar)
+    if (!tenkai || tenkai === 'pack' || tenkai === 'flat') return
+    const frontThird = race.totalGroups / 3
+    const unfavHorses = race.horses.filter(h => {
+      if (!h.groupIdx || !h.finish) return false
+      if (tenkai === 'front') return h.groupIdx > frontThird
+      if (tenkai === 'diff')  return h.groupIdx <= frontThird
+      return false
+    }).sort((a, b) => parseInt(a.finish) - parseInt(b.finish))
+    if (unfavHorses.length > 0) groups.push({ race, tenkai, horses: unfavHorses })
+  })
+
+  if (groups.length === 0) return null
+  const total = groups.reduce((s, g) => s + g.horses.length, 0)
+
+  return (
+    <div className="unfav-section">
+      <button className="unfav-toggle" onClick={() => setOpen(o => !o)}>
+        <span>展開不利馬</span>
+        <span className="unfav-toggle-count">{total}頭</span>
+        <span className="unfav-toggle-arrow">{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div className="unfav-body">
+          {groups.map(({ race, tenkai, horses }) => {
+            const raceNumMatch = race.name.match(/(\d+R)/)
+            const raceNum = raceNumMatch ? raceNumMatch[1] : ''
+            return (
+              <UnfavRaceGroup
+                key={race.name}
+                race={race}
+                tenkai={tenkai}
+                horses={horses}
+                raceNum={raceNum}
+                onNavigate={() => onRaceClick?.(race)}
+              />
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ── Race card ─────────────────────────────────────────────
+function RaceCard({ race }) {
+  const dominant = isDominant(race)
+  const tenkai = dominant ? null : predictTenkai(race.horses, race.totalGroups, isNAR(race))
+  const g = gradeInfo(race.grade)
+  return (
+    <div
+      id={`race-card-${race.name.replace(/\s/g, '-')}`}
+      className={`race-card course-${race.course === '芝' ? 'turf' : 'dirt'}${dominant ? ' dominant' : ''}`}
+    >
+      <div className="race-card-info">
+        <div className="race-card-name">
+          {g.label && <span className={`grade-badge ${g.cls}`}>{g.label}</span>}
+          {race.raceName || race.name}
+          {dominant && <span className="dominant-badge">⚠ 勝ち馬突出</span>}
+        </div>
+        <div className="race-card-meta">
+          {race.course}{race.distance}m
+          {race.trackCondition && <span className="track-cond-inline">{race.trackCondition}</span>}
+          {race.winTime && <span className="win-time">{race.winTime}</span>}
+        </div>
+      </div>
+      <span className={`tenkai-badge ${tenkai || 'none'}`}>
+        {dominant ? '参考外' : tenkai ? TENKAI_LABEL[tenkai] : 'データ不足'}
+      </span>
+    </div>
+  )
+}
+
+// ── Venue section ─────────────────────────────────────────
+function VenueSection({ venue, races, tab, setTab }) {
+  const condChips = ['芝', 'ダート'].map(surf => {
+    const r = races.find(r => r.course === surf && r.trackCondition)
+    if (!r) return null
+    return <span key={surf} className={`track-cond-chip ${surf === '芝' ? 'turf' : 'dirt'}`}>{surf} {r.trackCondition}</span>
+  }).filter(Boolean)
+
+  return (
+    <div id={`venue-${venue}`}>
+      <div className="venue-section-head">
+        {venue}
+        {condChips.length > 0 && <span className="track-cond-chips">{condChips}</span>}
+      </div>
+      <div className="sec-head"><span className="sec-title">1日まとめ</span></div>
+      <DaySummary races={races} />
+      <div className="sec-head" style={{ marginTop: '24px' }}><span className="sec-title">記録済みレース</span></div>
+      <div className="race-list">
+        {races.map((race, i) => <RaceCard key={i} race={race} />)}
+      </div>
+      <UnfavorableList
+        races={races}
+        onRaceClick={race => {
+          const league = NAR_VENUES.includes(venue) ? 'nar' : 'jra'
+          setTab(league)
+          setTimeout(() => {
+            const id = `race-card-${race.name.replace(/\s/g, '-')}`
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }, 50)
+        }}
+      />
+    </div>
+  )
+}
+
+// ── Day view ──────────────────────────────────────────────
+function DayView({ data }) {
+  const [tab, setTab] = useState('jra')
+
+  const venues = data.venues || {}
+  const jraVenues = JRA_VENUES.filter(v => venues[v])
+  const narVenues = NAR_VENUES.filter(v => venues[v])
+  const hasJRA = jraVenues.length > 0
+  const hasNAR = narVenues.length > 0
+
+  const activeVenues = tab === 'jra' ? jraVenues : narVenues
+
+  return (
+    <div>
+      {/* トップサマリー */}
+      <div className="track-bias-label">トラックバイアスまとめ</div>
+      {[['中央', jraVenues], ['地方', narVenues]].map(([label, vs]) => {
+        if (vs.length === 0) return null
+        return (
+          <div key={label}>
+            <div className="league-head">{label}</div>
+            <div className="top-summary-grid">
+              {vs.map(venue => (
+                <div key={venue} className="top-summary-venue">
+                  <div className="top-summary-venue-name">{venue}</div>
+                  <DaySummary
+                    races={venues[venue]}
+                    compact
+                    onCardClick={() => {
+                      const league = NAR_VENUES.includes(venue) ? 'nar' : 'jra'
+                      setTab(league)
+                      setTimeout(() => {
+                        document.getElementById(`venue-${venue}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                      }, 50)
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })}
+
+      {/* タブ切替 */}
+      {hasJRA && hasNAR && (
+        <div className="tab-bar">
+          <button className={`tab-btn ${tab === 'jra' ? 'active' : ''}`} onClick={() => setTab('jra')}>中央</button>
+          <button className={`tab-btn ${tab === 'nar' ? 'active' : ''}`} onClick={() => setTab('nar')}>地方</button>
+        </div>
+      )}
+
+      {/* 会場別詳細 */}
+      {activeVenues.map(venue => (
+        <VenueSection key={venue} venue={venue} races={venues[venue]} tab={tab} setTab={setTab} />
+      ))}
+    </div>
+  )
+}
+
+// ── Main App ──────────────────────────────────────────────
+export default function App() {
+  const [dates, setDates] = useState([])
+  const [selectedDate, setSelectedDate] = useState(null)
+  const [dayData, setDayData] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  // Load date index
+  useEffect(() => {
+    fetch('/data/index.json')
+      .then(r => r.json())
+      .then(list => {
+        setDates(list)
+        if (list.length > 0) setSelectedDate(list[0])
+        else setLoading(false)
+      })
+      .catch(() => {
+        setError('データが見つかりませんでした')
+        setLoading(false)
+      })
+  }, [])
+
+  // Load selected date's data
+  useEffect(() => {
+    if (!selectedDate) return
+    setLoading(true)
+    setDayData(null)
+    fetch(`/data/${selectedDate}.json`)
+      .then(r => r.json())
+      .then(data => {
+        setDayData(data)
+        setLoading(false)
+      })
+      .catch(() => {
+        setError('データの読み込みに失敗しました')
+        setLoading(false)
+      })
+  }, [selectedDate])
+
+  return (
+    <div className="wrap">
+      <header className="masthead">
+        <div className="eyebrow">TRACK BIAS</div>
+        <h1>トラックバイアス記録</h1>
+        <div className="sub">当日の展開傾向をレース結果から分析</div>
+      </header>
+
+      {/* 日付タブ */}
+      {dates.length > 1 && (
+        <div className="date-tab-bar">
+          {dates.map(d => {
+            const label = `${parseInt(d.slice(5, 7))}/${parseInt(d.slice(8, 10))}`
+            return (
+              <button
+                key={d}
+                className={`date-tab-btn ${d === selectedDate ? 'active' : ''}`}
+                onClick={() => setSelectedDate(d)}
+              >
+                {label}
+              </button>
+            )
+          })}
+        </div>
+      )}
+
+      {loading && (
+        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
+          読み込み中…
+        </div>
+      )}
+      {error && (
+        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--ink-soft)' }}>
+          {error}
+        </div>
+      )}
+      {dayData && !loading && (
+        <>
+          <div className="date-section-head">{dayData.dateDisplay || selectedDate}</div>
+          <DayView data={dayData} />
+        </>
+      )}
+    </div>
+  )
+}

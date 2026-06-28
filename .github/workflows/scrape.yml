@@ -1,0 +1,46 @@
+name: Daily Race Scrape
+
+on:
+  schedule:
+    # 18:30 JST (9:30 UTC) — after afternoon JRA races
+    - cron: '30 9 * * *'
+    # 22:00 JST (13:00 UTC) — after evening NAR races
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to scrape (YYYYMMDD, default: today JST)'
+        required: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run scraper
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then
+            DATE=$(TZ=Asia/Tokyo date +%Y%m%d)
+          fi
+          node scripts/scrape.js $DATE
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git diff --staged --quiet || git commit -m "chore: scrape race data $(TZ=Asia/Tokyo date +%Y-%m-%d)"
+          git push

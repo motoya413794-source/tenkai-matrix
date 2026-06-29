@@ -519,14 +519,6 @@ function HistoryView({ dates }) {
                 <div key={date} className="history-col">
                   <BiasBar counts={counts} date={label} />
                   <div className="history-date-label">{label}</div>
-                  {trackCond && <div className="history-cond">{trackCond}</div>}
-                  {weather && <div className="history-weather">{weather}</div>}
-                  {(courseType || kaisaiDay) && (
-                    <div className="history-course-info">
-                      {courseType && <span>{courseType}コース</span>}
-                      {kaisaiDay && <span>{kaisaiDay}日目</span>}
-                    </div>
-                  )}
                 </div>
               ))}
             </div>

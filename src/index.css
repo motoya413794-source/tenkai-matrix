@@ -1225,6 +1225,27 @@ header.masthead {
   color: var(--ink-soft);
   white-space: nowrap;
 }
+.history-cond {
+  font-size: 10px;
+  color: var(--ink-soft);
+  text-align: center;
+  white-space: nowrap;
+}
+.history-weather {
+  font-size: 10px;
+  color: var(--muted, var(--ink-faint));
+  text-align: center;
+  white-space: nowrap;
+}
+.history-course-info {
+  font-size: 9px;
+  color: var(--muted, var(--ink-faint));
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
 
 .history-table {
   background: var(--paper-card);
@@ -1235,7 +1256,7 @@ header.masthead {
 }
 .history-table-head {
   display: grid;
-  grid-template-columns: 60px 1fr 1fr 1fr;
+  grid-template-columns: 48px 72px 1fr 1fr 1fr;
   padding: 8px 12px;
   background: var(--paper-bg, var(--paper));
   border-bottom: 1px solid var(--line);
@@ -1245,7 +1266,7 @@ header.masthead {
 }
 .history-table-row {
   display: grid;
-  grid-template-columns: 60px 1fr 1fr 1fr;
+  grid-template-columns: 48px 72px 1fr 1fr 1fr;
   padding: 8px 12px;
   border-bottom: 1px solid var(--line);
 }

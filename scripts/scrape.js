@@ -79,8 +79,11 @@ async function scrapeJRA(page, raceId) {
     const gradeMatch = raceName.match(/\(([A-Z0-9]+)\)/) || raceName.match(/(GI|GII|GIII|L|OP)/)
     const grade = gradeMatch ? gradeMatch[1] : ''
     const data02 = document.querySelector('.RaceData02')?.textContent || ''
-    const venueMatch = data02.match(/\d+回\s*\n?\s*(.{2,3})\s*\n?\s*\d+日目/)
-    const venue = venueMatch ? venueMatch[1].trim() : ''
+    const venueMatch = data02.match(/(\d+)回\s*\n?\s*(.{2,3})\s*\n?\s*(\d+)日目/)
+    const venue = venueMatch ? venueMatch[2].trim() : ''
+    const kaisaiDay = venueMatch ? parseInt(venueMatch[3]) : null
+    const weatherMatch = data01.match(/天候[:：\s]*([晴曇雨小雪]+)/)
+    const weather = weatherMatch ? weatherMatch[1] : null
     const courseTypeMatch = data01.match(/\((?:右|左|直)\s*([A-D])\)/)
     const courseType = courseTypeMatch ? courseTypeMatch[1] : null
 
@@ -112,7 +115,7 @@ async function scrapeJRA(page, raceId) {
       corner4 = cornerRows[cornerRows.length - 1].querySelector('td')?.textContent?.trim()?.replace(/\s+/g, '') || ''
     }
 
-    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, winTime, corner4, horses }
+    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, weather, kaisaiDay, winTime, corner4, horses }
   }, raceId)
 }
 
@@ -136,6 +139,8 @@ async function scrapeNAR(page, raceId) {
     const trackCondition = condMatch ? condMatch[1].replace('稍', '稍重').replace('不', '不良') : ''
     const data02spans = Array.from(document.querySelectorAll('.RaceData02 span'))
     const venue = data02spans[1]?.textContent?.trim() || ''
+    const weatherMatch = data01.match(/天候[:：\s]*([晴曇雨小雪]+)/)
+    const weather = weatherMatch ? weatherMatch[1] : null
 
     const rows = Array.from(document.querySelectorAll('table tr'))
     const horses = []
@@ -173,7 +178,7 @@ async function scrapeNAR(page, raceId) {
       }
     }
 
-    return { raceNum, raceName, venue, course, distance, grade: '', trackCondition, courseType: null, winTime, corner4, horses, margin }
+    return { raceNum, raceName, venue, course, distance, grade: '', trackCondition, courseType: null, weather, winTime, corner4, horses, margin }
   }, raceId)
 }
 
@@ -199,6 +204,8 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
     grade: raw.grade || '',
     trackCondition: raw.trackCondition,
     courseType: raw.courseType || null,
+    weather: raw.weather || null,
+    kaisaiDay: raw.kaisaiDay || null,
     winTime: raw.winTime,
     totalHorses: raw.horses.length,
     totalGroups,

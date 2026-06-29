@@ -454,14 +454,21 @@ function HistoryView({ dates }) {
   // 各日付でこの会場・コースのcountsを計算
   const chartData = dates.map(d => {
     const venues = allData[d] || {}
-    const races = (venues[venue] || []).filter(r => r.course === selectedCourse && !isDominant(r))
+    const allRaces = venues[venue] || []
+    const races = allRaces.filter(r => r.course === selectedCourse && !isDominant(r))
     const counts = { front: 0, flat: 0, diff: 0 }
     races.forEach(r => {
       const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r))
       if (t && t !== 'pack') counts[t]++
     })
     const label = `${parseInt(d.slice(5,7))}/${parseInt(d.slice(8,10))}`
-    return { date: d, label, counts }
+    // 代表値：その日その会場・コースの最初のレースから取得
+    const rep = allRaces.find(r => r.course === selectedCourse) || allRaces[0]
+    const trackCond = rep?.trackCondition || null
+    const weather = rep?.weather || null
+    const courseType = selectedCourse === '芝' ? (rep?.courseType || null) : null
+    const kaisaiDay = rep?.kaisaiDay || null
+    return { date: d, label, counts, trackCond, weather, courseType, kaisaiDay }
   }).filter(({ counts }) => counts.front + counts.flat + counts.diff > 0)
 
   // コースの選択肢（この会場で実際にあるもの）
@@ -504,10 +511,18 @@ function HistoryView({ dates }) {
           ? <div className="history-nodata">データなし</div>
           : (
             <div className="history-bars">
-              {chartData.map(({ date, label, counts }) => (
+              {chartData.map(({ date, label, counts, trackCond, weather, courseType, kaisaiDay }) => (
                 <div key={date} className="history-col">
                   <BiasBar counts={counts} date={label} />
                   <div className="history-date-label">{label}</div>
+                  {trackCond && <div className="history-cond">{trackCond}</div>}
+                  {weather && <div className="history-weather">{weather}</div>}
+                  {(courseType || kaisaiDay) && (
+                    <div className="history-course-info">
+                      {courseType && <span>{courseType}コース</span>}
+                      {kaisaiDay && <span>{kaisaiDay}日目</span>}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -519,13 +534,15 @@ function HistoryView({ dates }) {
       {chartData.length > 0 && (
         <div className="history-table">
           <div className="history-table-head">
-            <span>日付</span><span>前残り</span><span>フラット</span><span>差し</span>
+            <span>日付</span><span>馬場</span><span>前残り</span><span>フラット</span><span>差し</span>
           </div>
-          {chartData.map(({ date, label, counts }) => {
+          {chartData.map(({ date, label, counts, trackCond, weather, courseType, kaisaiDay }) => {
             const total = counts.front + counts.flat + counts.diff
+            const condParts = [trackCond, weather, courseType ? `${courseType}コース` : null, kaisaiDay ? `${kaisaiDay}日目` : null].filter(Boolean)
             return (
               <div key={date} className="history-table-row">
                 <span>{label}</span>
+                <span style={{ color: 'var(--muted)', fontSize: '11px' }}>{condParts.join(' ')}</span>
                 <span className="front-text">{counts.front}R ({Math.round(counts.front/total*100)}%)</span>
                 <span className="flat-text">{counts.flat}R ({Math.round(counts.flat/total*100)}%)</span>
                 <span className="diff-text">{counts.diff}R ({Math.round(counts.diff/total*100)}%)</span>

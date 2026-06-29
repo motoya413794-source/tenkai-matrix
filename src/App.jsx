@@ -263,18 +263,41 @@ function RaceCard({ race }) {
         <span style={{ marginLeft: 'auto', color: 'var(--muted)', fontSize: '12px' }}>{open ? '▲' : '▼'}</span>
       </div>
       {open && (
-        <div style={{ padding: '10px 12px 4px', borderTop: '1px solid var(--border)', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-          {groups.map(([lbl, grpH]) => grpH.length === 0 ? null : (
-            <div key={lbl} style={{ flex: '1', minWidth: '80px' }}>
-              <div style={{ fontSize: '11px', color: 'var(--muted)', marginBottom: '4px' }}>{lbl}ポジション</div>
-              {grpH.map((h, i) => (
-                <div key={i} style={{ fontSize: '13px', display: 'flex', gap: '6px', padding: '2px 0' }}>
-                  <span style={{ color: 'var(--muted)', minWidth: '24px' }}>{h.finish}着</span>
-                  <span>{h.name}</span>
+        <div style={{ borderTop: '1px solid var(--border)', padding: '12px' }}>
+          {groups.filter(([, grpH]) => grpH.length > 0).map(([lbl, grpH], gi) => {
+            const laneColor = lbl === '前'
+              ? 'rgba(239,68,68,0.08)' : lbl === '中'
+              ? 'rgba(234,179,8,0.08)' : 'rgba(59,130,246,0.08)'
+            const labelColor = lbl === '前' ? '#ef4444' : lbl === '中' ? '#ca8a04' : '#3b82f6'
+            return (
+              <div key={lbl} style={{ marginBottom: gi < groups.filter(([,g])=>g.length>0).length-1 ? '8px' : 0, background: laneColor, borderRadius: '8px', padding: '8px 10px' }}>
+                <div style={{ fontSize: '11px', fontWeight: 700, color: labelColor, marginBottom: '6px', letterSpacing: '0.05em' }}>{lbl}ポジション ({grpH.length}頭)</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  {grpH.map((h, i) => {
+                    const fin = parseInt(h.finish)
+                    const isTop = fin <= 3
+                    const medal = fin === 1 ? '🥇' : fin === 2 ? '🥈' : fin === 3 ? '🥉' : null
+                    return (
+                      <div key={i} style={{
+                        display: 'flex', alignItems: 'center', gap: '4px',
+                        background: isTop ? 'var(--card)' : 'transparent',
+                        border: isTop ? '1px solid var(--border)' : '1px solid transparent',
+                        borderRadius: '20px', padding: '3px 8px',
+                        fontSize: '13px',
+                        fontWeight: isTop ? 700 : 400,
+                      }}>
+                        {medal
+                          ? <span style={{ fontSize: '14px' }}>{medal}</span>
+                          : <span style={{ color: 'var(--muted)', fontSize: '11px', minWidth: '18px' }}>{h.finish}着</span>
+                        }
+                        <span>{h.name}</span>
+                      </div>
+                    )
+                  })}
                 </div>
-              ))}
-            </div>
-          ))}
+              </div>
+            )
+          })}
         </div>
       )}
     </div>

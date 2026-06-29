@@ -406,14 +406,10 @@ function BiasBar({ counts, date }) {
   const diffPct  = Math.round(counts.diff  / total * 100)
   const flatPct  = 100 - frontPct - diffPct
   const label = `${date}\n前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
-  // 上から前残り→フラット→差しの順（column方向）
-  return (
-    <div className="bias-bar" title={label}>
-      {diffPct  > 0 && <div className="bias-seg diff"  style={{ height: `${diffPct}%` }} />}
-      {flatPct  > 0 && <div className="bias-seg flat"  style={{ height: `${flatPct}%` }} />}
-      {frontPct > 0 && <div className="bias-seg front" style={{ height: `${frontPct}%` }} />}
-    </div>
-  )
+  // 下から前残り(赤)→フラット(黄)→差し(青) をグラデーションで確実に描画
+  const f = frontPct, fl = frontPct + flatPct
+  const bg = `linear-gradient(to top, var(--front-fg) 0% ${f}%, var(--flat-fg) ${f}% ${fl}%, var(--diff-fg) ${fl}% 100%)`
+  return <div className="bias-bar" title={label} style={{ background: bg }} />
 }
 
 function HistoryView({ dates }) {

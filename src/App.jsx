@@ -406,11 +406,15 @@ function BiasBar({ counts, date }) {
   const diffPct  = Math.round(counts.diff  / total * 100)
   const flatPct  = 100 - frontPct - diffPct
   const label = `${date} 前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
+  const H = 120
+  const diffPx  = Math.round(diffPct  / 100 * H)
+  const flatPx  = Math.round(flatPct  / 100 * H)
+  const frontPx = H - diffPx - flatPx
   return (
     <div className="bias-bar" title={label}>
-      {diffPct  > 0 && <div style={{ background: '#2a5f93', flex: diffPct }} />}
-      {flatPct  > 0 && <div style={{ background: '#7a6b12', flex: flatPct }} />}
-      {frontPct > 0 && <div style={{ background: '#a5302a', flex: frontPct }} />}
+      {diffPx  > 0 && <div style={{ background: '#2a5f93', height: diffPx  + 'px', width: '100%', flexShrink: 0 }} />}
+      {flatPx  > 0 && <div style={{ background: '#7a6b12', height: flatPx  + 'px', width: '100%', flexShrink: 0 }} />}
+      {frontPx > 0 && <div style={{ background: '#a5302a', height: frontPx + 'px', width: '100%', flexShrink: 0 }} />}
     </div>
   )
 }

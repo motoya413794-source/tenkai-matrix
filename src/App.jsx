@@ -407,8 +407,9 @@ function BiasBar({ counts, date }) {
   const flatPct  = 100 - frontPct - diffPct
   const label = `${date}\n前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
   // 下から前残り(赤)→フラット(黄)→差し(青) をグラデーションで確実に描画 (Safari互換)
-  const f = frontPct, fl = frontPct + flatPct
-  const bg = `linear-gradient(to top, #a5302a 0%, #a5302a ${f}%, #7a6b12 ${f}%, #7a6b12 ${fl}%, #2a5f93 ${fl}%, #2a5f93 100%)`
+  const frontStop = frontPct
+  const flatStop = frontPct + flatPct
+  const bg = `linear-gradient(to top, #a5302a 0%, #a5302a ${frontStop}%, #7a6b12 ${frontStop}%, #7a6b12 ${flatStop}%, #2a5f93 ${flatStop}%, #2a5f93 100%)`
   return <div className="bias-bar" title={label} style={{ background: bg }} />
 }
 

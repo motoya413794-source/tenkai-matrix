@@ -406,11 +406,12 @@ function BiasBar({ counts, date }) {
   const diffPct  = Math.round(counts.diff  / total * 100)
   const flatPct  = 100 - frontPct - diffPct
   const label = `${date}\n前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
+  // 上から前残り→フラット→差しの順（column方向）
   return (
     <div className="bias-bar" title={label}>
-      {frontPct > 0 && <div className="bias-seg front" style={{ height: `${frontPct}%` }} />}
-      {flatPct  > 0 && <div className="bias-seg flat"  style={{ height: `${flatPct}%` }} />}
       {diffPct  > 0 && <div className="bias-seg diff"  style={{ height: `${diffPct}%` }} />}
+      {flatPct  > 0 && <div className="bias-seg flat"  style={{ height: `${flatPct}%` }} />}
+      {frontPct > 0 && <div className="bias-seg front" style={{ height: `${frontPct}%` }} />}
     </div>
   )
 }

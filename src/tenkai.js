@@ -64,9 +64,10 @@ export function predictTenkai(horses, totalGroups, isNAR = false) {
     else if (isNAR || h.groupIdx > rearThird) kohoScore += w
   })
 
-  const threshold = isNAR ? 0.6 : 0.5
-  if (frontScore / totalWeight >= threshold) return 'front'
-  if (kohoScore / totalWeight >= threshold) return 'diff'
+  const frontThreshold = isNAR ? 0.6 : 0.5
+  const diffThreshold  = isNAR ? 0.6 : 0.4
+  if (frontScore / totalWeight >= frontThreshold) return 'front'
+  if (kohoScore / totalWeight >= diffThreshold) return 'diff'
   return 'flat'
 }
 

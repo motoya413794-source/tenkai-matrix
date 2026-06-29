@@ -79,8 +79,8 @@ async function scrapeJRA(page, raceId) {
     const gradeMatch = raceName.match(/\(([A-Z0-9]+)\)/) || raceName.match(/(GI|GII|GIII|L|OP)/)
     const grade = gradeMatch ? gradeMatch[1] : ''
     const data02 = document.querySelector('.RaceData02')?.textContent || ''
-    const venueMatch = data02.match(/(.{2,3})\d+回/)
-    const venue = venueMatch ? venueMatch[1] : ''
+    const venueMatch = data02.match(/\d+回\s*\n?\s*(.{2,3})\s*\n?\s*\d+日目/)
+    const venue = venueMatch ? venueMatch[1].trim() : ''
     const courseTypeMatch = data01.match(/\((?:右|左|直)\s*([A-D])\)/)
     const courseType = courseTypeMatch ? courseTypeMatch[1] : null
 

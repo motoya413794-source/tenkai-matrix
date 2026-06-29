@@ -408,9 +408,9 @@ function BiasBar({ counts, date }) {
   const label = `${date} 前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
   return (
     <div className="bias-bar" title={label}>
-      {diffPct  > 0 && <div style={{ background: '#2a5f93', height: diffPct  + '%', width: '100%' }} />}
-      {flatPct  > 0 && <div style={{ background: '#7a6b12', height: flatPct  + '%', width: '100%' }} />}
-      {frontPct > 0 && <div style={{ background: '#a5302a', height: frontPct + '%', width: '100%' }} />}
+      {diffPct  > 0 && <div style={{ background: '#2a5f93', flex: diffPct }} />}
+      {flatPct  > 0 && <div style={{ background: '#7a6b12', flex: flatPct }} />}
+      {frontPct > 0 && <div style={{ background: '#a5302a', flex: frontPct }} />}
     </div>
   )
 }

@@ -179,7 +179,9 @@ async function scrapeNAR(page, raceId) {
 
 // ── Build race object ─────────────────────────────────────
 function buildRace(raw, raceId, dateDisplay, isNar) {
-  const venueCode = raceId.slice(4, 6)
+  // レースIDの末尾2桁がレース番号
+  const raceNumFromId = parseInt(raceId.slice(-2), 10)
+  const raceNum = raw.raceNum || `${raceNumFromId}R`
   const { posMap, totalGroups } = parseCornerStr(raw.corner4)
   const maxGi = Math.max(...Object.values(posMap), 0) || totalGroups
 
@@ -190,7 +192,7 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
   }))
 
   return {
-    name: `${raw.venue}${raw.raceNum} ${dateDisplay}`,
+    name: `${raw.venue}${raceNum} ${dateDisplay}`,
     raceName: raw.raceName,
     course: raw.course,
     distance: raw.distance,

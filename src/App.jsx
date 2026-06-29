@@ -218,29 +218,65 @@ function UnfavorableList({ races, onRaceClick }) {
 
 // ── Race card ─────────────────────────────────────────────
 function RaceCard({ race }) {
+  const [open, setOpen] = useState(false)
   const dominant = isDominant(race)
-  const tenkai = dominant ? null : predictTenkai(race.horses, race.totalGroups, useNARLogic(race))
+  const narLogic = useNARLogic(race)
+  const tenkai = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic)
   const g = gradeInfo(race.grade)
+
+  const frontThird = race.totalGroups / 3
+  const rearThird  = race.totalGroups * 2 / 3
+  const grouped = { front: [], mid: [], rear: [] }
+  const sorted = [...race.horses].sort((a, b) => parseInt(a.finish) - parseInt(b.finish))
+  sorted.forEach(h => {
+    if (!h.groupIdx) return
+    if (h.groupIdx <= frontThird) grouped.front.push(h)
+    else if (!narLogic && h.groupIdx <= rearThird) grouped.mid.push(h)
+    else grouped.rear.push(h)
+  })
+
+  const groups = [['前', grouped.front], ['中', narLogic ? [] : grouped.mid], ['後', grouped.rear]]
+
   return (
     <div
       id={`race-card-${race.name.replace(/\s/g, '-')}`}
       className={`race-card course-${race.course === '芝' ? 'turf' : 'dirt'}${dominant ? ' dominant' : ''}`}
+      style={{ flexDirection: 'column', alignItems: 'stretch', cursor: 'pointer' }}
+      onClick={() => setOpen(o => !o)}
     >
-      <div className="race-card-info">
-        <div className="race-card-name">
-          {g.label && <span className={`grade-badge ${g.cls}`}>{g.label}</span>}
-          {race.raceName || race.name}
-          {dominant && <span className="dominant-badge">⚠ 勝ち馬突出</span>}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div className="race-card-info">
+          <div className="race-card-name">
+            {g.label && <span className={`grade-badge ${g.cls}`}>{g.label}</span>}
+            {race.raceName || race.name}
+            {dominant && <span className="dominant-badge">⚠ 勝ち馬突出</span>}
+          </div>
+          <div className="race-card-meta">
+            {race.course}{race.distance}m
+            {race.trackCondition && <span className="track-cond-inline">{race.trackCondition}</span>}
+            {race.winTime && <span className="win-time">{race.winTime}</span>}
+          </div>
         </div>
-        <div className="race-card-meta">
-          {race.course}{race.distance}m
-          {race.trackCondition && <span className="track-cond-inline">{race.trackCondition}</span>}
-          {race.winTime && <span className="win-time">{race.winTime}</span>}
-        </div>
+        <span className={`tenkai-badge ${tenkai || 'none'}`}>
+          {dominant ? '参考外' : tenkai ? TENKAI_LABEL[tenkai] : 'データ不足'}
+        </span>
+        <span style={{ marginLeft: 'auto', color: 'var(--muted)', fontSize: '12px' }}>{open ? '▲' : '▼'}</span>
       </div>
-      <span className={`tenkai-badge ${tenkai || 'none'}`}>
-        {dominant ? '参考外' : tenkai ? TENKAI_LABEL[tenkai] : 'データ不足'}
-      </span>
+      {open && (
+        <div style={{ padding: '10px 12px 4px', borderTop: '1px solid var(--border)', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+          {groups.map(([lbl, grpH]) => grpH.length === 0 ? null : (
+            <div key={lbl} style={{ flex: '1', minWidth: '80px' }}>
+              <div style={{ fontSize: '11px', color: 'var(--muted)', marginBottom: '4px' }}>{lbl}ポジション</div>
+              {grpH.map((h, i) => (
+                <div key={i} style={{ fontSize: '13px', display: 'flex', gap: '6px', padding: '2px 0' }}>
+                  <span style={{ color: 'var(--muted)', minWidth: '24px' }}>{h.finish}着</span>
+                  <span>{h.name}</span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

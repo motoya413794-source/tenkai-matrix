@@ -403,8 +403,8 @@ function BiasBar({ counts, date }) {
   const total = counts.front + counts.flat + counts.diff
   if (total === 0) return <div className="bias-bar-empty" title={date}>-</div>
   const frontPct = Math.round(counts.front / total * 100)
-  const flatPct  = Math.round(counts.flat  / total * 100)
-  const diffPct  = 100 - frontPct - flatPct
+  const diffPct  = Math.round(counts.diff  / total * 100)
+  const flatPct  = 100 - frontPct - diffPct
   const label = `${date}\n前残り${frontPct}% フラット${flatPct}% 差し${diffPct}%`
   return (
     <div className="bias-bar" title={label}>

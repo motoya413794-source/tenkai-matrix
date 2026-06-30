@@ -17,6 +17,59 @@ function isDominant(race) { return race.margin != null && race.margin >= 5 }
 const LABEL = { front: '前残り', flat: 'フラット', diff: '差し有利' }
 const EMOJI = { front: '🔴', flat: '⚪', diff: '🔵' }
 
+const SHORT_DIRT = /^(函館|福島|小倉)/
+function useNARLogic(race) {
+  if (isNAR(race)) return true
+  if (race.course === 'ダート' && SHORT_DIRT.test(race.name)) return true
+  return false
+}
+
+function buildUnfavText(data) {
+  const { dateDisplay, venues } = data
+  const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
+  const NAR_ORDER = ['門別','盛岡','水沢','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
+  const allVenues = [...JRA_ORDER, ...NAR_ORDER].filter(v => venues[v])
+
+  let text = `📋 ${dateDisplay} 展開不利馬\n`
+
+  for (const venue of allVenues) {
+    const races = venues[venue] || []
+    const groups = []
+
+    races.forEach(race => {
+      if (isDominant(race)) return
+      const nar = useNARLogic(race)
+      const tenkai = predictTenkai(race.horses, race.totalGroups, nar)
+      if (!tenkai || tenkai === 'pack' || tenkai === 'flat') return
+      const frontThird = race.totalGroups / 3
+      const unfav = race.horses.filter(h => {
+        if (!h.groupIdx || !h.finish) return false
+        if (tenkai === 'front') return h.groupIdx > frontThird
+        if (tenkai === 'diff')  return h.groupIdx <= frontThird
+        return false
+      }).sort((a, b) => parseInt(a.finish) - parseInt(b.finish))
+      // 好走馬（1〜3着）のみ対象
+      const notable = unfav.filter(h => parseInt(h.finish) <= 3)
+      if (notable.length > 0) groups.push({ race, tenkai, unfav: notable })
+    })
+
+    if (groups.length === 0) continue
+    text += `\n【${venue}】\n`
+    for (const { race, tenkai, unfav } of groups) {
+      const raceNum = race.name.match(/(\d+R)/)?.[1] || ''
+      const raceName = race.raceName || race.name
+      text += `${raceNum} ${raceName}（${LABEL[tenkai]}）\n`
+      for (const h of unfav) {
+        const fin = parseInt(h.finish)
+        const comment = fin === 1 ? '🥇展開不利でも勝利' : fin <= 3 ? '⭐好走' : '凡走'
+        text += `  ${h.finish}着 ${h.name} ${comment}\n`
+      }
+    }
+  }
+
+  return text
+}
+
 function venueVerdict(races) {
   const result = {}
   for (const course of ['芝', 'ダート']) {
@@ -97,9 +150,13 @@ function buildTweet(data) {
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
   const tweet = buildTweet(data)
 
+  const unfav = buildUnfavText(data)
+
   console.log('--- Tweet preview ---')
   console.log(tweet)
   console.log(`--- ${tweet.length} chars ---`)
+  console.log('--- Unfav preview ---')
+  console.log(unfav)
 
   if (!process.env.X_API_KEY) {
     console.log('No X credentials, skipping post')

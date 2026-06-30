@@ -1010,6 +1010,15 @@ header.masthead {
   color: var(--ink-main);
   flex: 1;
 }
+.unfav-popularity {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a5302a;
+  background: rgba(165,48,42,0.1);
+  border-radius: 10px;
+  padding: 1px 7px;
+  flex-shrink: 0;
+}
 .unfav-pos {
   font-size: 11px;
   color: var(--ink-soft);

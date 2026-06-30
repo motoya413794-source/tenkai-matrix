@@ -154,6 +154,9 @@ function UnfavRaceGroup({ race, tenkai, horses, raceNum, onNavigate }) {
               <div key={i} className="unfav-horse-row">
                 <span className="unfav-finish">{h.finish}着</span>
                 <span className="unfav-name">{h.name}</span>
+                {h.popularity != null && (
+                  <span className="unfav-popularity">{h.popularity}人気</span>
+                )}
                 <span className={commentCls}>{comment}</span>
               </div>
             )
@@ -291,6 +294,9 @@ function RaceCard({ race }) {
                           : <span style={{ color: 'var(--muted)', fontSize: '11px', minWidth: '18px' }}>{h.finish}着</span>
                         }
                         <span>{h.name}</span>
+                        {h.popularity != null && (
+                          <span style={{ color: 'var(--muted)', fontSize: '10px' }}>{h.popularity}人気</span>
+                        )}
                       </div>
                     )
                   })}

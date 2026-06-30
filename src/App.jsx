@@ -584,8 +584,9 @@ export default function App() {
   useEffect(() => {
     fetchWithRetry('/data/index.json')
       .then(list => {
-        setDates(list)
-        if (list.length > 0) setSelectedDate(list[0])
+        const sorted = [...list].sort((a, b) => b.localeCompare(a))
+        setDates(sorted)
+        if (sorted.length > 0) setSelectedDate(sorted[0])
         else setLoading(false)
       })
       .catch(() => {
@@ -633,18 +634,28 @@ export default function App() {
         {/* 日付タブ */}
         {dates.length > 1 && (
           <div className="date-tab-bar">
-            {dates.map(d => {
-              const label = `${parseInt(d.slice(5, 7))}/${parseInt(d.slice(8, 10))}`
-              return (
-                <button
-                  key={d}
-                  className={`date-tab-btn ${d === selectedDate ? 'active' : ''}`}
-                  onClick={() => setSelectedDate(d)}
-                >
-                  {label}
-                </button>
-              )
-            })}
+            {(() => {
+              const items = []
+              let lastMonth = null
+              dates.forEach(d => {
+                const month = d.slice(0, 7)
+                if (month !== lastMonth) {
+                  items.push(<span key={`m-${month}`} className="date-tab-month">{parseInt(d.slice(5, 7))}月</span>)
+                  lastMonth = month
+                }
+                const label = `${parseInt(d.slice(8, 10))}日`
+                items.push(
+                  <button
+                    key={d}
+                    className={`date-tab-btn ${d === selectedDate ? 'active' : ''}`}
+                    onClick={() => setSelectedDate(d)}
+                  >
+                    {label}
+                  </button>
+                )
+              })
+              return items
+            })()}
           </div>
         )}
 

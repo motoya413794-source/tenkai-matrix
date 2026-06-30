@@ -139,6 +139,18 @@ header.masthead {
   scrollbar-width: none;
 }
 .date-tab-bar::-webkit-scrollbar { display: none; }
+.date-tab-month {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--turf);
+  letter-spacing: 0.08em;
+  padding: 0 4px 0 8px;
+  white-space: nowrap;
+}
+.date-tab-month:first-child { padding-left: 0; }
 .date-tab-btn {
   flex-shrink: 0;
   font-family: var(--font-disp);

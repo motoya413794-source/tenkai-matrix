@@ -15,7 +15,7 @@ function isNAR(race) { return NAR_PATTERN.test(race.name) }
 function isDominant(race) { return race.margin != null && race.margin >= 5 }
 
 const LABEL = { front: '前残り', flat: 'フラット', diff: '差し有利' }
-const EMOJI = { front: '🔴', flat: '⚪', diff: '🔵' }
+const EMOJI = { front: '', flat: '', diff: '' }
 
 const SHORT_DIRT = /^(函館|福島|小倉)/
 function useNARLogic(race) {
@@ -30,7 +30,7 @@ function buildUnfavText(data) {
   const NAR_ORDER = ['門別','盛岡','水沢','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
   const allVenues = [...JRA_ORDER, ...NAR_ORDER].filter(v => venues[v])
 
-  let text = `📋 ${dateDisplay} 展開不利馬\n`
+  let text = `${dateDisplay} 展開不利馬\n`
 
   for (const venue of allVenues) {
     const races = venues[venue] || []
@@ -66,11 +66,11 @@ function buildUnfavText(data) {
       text += `${raceNum} ${raceName}（${LABEL[tenkai]}）\n`
       for (const h of unfav) {
         const fin = parseInt(h.finish)
-        const comment = fin === 1 ? '🥇展開不利でも勝利' : fin <= 3 ? '⭐好走' : '凡走'
+        const comment = fin === 1 ? '展開不利でも勝利' : fin <= 3 ? '好走' : '凡走'
         text += `  ${h.finish}着 ${h.name} ${comment}\n`
       }
       for (const h of popularButBeaten) {
-        text += `  ${h.finish}着 ${h.name}（${h.popularity}番人気）⚠展開不利で凡走\n`
+        text += `  ${h.finish}着 ${h.name}（${h.popularity}番人気）展開不利で凡走\n`
       }
     }
   }
@@ -106,7 +106,7 @@ function buildTweet(data) {
   const jraVenues = JRA_ORDER.filter(v => venues[v])
   const narVenues = NAR_ORDER.filter(v => venues[v])
 
-  let text = `🏇 ${dateDisplay} トラックバイアスまとめ\n\n`
+  let text = `${dateDisplay} トラックバイアスまとめ\n\n`
 
   if (jraVenues.length > 0) {
     text += `【中央】\n`

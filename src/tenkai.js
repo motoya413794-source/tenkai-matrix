@@ -64,10 +64,16 @@ export function predictTenkai(horses, totalGroups, isNAR = false) {
     else if (isNAR || h.groupIdx > rearThird) kohoScore += w
   })
 
-  const frontThreshold = 0.5
-  const diffThreshold  = isNAR ? 0.25 : 0.3
-  if (frontScore / totalWeight >= frontThreshold) return 'front'
-  if (kohoScore / totalWeight >= diffThreshold) return 'diff'
+  if (isNAR) {
+    // 2区分（前1/3 vs 後2/3）: 単一軸で2カット点
+    const ratio = frontScore / totalWeight
+    if (ratio >= 5 / 9) return 'front'   // 前 ≥ 55.6%
+    if (ratio <= 2 / 9) return 'diff'    // 前 ≤ 22.2% = 後 ≥ 77.8%
+    return 'flat'
+  }
+  // JRA 3区分（前/中/後 各1/3）: 両閾値とも5/9
+  if (frontScore / totalWeight >= 5 / 9) return 'front'
+  if (kohoScore / totalWeight >= 5 / 9) return 'diff'
   return 'flat'
 }
 

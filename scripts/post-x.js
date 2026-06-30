@@ -10,7 +10,7 @@ import { predictTenkai } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const NAR_PATTERN = /^(門別|盛岡|水沢|船橋|大井|川崎|金沢|笠松|名古屋|園田|姫路|高知|佐賀)/
+const NAR_PATTERN = /^(門別|盛岡|水沢|浦和|船橋|大井|川崎|金沢|笠松|名古屋|園田|姫路|高知|佐賀)/
 function isNAR(race) { return NAR_PATTERN.test(race.name) }
 function isDominant(race) { return race.margin != null && race.margin >= 5 }
 
@@ -27,7 +27,7 @@ function useNARLogic(race) {
 function buildUnfavText(data) {
   const { dateDisplay, venues } = data
   const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
-  const NAR_ORDER = ['門別','盛岡','水沢','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
+  const NAR_ORDER = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
   const allVenues = [...JRA_ORDER, ...NAR_ORDER].filter(v => venues[v])
 
   let text = `${dateDisplay} 展開不利馬\n`
@@ -101,7 +101,7 @@ function venueVerdict(races) {
 function buildTweet(data) {
   const { dateDisplay, venues } = data
   const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
-  const NAR_ORDER = ['門別','盛岡','水沢','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
+  const NAR_ORDER = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
 
   const jraVenues = JRA_ORDER.filter(v => venues[v])
   const narVenues = NAR_ORDER.filter(v => venues[v])

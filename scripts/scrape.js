@@ -98,8 +98,10 @@ async function scrapeJRA(page, raceId) {
       const horseNum = cells[2]?.textContent?.trim()
       const name = cells[3]?.querySelector('a')?.textContent?.trim() || cells[3]?.textContent?.trim()
       const time = cells[7]?.textContent?.trim()
+      const popStr = cells[9]?.textContent?.trim()
+      const popularity = /^\d+$/.test(popStr) ? parseInt(popStr, 10) : null
       if (finish === '1') winTime = time
-      if (name) horses.push({ finish, num: horseNum, name })
+      if (name) horses.push({ finish, num: horseNum, name, popularity })
     }
 
     const cornerRows = Array.from(document.querySelectorAll('.Corner_Num tr'))
@@ -153,8 +155,10 @@ async function scrapeNAR(page, raceId) {
       const horseNum = cells[2]?.textContent?.trim()
       const name = cells[3]?.textContent?.trim()
       const time = cells[7]?.textContent?.trim()
+      const popStr = cells[9]?.textContent?.trim()
+      const popularity = /^\d+$/.test(popStr) ? parseInt(popStr, 10) : null
       if (finish === '1') winTime = time
-      if (name) horses.push({ finish, num: horseNum, name })
+      if (name) horses.push({ finish, num: horseNum, name, popularity })
     }
 
     const cornerRows = Array.from(document.querySelectorAll('table.Corner_Num tr'))
@@ -193,6 +197,7 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
   const horses = raw.horses.map(h => ({
     finish: h.finish,
     name: h.name,
+    popularity: h.popularity ?? null,
     groupIdx: posMap[String(h.num)] ?? (Object.keys(posMap).length > 0 ? maxGi : null),
   }))
 

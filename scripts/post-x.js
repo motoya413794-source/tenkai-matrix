@@ -50,12 +50,17 @@ function buildUnfavText(data) {
       }).sort((a, b) => parseInt(a.finish) - parseInt(b.finish))
       // 好走馬（1〜3着）のみ対象
       const notable = unfav.filter(h => parseInt(h.finish) <= 3)
-      if (notable.length > 0) groups.push({ race, tenkai, unfav: notable })
+      // 4着以下で人気上位（3番人気以内）だった馬＝展開不利で着順を落とした可能性
+      const popularButBeaten = unfav.filter(h => parseInt(h.finish) >= 4 && h.popularity != null && h.popularity <= 3)
+        .sort((a, b) => a.popularity - b.popularity)
+      if (notable.length > 0 || popularButBeaten.length > 0) {
+        groups.push({ race, tenkai, unfav: notable, popularButBeaten })
+      }
     })
 
     if (groups.length === 0) continue
     text += `\n【${venue}】\n`
-    for (const { race, tenkai, unfav } of groups) {
+    for (const { race, tenkai, unfav, popularButBeaten } of groups) {
       const raceNum = race.name.match(/(\d+R)/)?.[1] || ''
       const raceName = race.raceName || race.name
       text += `${raceNum} ${raceName}（${LABEL[tenkai]}）\n`
@@ -63,6 +68,9 @@ function buildUnfavText(data) {
         const fin = parseInt(h.finish)
         const comment = fin === 1 ? '🥇展開不利でも勝利' : fin <= 3 ? '⭐好走' : '凡走'
         text += `  ${h.finish}着 ${h.name} ${comment}\n`
+      }
+      for (const h of popularButBeaten) {
+        text += `  ${h.finish}着 ${h.name}（${h.popularity}番人気）⚠展開不利で凡走\n`
       }
     }
   }

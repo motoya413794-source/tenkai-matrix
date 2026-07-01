@@ -38,7 +38,7 @@ jobs:
           node scripts/scrape.js $DATE
 
       - name: Recompute quantiles
-        run: node scripts/compute-quantiles.js --months 1
+        run: node scripts/compute-quantiles.js --months 2
 
       - name: Commit data
         run: |

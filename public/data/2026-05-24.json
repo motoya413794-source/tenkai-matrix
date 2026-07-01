@@ -1,0 +1,2712 @@
+{
+  "date": "2026-05-24",
+  "dateDisplay": "5/24",
+  "venues": {
+    "盛岡": [
+      {
+        "name": "盛岡1R 5/24",
+        "raceName": "C2",
+        "course": "ダート",
+        "distance": 1000,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:01.7",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "クウェンヤ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミツカネスコーピオ",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "フリュート",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "オーロプロサングエ",
+            "popularity": 1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "リスクテイカー",
+            "popularity": 10,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "スカイロック",
+            "popularity": 7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "キラン",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "ハッサク",
+            "popularity": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "アストラアヴィス",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "ソロフィオーレ",
+            "popularity": 8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "11",
+            "name": "アドマイヤハイジ",
+            "popularity": 11,
+            "groupIdx": 9
+          }
+        ],
+        "margin": null,
+        "_corner4": "(2,4)-(6,9),(10,11),(1,7),5,8-3"
+      },
+      {
+        "name": "盛岡2R 5/24",
+        "raceName": "C2九組",
+        "course": "ダート",
+        "distance": 1200,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:15.2",
+        "totalHorses": 8,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "オムブラーヴ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "カリスティア",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "グレースアイリス",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ミヤビノオウザ",
+            "popularity": 3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "フジサンエンヤス",
+            "popularity": 4,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "イモータリティ",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ラストパラダイス",
+            "popularity": 8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "8",
+            "name": "トーセンオリジン",
+            "popularity": 5,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 3,
+        "_corner4": "2,5-3-(6,9)-7,8=1"
+      },
+      {
+        "name": "盛岡3R 5/24",
+        "raceName": "C2八組",
+        "course": "ダート",
+        "distance": 1200,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:14.3",
+        "totalHorses": 8,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アークフロリナ",
+            "popularity": 5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "レモンスフレ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "パワームーブ",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ジーティービート",
+            "popularity": 7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ホロヨイマンゲツ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ワンダーフルーリ",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "ジョードプル",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "エバーアリエル",
+            "popularity": 6,
+            "groupIdx": 6
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "1,(3,5),7,2,4,9,8"
+      },
+      {
+        "name": "盛岡4R 5/24",
+        "raceName": "C2七組",
+        "course": "ダート",
+        "distance": 1200,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:15.4",
+        "totalHorses": 9,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "フークレグルス",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ラムセス",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "レーニス",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "ダイナミックス",
+            "popularity": 5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ニシノブライアント",
+            "popularity": 9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "アニマルキリシマ",
+            "popularity": 1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ディーファンクス",
+            "popularity": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "アルデムラータ",
+            "popularity": 4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "ジュンツーポイント",
+            "popularity": 8,
+            "groupIdx": 8
+          }
+        ],
+        "margin": null,
+        "_corner4": "(4,5),3,9,2,1-7,(8,6)"
+      },
+      {
+        "name": "盛岡5R 5/24",
+        "raceName": "3歳C1三組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:29.3",
+        "totalHorses": 10,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "チャムベリー",
+            "popularity": 7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "サンニュールック",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "タカマキセブン",
+            "popularity": 8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ピルスナー",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "キタノモテック",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ワイルドグレイス",
+            "popularity": 6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "モンサンジャスミン",
+            "popularity": 10,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "スズットアリス",
+            "popularity": 9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "グラッドキングダム",
+            "popularity": 3,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ヴィーナスキック",
+            "popularity": 1,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "3-(4,10),8,(1,9),5,2,7,6"
+      },
+      {
+        "name": "盛岡6R 5/24",
+        "raceName": "3歳C1二組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:27.0",
+        "totalHorses": 10,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "イヌボウノキラメキ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "アイビーキラリ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "キタノボストン",
+            "popularity": 7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ピッタンヌンムル",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "モーニングスズラン",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ブリーゼプリマベラ",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ハミッツキャンディ",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ゼットナッキー",
+            "popularity": 9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "9",
+            "name": "ユキノレックス",
+            "popularity": 8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "ユウユウロッゲン",
+            "popularity": 10,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 2,
+        "_corner4": "3,6-10,4,(1,2),9-8,5,7"
+      },
+      {
+        "name": "盛岡7R 5/24",
+        "raceName": "3歳C1一組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:27.8",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "バオシェテンシ",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "ディオスデルマール",
+            "popularity": 4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "3",
+            "name": "オフクマメ",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ノーブルティアラ",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "リケアリングイネ",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "シスターブラック",
+            "popularity": 3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "7",
+            "name": "リオジョウ",
+            "popularity": 10,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "マルケイファイン",
+            "popularity": 9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ミスメリッサ",
+            "popularity": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "リンクルリンク",
+            "popularity": 8,
+            "groupIdx": 1
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "(10,5),(1,9),2,6,3,4,7,8"
+      },
+      {
+        "name": "盛岡8R 5/24",
+        "raceName": "C1",
+        "course": "ダート",
+        "distance": 1000,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:00.9",
+        "totalHorses": 9,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "エイカイソフィア",
+            "popularity": 7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "2",
+            "name": "タマモオペラ",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "エーデルムート",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ウワサノハルカ",
+            "popularity": 9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "シベリアンデネブ",
+            "popularity": 1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "スリアント",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "7",
+            "name": "テーオーシュターデ",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "マローディープ",
+            "popularity": 5,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "ベロニカブレイン",
+            "popularity": 8,
+            "groupIdx": 8
+          }
+        ],
+        "margin": null,
+        "_corner4": "1,4,9,(3,2),5,7-8,6"
+      },
+      {
+        "name": "盛岡9R 5/24",
+        "raceName": "C1",
+        "course": "ダート",
+        "distance": 1000,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:00.4",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "モーモーブラック",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "シキ",
+            "popularity": 7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "キタノブルーアレツ",
+            "popularity": 2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "アビレ",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "パンディーロ",
+            "popularity": 9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "アスノヒロイン",
+            "popularity": 6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "アルクドラ",
+            "popularity": 10,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "セジールレーヴ",
+            "popularity": 4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "シノブデスティーノ",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "10",
+            "name": "ネコニコタツ",
+            "popularity": 8,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 2,
+        "_corner4": "1,9,7,3,(4,5),2,(10,8),6"
+      },
+      {
+        "name": "盛岡10R 5/24",
+        "raceName": "奥中山高原賞(C1)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "小雨",
+        "kaisaiDay": null,
+        "winTime": "1:26.8",
+        "totalHorses": 11,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ゴールドハーディス",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "トントンプー",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "3",
+            "name": "モルデュール",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ビームービー",
+            "popularity": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "5",
+            "name": "サウンドヒーロー",
+            "popularity": 9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ライヴケチャップ",
+            "popularity": 4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "トウメイヨリキレイ",
+            "popularity": 10,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ゴールデンレディー",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "9",
+            "name": "メイショウガイフウ",
+            "popularity": 8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "サンスズラン",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "ヒナノツルツル",
+            "popularity": 11,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 1,
+        "_corner4": "(3,9),7,10,2-(6,4),1,11-5,8"
+      },
+      {
+        "name": "盛岡11R 5/24",
+        "raceName": "マグオート賞(C1)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "雨",
+        "kaisaiDay": null,
+        "winTime": "1:26.8",
+        "totalHorses": 12,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "キタノヴァリュー",
+            "popularity": 4,
+            "groupIdx": 9
+          },
+          {
+            "finish": "2",
+            "name": "エールプレジール",
+            "popularity": 1,
+            "groupIdx": 8
+          },
+          {
+            "finish": "3",
+            "name": "タナキーボー",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ネイチャーミヤビ",
+            "popularity": 7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ビッグロジールーフ",
+            "popularity": 10,
+            "groupIdx": 11
+          },
+          {
+            "finish": "6",
+            "name": "カウンターアタック",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "タイシロンブレード",
+            "popularity": 9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "アイディンエース",
+            "popularity": 12,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ランドフリード",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "カイトリヒト",
+            "popularity": 5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "マイネルヒッツェ",
+            "popularity": 11,
+            "groupIdx": 9
+          },
+          {
+            "finish": "12",
+            "name": "ウィズホープ",
+            "popularity": 6,
+            "groupIdx": 6
+          }
+        ],
+        "margin": null,
+        "_corner4": "1,8,5-3,9,(7,10),(2,11),(6,4)-12"
+      },
+      {
+        "name": "盛岡12R 5/24",
+        "raceName": "あすなろ賞 重賞",
+        "course": "ダート",
+        "distance": 1800,
+        "grade": "",
+        "trackCondition": "稍重",
+        "courseType": null,
+        "weather": "雨",
+        "kaisaiDay": null,
+        "winTime": "1:51.6",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ラッキードリーム",
+            "popularity": 1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "2",
+            "name": "リケアカプチーノ",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "サクラトップキッド",
+            "popularity": 3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ライアン",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "レールガン",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "コスモフロイデ",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "キタノリューオー",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "ヒロイックテイル",
+            "popularity": 10,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ヒューゴ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "タナハシ",
+            "popularity": 7,
+            "groupIdx": 6
+          }
+        ],
+        "margin": null,
+        "_corner4": "9,8-(4,10),2,(6,3,7),1,5"
+      }
+    ],
+    "高知": [
+      {
+        "name": "高知1R 5/24",
+        "raceName": "3歳ー6",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:23.4",
+        "totalHorses": 9,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "シティプロスパー",
+            "popularity": 1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "2",
+            "name": "トシッキーセカンド",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "スリーマドンナ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "モズラストセール",
+            "popularity": 6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "ノクスパーピリオ",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "クイーンズガーデン",
+            "popularity": 3,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "オリヴィオリヴィ",
+            "popularity": 7,
+            "groupIdx": 11
+          },
+          {
+            "finish": "8",
+            "name": "ソヴァージュ",
+            "popularity": 9,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "アピールパワー",
+            "popularity": 8,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 3,
+        "_corner4": "8,1-5,9-6,7,3-4-2"
+      },
+      {
+        "name": "高知2R 5/24",
+        "raceName": "3歳ー5",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:23.6",
+        "totalHorses": 9,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "フウリンカザン",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ターニーロイヤル",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ユイノナナフシギ",
+            "popularity": 6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "プリティスーチャン",
+            "popularity": 8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ファーストシーン",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ホットロッドスター",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ハクノセブン",
+            "popularity": 10,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "メガクローム",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "シデレウス",
+            "popularity": 5,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 4,
+        "_corner4": "(5,7),2,(8,3),(9,1),4,6"
+      },
+      {
+        "name": "高知3R 5/24",
+        "raceName": "3歳ー4",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:23.4",
+        "totalHorses": 11,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "コンヴァーンクル",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "サンセットロード",
+            "popularity": 1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "カイトヴァイター",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "コスモラパウィラ",
+            "popularity": 7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "カナデルラーケン",
+            "popularity": 5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "クリュメノス",
+            "popularity": 3,
+            "groupIdx": 9
+          },
+          {
+            "finish": "7",
+            "name": "ハルウタ",
+            "popularity": 10,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ミアソレイユ",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "アーユーリアル",
+            "popularity": 11,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "チュラリヴァル",
+            "popularity": 6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "11",
+            "name": "キーゴールド",
+            "popularity": 9,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "_corner4": "(5,8)-11-9,2,(6,10)-(4,1),3,7"
+      },
+      {
+        "name": "高知4R 5/24",
+        "raceName": "C3ー14",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:29.0",
+        "totalHorses": 10,
+        "totalGroups": 14,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ローガンパス",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ペイシャニット",
+            "popularity": 5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ビッグバンド",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "スクーバー",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "リゼレインボー",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "トーセンブレンダ",
+            "popularity": 10,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "ナチュラルスマイル",
+            "popularity": 7,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "ブルジョア",
+            "popularity": 8,
+            "groupIdx": 12
+          },
+          {
+            "finish": "9",
+            "name": "アラタマファルクス",
+            "popularity": 9,
+            "groupIdx": 14
+          },
+          {
+            "finish": "10",
+            "name": "レジスタ",
+            "popularity": 6,
+            "groupIdx": 14
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "4,10,1,7-2-5-6-3-8=9"
+      },
+      {
+        "name": "高知5R 5/24",
+        "raceName": "ショウガ特別(A)",
+        "course": "ダート",
+        "distance": 1600,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:43.5",
+        "totalHorses": 9,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ジャスパーバローズ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "ゲンヨウサイ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ナムラテディー",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "ミズワリヲクダサイ",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "ウインアウォード",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "サンダーゼウス",
+            "popularity": 1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "キャッスルトップ",
+            "popularity": 9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ビオグラフィア",
+            "popularity": 7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "アルドーレ",
+            "popularity": 8,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 3,
+        "_corner4": "(9,2),1,5-3,(4,6),(7,8)"
+      },
+      {
+        "name": "高知6R 5/24",
+        "raceName": "福永洋一記念[地方交流] 重賞",
+        "course": "ダート",
+        "distance": 1600,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:41.3",
+        "totalHorses": 11,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ライラボンド",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "エコロクラージュ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ロレンツォ",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "プリフロオールイン",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ニクソンテソーロ",
+            "popularity": 10,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "マルカイグアス",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "エクセレントタイム",
+            "popularity": 11,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "アラジンバローズ",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ウインザナドゥ",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "ジョウショーホープ",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "グッドヒューマー",
+            "popularity": 7,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 5,
+        "_corner4": "(7,9),11-(10,3),6,(5,2,4),(8,1)"
+      },
+      {
+        "name": "高知7R 5/24",
+        "raceName": "C3ー13",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:29.5",
+        "totalHorses": 9,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "コパノハンプトン",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "アメージングラン",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ワグナーチューバ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ナッシングベター",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "セージブラッシュ",
+            "popularity": 5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "メイショウハヤセ",
+            "popularity": 6,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "エムティパブロ",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "マイネルバルビゾン",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "オーウェンズバレー",
+            "popularity": 9,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 5,
+        "_corner4": "9,10-4,7,8,5,(3,6)-2"
+      },
+      {
+        "name": "高知8R 5/24",
+        "raceName": "C3ー12",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:29.0",
+        "totalHorses": 9,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "トーアシオン",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "リワードパシオン",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "ブリスディーシャ",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "オブリマイラブ",
+            "popularity": 5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "フランフィズ",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "ナムラビオラ",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ペイシャブギー",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ハチャプリ",
+            "popularity": 4,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "パーシステンス",
+            "popularity": 9,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 9,
+        "_corner4": "(1,6)-9,7,4,5-8,2=3"
+      },
+      {
+        "name": "高知9R 5/24",
+        "raceName": "Aー3",
+        "course": "ダート",
+        "distance": 1600,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:43.9",
+        "totalHorses": 9,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スカイライト",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ダノンウィルヘルム",
+            "popularity": 1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "ブルーシンフォニー",
+            "popularity": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "カルテメトレス",
+            "popularity": 8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "マジックセブン",
+            "popularity": 6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "アムレートゥム",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "カツベンケイ",
+            "popularity": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "エブリワンブラック",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "デシジョン",
+            "popularity": 9,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "3,(5,7)-(2,9),6-(1,4),8"
+      },
+      {
+        "name": "高知10R 5/24",
+        "raceName": "Aー2",
+        "course": "ダート",
+        "distance": 1600,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:42.2",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "エスケンドリーム",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "サンライズグリット",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "ネオブレイブ",
+            "popularity": 8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "グラティアスグー",
+            "popularity": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ミシェラドラータ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "ダノンダンサー",
+            "popularity": 7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "フォードテソーロ",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "エイシングラス",
+            "popularity": 10,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ティアップエックス",
+            "popularity": 11,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ロイズピーク",
+            "popularity": 9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "トゥルーバローズ",
+            "popularity": 5,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "11,(3,4)-(7,2,9),(1,5),10-6,8"
+      },
+      {
+        "name": "高知11R 5/24",
+        "raceName": "ファイナルレース(C3)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "不良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:30.4",
+        "totalHorses": 12,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "フロスティクォーツ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "メルヘンライズ",
+            "popularity": 7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "レゲエパンチ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "アンダーザスター",
+            "popularity": 8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "アンヘルカイド",
+            "popularity": 10,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "インテンスフレイム",
+            "popularity": 11,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "チュウオーハーン",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "フェレスアダマス",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "アクロポリス",
+            "popularity": 12,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "エスケーダンディ",
+            "popularity": 9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "11",
+            "name": "チャンピオンフジ",
+            "popularity": 5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "12",
+            "name": "チョットヤバイヨネ",
+            "popularity": 6,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 3,
+        "_corner4": "12=5-(3,9),7,(1,10,6,4),2,11-8"
+      }
+    ],
+    "佐賀": [
+      {
+        "name": "佐賀1R 5/24",
+        "raceName": "スーパーホープフルデビュー 2歳新馬",
+        "course": "ダート",
+        "distance": 900,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "0:55.2",
+        "totalHorses": 8,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ブリージンウェイ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "プレアボス",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "エスワンモコチャン",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ブリーズホープ",
+            "popularity": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "リュウノスパーク",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "セーズノヴァ",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "レディーハルハル",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ゼンベイガナイタ",
+            "popularity": 7,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "4,(1,5,6)-8-7,3=2"
+      },
+      {
+        "name": "佐賀2R 5/24",
+        "raceName": "スーパーホープフルデビュー 2歳新馬",
+        "course": "ダート",
+        "distance": 900,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "0:56.9",
+        "totalHorses": 7,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ブルーミストラル",
+            "popularity": 6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "エスケンスナイパー",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ナベシマスター",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ドラゴンアイ",
+            "popularity": 3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "プレアボンド",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "フクシマロイヤル",
+            "popularity": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "キセキノキセキ",
+            "popularity": 5,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "_corner4": "1,2,6,4-5-8=3"
+      },
+      {
+        "name": "佐賀3R 5/24",
+        "raceName": "3歳ー8組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:31.6",
+        "totalHorses": 10,
+        "totalGroups": 14,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "テセラグラディウス",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ベラジオマーカス",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "オッハッピー",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ネモフィラノアテナ",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "リュウノプティ",
+            "popularity": 5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "エクセレンプライム",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "リュウノトマト",
+            "popularity": 6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "マイントップスター",
+            "popularity": 7,
+            "groupIdx": 14
+          },
+          {
+            "finish": "9",
+            "name": "ナンゴクイイネット",
+            "popularity": 9,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "コパノセビリア",
+            "popularity": 10,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 7,
+        "_corner4": "5-2,(6,1)-10-3,4,8-7-9"
+      },
+      {
+        "name": "佐賀4R 5/24",
+        "raceName": "C2ー6組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:30.9",
+        "totalHorses": 10,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ナムラカメジロー",
+            "popularity": 8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミコノオンガエシ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ドリフトウッド",
+            "popularity": 7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ミシャベル",
+            "popularity": 5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "ホイッスルベイト",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ウラチャチャ",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "エムズマン",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ピピット",
+            "popularity": 10,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ベラジオソノダヒメ",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "ウルトラピース",
+            "popularity": 6,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 6,
+        "_corner4": "(7,10)-6,(8,4,9),(2,1)-5-3"
+      },
+      {
+        "name": "佐賀5R 5/24",
+        "raceName": "C2ー5組",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:32.1",
+        "totalHorses": 12,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "クラシカルタイプ",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "マジョレル",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "メニー",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ロイヤルキャピタル",
+            "popularity": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "フェリスダージ",
+            "popularity": 11,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "ニンマリ",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ベラジオチャンプ",
+            "popularity": 10,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "カオリチャン",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "アイロッソ",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "グレイトミッション",
+            "popularity": 8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "11",
+            "name": "シシノステラ",
+            "popularity": 12,
+            "groupIdx": 7
+          },
+          {
+            "finish": "12",
+            "name": "ドットゲット",
+            "popularity": 7,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "_corner4": "4,5-(8,6),(11,12),3,(1,2,10),(7,9)"
+      },
+      {
+        "name": "佐賀6R 5/24",
+        "raceName": "緑風賞(C2)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:31.2",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アンティジャミーラ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "バティックオーレ",
+            "popularity": 6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ニシノイッキサス",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "テイエムファルクス",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ロードアライアンス",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "マリエッティ",
+            "popularity": 5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "キャラメルコード",
+            "popularity": 10,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ハドソンテソーロ",
+            "popularity": 7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "9",
+            "name": "メーリッハベイ",
+            "popularity": 8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "10",
+            "name": "グレナマディー",
+            "popularity": 9,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 4,
+        "_corner4": "(6,9,2),1,7,(4,10),8,3,5"
+      },
+      {
+        "name": "佐賀7R 5/24",
+        "raceName": "佐賀スプリングダッシュ",
+        "course": "ダート",
+        "distance": 900,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "0:52.9",
+        "totalHorses": 9,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "テイエムタリスマ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ジャックメモリアム",
+            "popularity": 3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "アイタカ",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ミュステーリオン",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "フェブキラナ",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "デジタルサイオン",
+            "popularity": 5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "ヴィクラント",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ビレッジシングル",
+            "popularity": 6,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ゴールドハイアー",
+            "popularity": 9,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 2,
+        "_corner4": "2-3-(9,7),(6,1)-(4,8),10"
+      },
+      {
+        "name": "佐賀8R 5/24",
+        "raceName": "C1ー14組",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:24.0",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ベラジオボッキーニ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ドライカプチーノ",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "メイショウタダカツ",
+            "popularity": 8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "イサチルオアシス",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "アロガントシェイム",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ジーティーノーブル",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "フェールアシュバル",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "デリングシチー",
+            "popularity": 10,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ビービーシャルム",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "ベルゲンハート",
+            "popularity": 7,
+            "groupIdx": 6
+          }
+        ],
+        "margin": 1,
+        "_corner4": "(5,7)-1,(3,6),(2,8),(4,10),9"
+      },
+      {
+        "name": "佐賀9R 5/24",
+        "raceName": "C1ー13組",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:24.1",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アニラ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "マイネルダンク",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "リーフアクアリウム",
+            "popularity": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "タケノリッチ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ウインクルキセキ",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "オグリマックイーン",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ベンデュガ",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "ブルーフレーム",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "ガトリンテソーロ",
+            "popularity": 10,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "レジェンダイズ",
+            "popularity": 7,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "_corner4": "(2,6)-4,(5,8),(7,1),3,10,9"
+      },
+      {
+        "name": "佐賀10R 5/24",
+        "raceName": "KYUSHU DREAM賞(C1)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:30.2",
+        "totalHorses": 11,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ウフフトルンナ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "カズヴィトシャ",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "アイビーイダテン",
+            "popularity": 9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ティプシーワールド",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "シャクイワナ",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "クリーンスレイト",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ライウ",
+            "popularity": 7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ロードレアル",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ルミリオン",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "ポンテビアンカ",
+            "popularity": 10,
+            "groupIdx": 9
+          },
+          {
+            "finish": "11",
+            "name": "メイショウムーヴ",
+            "popularity": 11,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 5,
+        "_corner4": "7,2,11-8,(4,1),(6,9),5,3,10"
+      },
+      {
+        "name": "佐賀11R 5/24",
+        "raceName": "ヘリオトロープ賞(B)",
+        "course": "ダート",
+        "distance": 1400,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:30.0",
+        "totalHorses": 9,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "テイエムタワードン",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ハスラー",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "セクシーコマンドー",
+            "popularity": 5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "4",
+            "name": "アルルカン",
+            "popularity": 7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "ビーチボーイ",
+            "popularity": 4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ファイナルソード",
+            "popularity": 3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ポッピンベリー",
+            "popularity": 6,
+            "groupIdx": 9
+          },
+          {
+            "finish": "8",
+            "name": "オーケースマイル",
+            "popularity": 9,
+            "groupIdx": 12
+          },
+          {
+            "finish": "9",
+            "name": "エイシンゼータ",
+            "popularity": 8,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 3,
+        "_corner4": "5-8-1,(6,3),9-7-2,4"
+      },
+      {
+        "name": "佐賀12R 5/24",
+        "raceName": "SAGAリベンジャーズドリーム(3歳)",
+        "course": "ダート",
+        "distance": 1300,
+        "grade": "",
+        "trackCondition": "良",
+        "courseType": null,
+        "weather": "曇",
+        "kaisaiDay": null,
+        "winTime": "1:25.7",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "コリアンダーアイ",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "ヘルメステソーロ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "トントゥ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ロードゴスペル",
+            "popularity": 1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "アメジストテソーロ",
+            "popularity": 6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "パワーレイヤー",
+            "popularity": 10,
+            "groupIdx": 10
+          },
+          {
+            "finish": "7",
+            "name": "クラウンプレゼンタ",
+            "popularity": 11,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "ケンブリッジルプス",
+            "popularity": 5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "テムホウサク",
+            "popularity": 7,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ハガクレトップ",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "11",
+            "name": "クラリスヒメ",
+            "popularity": 9,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "アツンケル",
+            "popularity": 12,
+            "groupIdx": 12
+          }
+        ],
+        "margin": null,
+        "_corner4": "1-8,2,(3,10)-6,(4,9),11,(12,7)-5"
+      }
+    ]
+  }
+}

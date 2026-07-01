@@ -279,15 +279,15 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
   console.log(`Saved ${outPath}`)
 
   // Update index.json
+  // 実際に存在するYYYY-MM-DD.jsonファイルを毎回スキャンして再構築する。
+  // 並列実行時のread-modify-write競合でindex.jsonが破損するのを防ぐため、
+  // 保存済みindex配列を信用せずディスクの実態から都度生成する。
   const indexPath = path.join(DATA_DIR, 'index.json')
-  let index = []
-  if (fs.existsSync(indexPath)) {
-    index = JSON.parse(fs.readFileSync(indexPath, 'utf8'))
-  }
-  if (!index.includes(dateISO)) {
-    index.unshift(dateISO)
-    index = index.slice(0, 30) // keep last 30 days
-    fs.writeFileSync(indexPath, JSON.stringify(index, null, 2))
-    console.log('Updated index.json')
-  }
+  const dateFilePattern = /^\d{4}-\d{2}-\d{2}\.json$/
+  const index = fs.readdirSync(DATA_DIR)
+    .filter(f => dateFilePattern.test(f))
+    .map(f => f.slice(0, -5))
+    .sort((a, b) => b.localeCompare(a))
+  fs.writeFileSync(indexPath, JSON.stringify(index, null, 2) + '\n')
+  console.log('Updated index.json')
 })()

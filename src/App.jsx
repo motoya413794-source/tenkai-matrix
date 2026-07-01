@@ -68,29 +68,38 @@ function tenkaiOpts(race, quantiles) {
 }
 
 // ── Day bias logic ────────────────────────────────────────
+function tallyVerdict(races, course, opts) {
+  const filtered = races.filter(r => r.course === course && !isDominant(r))
+  const counts = { front: 0, flat: 0, diff: 0 }
+  filtered.forEach(r => {
+    const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), typeof opts === 'function' ? opts(r) : opts)
+    if (t && t !== 'pack') counts[t]++
+  })
+  const total = counts.front + counts.flat + counts.diff
+  if (total === 0) return { verdict: null, counts }
+  let verdict = 'flat'
+  if (counts.front / total >= 0.5) verdict = 'front'
+  else if (counts.diff / total >= 0.5) verdict = 'diff'
+  return { verdict, counts }
+}
+
 function dayCourseVerdict(races, course, quantiles) {
   const filtered = races.filter(r => r.course === course && !isDominant(r))
   if (filtered.length === 0) return null
-  const counts = { front: 0, flat: 0, diff: 0 }
   const variants = []
   filtered.forEach(r => {
-    const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), tenkaiOpts(r, quantiles))
-    if (t && t !== 'pack') counts[t]++
     if (r.winTime && r.distance) {
       const sec = parseTimeStr(r.winTime)
       const v = calcTrackVariant(course, r.distance, sec, r.grade)
       if (v != null) variants.push(v)
     }
   })
-  const total = counts.front + counts.flat + counts.diff
-  if (total === 0) return { verdict: null, counts, avgVariant: null }
-  let verdict = 'flat'
-  if (counts.front / total >= 0.5) verdict = 'front'
-  else if (counts.diff / total >= 0.5) verdict = 'diff'
+  const abs = tallyVerdict(races, course, { legacy: true })
+  const rel = tallyVerdict(races, course, r => tenkaiOpts(r, quantiles))
   const avgVariant = variants.length > 0
     ? Math.round(variants.reduce((a, b) => a + b, 0) / variants.length * 10) / 10
     : null
-  return { verdict, counts, avgVariant }
+  return { abs, rel, avgVariant }
 }
 
 // ── DaySummary ────────────────────────────────────────────
@@ -100,19 +109,25 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
       {['芝', 'ダート'].map(course => {
         const data = dayCourseVerdict(races, course, quantiles)
         if (!data) return null
-        const { verdict, counts, avgVariant } = data
-        const total = counts.front + counts.flat + counts.diff
+        const { abs, rel, avgVariant } = data
         const courseKey = course === '芝' ? 'turf' : 'dirt'
         const t = trackLabel(avgVariant)
+        const VerdictBadge = ({ label, v }) => (
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+            <span style={{ fontSize: '9px', color: 'var(--muted)' }}>{label}</span>
+            {v.verdict
+              ? <span className={`tenkai-badge ${v.verdict}`}>{TENKAI_LABEL[v.verdict]}</span>
+              : <span className="tenkai-badge none">判定不能</span>
+            }
+          </span>
+        )
         if (compact) {
           return (
             <div key={course} className={`day-summary-card compact ${courseKey}`} onClick={onCardClick} role="button">
               <span className={`day-course-label ${courseKey}`}>{course}</span>
-              <div className="compact-badges">
-                {verdict
-                  ? <span className={`tenkai-badge ${verdict}`}>{TENKAI_LABEL[verdict]}</span>
-                  : <span className="tenkai-badge none">判定不能</span>
-                }
+              <div className="compact-badges" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '3px' }}>
+                <VerdictBadge label="絶対" v={abs} />
+                <VerdictBadge label="相対" v={rel} />
                 {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
               </div>
             </div>
@@ -120,25 +135,31 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
         }
         return (
           <div key={course} className={`day-summary-card ${courseKey}`}>
-            <div className="day-summary-head">
+            <div className="day-summary-head" style={{ flexWrap: 'wrap', rowGap: '6px' }}>
               <span className={`day-course-label ${courseKey}`}>{course}</span>
-              {verdict
-                ? <span className={`tenkai-badge ${verdict}`}>{TENKAI_LABEL[verdict]}</span>
-                : <span className="tenkai-badge none">判定不能</span>
-              }
+              <VerdictBadge label="絶対判定" v={abs} />
+              <VerdictBadge label="相対判定" v={rel} />
               {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
             </div>
-            <div className="day-summary-bars">
-              {[['front','前残り'], ['flat','フラット'], ['diff','差し有利']].map(([key, label]) => (
-                <div key={key} className="day-bar-row">
-                  <span className="day-bar-label">{label}</span>
-                  <div className="day-bar-track">
-                    <div className={`day-bar-fill ${key}`} style={{ width: total > 0 ? `${counts[key]/total*100}%` : '0%' }} />
+            {[['絶対判定（旧・固定閾値）', abs], ['相対判定（新・パーセンタイル）', rel]].map(([title, v]) => {
+              const total = v.counts.front + v.counts.flat + v.counts.diff
+              return (
+                <div key={title} style={{ marginTop: '8px' }}>
+                  <div style={{ fontSize: '10px', color: 'var(--muted)', marginBottom: '4px' }}>{title}</div>
+                  <div className="day-summary-bars">
+                    {[['front','前残り'], ['flat','フラット'], ['diff','差し有利']].map(([key, label]) => (
+                      <div key={key} className="day-bar-row">
+                        <span className="day-bar-label">{label}</span>
+                        <div className="day-bar-track">
+                          <div className={`day-bar-fill ${key}`} style={{ width: total > 0 ? `${v.counts[key]/total*100}%` : '0%' }} />
+                        </div>
+                        <span className="day-bar-count">{v.counts[key]}R {total > 0 ? `${Math.round(v.counts[key]/total*100)}%` : ''}</span>
+                      </div>
+                    ))}
                   </div>
-                  <span className="day-bar-count">{counts[key]}R {total > 0 ? `${Math.round(counts[key]/total*100)}%` : ''}</span>
                 </div>
-              ))}
-            </div>
+              )
+            })}
           </div>
         )
       })}
@@ -246,7 +267,8 @@ function RaceCard({ race, quantiles }) {
   const [open, setOpen] = useState(false)
   const dominant = isDominant(race)
   const narLogic = useNARLogic(race)
-  const tenkai = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, tenkaiOpts(race, quantiles))
+  const tenkaiAbs = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, { legacy: true })
+  const tenkaiRel = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, tenkaiOpts(race, quantiles))
   const g = gradeInfo(race.grade)
 
   const frontThird = race.totalGroups / 3
@@ -282,9 +304,22 @@ function RaceCard({ race, quantiles }) {
             {race.winTime && <span className="win-time">{race.winTime}</span>}
           </div>
         </div>
-        <span className={`tenkai-badge ${tenkai || 'none'}`}>
-          {dominant ? '参考外' : tenkai ? TENKAI_LABEL[tenkai] : 'データ不足'}
-        </span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', alignItems: 'flex-end' }}>
+          {dominant ? (
+            <span className="tenkai-badge none">参考外</span>
+          ) : (
+            <>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>絶対判定</span>
+                <span className={`tenkai-badge ${tenkaiAbs || 'none'}`}>{tenkaiAbs ? TENKAI_LABEL[tenkaiAbs] : 'データ不足'}</span>
+              </span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>相対判定</span>
+                <span className={`tenkai-badge ${tenkaiRel || 'none'}`}>{tenkaiRel ? TENKAI_LABEL[tenkaiRel] : 'データ不足'}</span>
+              </span>
+            </>
+          )}
+        </div>
         <span style={{ marginLeft: 'auto', color: 'var(--muted)', fontSize: '12px' }}>{open ? '▲' : '▼'}</span>
       </div>
       {open && (

@@ -37,6 +37,9 @@ jobs:
           fi
           node scripts/scrape.js $DATE
 
+      - name: Recompute quantiles
+        run: node scripts/compute-quantiles.js --months 1
+
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"

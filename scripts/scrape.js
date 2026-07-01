@@ -90,6 +90,7 @@ async function scrapeJRA(page, raceId) {
     const rows = Array.from(document.querySelectorAll('table.RaceTable01 tr'))
     const horses = []
     let winTime = ''
+    let margin = null
     for (const row of rows) {
       const cells = Array.from(row.querySelectorAll('td'))
       if (cells.length < 6) continue
@@ -101,6 +102,10 @@ async function scrapeJRA(page, raceId) {
       const popStr = cells[9]?.textContent?.trim()
       const popularity = /^\d+$/.test(popStr) ? parseInt(popStr, 10) : null
       if (finish === '1') winTime = time
+      if (finish === '2') {
+        const m = cells[8]?.textContent?.trim()
+        if (m) margin = m === '大差' || m === '大' ? 99 : parseFloat(m) || null
+      }
       if (name) horses.push({ finish, num: horseNum, name, popularity })
     }
 
@@ -117,7 +122,7 @@ async function scrapeJRA(page, raceId) {
       corner4 = cornerRows[cornerRows.length - 1].querySelector('td')?.textContent?.trim()?.replace(/\s+/g, '') || ''
     }
 
-    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, weather, kaisaiDay, winTime, corner4, horses }
+    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, weather, kaisaiDay, winTime, corner4, horses, margin }
   }, raceId)
 }
 

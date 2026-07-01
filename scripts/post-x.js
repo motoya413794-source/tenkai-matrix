@@ -6,29 +6,50 @@ import { TwitterApi } from 'twitter-api-v2'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { predictTenkai } from '../src/tenkai.js'
+import { predictTenkai, marginThreshold } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
+const JRA_VENUES = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
+const NAR_VENUES = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
 const NAR_PATTERN = /^(門別|盛岡|水沢|浦和|船橋|大井|川崎|金沢|笠松|名古屋|園田|姫路|高知|佐賀)/
 function isNAR(race) { return NAR_PATTERN.test(race.name) }
-function isDominant(race) { return race.margin != null && race.margin >= 5 }
+function isDominant(race) {
+  if (race.margin == null) return false
+  return race.margin >= marginThreshold(race.course)
+}
 
 const LABEL = { front: '前残り', flat: 'フラット', diff: '差し有利' }
 const EMOJI = { front: '', flat: '', diff: '' }
 
-const SHORT_DIRT = /^(函館|福島|小倉)/
+const SHORT_DIRT = /^(函館|福島|小倉|札幌)/
 function useNARLogic(race) {
   if (isNAR(race)) return true
   if (race.course === 'ダート' && SHORT_DIRT.test(race.name)) return true
   return false
 }
 
-function buildUnfavText(data) {
+function raceVenue(race) {
+  const all = [...JRA_VENUES, ...NAR_VENUES]
+  return all.find(v => race.name.startsWith(v)) || null
+}
+
+function getQuantiles(venue, quantiles) {
+  if (!quantiles) return null
+  if (quantiles[venue]) return quantiles[venue]
+  return NAR_VENUES.includes(venue) ? quantiles._nar_pool : quantiles._jra_dirt_pool
+}
+
+function tenkaiOpts(race, quantiles) {
+  const venue = raceVenue(race)
+  const q = getQuantiles(venue, quantiles)
+  if (!q || q.q1 == null || q.q3 == null) return {}
+  return { quantiles: { q1: q.q1, q3: q.q3 } }
+}
+
+function buildUnfavText(data, quantiles) {
   const { dateDisplay, venues } = data
-  const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
-  const NAR_ORDER = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
-  const allVenues = [...JRA_ORDER, ...NAR_ORDER].filter(v => venues[v])
+  const allVenues = [...JRA_VENUES, ...NAR_VENUES].filter(v => venues[v])
 
   let text = `${dateDisplay} 展開不利馬\n`
 
@@ -39,7 +60,7 @@ function buildUnfavText(data) {
     races.forEach(race => {
       if (isDominant(race)) return
       const nar = useNARLogic(race)
-      const tenkai = predictTenkai(race.horses, race.totalGroups, nar)
+      const tenkai = predictTenkai(race.horses, race.totalGroups, nar, tenkaiOpts(race, quantiles))
       if (!tenkai || tenkai === 'pack' || tenkai === 'flat') return
       const frontThird = race.totalGroups / 3
       const unfav = race.horses.filter(h => {
@@ -78,14 +99,14 @@ function buildUnfavText(data) {
   return text
 }
 
-function venueVerdict(races) {
+function venueVerdict(races, quantiles) {
   const result = {}
   for (const course of ['芝', 'ダート']) {
     const filtered = races.filter(r => r.course === course && !isDominant(r))
     if (filtered.length === 0) continue
     const counts = { front: 0, flat: 0, diff: 0 }
     filtered.forEach(r => {
-      const t = predictTenkai(r.horses, r.totalGroups, isNAR(r))
+      const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), tenkaiOpts(r, quantiles))
       if (t && t !== 'pack') counts[t]++
     })
     const total = counts.front + counts.flat + counts.diff
@@ -98,20 +119,18 @@ function venueVerdict(races) {
   return result
 }
 
-function buildTweet(data) {
+function buildTweet(data, quantiles) {
   const { dateDisplay, venues } = data
-  const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
-  const NAR_ORDER = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
 
-  const jraVenues = JRA_ORDER.filter(v => venues[v])
-  const narVenues = NAR_ORDER.filter(v => venues[v])
+  const jraVenues = JRA_VENUES.filter(v => venues[v])
+  const narVenues = NAR_VENUES.filter(v => venues[v])
 
   let text = `${dateDisplay} トラックバイアスまとめ\n\n`
 
   if (jraVenues.length > 0) {
     text += `【中央】\n`
     for (const venue of jraVenues) {
-      const v = venueVerdict(venues[venue])
+      const v = venueVerdict(venues[venue], quantiles)
       const parts = Object.entries(v).map(([course, d]) =>
         `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}(${Math.round(d.counts[d.verdict] / d.total * 100)}%)`
       )
@@ -120,12 +139,12 @@ function buildTweet(data) {
     text += '\n'
   }
 
-  // 実際にデータがある地方会場も含める（NAR_ORDERにない会場も）
+  // 実際にデータがある地方会場も含める（NAR_VENUESにない会場も）
   const allNarVenues = [...new Set([...narVenues, ...Object.keys(venues).filter(v => !jraVenues.includes(v))])]
   if (allNarVenues.length > 0) {
     text += `【地方】\n`
     for (const venue of allNarVenues) {
-      const v = venueVerdict(venues[venue])
+      const v = venueVerdict(venues[venue], quantiles)
       const parts = Object.entries(v).map(([course, d]) =>
         `${course}:${EMOJI[d.verdict]}${LABEL[d.verdict]}(${Math.round(d.counts[d.verdict] / d.total * 100)}%)`
       )
@@ -156,9 +175,11 @@ function buildTweet(data) {
   }
 
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-  const tweet = buildTweet(data)
+  const quantilesPath = path.join(__dirname, '../public/data/quantiles.json')
+  const quantiles = fs.existsSync(quantilesPath) ? JSON.parse(fs.readFileSync(quantilesPath, 'utf8')) : null
 
-  const unfav = buildUnfavText(data)
+  const tweet = buildTweet(data, quantiles)
+  const unfav = buildUnfavText(data, quantiles)
 
   console.log('--- Tweet preview ---')
   console.log(tweet)

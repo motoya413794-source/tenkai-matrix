@@ -1,0 +1,155 @@
+{
+  "門別": {
+    "q1": 0.4444444444444444,
+    "q3": 0.7777777777777778,
+    "median": 0.5555555555555556,
+    "sampleSize": 120,
+    "reliable": true,
+    "source": "own"
+  },
+  "盛岡": {
+    "q1": 0.4444444444444444,
+    "q3": 0.6666666666666666,
+    "median": 0.5555555555555556,
+    "sampleSize": 34,
+    "reliable": true,
+    "source": "own"
+  },
+  "大井": {
+    "q1": 0.4444444444444444,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 76,
+    "reliable": true,
+    "source": "own"
+  },
+  "金沢": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 91,
+    "reliable": true,
+    "source": "own"
+  },
+  "名古屋": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.7777777777777778,
+    "sampleSize": 112,
+    "reliable": true,
+    "source": "own"
+  },
+  "船橋": {
+    "q1": 0.3333333333333333,
+    "q3": 0.6666666666666666,
+    "median": 0.5555555555555556,
+    "sampleSize": 72,
+    "reliable": true,
+    "source": "own"
+  },
+  "福島": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 46,
+    "reliable": true,
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 9
+  },
+  "小倉": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 46,
+    "reliable": true,
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 8
+  },
+  "函館": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 46,
+    "reliable": true,
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 29
+  },
+  "高知": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.5555555555555556,
+    "sampleSize": 85,
+    "reliable": true,
+    "source": "own"
+  },
+  "佐賀": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 85,
+    "reliable": true,
+    "source": "own"
+  },
+  "浦和": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 56,
+    "reliable": true,
+    "source": "own"
+  },
+  "笠松": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 61,
+    "reliable": true,
+    "source": "own"
+  },
+  "園田": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 131,
+    "reliable": true,
+    "source": "own"
+  },
+  "水沢": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 124,
+    "reliable": true,
+    "source": "own"
+  },
+  "川崎": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 47,
+    "reliable": true,
+    "source": "own"
+  },
+  "_nar_pool": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 1094,
+    "reliable": true,
+    "source": "pool"
+  },
+  "_jra_dirt_pool": {
+    "q1": 0.5555555555555556,
+    "q3": 0.7777777777777778,
+    "median": 0.6666666666666666,
+    "sampleSize": 46,
+    "reliable": true,
+    "source": "pool"
+  },
+  "_meta": {
+    "periodStart": "2026-06-01",
+    "periodEnd": "2026-07-01",
+    "months": 1,
+    "generatedAt": "2026-07-01T10:43:10.051Z"
+  }
+}

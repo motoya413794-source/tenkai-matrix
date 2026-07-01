@@ -34,12 +34,32 @@ export function classifyStyle(groupIdx, totalGroups) {
   return 'koho'
 }
 
-// レース展開を判定: front / flat / diff / pack(馬群一体)
-// 1着=3点, 2着=2点, 3着=2点, 4着=1点, 5着=1点 で重み付け
-// isNAR=true の場合: 中団なし（前1/3 vs 残り全部）、閾値60%
-export function predictTenkai(horses, totalGroups, isNAR = false) {
-  if (totalGroups <= 2) return 'pack'
+// 着順の重み付け（同着は占有スロットの平均を配分）
+// 例: 1着同着2頭 → (3+2)/2=2.5点ずつ
+const RANK_WEIGHTS = [3, 2, 2, 1, 1]
 
+function assignRankWeights(ranked) {
+  const result = []
+  let i = 0
+  let slot = 0
+  while (i < ranked.length && slot < RANK_WEIGHTS.length) {
+    let j = i
+    while (j < ranked.length && ranked[j].finNum === ranked[i].finNum) j++
+    const groupSize = j - i
+    const slice = RANK_WEIGHTS.slice(slot, slot + groupSize)
+    const avgWeight = slice.reduce((a, b) => a + b, 0) / groupSize
+    for (let k = 0; k < groupSize; k++) {
+      result.push({ groupIdx: ranked[i + k].groupIdx, weight: avgWeight })
+    }
+    slot += groupSize
+    i = j
+  }
+  return result
+}
+
+// 有効馬（groupIdx・finishあり）から前/後スコアを算出
+// 分母は実際に使用した重みの合計（動的）
+export function computeScores(horses, totalGroups) {
   const valid = horses.filter(h => h.groupIdx != null && h.finish)
   if (valid.length < 3) return null
 
@@ -50,31 +70,91 @@ export function predictTenkai(horses, totalGroups, isNAR = false) {
 
   if (ranked.length < 3) return null
 
-  const top5 = ranked.slice(0, 5)
-  const WEIGHTS = [3, 2, 2, 1, 1]
-  const totalWeight = WEIGHTS.slice(0, top5.length).reduce((a, b) => a + b, 0)
+  const weighted = assignRankWeights(ranked)
+  const totalWeight = weighted.reduce((a, h) => a + h.weight, 0)
+  if (totalWeight <= 0) return null
 
   const frontThird = totalGroups / 3
   const rearThird  = totalGroups * 2 / 3
 
   let frontScore = 0, kohoScore = 0
-  top5.forEach((h, i) => {
-    const w = WEIGHTS[i]
-    if (h.groupIdx <= frontThird) frontScore += w
-    else if (isNAR || h.groupIdx > rearThird) kohoScore += w
+  weighted.forEach(h => {
+    if (h.groupIdx <= frontThird) frontScore += h.weight
+    else if (h.groupIdx > rearThird) kohoScore += h.weight
   })
 
+  return { frontScore, kohoScore, totalWeight, frontRatio: frontScore / totalWeight }
+}
+
+// レース展開を判定: front / flat / diff / pack(馬群一体)
+// isNAR=true の場合: 中団なし（前1/3 vs 後2/3）
+// opts.legacy=true で旧固定閾値ロジック、opts.quantiles={q1,q3} でパーセンタイル方式（NAR系のみ）
+export function predictTenkai(horses, totalGroups, isNAR = false, opts = {}) {
+  if (totalGroups <= 1) return 'pack'
+
+  const scores = computeScores(horses, totalGroups)
+  if (!scores) return null
+  const { frontScore, kohoScore, totalWeight, frontRatio } = scores
+
   if (isNAR) {
-    // 2区分（前1/3 vs 後2/3）: 単一軸で2カット点
-    const ratio = frontScore / totalWeight
-    if (ratio >= 5 / 9) return 'front'   // 前 ≥ 55.6%
-    if (ratio <= 2 / 9) return 'diff'    // 前 ≤ 22.2% = 後 ≥ 77.8%
+    if (!opts.legacy && opts.quantiles && opts.quantiles.q1 != null && opts.quantiles.q3 != null) {
+      const { q1, q3 } = opts.quantiles
+      if (frontRatio > q3) return 'front'
+      if (frontRatio < q1) return 'diff'
+      return 'flat'
+    }
+    // 固定閾値フォールバック（パーセンタイル基準未算出時 or legacy指定時）
+    if (frontRatio >= 5 / 9) return 'front'
+    if (frontRatio <= 2 / 9) return 'diff'
     return 'flat'
   }
   // JRA 3区分（前/中/後 各1/3）: 両閾値とも5/9
   if (frontScore / totalWeight >= 5 / 9) return 'front'
   if (kohoScore / totalWeight >= 5 / 9) return 'diff'
   return 'flat'
+}
+
+// isDominant用の着差閾値: 芝5馬身・ダート7馬身
+export function marginThreshold(course) {
+  return course === 'ダート' ? 7 : 5
+}
+
+// コース単位（分布不足時は全体プール）でQ1/Q3/中央値を算出
+// races: buildRace()の出力配列、対象コースに絞り込んで渡すこと
+// periodMonths は将来のローリング窓対応のため引数化（現状は呼び出し側でフィルタ済み前提）
+export function computeQuantiles(races, isNARFn, minSampleSize = 30) {
+  const ratios = []
+  races.forEach(race => {
+    const margin = race.margin
+    const threshold = marginThreshold(race.course)
+    if (margin != null && margin >= threshold) return // isDominant除外
+    if (race.totalGroups <= 1) return // pack除外
+    const scores = computeScores(race.horses, race.totalGroups)
+    if (!scores) return
+    ratios.push(scores.frontRatio)
+  })
+  if (ratios.length === 0) return null
+  ratios.sort((a, b) => a - b)
+  return {
+    q1: percentile(ratios, 25),
+    q3: percentile(ratios, 75),
+    median: percentile(ratios, 50),
+    sampleSize: ratios.length,
+    reliable: ratios.length >= minSampleSize,
+  }
+}
+
+// numpy.percentile 互換（linear interpolation）
+function percentile(sortedArr, p) {
+  const n = sortedArr.length
+  if (n === 0) return null
+  if (n === 1) return sortedArr[0]
+  const idx = (p / 100) * (n - 1)
+  const lo = Math.floor(idx)
+  const hi = Math.ceil(idx)
+  if (lo === hi) return sortedArr[lo]
+  const frac = idx - lo
+  return sortedArr[lo] + (sortedArr[hi] - sortedArr[lo]) * frac
 }
 
 export const TENKAI_LABEL = {

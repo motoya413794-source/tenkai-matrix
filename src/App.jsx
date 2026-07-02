@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import {
   predictTenkai, marginThreshold,
-  TENKAI_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
+  TENKAI_LABEL, TENKAI_REL_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
   parseTimeStr, calcTrackVariant,
 } from './tenkai.js'
 
@@ -112,11 +112,11 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
         const { abs, rel, avgVariant } = data
         const courseKey = course === '芝' ? 'turf' : 'dirt'
         const t = trackLabel(avgVariant)
-        const VerdictBadge = ({ label, v }) => (
+        const VerdictBadge = ({ label, v, relative = false }) => (
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
             <span style={{ fontSize: '9px', color: 'var(--muted)' }}>{label}</span>
             {v.verdict
-              ? <span className={`tenkai-badge ${v.verdict}`}>{TENKAI_LABEL[v.verdict]}</span>
+              ? <span className={`tenkai-badge ${v.verdict}`}>{(relative ? TENKAI_REL_LABEL : TENKAI_LABEL)[v.verdict]}</span>
               : <span className="tenkai-badge none">判定不能</span>
             }
           </span>
@@ -127,7 +127,7 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
               <span className={`day-course-label ${courseKey}`}>{course}</span>
               <div className="compact-badges" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '3px' }}>
                 <VerdictBadge label="絶対" v={abs} />
-                <VerdictBadge label="相対" v={rel} />
+                <VerdictBadge label="相対" v={rel} relative />
                 {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
               </div>
             </div>
@@ -138,16 +138,16 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
             <div className="day-summary-head" style={{ flexWrap: 'wrap', rowGap: '6px' }}>
               <span className={`day-course-label ${courseKey}`}>{course}</span>
               <VerdictBadge label="絶対判定" v={abs} />
-              <VerdictBadge label="相対判定" v={rel} />
+              <VerdictBadge label="相対判定" v={rel} relative />
               {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
             </div>
-            {[['絶対判定（旧・固定閾値）', abs], ['相対判定（新・パーセンタイル）', rel]].map(([title, v]) => {
+            {[['絶対判定（達成率・固定閾値）', abs, TENKAI_LABEL], ['相対判定（コース平年比）', rel, TENKAI_REL_LABEL]].map(([title, v, labels]) => {
               const total = v.counts.front + v.counts.flat + v.counts.diff
               return (
                 <div key={title} style={{ marginTop: '8px' }}>
                   <div style={{ fontSize: '10px', color: 'var(--muted)', marginBottom: '4px' }}>{title}</div>
                   <div className="day-summary-bars">
-                    {[['front','前残り'], ['flat','フラット'], ['diff','差し有利']].map(([key, label]) => (
+                    {[['front', labels.front], ['flat', labels.flat === '前後フラット' ? 'フラット' : labels.flat], ['diff', labels.diff]].map(([key, label]) => (
                       <div key={key} className="day-bar-row">
                         <span className="day-bar-label">{label}</span>
                         <div className="day-bar-track">
@@ -315,7 +315,7 @@ function RaceCard({ race, quantiles }) {
               </span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                 <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>相対判定</span>
-                <span className={`tenkai-badge ${tenkaiRel || 'none'}`}>{tenkaiRel ? TENKAI_LABEL[tenkaiRel] : 'データ不足'}</span>
+                <span className={`tenkai-badge ${tenkaiRel || 'none'}`}>{tenkaiRel ? TENKAI_REL_LABEL[tenkaiRel] : 'データ不足'}</span>
               </span>
             </>
           )}

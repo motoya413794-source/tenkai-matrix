@@ -57,9 +57,20 @@ function assignRankWeights(ranked) {
   return result
 }
 
-// 有効馬（groupIdx・finishあり）から前/後スコアを算出
-// 分母は実際に使用した重みの合計（動的）
-export function computeScores(horses, totalGroups) {
+// グループ頭数に対する理論上限重み（上位5頭の重み体系で頭打ち）
+// 頭数1→3, 2→5, 3→7, 4→8, 5以上→9
+// 6着以下の馬は重み体系外のため理論上限にも実獲得にも影響しない
+function theoreticalMax(groupSize) {
+  let sum = 0
+  for (let i = 0; i < Math.min(groupSize, RANK_WEIGHTS.length); i++) sum += RANK_WEIGHTS[i]
+  return sum
+}
+
+// 有効馬（groupIdx・finishあり）からゾーン別の達成率を算出
+// 達成率 = そのゾーンの馬が実際に獲得した重み合計 ÷ そのゾーンの頭数から決まる理論上限
+// ゾーンに1頭もいない場合はnull（ゼロ割回避、判定では「主張なし」扱い）
+// isNAR=true: 2区分（前1/3 vs 後2/3、中団なし）/ false: 3区分（前/中/後 各1/3）
+export function computeScores(horses, totalGroups, isNAR = false) {
   const valid = horses.filter(h => h.groupIdx != null && h.finish)
   if (valid.length < 3) return null
 
@@ -70,47 +81,67 @@ export function computeScores(horses, totalGroups) {
 
   if (ranked.length < 3) return null
 
-  const weighted = assignRankWeights(ranked)
-  const totalWeight = weighted.reduce((a, h) => a + h.weight, 0)
-  if (totalWeight <= 0) return null
-
   const frontThird = totalGroups / 3
   const rearThird  = totalGroups * 2 / 3
+  const zoneOf = gi => {
+    if (gi <= frontThird) return 'front'
+    if (isNAR || gi > rearThird) return 'rear'
+    return 'mid'
+  }
 
-  let frontScore = 0, kohoScore = 0
-  weighted.forEach(h => {
-    if (h.groupIdx <= frontThird) frontScore += h.weight
-    else if (h.groupIdx > rearThird) kohoScore += h.weight
-  })
+  // ゾーン頭数（有効な全出走馬でカウント、6着以下も頭数には含む）
+  const sizes = { front: 0, mid: 0, rear: 0 }
+  ranked.forEach(h => { sizes[zoneOf(h.groupIdx)]++ })
 
-  return { frontScore, kohoScore, totalWeight, frontRatio: frontScore / totalWeight }
+  // 実獲得重み（上位5頭のみ、同着は占有スロット平均）
+  const weighted = assignRankWeights(ranked)
+  const earned = { front: 0, mid: 0, rear: 0 }
+  weighted.forEach(h => { earned[zoneOf(h.groupIdx)] += h.weight })
+
+  const rate = zone => {
+    const max = theoreticalMax(sizes[zone])
+    return max > 0 ? earned[zone] / max : null
+  }
+
+  return {
+    frontRate: rate('front'),
+    midRate: isNAR ? null : rate('mid'),
+    rearRate: rate('rear'),
+    sizes,
+    earned,
+  }
 }
+
+// 絶対判定の固定閾値（達成率ベース・暫定値、実データを見て調整する）
+export const ABS_FRONT_THRESHOLD = 0.7
+export const ABS_DIFF_THRESHOLD = 0.7
 
 // レース展開を判定: front / flat / diff / pack(馬群一体)
 // isNAR=true の場合: 中団なし（前1/3 vs 後2/3）
-// opts.legacy=true で旧固定閾値ロジック、opts.quantiles={q1,q3} でパーセンタイル方式（NAR系のみ）
+// opts.quantiles={q1,q3} 指定時は相対判定（コース別の達成率分布パーセンタイル）
+// 未指定（またはopts.legacy=true）時は絶対判定（達成率の固定閾値）
 export function predictTenkai(horses, totalGroups, isNAR = false, opts = {}) {
   if (totalGroups <= 1) return 'pack'
 
-  const scores = computeScores(horses, totalGroups)
+  const scores = computeScores(horses, totalGroups, isNAR)
   if (!scores) return null
-  const { frontScore, kohoScore, totalWeight, frontRatio } = scores
+  const { frontRate, rearRate } = scores
 
-  if (isNAR) {
-    if (!opts.legacy && opts.quantiles && opts.quantiles.q1 != null && opts.quantiles.q3 != null) {
-      const { q1, q3 } = opts.quantiles
-      if (frontRatio > q3) return 'front'
-      if (frontRatio < q1) return 'diff'
-      return 'flat'
-    }
-    // 固定閾値フォールバック（パーセンタイル基準未算出時 or legacy指定時）
-    if (frontRatio >= 5 / 9) return 'front'
-    if (frontRatio <= 2 / 9) return 'diff'
+  // 相対判定: 前達成率をコース別分布のQ1/Q3と比較
+  if (!opts.legacy && opts.quantiles && opts.quantiles.q1 != null && opts.quantiles.q3 != null) {
+    if (frontRate == null) return 'flat'
+    const { q1, q3 } = opts.quantiles
+    if (frontRate > q3) return 'front'
+    if (frontRate < q1) return 'diff'
     return 'flat'
   }
-  // JRA 3区分（前/中/後 各1/3）: 両閾値とも5/9
-  if (frontScore / totalWeight >= 5 / 9) return 'front'
-  if (kohoScore / totalWeight >= 5 / 9) return 'diff'
+
+  // 絶対判定: 前後それぞれの達成率を固定閾値と比較（両方超えたら高い方を採用）
+  const frontHit = frontRate != null && frontRate >= ABS_FRONT_THRESHOLD
+  const rearHit  = rearRate != null && rearRate >= ABS_DIFF_THRESHOLD
+  if (frontHit && rearHit) return frontRate >= rearRate ? 'front' : 'diff'
+  if (frontHit) return 'front'
+  if (rearHit) return 'diff'
   return 'flat'
 }
 
@@ -129,9 +160,9 @@ export function computeQuantiles(races, isNARFn, minSampleSize = 30) {
     const threshold = marginThreshold(race.course)
     if (margin != null && margin >= threshold) return // isDominant除外
     if (race.totalGroups <= 1) return // pack除外
-    const scores = computeScores(race.horses, race.totalGroups)
-    if (!scores) return
-    ratios.push(scores.frontRatio)
+    const scores = computeScores(race.horses, race.totalGroups, true)
+    if (!scores || scores.frontRate == null) return
+    ratios.push(scores.frontRate)
   })
   if (ratios.length === 0) return null
   ratios.sort((a, b) => a - b)
@@ -161,6 +192,14 @@ export const TENKAI_LABEL = {
   front: '前残り',
   flat:  '前後フラット',
   diff:  '差し有利',
+  pack:  '馬群一体',
+}
+
+// 相対判定（コース平年比）用ラベル
+export const TENKAI_REL_LABEL = {
+  front: '前寄り',
+  flat:  '平年並み',
+  diff:  '差し寄り',
   pack:  '馬群一体',
 }
 

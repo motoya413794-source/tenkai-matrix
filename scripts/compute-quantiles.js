@@ -59,12 +59,13 @@ for (const date of targetDates) {
     for (const race of races) {
       if (!isTargetRace(race, venue)) continue
       if (isExcluded(race)) continue
-      const scores = computeScores(race.horses, race.totalGroups)
-      if (!scores) continue
+      // 母集団は2区分の前ゾーン達成率（v2仕様）
+      const scores = computeScores(race.horses, race.totalGroups, true)
+      if (!scores || scores.frontRate == null) continue
       if (!byVenue[venue]) byVenue[venue] = []
-      byVenue[venue].push(scores.frontRatio)
-      if (NAR_VENUES.includes(venue)) narPool.push(scores.frontRatio)
-      else jraDirtPool.push(scores.frontRatio)
+      byVenue[venue].push(scores.frontRate)
+      if (NAR_VENUES.includes(venue)) narPool.push(scores.frontRate)
+      else jraDirtPool.push(scores.frontRate)
     }
   }
 }

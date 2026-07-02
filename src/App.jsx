@@ -59,8 +59,11 @@ function getQuantiles(venue, quantiles) {
   return NAR_VENUES.includes(venue) ? quantiles._nar_pool : quantiles._jra_dirt_pool
 }
 
-// predictTenkai用のoptsを組み立て（NAR系レースのみ意味を持つ）
+// predictTenkai用のoptsを組み立て
+// パーセンタイル基準は2区分対象（NAR＋函館/福島/小倉/札幌ダート）のみに適用。
+// それ以外のJRAレースに流用するとダート分布で芝を測る誤判定になるため必ず除外する
 function tenkaiOpts(race, quantiles) {
+  if (!useNARLogic(race)) return {}
   const venue = raceVenue(race)
   const q = getQuantiles(venue, quantiles)
   if (!q || q.q1 == null || q.q3 == null) return {}

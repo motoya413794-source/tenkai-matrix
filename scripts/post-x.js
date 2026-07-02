@@ -41,6 +41,8 @@ function getQuantiles(venue, quantiles) {
 }
 
 function tenkaiOpts(race, quantiles) {
+  // パーセンタイル基準は2区分対象（NAR＋短距離ダート）のみ。JRA芝等への流用は誤判定になる
+  if (!useNARLogic(race)) return {}
   const venue = raceVenue(race)
   const q = getQuantiles(venue, quantiles)
   if (!q || q.q1 == null || q.q3 == null) return {}

@@ -128,11 +128,14 @@ export function predictTenkai(horses, totalGroups, isNAR = false, opts = {}) {
   const { frontRate, rearRate } = scores
 
   // 相対判定: 前達成率をコース別分布のQ1/Q3と比較
+  // Q3が達成率の上限1.0に張り付いている分布では「>Q3」が数学的に不成立となり
+  // 前寄りが構造的に出なくなるため、上限到達（=1.0）をQ3超え扱いにする（下限0も対称に補正）
   if (!opts.legacy && opts.quantiles && opts.quantiles.q1 != null && opts.quantiles.q3 != null) {
     if (frontRate == null) return 'flat'
     const { q1, q3 } = opts.quantiles
-    if (frontRate > q3) return 'front'
-    if (frontRate < q1) return 'diff'
+    const EPS = 1e-9
+    if (frontRate > q3 + EPS || (q3 >= 1 - EPS && frontRate >= 1 - EPS)) return 'front'
+    if (frontRate < q1 - EPS || (q1 <= EPS && frontRate <= EPS)) return 'diff'
     return 'flat'
   }
 

@@ -1,4 +1,20 @@
 {
+  "盛岡": {
+    "q1": 0.6125,
+    "q3": 1,
+    "median": 0.8,
+    "sampleSize": 167,
+    "reliable": true,
+    "source": "own"
+  },
+  "川崎": {
+    "q1": 0.6354166666666666,
+    "q3": 1,
+    "median": 0.8,
+    "sampleSize": 118,
+    "reliable": true,
+    "source": "own"
+  },
   "福島": {
     "q1": 0.6666666666666666,
     "q3": 1,
@@ -25,19 +41,11 @@
     "reliable": true,
     "source": "own"
   },
-  "盛岡": {
-    "q1": 0.625,
-    "q3": 1,
-    "median": 0.8,
-    "sampleSize": 167,
-    "reliable": true,
-    "source": "own"
-  },
   "金沢": {
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 181,
+    "sampleSize": 169,
     "reliable": true,
     "source": "own"
   },
@@ -59,9 +67,9 @@
   },
   "船橋": {
     "q1": 0.4444444444444444,
-    "q3": 0.875,
+    "q3": 0.8660714285714286,
     "median": 0.7142857142857143,
-    "sampleSize": 147,
+    "sampleSize": 135,
     "reliable": true,
     "source": "own"
   },
@@ -77,15 +85,15 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 255,
+    "sampleSize": 243,
     "reliable": true,
     "source": "own"
   },
   "園田": {
-    "q1": 0.7569444444444444,
+    "q1": 0.7777777777777778,
     "q3": 1,
     "median": 0.8888888888888888,
-    "sampleSize": 298,
+    "sampleSize": 289,
     "reliable": true,
     "source": "own"
   },
@@ -93,7 +101,7 @@
     "q1": 0.625,
     "q3": 1,
     "median": 0.8,
-    "sampleSize": 235,
+    "sampleSize": 224,
     "reliable": true,
     "source": "own"
   },
@@ -121,19 +129,11 @@
     "reliable": true,
     "source": "own"
   },
-  "川崎": {
-    "q1": 0.6666666666666666,
-    "q3": 1,
-    "median": 0.8,
-    "sampleSize": 106,
-    "reliable": true,
-    "source": "own"
-  },
   "_nar_pool": {
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2326,
+    "sampleSize": 2282,
     "reliable": true,
     "source": "pool"
   },
@@ -146,9 +146,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-05-05",
-    "periodEnd": "2026-07-05",
+    "periodStart": "2026-05-06",
+    "periodEnd": "2026-07-06",
     "months": 2,
-    "generatedAt": "2026-07-05T14:43:39.731Z"
+    "generatedAt": "2026-07-06T13:03:56.481Z"
   }
 }

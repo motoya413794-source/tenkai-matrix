@@ -34,10 +34,11 @@ function raceVenue(race) {
   return all.find(v => race.name.startsWith(v)) || null
 }
 
+// 自会場の母数が足りている(source==='own')場合のみ相対判定に使う
+// 母数不足の会場は絶対判定にフォールバック（App.jsxと同方針）
 function getQuantiles(venue, quantiles) {
-  if (!quantiles) return null
-  if (quantiles[venue]) return quantiles[venue]
-  return NAR_VENUES.includes(venue) ? quantiles._nar_pool : quantiles._jra_dirt_pool
+  const q = quantiles?.[venue]
+  return q && q.source === 'own' ? q : null
 }
 
 function tenkaiOpts(race, quantiles) {

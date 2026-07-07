@@ -52,11 +52,13 @@ function raceVenue(race) {
   return all.find(v => race.name.startsWith(v)) || null
 }
 
-// venueの基準点（quantiles.json）を取得。自会場データ不足時はプールへフォールバック
+// venueの基準点（quantiles.json）を取得
+// 自会場の母数が足りている(source==='own')場合のみ相対判定に使う。
+// プール借用の基準は会場のクセを反映せず誤判定の原因になるため使わない
+// （母数不足の会場は絶対判定にフォールバック）
 function getQuantiles(venue, quantiles) {
-  if (!quantiles) return null
-  if (quantiles[venue]) return quantiles[venue]
-  return NAR_VENUES.includes(venue) ? quantiles._nar_pool : quantiles._jra_dirt_pool
+  const q = quantiles?.[venue]
+  return q && q.source === 'own' ? q : null
 }
 
 // predictTenkai用のoptsを組み立て
@@ -98,7 +100,9 @@ function dayCourseVerdict(races, course, quantiles) {
     }
   })
   const abs = tallyVerdict(races, course, { legacy: true })
-  const rel = tallyVerdict(races, course, r => tenkaiOpts(r, quantiles))
+  // 相対判定は自会場基準を持つレースのみ対象（基準なし＝母数不足の会場はrel自体をnullに）
+  const relRaces = races.filter(r => tenkaiOpts(r, quantiles).quantiles)
+  const rel = relRaces.length > 0 ? tallyVerdict(relRaces, course, r => tenkaiOpts(r, quantiles)) : null
   const avgVariant = variants.length > 0
     ? Math.round(variants.reduce((a, b) => a + b, 0) / variants.length * 10) / 10
     : null
@@ -130,7 +134,7 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
               <span className={`day-course-label ${courseKey}`}>{course}</span>
               <div className="compact-badges" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '3px' }}>
                 <VerdictBadge label="絶対" v={abs} />
-                <VerdictBadge label="相対" v={rel} relative />
+                {rel && <VerdictBadge label="相対" v={rel} relative />}
                 {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
               </div>
             </div>
@@ -141,10 +145,10 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
             <div className="day-summary-head" style={{ flexWrap: 'wrap', rowGap: '6px' }}>
               <span className={`day-course-label ${courseKey}`}>{course}</span>
               <VerdictBadge label="絶対判定" v={abs} />
-              <VerdictBadge label="相対判定" v={rel} relative />
+              {rel && <VerdictBadge label="相対判定" v={rel} relative />}
               {t && <span className={`track-variant ${t.cls}`}>{t.label}</span>}
             </div>
-            {[['絶対判定（達成率・固定閾値）', abs, TENKAI_LABEL], ['相対判定（コース平年比）', rel, TENKAI_REL_LABEL]].map(([title, v, labels]) => {
+            {[['絶対判定（達成率・固定閾値）', abs, TENKAI_LABEL], ...(rel ? [['相対判定（コース平年比）', rel, TENKAI_REL_LABEL]] : [])].map(([title, v, labels]) => {
               const total = v.counts.front + v.counts.flat + v.counts.diff
               return (
                 <div key={title} style={{ marginTop: '8px' }}>
@@ -271,7 +275,8 @@ function RaceCard({ race, quantiles }) {
   const dominant = isDominant(race)
   const narLogic = useNARLogic(race)
   const tenkaiAbs = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, { legacy: true })
-  const tenkaiRel = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, tenkaiOpts(race, quantiles))
+  const relOpts = tenkaiOpts(race, quantiles)
+  const tenkaiRel = dominant || !relOpts.quantiles ? null : predictTenkai(race.horses, race.totalGroups, narLogic, relOpts)
   const g = gradeInfo(race.grade)
 
   const frontThird = race.totalGroups / 3
@@ -316,10 +321,12 @@ function RaceCard({ race, quantiles }) {
                 <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>絶対判定</span>
                 <span className={`tenkai-badge ${tenkaiAbs || 'none'}`}>{tenkaiAbs ? TENKAI_LABEL[tenkaiAbs] : 'データ不足'}</span>
               </span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>相対判定</span>
-                <span className={`tenkai-badge ${tenkaiRel || 'none'}`}>{tenkaiRel ? TENKAI_REL_LABEL[tenkaiRel] : 'データ不足'}</span>
-              </span>
+              {tenkaiRel && (
+                <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>相対判定</span>
+                  <span className={`tenkai-badge ${tenkaiRel}`}>{TENKAI_REL_LABEL[tenkaiRel]}</span>
+                </span>
+              )}
             </>
           )}
         </div>

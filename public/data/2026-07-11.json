@@ -3973,12 +3973,61 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:24.8",
+        "totalHorses": 8,
+        "totalGroups": 5,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ニコラウス",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ロイヤルダンス",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ルージュブラゾン",
+            "popularity": 7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "カルリーノ",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ゼントユウイ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "コパノキュラソー",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ロードイモータル",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "サプライズビュー",
+            "popularity": 8,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "(9,6),2-(7,8),(1,3,5)"
       },
       {
         "name": "高知9R 7/11",
@@ -3990,12 +4039,79 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:24.2",
+        "totalHorses": 11,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "プレジール",
+            "popularity": 2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "2",
+            "name": "ホークレア",
+            "popularity": 5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "アンビシュー",
+            "popularity": 1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "ゾクゾク",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ヒデノブルースカイ",
+            "popularity": 11,
+            "groupIdx": 1
+          },
+          {
+            "finish": "6",
+            "name": "ミステリオ",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ダイヤモンドビーチ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "マサウッドテール",
+            "popularity": 8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "リグレイアー",
+            "popularity": 7,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "ココリハクタク",
+            "popularity": 9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "11",
+            "name": "タイガーワゴン",
+            "popularity": 10,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 1,
+        "_corner4": "1-10,(9,8),(2,11)-4-5,3,(7,6)"
       },
       {
         "name": "高知10R 7/11",
@@ -4007,12 +4123,79 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:47.0",
+        "totalHorses": 11,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "セキショウイダイ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "レアルシチー",
+            "popularity": 8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "サイモングリット",
+            "popularity": 1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "クラウンクーロン",
+            "popularity": 5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "ノアプレスリー",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ヨシュア",
+            "popularity": 11,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "ペタルビジュー",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "リライトヒストリー",
+            "popularity": 7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ハンドレインジ",
+            "popularity": 10,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "トーアグッドラック",
+            "popularity": 6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "11",
+            "name": "ドゥラルーナ",
+            "popularity": 9,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 6,
+        "_corner4": "10-(6,11),(5,7),2,9,3-8=(4,1)"
       }
     ],
     "佐賀": [
@@ -4602,12 +4785,73 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:30.4",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "テーオースミス",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "デッドフレイ",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ダンスインザリング",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "サウンドノバ",
+            "popularity": 8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "グレンノアラシ",
+            "popularity": 7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "プアラニ",
+            "popularity": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ヘキクウ",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "コスモコンクエスト",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "サンサラン",
+            "popularity": 10,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "トライコーン",
+            "popularity": 5,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "7,(2,4),9,1,(6,5,3),8,10"
       },
       {
         "name": "佐賀9R 7/11",
@@ -4619,12 +4863,85 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:57.4",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アクデニズ",
+            "popularity": 5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ジーティースピカ",
+            "popularity": 7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ウインクルキセキ",
+            "popularity": 9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "アーコレード",
+            "popularity": 8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ドラゴンバスター",
+            "popularity": 3,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "アスターニルギリ",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ルクスエクレール",
+            "popularity": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "ヘルト",
+            "popularity": 10,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "チェンジオブハート",
+            "popularity": 12,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "コスモバラタ",
+            "popularity": 6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "ミスレモン",
+            "popularity": 1,
+            "groupIdx": 9
+          },
+          {
+            "finish": "12",
+            "name": "タケノライコウ",
+            "popularity": 11,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "(8,1),2,4,12,11,6,3,5,9,10-7"
       },
       {
         "name": "佐賀10R 7/11",
@@ -4636,12 +4953,85 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:32.5",
+        "totalHorses": 12,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ビザンティーノ",
+            "popularity": 3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ライジングハース",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "フューチャーアイ",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "スマートアクシオン",
+            "popularity": 10,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ウインマグノリア",
+            "popularity": 11,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "クロゴウ",
+            "popularity": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "イズジョーレイナス",
+            "popularity": 5,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "クラウンマカナ",
+            "popularity": 7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "スマートピリカ",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "セルリアンロケット",
+            "popularity": 6,
+            "groupIdx": 8
+          },
+          {
+            "finish": "11",
+            "name": "ゴルドヴァッサー",
+            "popularity": 9,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "カイブルーノ",
+            "popularity": 12,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 2,
+        "_corner4": "1,5,4,(3,6),(9,7),12-11-10,8=2"
       }
     ]
   }

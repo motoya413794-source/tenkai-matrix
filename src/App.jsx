@@ -657,6 +657,29 @@ function HorseHistoryCard({ name, records }) {
   )
 }
 
+function WatchRaceGroup({ race, flagged }) {
+  const [open, setOpen] = useState(false)
+  const raceNumMatch = race.name.match(/(\d+R)/)
+  const raceNum = raceNumMatch ? raceNumMatch[1] : ''
+  return (
+    <div className="unfav-race-group" style={{ marginTop: '8px' }}>
+      <div className="unfav-race-head" style={{ cursor: 'pointer' }} onClick={() => setOpen(o => !o)}>
+        {raceNum && <span className="unfav-race-num">{raceNum}</span>}
+        <span className="unfav-race-name">{race.raceName || race.name}</span>
+        <span className="unfav-toggle-count">{flagged.length}頭</span>
+        <span className="unfav-race-arrow">{open ? '▲' : '▼'}</span>
+      </div>
+      {open && (
+        <div className="unfav-horse-list">
+          {flagged.map((h, i) => (
+            <HorseHistoryCard key={i} name={h.name} records={h.records} />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function WatchView({ quantiles }) {
   const [entries, setEntries] = useState(undefined) // undefined=読込中, null=データなし
   const [history, setHistory] = useState(null)
@@ -717,23 +740,9 @@ function WatchView({ quantiles }) {
       {venueGroups.map(({ venue, raceGroups }) => (
         <div key={venue} style={{ marginBottom: '20px' }}>
           <div className="venue-section-head">{venue}</div>
-          {raceGroups.map(({ race, flagged }) => {
-            const raceNumMatch = race.name.match(/(\d+R)/)
-            const raceNum = raceNumMatch ? raceNumMatch[1] : ''
-            return (
-              <div key={race.name} className="unfav-race-group" style={{ marginTop: '8px' }}>
-                <div className="unfav-race-head">
-                  {raceNum && <span className="unfav-race-num">{raceNum}</span>}
-                  <span className="unfav-race-name">{race.raceName || race.name}</span>
-                </div>
-                <div className="unfav-horse-list">
-                  {flagged.map((h, i) => (
-                    <HorseHistoryCard key={i} name={h.name} records={h.records} />
-                  ))}
-                </div>
-              </div>
-            )
-          })}
+          {raceGroups.map(({ race, flagged }) => (
+            <WatchRaceGroup key={race.name} race={race} flagged={flagged} />
+          ))}
         </div>
       ))}
     </div>

@@ -1002,6 +1002,30 @@ header.masthead {
   color: var(--ink-main);
 }
 .unfav-horse-list { padding: 6px 12px 8px; }
+.watch-horse-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.watch-horse-card:last-child { margin-bottom: 0; }
+.watch-horse-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--paper-card);
+}
+.watch-horse-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-main);
+}
+.watch-horse-count {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-left: auto;
+}
 .unfav-horse-row {
   display: flex;
   align-items: center;

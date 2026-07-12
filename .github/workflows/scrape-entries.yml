@@ -1,0 +1,48 @@
+name: Daily Entries Scrape
+
+on:
+  schedule:
+    # 21:00 JST (12:00 UTC) — 前日夜に翌日の出走表を取得
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to scrape entries for (YYYYMMDD, default: tomorrow JST)'
+        required: false
+
+jobs:
+  scrape-entries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Scrape tomorrow's entries
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then
+            node scripts/scrape-entries.js
+          else
+            node scripts/scrape-entries.js $DATE
+          fi
+
+      - name: Rebuild horse bias history
+        run: node scripts/build-horse-bias-history.js
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/entries-*.json public/data/horse-bias-history.json
+          git diff --staged --quiet || git commit -m "chore: scrape entries $(TZ=Asia/Tokyo date -d tomorrow +%Y-%m-%d 2>/dev/null || TZ=Asia/Tokyo date -v+1d +%Y-%m-%d)"
+          git push

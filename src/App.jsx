@@ -626,6 +626,120 @@ function HistoryView({ dates, quantiles }) {
   )
 }
 
+// ── 明日の注目馬（展開不利歴のある出走馬）──────────────────
+function HorseHistoryCard({ name, records }) {
+  const [open, setOpen] = useState(false)
+  const notable = records.filter(r => parseInt(r.finish, 10) <= 3).length
+  return (
+    <div className="watch-horse-card">
+      <div className="watch-horse-head" style={{ cursor: 'pointer' }} onClick={() => setOpen(o => !o)}>
+        <span className="watch-horse-name">{name}</span>
+        <span className="watch-horse-count">{records.length}回 展開不利歴{notable > 0 ? `（好走${notable}回）` : ''}</span>
+        <span className="unfav-race-arrow">{open ? '▲' : '▼'}</span>
+      </div>
+      {open && (
+        <div className="unfav-horse-list">
+          {records.slice(0, 5).map((r, i) => {
+            const fin = parseInt(r.finish, 10)
+            const comment = fin === 1 ? '不利でも勝利' : fin <= 3 ? '不利でも好走' : '不利で凡走'
+            const label = `${r.date.slice(5).replace('-', '/')} ${r.venue} ${TENKAI_LABEL[r.tenkai]}`
+            return (
+              <div key={i} className="unfav-horse-row">
+                <span className="unfav-finish">{r.finish}着</span>
+                <span className="unfav-name">{label}</span>
+                <span className="unfav-comment">{comment}</span>
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function WatchView({ quantiles }) {
+  const [entries, setEntries] = useState(undefined) // undefined=読込中, null=データなし
+  const [history, setHistory] = useState(null)
+
+  useEffect(() => {
+    const fetchOne = async (url) => {
+      try {
+        const r = await fetch(url)
+        if (!r.ok) return null
+        return await r.json()
+      } catch { return null }
+    }
+    ;(async () => {
+      const d = new Date(Date.now() + 9 * 60 * 60 * 1000 + 24 * 60 * 60 * 1000)
+      const tomorrow = d.toISOString().slice(0, 10)
+      let data = await fetchOne(`/data/entries-${tomorrow}.json`)
+      if (!data) {
+        // 翌日分がまだ無ければ当日分にフォールバック
+        const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
+        data = await fetchOne(`/data/entries-${today}.json`)
+      }
+      setEntries(data || null)
+    })()
+    fetchOne('/data/horse-bias-history.json').then(setHistory)
+  }, [])
+
+  if (entries === undefined || history === null) {
+    return <div className="history-loading">読み込み中…</div>
+  }
+  if (!entries) {
+    return <div className="history-nodata">出走表データがまだありません（レース前日夜に更新されます）</div>
+  }
+
+  const JRA_ORDER = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
+  const NAR_ORDER = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
+  const allVenues = [...JRA_ORDER, ...NAR_ORDER].filter(v => entries.venues[v])
+
+  let totalFlagged = 0
+  const venueGroups = allVenues.map(venue => {
+    const races = entries.venues[venue]
+    const raceGroups = races.map(race => {
+      const flagged = race.horses
+        .filter(h => history[h.name])
+        .map(h => ({ ...h, records: history[h.name] }))
+      return { race, flagged }
+    }).filter(g => g.flagged.length > 0)
+    totalFlagged += raceGroups.reduce((s, g) => s + g.flagged.length, 0)
+    return { venue, raceGroups }
+  }).filter(g => g.raceGroups.length > 0)
+
+  return (
+    <div className="watch-view">
+      <div className="track-bias-label">{entries.dateDisplay} 展開不利歴のある出走馬（{totalFlagged}頭）</div>
+      <p style={{ fontSize: '12px', color: 'var(--ink-soft)', margin: '0 0 16px' }}>
+        過去に展開不利な位置取りで走ったことがある馬をレース単位で表示しています。参考情報であり、明日の展開や着順を保証するものではありません。
+      </p>
+      {venueGroups.length === 0 && <div className="history-nodata">該当する馬はいませんでした</div>}
+      {venueGroups.map(({ venue, raceGroups }) => (
+        <div key={venue} style={{ marginBottom: '20px' }}>
+          <div className="venue-section-head">{venue}</div>
+          {raceGroups.map(({ race, flagged }) => {
+            const raceNumMatch = race.name.match(/(\d+R)/)
+            const raceNum = raceNumMatch ? raceNumMatch[1] : ''
+            return (
+              <div key={race.name} className="unfav-race-group" style={{ marginTop: '8px' }}>
+                <div className="unfav-race-head">
+                  {raceNum && <span className="unfav-race-num">{raceNum}</span>}
+                  <span className="unfav-race-name">{race.raceName || race.name}</span>
+                </div>
+                <div className="unfav-horse-list">
+                  {flagged.map((h, i) => (
+                    <HorseHistoryCard key={i} name={h.name} records={h.records} />
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 // ── Main App ──────────────────────────────────────────────
 export default function App() {
   const [dates, setDates] = useState([])
@@ -695,10 +809,15 @@ export default function App() {
       <div className="tab-bar" style={{ marginTop: '16px' }}>
         <button className={`tab-btn ${mainTab === 'today' ? 'active' : ''}`} onClick={() => setMainTab('today')}>当日バイアス</button>
         <button className={`tab-btn ${mainTab === 'history' ? 'active' : ''}`} onClick={() => setMainTab('history')}>履歴グラフ</button>
+        <button className={`tab-btn ${mainTab === 'watch' ? 'active' : ''}`} onClick={() => setMainTab('watch')}>注目馬</button>
       </div>
 
       {mainTab === 'history' && dates.length > 0 && (
         <HistoryView dates={dates} quantiles={quantiles} />
+      )}
+
+      {mainTab === 'watch' && (
+        <WatchView quantiles={quantiles} />
       )}
 
       {mainTab === 'today' && <>

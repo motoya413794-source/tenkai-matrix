@@ -775,12 +775,73 @@
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:02.2",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ラグナキリア",
+            "popularity": 1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "アトニモサキニモ",
+            "popularity": 3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "クラスヴァンクル",
+            "popularity": 2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "4",
+            "name": "シュヴィル",
+            "popularity": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ジャスパーエイト",
+            "popularity": 6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ミラージュフルール",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "エムピーフリップ",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ミソラ",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "9",
+            "name": "キタサンヤマブキ",
+            "popularity": 7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "ドラゴンウィッシュ",
+            "popularity": 10,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 2.1,
+        "_corner4": "5-(4,9),(3,10),(6,8),(1,7),2"
       },
       {
         "name": "門別12R 7/15",
@@ -792,12 +853,61 @@
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:00.6",
+        "totalHorses": 8,
+        "totalGroups": 4,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ミッドナイトゲイル",
+            "popularity": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ジャイロ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "リオンダリーナ",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "リコシェ",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "レアグリフォン",
+            "popularity": 9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ジャスパーイーグル",
+            "popularity": 6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "トモノシルバー",
+            "popularity": 7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "クラサーベル",
+            "popularity": 8,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 1.1,
+        "_corner4": "6,(1,8),(2,3,9),5=7"
       }
     ],
     "浦和": [
@@ -2667,12 +2777,85 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:49.7",
+        "totalHorses": 12,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "リバーサルトップ",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "マイネルモンテュス",
+            "popularity": 4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "3",
+            "name": "ハンドフル",
+            "popularity": 1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ヨッシーリオ",
+            "popularity": 5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ビアリッツ",
+            "popularity": 8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "シーズンシート",
+            "popularity": 11,
+            "groupIdx": 12
+          },
+          {
+            "finish": "7",
+            "name": "グランドタルマエ",
+            "popularity": 6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "カレンショー",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "メイナンファスト",
+            "popularity": 9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "ハチハチローズ",
+            "popularity": 12,
+            "groupIdx": 12
+          },
+          {
+            "finish": "11",
+            "name": "ウインクリンゲル",
+            "popularity": 10,
+            "groupIdx": 9
+          },
+          {
+            "finish": "12",
+            "name": "ジャスパールビー",
+            "popularity": 7,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 4,
+        "_corner4": "8-7,1,11,6,2,9,12,3-(10,5)=4"
       },
       {
         "name": "名古屋12R 7/15",
@@ -2684,12 +2867,85 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:37.4",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "マルシェ",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "フーダオラ",
+            "popularity": 10,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "リケアディンブラ",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "サクリファイス",
+            "popularity": 6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "マルクパージュ",
+            "popularity": 11,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "パリパリライズ",
+            "popularity": 9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "7",
+            "name": "フォードスピリット",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ニホンピログリット",
+            "popularity": 7,
+            "groupIdx": 10
+          },
+          {
+            "finish": "9",
+            "name": "アミアン",
+            "popularity": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "ミキノオーボエ",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "アンファング",
+            "popularity": 3,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "ルージュパラディ",
+            "popularity": 12,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 4,
+        "_corner4": "12,7,10,6,(2,9),8,3,4-(5,11)-1"
       }
     ],
     "園田": [

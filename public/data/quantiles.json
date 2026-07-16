@@ -3,7 +3,7 @@
     "q1": 0.6,
     "q3": 1,
     "median": 0.75,
-    "sampleSize": 247,
+    "sampleSize": 255,
     "reliable": true,
     "source": "own"
   },
@@ -11,15 +11,7 @@
     "q1": 0.8571428571428571,
     "q3": 1,
     "median": 1,
-    "sampleSize": 150,
-    "reliable": true,
-    "source": "own"
-  },
-  "名古屋": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 240,
+    "sampleSize": 161,
     "reliable": true,
     "source": "own"
   },
@@ -28,6 +20,22 @@
     "q3": 1,
     "median": 0.8888888888888888,
     "sampleSize": 289,
+    "reliable": true,
+    "source": "own"
+  },
+  "佐賀": {
+    "q1": 0.8,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 190,
+    "reliable": true,
+    "source": "own"
+  },
+  "名古屋": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 240,
     "reliable": true,
     "source": "own"
   },
@@ -81,27 +89,19 @@
     "reliable": true,
     "source": "own"
   },
-  "佐賀": {
-    "q1": 0.8,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 182,
-    "reliable": true,
-    "source": "own"
-  },
   "川崎": {
     "q1": 0.6,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 114,
+    "sampleSize": 102,
     "reliable": true,
     "source": "own"
   },
   "笠松": {
-    "q1": 0.7142857142857143,
+    "q1": 0.75,
     "q3": 1,
     "median": 0.8888888888888888,
-    "sampleSize": 143,
+    "sampleSize": 131,
     "reliable": true,
     "source": "own"
   },
@@ -133,7 +133,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2311,
+    "sampleSize": 2314,
     "reliable": true,
     "source": "pool"
   },
@@ -146,9 +146,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-05-15",
-    "periodEnd": "2026-07-15",
+    "periodStart": "2026-05-16",
+    "periodEnd": "2026-07-16",
     "months": 2,
-    "generatedAt": "2026-07-15T14:49:03.035Z"
+    "generatedAt": "2026-07-16T11:17:19.395Z"
   }
 }

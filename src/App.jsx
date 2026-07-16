@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import {
-  predictTenkai, marginThreshold,
+  predictTenkai, marginThreshold, computeScores,
   TENKAI_LABEL, TENKAI_REL_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
   parseTimeStr, calcTrackVariant,
 } from './tenkai.js'
@@ -44,6 +44,14 @@ function useNARLogic(race) {
 function isDominant(race) {
   if (race.margin == null) return false
   return race.margin >= marginThreshold(race.course)
+}
+
+// 判定ラベルに対応する達成率（前残り/前寄り→前ゾーン達成率、差し有利/差し寄り→後ゾーン達成率）
+function biasPct(verdict, scores) {
+  if (!scores) return 0
+  if (verdict === 'front') return scores.frontRate ?? 0
+  if (verdict === 'diff') return scores.rearRate ?? 0
+  return scores.frontRate ?? 0
 }
 
 // 会場名をレースから抽出
@@ -119,15 +127,19 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
         const { abs, rel, avgVariant } = data
         const courseKey = course === '芝' ? 'turf' : 'dirt'
         const t = trackLabel(avgVariant)
-        const VerdictBadge = ({ label, v, relative = false }) => (
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <span style={{ fontSize: '9px', color: 'var(--muted)' }}>{label}</span>
-            {v.verdict
-              ? <span className={`tenkai-badge ${v.verdict}`}>{(relative ? TENKAI_REL_LABEL : TENKAI_LABEL)[v.verdict]}</span>
-              : <span className="tenkai-badge none">判定不能</span>
-            }
-          </span>
-        )
+        const VerdictBadge = ({ label, v, relative = false }) => {
+          const total = v.counts.front + v.counts.flat + v.counts.diff
+          const pct = v.verdict && total > 0 ? Math.round(v.counts[v.verdict] / total * 100) : null
+          return (
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span style={{ fontSize: '9px', color: 'var(--muted)' }}>{label}</span>
+              {v.verdict
+                ? <span className={`tenkai-badge ${v.verdict}`}>{(relative ? TENKAI_REL_LABEL : TENKAI_LABEL)[v.verdict]}{pct != null ? ` ${pct}%` : ''}</span>
+                : <span className="tenkai-badge none">判定不能</span>
+              }
+            </span>
+          )
+        }
         if (compact) {
           return (
             <div key={course} className={`day-summary-card compact ${courseKey}`} onClick={onCardClick} role="button">
@@ -277,6 +289,7 @@ function RaceCard({ race, quantiles }) {
   const tenkaiAbs = dominant ? null : predictTenkai(race.horses, race.totalGroups, narLogic, { legacy: true })
   const relOpts = tenkaiOpts(race, quantiles)
   const tenkaiRel = dominant || !relOpts.quantiles ? null : predictTenkai(race.horses, race.totalGroups, narLogic, relOpts)
+  const scores = dominant ? null : computeScores(race.horses, race.totalGroups, narLogic)
   const g = gradeInfo(race.grade)
 
   const frontThird = race.totalGroups / 3
@@ -319,12 +332,16 @@ function RaceCard({ race, quantiles }) {
             <>
               <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                 <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>絶対判定</span>
-                <span className={`tenkai-badge ${tenkaiAbs || 'none'}`}>{tenkaiAbs ? TENKAI_LABEL[tenkaiAbs] : 'データ不足'}</span>
+                <span className={`tenkai-badge ${tenkaiAbs || 'none'}`}>
+                  {tenkaiAbs ? `${TENKAI_LABEL[tenkaiAbs]} ${Math.round(biasPct(tenkaiAbs, scores) * 100)}%` : 'データ不足'}
+                </span>
               </span>
               {tenkaiRel && (
                 <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <span style={{ fontSize: '9px', color: 'var(--muted)', minWidth: '38px', textAlign: 'right' }}>相対判定</span>
-                  <span className={`tenkai-badge ${tenkaiRel}`}>{TENKAI_REL_LABEL[tenkaiRel]}</span>
+                  <span className={`tenkai-badge ${tenkaiRel}`}>
+                    {TENKAI_REL_LABEL[tenkaiRel]} {Math.round(biasPct(tenkaiRel, scores) * 100)}%
+                  </span>
                 </span>
               )}
             </>

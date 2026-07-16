@@ -39,10 +39,20 @@ jobs:
       - name: Rebuild horse bias history
         run: node scripts/build-horse-bias-history.js
 
+      - name: Build bias match
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then
+            node scripts/build-bias-match.js
+          else
+            ISO="${DATE:0:4}-${DATE:4:2}-${DATE:6:2}"
+            node scripts/build-bias-match.js $ISO
+          fi
+
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/entries-*.json public/data/horse-bias-history.json
+          git add public/data/entries-*.json public/data/horse-bias-history.json public/data/bias-match-*.json
           git diff --staged --quiet || git commit -m "chore: scrape entries $(TZ=Asia/Tokyo date -d tomorrow +%Y-%m-%d 2>/dev/null || TZ=Asia/Tokyo date -v+1d +%Y-%m-%d)"
           git push

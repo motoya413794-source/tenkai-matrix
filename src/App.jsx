@@ -680,9 +680,57 @@ function WatchRaceGroup({ race, flagged }) {
   )
 }
 
+const STYLE_JA = { senkou: '先行', chutan: '中団', koho: '差し' }
+
+function BiasMatchCard({ h }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="watch-horse-card">
+      <div className="watch-horse-head" style={{ cursor: 'pointer' }} onClick={() => setOpen(o => !o)}>
+        <span className="watch-horse-name">{h.name}</span>
+        <span className="watch-horse-count">
+          {h.popularity != null ? `${h.popularity}番人気 ` : ''}直近{h.recentRaces.length}走{STYLE_JA[h.style]}多数
+        </span>
+        <span className="unfav-race-arrow">{open ? '▲' : '▼'}</span>
+      </div>
+      {open && (
+        <div className="unfav-horse-list">
+          <div className="unfav-horse-row">
+            <span className="unfav-name">脚質履歴（古い→新しい）</span>
+            <span className="unfav-comment">{h.recentRaces.map(r => STYLE_JA[r.style]).join(' → ')}</span>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function BiasMatchRaceGroup({ race, bias, horses }) {
+  const [open, setOpen] = useState(false)
+  const raceNumMatch = race.name.match(/(\d+R)/)
+  const raceNum = raceNumMatch ? raceNumMatch[1] : ''
+  return (
+    <div className="unfav-race-group" style={{ marginTop: '8px' }}>
+      <div className="unfav-race-head" style={{ cursor: 'pointer' }} onClick={() => setOpen(o => !o)}>
+        {raceNum && <span className="unfav-race-num">{raceNum}</span>}
+        <span className="unfav-race-name">{race.raceName || race.name}</span>
+        <span className="unfav-toggle-count">{horses.length}頭</span>
+        <span className="unfav-race-arrow">{open ? '▲' : '▼'}</span>
+      </div>
+      {open && (
+        <div className="unfav-horse-list">
+          {horses.map((h, i) => <BiasMatchCard key={i} h={h} />)}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function WatchView({ quantiles }) {
+  const [subTab, setSubTab] = useState('bias') // 'bias' | 'unfav'
   const [entries, setEntries] = useState(undefined) // undefined=読込中, null=データなし
   const [history, setHistory] = useState(null)
+  const [biasMatch, setBiasMatch] = useState(undefined)
 
   useEffect(() => {
     const fetchOne = async (url) => {
@@ -696,12 +744,20 @@ function WatchView({ quantiles }) {
       const d = new Date(Date.now() + 9 * 60 * 60 * 1000 + 24 * 60 * 60 * 1000)
       const tomorrow = d.toISOString().slice(0, 10)
       let data = await fetchOne(`/data/entries-${tomorrow}.json`)
+      let matchDate = tomorrow
       if (!data) {
         // 翌日分がまだ無ければ当日分にフォールバック
         const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
         data = await fetchOne(`/data/entries-${today}.json`)
+        matchDate = today
       }
       setEntries(data || null)
+      if (data) {
+        const bm = await fetchOne(`/data/bias-match-${matchDate}.json`)
+        setBiasMatch(bm || null)
+      } else {
+        setBiasMatch(null)
+      }
     })()
     fetchOne('/data/horse-bias-history.json').then(setHistory)
   }, [])
@@ -730,21 +786,63 @@ function WatchView({ quantiles }) {
     return { venue, raceGroups }
   }).filter(g => g.raceGroups.length > 0)
 
+  const biasVenues = biasMatch ? Object.entries(biasMatch.venues || {}) : []
+  const totalBiasMatched = biasVenues.reduce((s, [, v]) => s + v.races.reduce((s2, r) => s2 + r.horses.length, 0), 0)
+
   return (
     <div className="watch-view">
-      <div className="track-bias-label">{entries.dateDisplay} 展開不利歴のある出走馬（{totalFlagged}頭）</div>
-      <p style={{ fontSize: '12px', color: 'var(--ink-soft)', margin: '0 0 16px' }}>
-        過去に展開不利な位置取りで走ったことがある馬をレース単位で表示しています。参考情報であり、明日の展開や着順を保証するものではありません。
-      </p>
-      {venueGroups.length === 0 && <div className="history-nodata">該当する馬はいませんでした</div>}
-      {venueGroups.map(({ venue, raceGroups }) => (
-        <div key={venue} style={{ marginBottom: '20px' }}>
-          <div className="venue-section-head">{venue}</div>
-          {raceGroups.map(({ race, flagged }) => (
-            <WatchRaceGroup key={race.name} race={race} flagged={flagged} />
+      <div className="tab-bar" style={{ marginBottom: '16px' }}>
+        <button className={`tab-btn ${subTab === 'bias' ? 'active' : ''}`} onClick={() => setSubTab('bias')}>バイアス適合馬</button>
+        <button className={`tab-btn ${subTab === 'unfav' ? 'active' : ''}`} onClick={() => setSubTab('unfav')}>展開不利歴</button>
+      </div>
+
+      {subTab === 'bias' && (
+        <>
+          <div className="track-bias-label">{entries.dateDisplay} 今のバイアスに脚質が合う馬（{totalBiasMatched}頭）</div>
+          <p style={{ fontSize: '12px', color: 'var(--ink-soft)', margin: '0 0 16px' }}>
+            会場・コースごとの直近{5}日間の傾向（データ不足の地方競馬場は前有利をデフォルト想定）と、
+            馬の直近5走の脚質多数決を照合しています。参考情報であり、着順を保証するものではありません。
+          </p>
+          {biasMatch === undefined && <div className="history-loading">読み込み中…</div>}
+          {biasMatch === null && <div className="history-nodata">バイアス照合データがまだありません</div>}
+          {biasVenues.length === 0 && biasMatch != null && <div className="history-nodata">該当する馬はいませんでした</div>}
+          {biasVenues.map(([venue, v]) => (
+            <div key={venue} style={{ marginBottom: '20px' }}>
+              <div className="venue-section-head">
+                {venue}
+                <span className="track-cond-chips">
+                  {Object.entries(v.biasByCourse).map(([course, b]) => (
+                    <span key={course} className={`tenkai-badge ${b.bias || 'none'}`} style={{ marginLeft: '6px' }}>
+                      {course}:{b.bias ? TENKAI_LABEL[b.bias] : '不明'}{b.source === 'default' ? '(想定)' : ''}
+                    </span>
+                  ))}
+                </span>
+              </div>
+              {v.races.map(({ race, bias, horses }) => (
+                <BiasMatchRaceGroup key={race.name} race={race} bias={bias} horses={horses} />
+              ))}
+            </div>
           ))}
-        </div>
-      ))}
+        </>
+      )}
+
+      {subTab === 'unfav' && (
+        <>
+          <div className="track-bias-label">{entries.dateDisplay} 展開不利歴のある出走馬（{totalFlagged}頭）</div>
+          <p style={{ fontSize: '12px', color: 'var(--ink-soft)', margin: '0 0 16px' }}>
+            過去に展開不利な位置取りで走ったことがある馬をレース単位で表示しています。参考情報であり、明日の展開や着順を保証するものではありません。
+          </p>
+          {venueGroups.length === 0 && <div className="history-nodata">該当する馬はいませんでした</div>}
+          {venueGroups.map(({ venue, raceGroups }) => (
+            <div key={venue} style={{ marginBottom: '20px' }}>
+              <div className="venue-section-head">{venue}</div>
+              {raceGroups.map(({ race, flagged }) => (
+                <WatchRaceGroup key={race.name} race={race} flagged={flagged} />
+              ))}
+            </div>
+          ))}
+        </>
+      )}
     </div>
   )
 }

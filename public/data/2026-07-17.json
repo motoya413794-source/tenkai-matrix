@@ -2005,95 +2005,95 @@
         "kaisaiDay": null,
         "winTime": "1:37.8",
         "totalHorses": 12,
-        "totalGroups": 0,
+        "totalGroups": 10,
         "horses": [
           {
             "finish": "1",
             "name": "ハクサンフラッシュ",
             "jockey": "大畑慧悟",
             "popularity": 1,
-            "groupIdx": null
+            "groupIdx": 1
           },
           {
             "finish": "2",
             "name": "ローズドゥレッシュ",
             "jockey": "丸野勝虎",
             "popularity": 2,
-            "groupIdx": null
+            "groupIdx": 3
           },
           {
             "finish": "3",
             "name": "ピークブルーム",
             "jockey": "細川智史",
             "popularity": 4,
-            "groupIdx": null
+            "groupIdx": 3
           },
           {
             "finish": "4",
             "name": "キャンディタフト",
             "jockey": "加藤利征",
             "popularity": 3,
-            "groupIdx": null
+            "groupIdx": 8
           },
           {
             "finish": "5",
             "name": "カナアミデスマッチ",
             "jockey": "塚本征吾",
             "popularity": 9,
-            "groupIdx": null
+            "groupIdx": 3
           },
           {
             "finish": "6",
             "name": "イブシギン",
             "jockey": "柿原翔",
             "popularity": 5,
-            "groupIdx": null
+            "groupIdx": 5
           },
           {
             "finish": "7",
             "name": "フルオブエナジー",
             "jockey": "望月洵輝",
             "popularity": 7,
-            "groupIdx": null
+            "groupIdx": 2
           },
           {
             "finish": "8",
             "name": "パルジファル",
             "jockey": "尾崎章生",
             "popularity": 8,
-            "groupIdx": null
+            "groupIdx": 6
           },
           {
             "finish": "9",
             "name": "ゴーゴーゴウト",
             "jockey": "松本一心",
             "popularity": 11,
-            "groupIdx": null
+            "groupIdx": 7
           },
           {
             "finish": "10",
             "name": "ビップレジアス",
             "jockey": "東川慎",
             "popularity": 10,
-            "groupIdx": null
+            "groupIdx": 1
           },
           {
             "finish": "11",
             "name": "ミツカネリブラ",
             "jockey": "丸山真一",
             "popularity": 12,
-            "groupIdx": null
+            "groupIdx": 10
           },
           {
             "finish": "12",
             "name": "ヴィクトリアランド",
             "jockey": "木之前葵",
             "popularity": 6,
-            "groupIdx": null
+            "groupIdx": 10
           }
         ],
         "margin": 1,
-        "_corner4": ""
+        "_corner4": "(12,10),4,(1,2,9)-3,6,11,7-8=5"
       },
       {
         "name": "名古屋11R 7/17",
@@ -2105,12 +2105,55 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:35.4",
+        "totalHorses": 6,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "キャルベイクルーズ",
+            "jockey": "望月洵輝",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "キャッシュブリッツ",
+            "jockey": "渡辺竜也",
+            "popularity": 4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "エバーシンス",
+            "jockey": "細川智史",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "フリッパー",
+            "jockey": "▲近藤颯羽",
+            "popularity": 5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "5",
+            "name": "ジュンフィレンツェ",
+            "jockey": "筒井勇介",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "パピタ",
+            "jockey": "大畑慧悟",
+            "popularity": 6,
+            "groupIdx": 2
+          }
+        ],
         "margin": null,
-        "_corner4": ""
+        "_corner4": "4,6,5-3-1,2"
       },
       {
         "name": "名古屋12R 7/17",
@@ -2122,12 +2165,97 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:37.3",
+        "totalHorses": 12,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "メタルクラフト",
+            "jockey": "丸野勝虎",
+            "popularity": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "インフォーマント",
+            "jockey": "▲小笠原羚",
+            "popularity": 10,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ショウナンラフィネ",
+            "jockey": "▲近藤颯羽",
+            "popularity": 1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "コスモコロネット",
+            "jockey": "塚本征吾",
+            "popularity": 2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "リストン",
+            "jockey": "阪野学",
+            "popularity": 11,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ブリージョドラード",
+            "jockey": "大畑雅章",
+            "popularity": 3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "オマタセシマシタ",
+            "jockey": "渡辺竜也",
+            "popularity": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ヤモリアツマレ",
+            "jockey": "木之前葵",
+            "popularity": 9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "フークベルエ",
+            "jockey": "丸山真一",
+            "popularity": 6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "ハイグッドエース",
+            "jockey": "松本一心",
+            "popularity": 12,
+            "groupIdx": 9
+          },
+          {
+            "finish": "11",
+            "name": "ピックアンドロール",
+            "jockey": "望月洵輝",
+            "popularity": 5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "ソルトミラクル",
+            "jockey": "丹羽克輝",
+            "popularity": 7,
+            "groupIdx": 6
+          }
+        ],
+        "margin": 2,
+        "_corner4": "2,(12,11),6-9,(8,4),(1,7),3,5,10"
       }
     ],
     "園田": [
@@ -2986,12 +3114,90 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "1:18.1",
+        "totalHorses": 11,
+        "totalGroups": 5,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ジーニアスレノン",
+            "jockey": "廣瀬航",
+            "popularity": 1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ハナブサ",
+            "jockey": "田野豊三",
+            "popularity": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ホクザンバーリイ",
+            "jockey": "永井孝典",
+            "popularity": 6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ミグラテール",
+            "jockey": "★塩津璃菜",
+            "popularity": 10,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ケイアイロベージ",
+            "jockey": "下原理",
+            "popularity": 3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "ナリタシン",
+            "jockey": "大山真吾",
+            "popularity": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "エイシンテムジン",
+            "jockey": "渡瀬和幸",
+            "popularity": 7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "ドラゴンゴクウ",
+            "jockey": "杉浦健太",
+            "popularity": 11,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "グランドルチル",
+            "jockey": "吉村智洋",
+            "popularity": 8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "アシャカタカ",
+            "jockey": "小牧太",
+            "popularity": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "ココキュンキュン",
+            "jockey": "山本咲希",
+            "popularity": 5,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 3,
+        "_corner4": "(6,7),(3,5,9),2,(4,1,11),(8,10)"
       },
       {
         "name": "園田12R 7/17",
@@ -3003,12 +3209,90 @@
         "courseType": null,
         "weather": "晴",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "_corner4": ""
+        "winTime": "0:50.5",
+        "totalHorses": 11,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ブルーブレイブ",
+            "jockey": "杉浦健太",
+            "popularity": 5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ヴァンガルダ",
+            "jockey": "吉村智洋",
+            "popularity": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "ディアナゼロス",
+            "jockey": "川原正一",
+            "popularity": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "トランスラン",
+            "jockey": "永井孝典",
+            "popularity": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "スカイピース",
+            "jockey": "☆小谷哲平",
+            "popularity": 10,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ホクザンシュシュ",
+            "jockey": "長尾翼玖",
+            "popularity": 8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "バイカル",
+            "jockey": "佐々木世",
+            "popularity": 3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ニシノガランテ",
+            "jockey": "廣瀬航",
+            "popularity": 7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "9",
+            "name": "レーヌガレット",
+            "jockey": "小牧太",
+            "popularity": 1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "ノブノキャット",
+            "jockey": "板野央",
+            "popularity": 11,
+            "groupIdx": 9
+          },
+          {
+            "finish": "11",
+            "name": "ブチエードリーム",
+            "jockey": "★塩津璃菜",
+            "popularity": 9,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 3.1,
+        "_corner4": "1,(5,9)-4,(3,7,11),8,6-10,12"
       }
     ]
   }

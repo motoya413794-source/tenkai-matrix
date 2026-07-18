@@ -1,4 +1,45 @@
 {
+  "福島": {
+    "q1": 0.6166666666666667,
+    "q3": 0.8571428571428571,
+    "median": 0.7777777777777778,
+    "sampleSize": 30,
+    "reliable": true,
+    "source": "own"
+  },
+  "小倉": {
+    "q1": 0.6666666666666666,
+    "q3": 0.8888888888888888,
+    "median": 0.8,
+    "sampleSize": 111,
+    "reliable": true,
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 27
+  },
+  "函館": {
+    "q1": 0.7232142857142857,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 54,
+    "reliable": true,
+    "source": "own"
+  },
+  "高知": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.8819444444444444,
+    "sampleSize": 176,
+    "reliable": true,
+    "source": "own"
+  },
+  "佐賀": {
+    "q1": 0.8571428571428571,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 181,
+    "reliable": true,
+    "source": "own"
+  },
   "浦和": {
     "q1": 0.8571428571428571,
     "q3": 1,
@@ -31,19 +72,11 @@
     "reliable": true,
     "source": "own"
   },
-  "佐賀": {
-    "q1": 0.8428571428571429,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 184,
-    "reliable": true,
-    "source": "own"
-  },
   "盛岡": {
     "q1": 0.5714285714285714,
-    "q3": 1,
-    "median": 0.75,
-    "sampleSize": 170,
+    "q3": 0.8888888888888888,
+    "median": 0.7142857142857143,
+    "sampleSize": 159,
     "reliable": true,
     "source": "own"
   },
@@ -51,41 +84,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 181,
-    "reliable": true,
-    "source": "own"
-  },
-  "福島": {
-    "q1": 0.6666666666666666,
-    "q3": 0.8888888888888888,
-    "median": 0.8571428571428571,
-    "sampleSize": 98,
-    "reliable": true,
-    "source": "jra_dirt_pool",
-    "ownSampleSize": 26
-  },
-  "小倉": {
-    "q1": 0.6666666666666666,
-    "q3": 0.8888888888888888,
-    "median": 0.8571428571428571,
-    "sampleSize": 98,
-    "reliable": true,
-    "source": "jra_dirt_pool",
-    "ownSampleSize": 23
-  },
-  "函館": {
-    "q1": 0.75,
-    "q3": 1,
-    "median": 0.875,
-    "sampleSize": 49,
-    "reliable": true,
-    "source": "own"
-  },
-  "高知": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.875,
-    "sampleSize": 177,
+    "sampleSize": 172,
     "reliable": true,
     "source": "own"
   },
@@ -133,22 +132,22 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2333,
+    "sampleSize": 2309,
     "reliable": true,
     "source": "pool"
   },
   "_jra_dirt_pool": {
     "q1": 0.6666666666666666,
     "q3": 0.8888888888888888,
-    "median": 0.8571428571428571,
-    "sampleSize": 98,
+    "median": 0.8,
+    "sampleSize": 111,
     "reliable": true,
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-05-17",
-    "periodEnd": "2026-07-17",
+    "periodStart": "2026-05-18",
+    "periodEnd": "2026-07-18",
     "months": 2,
-    "generatedAt": "2026-07-17T14:42:50.587Z"
+    "generatedAt": "2026-07-18T10:48:03.026Z"
   }
 }

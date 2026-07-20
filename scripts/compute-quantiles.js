@@ -10,7 +10,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { computeScores, marginThreshold } from '../src/tenkai.js'
+import { computeScores, isDominant } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DATA_DIR = path.join(__dirname, '../public/data')
@@ -29,8 +29,7 @@ function isTargetRace(race, venue) {
 }
 
 function isExcluded(race) {
-  const threshold = marginThreshold(race.course)
-  if (race.margin != null && race.margin >= threshold) return true
+  if (isDominant(race)) return true
   if (race.totalGroups <= 1) return true
   return false
 }

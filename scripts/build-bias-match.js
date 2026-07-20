@@ -7,7 +7,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { predictTenkai, marginThreshold, classifyStyle } from '../src/tenkai.js'
+import { predictTenkai, isDominant, dayTallyWeight, classifyStyle } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DATA_DIR = path.join(__dirname, '../public/data')
@@ -23,10 +23,6 @@ function useNARLogic(venue, race) {
   if (isNARVenue(venue)) return true
   if (race.course === 'ダート' && SHORT_DIRT_VENUES.includes(venue)) return true
   return false
-}
-function isDominant(race) {
-  if (race.margin == null) return false
-  return race.margin >= marginThreshold(race.course)
 }
 function getQuantiles(venue, quantiles) {
   const q = quantiles?.[venue]
@@ -75,7 +71,7 @@ function computeRecentBias(venue, course) {
       if (isDominant(race)) continue
       const nar = useNARLogic(venue, race)
       const t = predictTenkai(race.horses, race.totalGroups, nar, { legacy: true })
-      if (t && t !== 'pack') counts[t]++
+      if (t && t !== 'pack') counts[t] += dayTallyWeight(race)
     }
   }
   const total = counts.front + counts.flat + counts.diff

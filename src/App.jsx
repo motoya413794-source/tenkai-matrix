@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import {
-  predictTenkai, marginThreshold, computeScores,
+  predictTenkai, computeScores, isDominant, dayTallyWeight,
   TENKAI_LABEL, TENKAI_REL_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
   parseTimeStr, calcTrackVariant,
 } from './tenkai.js'
@@ -39,11 +39,6 @@ function useNARLogic(race) {
   if (isNAR(race)) return true
   if (race.course === 'ダート' && SHORT_DIRT_PATTERN.test(race.name)) return true
   return false
-}
-
-function isDominant(race) {
-  if (race.margin == null) return false
-  return race.margin >= marginThreshold(race.course)
 }
 
 // 判定ラベルに対応する達成率（前残り/前寄り→前ゾーン達成率、差し有利/差し寄り→後ゾーン達成率）
@@ -86,7 +81,7 @@ function tallyVerdict(races, course, opts) {
   const counts = { front: 0, flat: 0, diff: 0 }
   filtered.forEach(r => {
     const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), typeof opts === 'function' ? opts(r) : opts)
-    if (t && t !== 'pack') counts[t]++
+    if (t && t !== 'pack') counts[t] += dayTallyWeight(r)
   })
   const total = counts.front + counts.flat + counts.diff
   if (total === 0) return { verdict: null, counts }

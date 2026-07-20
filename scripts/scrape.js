@@ -90,7 +90,14 @@ async function scrapeJRA(page, raceId) {
     const rows = Array.from(document.querySelectorAll('table.RaceTable01 tr'))
     const horses = []
     let winTime = ''
-    let margin = null
+    let margin = null   // 1着→2着の着差
+    let margin3 = null  // 1着→3着の累積着差（2着→3着の着差を加算した近似値）
+    const parseMargin = m => {
+      if (!m) return 0
+      if (m === '大差' || m === '大') return 99
+      const n = parseFloat(m)
+      return isNaN(n) ? 0 : n // クビ・アタマ・ハナ等は僅差として0扱い
+    }
     for (const row of rows) {
       const cells = Array.from(row.querySelectorAll('td'))
       if (cells.length < 6) continue
@@ -102,12 +109,17 @@ async function scrapeJRA(page, raceId) {
       const time = cells[7]?.textContent?.trim()
       const popStr = cells[9]?.textContent?.trim()
       const popularity = /^\d+$/.test(popStr) ? parseInt(popStr, 10) : null
+      const oddsStr = cells[10]?.textContent?.trim()
+      const odds = oddsStr && !isNaN(parseFloat(oddsStr)) ? parseFloat(oddsStr) : null
       if (finish === '1') winTime = time
       if (finish === '2') {
-        const m = cells[8]?.textContent?.trim()
-        if (m) margin = m === '大差' || m === '大' ? 99 : parseFloat(m) || null
+        margin = parseMargin(cells[8]?.textContent?.trim()) || null
       }
-      if (name) horses.push({ finish, num: horseNum, name, jockey, popularity })
+      if (finish === '3') {
+        const m3 = parseMargin(cells[8]?.textContent?.trim())
+        margin3 = (margin === 99 || m3 === 99) ? 99 : (margin || 0) + m3
+      }
+      if (name) horses.push({ finish, num: horseNum, name, jockey, popularity, odds })
     }
 
     const cornerRows = Array.from(document.querySelectorAll('.Corner_Num tr'))
@@ -123,7 +135,7 @@ async function scrapeJRA(page, raceId) {
       corner4 = cornerRows[cornerRows.length - 1].querySelector('td')?.textContent?.trim()?.replace(/\s+/g, '') || ''
     }
 
-    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, weather, kaisaiDay, winTime, corner4, horses, margin }
+    return { raceNum, raceName, venue, course, distance, grade, trackCondition, courseType, weather, kaisaiDay, winTime, corner4, horses, margin, margin3 }
   }, raceId)
 }
 
@@ -153,6 +165,14 @@ async function scrapeNAR(page, raceId) {
     const rows = Array.from(document.querySelectorAll('table tr'))
     const horses = []
     let winTime = ''
+    let margin = null
+    let margin3 = null
+    const parseMargin = m => {
+      if (!m) return 0
+      if (m === '大差' || m === '大') return 99
+      const n = parseFloat(m)
+      return isNaN(n) ? 0 : n
+    }
     for (const row of rows) {
       const cells = Array.from(row.querySelectorAll('td'))
       if (cells.length < 4) continue
@@ -164,8 +184,17 @@ async function scrapeNAR(page, raceId) {
       const time = cells[7]?.textContent?.trim()
       const popStr = cells[9]?.textContent?.trim()
       const popularity = /^\d+$/.test(popStr) ? parseInt(popStr, 10) : null
+      const oddsStr = cells[10]?.textContent?.trim()
+      const odds = oddsStr && !isNaN(parseFloat(oddsStr)) ? parseFloat(oddsStr) : null
       if (finish === '1') winTime = time
-      if (name) horses.push({ finish, num: horseNum, name, jockey, popularity })
+      if (finish === '2') {
+        margin = parseMargin(cells[8]?.textContent?.trim()) || null
+      }
+      if (finish === '3') {
+        const m3 = parseMargin(cells[8]?.textContent?.trim())
+        margin3 = (margin === 99 || m3 === 99) ? 99 : (margin || 0) + m3
+      }
+      if (name) horses.push({ finish, num: horseNum, name, jockey, popularity, odds })
     }
 
     const cornerRows = Array.from(document.querySelectorAll('table.Corner_Num tr'))
@@ -178,18 +207,7 @@ async function scrapeNAR(page, raceId) {
       corner4 = cornerRows[cornerRows.length - 1].querySelector('td')?.textContent?.trim()?.replace(/\s+/g, '') || ''
     }
 
-    // 着差（2着馬の着差列）
-    let margin = null
-    for (const row of rows) {
-      const cells = Array.from(row.querySelectorAll('td'))
-      if (cells[0]?.textContent?.trim() === '2') {
-        const m = cells[8]?.textContent?.trim()
-        if (m) margin = m === '大差' || m === '大' ? 99 : parseFloat(m) || null
-        break
-      }
-    }
-
-    return { raceNum, raceName, venue, course, distance, grade: '', trackCondition, courseType: null, weather, winTime, corner4, horses, margin }
+    return { raceNum, raceName, venue, course, distance, grade: '', trackCondition, courseType: null, weather, winTime, corner4, horses, margin, margin3 }
   }, raceId)
 }
 
@@ -206,6 +224,7 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
     name: h.name,
     jockey: h.jockey ?? null,
     popularity: h.popularity ?? null,
+    odds: h.odds ?? null,
     groupIdx: posMap[String(h.num)] ?? (Object.keys(posMap).length > 0 ? maxGi : null),
   }))
 
@@ -224,6 +243,7 @@ function buildRace(raw, raceId, dateDisplay, isNar) {
     totalGroups,
     horses,
     margin: raw.margin ?? null,
+    margin3: raw.margin3 ?? null,
     _corner4: raw.corner4,
   }
 }

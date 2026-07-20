@@ -153,6 +153,29 @@ export function marginThreshold(course) {
   return course === 'ダート' ? 7 : 5
 }
 
+// 3着以下が大きく離される「1-2着だけ独走」レースの閾値（コース問わず固定7馬身）
+export const THREE_HORSE_BREAK_THRESHOLD = 7
+
+// 参考外（判定から除外）判定
+// 1) 1着が2着に marginThreshold 以上の着差をつけた「勝ち馬突出」
+// 2) 1着・2着がまとまって3着以下を THREE_HORSE_BREAK_THRESHOLD 以上突き放した「上位独走」
+export function isDominant(race) {
+  if (race.margin != null && race.margin >= marginThreshold(race.course)) return true
+  if (race.margin3 != null && race.margin3 >= THREE_HORSE_BREAK_THRESHOLD) return true
+  return false
+}
+
+// 単勝1倍台(1.0〜1.99倍)の圧倒的人気馬が勝った場合、1日まとめ集計での影響を下げる重み
+// 個別レースの判定バッジ自体はそのまま表示し、日次集計(front/flat/diff内訳)にのみ効かせる
+export const EXTREME_FAVORITE_WEIGHT = 0.5
+export function dayTallyWeight(race) {
+  const winner = race.horses.find(h => h.finish === '1')
+  if (winner && winner.odds != null && winner.odds >= 1.0 && winner.odds < 2.0) {
+    return EXTREME_FAVORITE_WEIGHT
+  }
+  return 1
+}
+
 // コース単位（分布不足時は全体プール）でQ1/Q3/中央値を算出
 // races: buildRace()の出力配列、対象コースに絞り込んで渡すこと
 // periodMonths は将来のローリング窓対応のため引数化（現状は呼び出し側でフィルタ済み前提）

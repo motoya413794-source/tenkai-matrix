@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import {
-  predictTenkai, computeScores, isDominant, dayTallyWeight,
+  predictTenkai, computeScores, isDominant, dayTallyWeight, classWeight, favoriteBeatenSignal,
   TENKAI_LABEL, TENKAI_REL_LABEL, STYLE_LABEL, STYLE_KEYS, TENKAI_KEYS,
   parseTimeStr, calcTrackVariant,
 } from './tenkai.js'
@@ -81,13 +81,18 @@ function tallyVerdict(races, course, opts) {
   const counts = { front: 0, flat: 0, diff: 0 }
   filtered.forEach(r => {
     const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), typeof opts === 'function' ? opts(r) : opts)
-    if (t && t !== 'pack') counts[t] += dayTallyWeight(r)
+    if (!t || t === 'pack') return
+    const w = dayTallyWeight(r) * classWeight(r)
+    const rawSig = favoriteBeatenSignal(r, useNARLogic(r))
+    const transfer = Math.min(rawSig, 1) * w
+    counts[t] += w - transfer
+    counts.diff += transfer
   })
   const total = counts.front + counts.flat + counts.diff
   if (total === 0) return { verdict: null, counts }
   let verdict = 'flat'
-  if (counts.front / total >= 0.5) verdict = 'front'
-  else if (counts.diff / total >= 0.5) verdict = 'diff'
+  if (counts.diff / total >= 0.5) verdict = 'diff'
+  else if (counts.front / total >= 0.5) verdict = 'front'
   return { verdict, counts }
 }
 

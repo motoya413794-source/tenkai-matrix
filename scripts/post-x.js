@@ -6,7 +6,7 @@ import { TwitterApi } from 'twitter-api-v2'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { predictTenkai, isDominant, dayTallyWeight } from '../src/tenkai.js'
+import { predictTenkai, isDominant, dayTallyWeight, classWeight, favoriteBeatenSignal } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -106,13 +106,18 @@ function venueVerdict(races, quantiles) {
     const counts = { front: 0, flat: 0, diff: 0 }
     filtered.forEach(r => {
       const t = predictTenkai(r.horses, r.totalGroups, useNARLogic(r), tenkaiOpts(r, quantiles))
-      if (t && t !== 'pack') counts[t] += dayTallyWeight(r)
+      if (!t || t === 'pack') return
+      const w = dayTallyWeight(r) * classWeight(r)
+      const rawSig = favoriteBeatenSignal(r, useNARLogic(r))
+      const transfer = Math.min(rawSig, 1) * w
+      counts[t] += w - transfer
+      counts.diff += transfer
     })
     const total = counts.front + counts.flat + counts.diff
     if (total === 0) continue
     let verdict = 'flat'
-    if (counts.front / total >= 0.5) verdict = 'front'
-    else if (counts.diff / total >= 0.5) verdict = 'diff'
+    if (counts.diff / total >= 0.5) verdict = 'diff'
+    else if (counts.front / total >= 0.5) verdict = 'front'
     result[course] = { verdict, counts, total }
   }
   return result

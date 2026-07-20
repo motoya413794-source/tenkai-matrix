@@ -142,7 +142,7 @@ export function predictTenkai(horses, totalGroups, isNAR = false, opts = {}) {
   // 絶対判定: 前後それぞれの達成率を固定閾値と比較（両方超えたら高い方を採用）
   const frontHit = frontRate != null && frontRate >= ABS_FRONT_THRESHOLD
   const rearHit  = rearRate != null && rearRate >= ABS_DIFF_THRESHOLD
-  if (frontHit && rearHit) return frontRate >= rearRate ? 'front' : 'diff'
+  if (frontHit && rearHit) return rearRate >= frontRate ? 'diff' : 'front'
   if (frontHit) return 'front'
   if (rearHit) return 'diff'
   return 'flat'
@@ -165,15 +165,56 @@ export function isDominant(race) {
   return false
 }
 
-// 単勝1倍台(1.0〜1.99倍)の圧倒的人気馬が勝った場合、1日まとめ集計での影響を下げる重み
-// 個別レースの判定バッジ自体はそのまま表示し、日次集計(front/flat/diff内訳)にのみ効かせる
-export const EXTREME_FAVORITE_WEIGHT = 0.5
+// 単勝オッズによる圧倒的人気馬勝利の重み低減（1日まとめ集計にのみ効く。個別レースの判定バッジは変えない）
+// 実力差が大きいレースほど「展開・バイアス」より「馬の地力」で決着した可能性が高いとみなす
 export function dayTallyWeight(race) {
   const winner = race.horses.find(h => h.finish === '1')
-  if (winner && winner.odds != null && winner.odds >= 1.0 && winner.odds < 2.0) {
-    return EXTREME_FAVORITE_WEIGHT
-  }
+  if (!winner || winner.odds == null) return 1
+  if (winner.odds >= 1.0 && winner.odds < 1.5) return 0.25
+  if (winner.odds >= 1.5 && winner.odds < 2.0) return 0.5
   return 1
+}
+
+// レースのクラス（実力の拮抗度）を重みに変換
+// クラスが上がるほど馬同士の実力差が小さく、着順が展開・バイアスをより正確に反映するとみなし重みを上げる
+const JRA_CLASS_WEIGHTS = {
+  '新馬': 0.7, '未勝利': 0.7, '1勝': 0.9, '2勝': 1.1, '3勝': 1.3,
+  'OP': 1.4, 'L': 1.4,
+  'GIII': 1.5, 'G3': 1.5, 'GII': 1.6, 'G2': 1.6, 'GI': 1.8, 'G1': 1.8,
+}
+const NAR_CLASS_WEIGHTS = {
+  'C3': 0.7, 'C2': 0.8, 'C1': 0.9,
+  'B3': 1.0, 'B2': 1.1, 'B1': 1.2,
+  'A3': 1.3, 'A2': 1.4, 'A1': 1.5,
+}
+export function classWeight(race) {
+  if (race.grade && JRA_CLASS_WEIGHTS[race.grade] != null) return JRA_CLASS_WEIGHTS[race.grade]
+  const name = race.raceName || ''
+  if (/重賞|オープン|\(OP\)/.test(name)) return 1.6
+  const matches = name.match(/[ABC][123]/g)
+  if (!matches) return 1.0
+  return NAR_CLASS_WEIGHTS[matches[matches.length - 1]] ?? 1.0
+}
+
+// 1〜2番人気馬が「前の位置取りなのに4着以下」または「後方の位置取りなのに3着以内」だった場合、
+// 位置取りだけでは決着を説明できない＝差し有利のシグナルとして加点する
+// （日次集計のdiffバケットに直接加算する。個別レースの判定バッジは変えない）
+export function favoriteBeatenSignal(race, isNAR) {
+  const totalGroups = race.totalGroups
+  if (!totalGroups || totalGroups <= 1) return 0
+  const frontThird = totalGroups / 3
+  const rearThird = totalGroups * 2 / 3
+  let signal = 0
+  race.horses.forEach(h => {
+    if (h.popularity == null || h.popularity > 2 || !h.groupIdx || !h.finish) return
+    const fin = parseInt(h.finish, 10)
+    if (isNaN(fin)) return
+    const front = h.groupIdx <= frontThird
+    const rear = isNAR ? !front : h.groupIdx > rearThird
+    if (front && fin > 3) signal += 0.5   // 人気馬が前で凡走
+    if (rear && fin <= 3) signal += 0.5   // 人気馬が後方から好走
+  })
+  return signal
 }
 
 // コース単位（分布不足時は全体プール）でQ1/Q3/中央値を算出

@@ -7,7 +7,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { predictTenkai, isDominant, dayTallyWeight, classifyStyle } from '../src/tenkai.js'
+import { predictTenkai, isDominant, dayTallyWeight, classWeight, favoriteBeatenSignal, classifyStyle } from '../src/tenkai.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DATA_DIR = path.join(__dirname, '../public/data')
@@ -71,7 +71,12 @@ function computeRecentBias(venue, course) {
       if (isDominant(race)) continue
       const nar = useNARLogic(venue, race)
       const t = predictTenkai(race.horses, race.totalGroups, nar, { legacy: true })
-      if (t && t !== 'pack') counts[t] += dayTallyWeight(race)
+      if (!t || t === 'pack') continue
+      const w = dayTallyWeight(race) * classWeight(race)
+      const rawSig = favoriteBeatenSignal(race, nar)
+      const transfer = Math.min(rawSig, 1) * w
+      counts[t] += w - transfer
+      counts.diff += transfer
     }
   }
   const total = counts.front + counts.flat + counts.diff
@@ -80,8 +85,8 @@ function computeRecentBias(venue, course) {
     return { bias: isNARVenue(venue) ? 'front' : null, source: 'default', daysUsed: 0, counts }
   }
   let bias = 'flat'
-  if (counts.front / total >= counts.diff / total && counts.front / total > counts.flat / total) bias = 'front'
-  else if (counts.diff / total > counts.front / total && counts.diff / total > counts.flat / total) bias = 'diff'
+  if (counts.diff / total >= counts.front / total && counts.diff / total > counts.flat / total) bias = 'diff'
+  else if (counts.front / total > counts.diff / total && counts.front / total > counts.flat / total) bias = 'front'
   return { bias, source: 'recent', daysUsed, counts }
 }
 

@@ -104,9 +104,11 @@ function tallyVerdict(races, course, opts) {
 function dayCourseVerdict(races, course, quantiles) {
   const filtered = races.filter(r => r.course === course && !isDominant(r))
   if (filtered.length === 0) return null
+  // 馬場速度指数（タフ/高速馬場）はJRAの函館基準タイムを元にしており、
+  // 地方競馬(NAR)や函館以外の会場に適用すると全く異なる基準で誤判定になるためJRAのみ算出する
   const variants = []
   filtered.forEach(r => {
-    if (r.winTime && r.distance) {
+    if (r.winTime && r.distance && !useNARLogic(r)) {
       const sec = parseTimeStr(r.winTime)
       const v = calcTrackVariant(course, r.distance, sec, r.grade)
       if (v != null) variants.push(v)

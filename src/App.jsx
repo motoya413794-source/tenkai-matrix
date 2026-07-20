@@ -27,6 +27,11 @@ function trackLabel(variant) {
   return                      { label: '標準馬場',    cls: 'even' }
 }
 
+// 重み付き件数の表示用フォーマット（小数第2位まで、末尾0は削る）
+function fmtCount(n) {
+  return Math.round(n * 100) / 100
+}
+
 const NAR_PATTERN = /^(門別|盛岡|水沢|浦和|船橋|大井|川崎|金沢|笠松|名古屋|園田|姫路|高知|佐賀)/
 const JRA_VENUES = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
 const NAR_VENUES = ['門別','盛岡','水沢','浦和','船橋','大井','川崎','金沢','笠松','名古屋','園田','姫路','高知','佐賀']
@@ -172,7 +177,7 @@ function DaySummary({ races, compact = false, onCardClick, quantiles }) {
                         <div className="day-bar-track">
                           <div className={`day-bar-fill ${key}`} style={{ width: total > 0 ? `${v.counts[key]/total*100}%` : '0%' }} />
                         </div>
-                        <span className="day-bar-count">{v.counts[key]}R {total > 0 ? `${Math.round(v.counts[key]/total*100)}%` : ''}</span>
+                        <span className="day-bar-count">{fmtCount(v.counts[key])}R {total > 0 ? `${Math.round(v.counts[key]/total*100)}%` : ''}</span>
                       </div>
                     ))}
                   </div>

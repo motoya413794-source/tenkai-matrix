@@ -47,7 +47,7 @@ body {
   padding-bottom: 80px;
 }
 
-.wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; transition: max-width 0.15s; }
 
 /* ── Masthead ── */
 header.masthead {
@@ -765,6 +765,37 @@ header.masthead {
   font-size: 11px;
   color: var(--ink-faint);
   margin-top: 6px;
+}
+
+/* ── Desktop ── */
+@media (min-width: 900px) {
+  .wrap { max-width: 1080px; padding: 0 32px; }
+
+  header.masthead {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 40px 24px 32px;
+  }
+  .masthead h1 { font-size: 30px; }
+
+  /* 会場カードを横に並べる */
+  .top-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  /* レースカードを2カラムに */
+  .race-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  /* タブ・日付選択は中央寄せで広がりすぎないように */
+  .tab-bar { max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  .race-card { cursor: pointer; }
+  .race-card:hover { border-color: var(--turf); }
 }
 
 /* ── Mobile ── */

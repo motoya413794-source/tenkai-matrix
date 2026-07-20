@@ -778,10 +778,11 @@ header.masthead {
   }
   .masthead h1 { font-size: 30px; }
 
-  /* 会場カードを横に並べる */
+  /* 会場カードを横に並べる（各セルは中身の高さのみ確保し、行の高さに引き伸ばさない） */
   .top-summary-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    align-items: start;
   }
 
   /* レースカードを2カラムに */

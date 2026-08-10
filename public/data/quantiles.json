@@ -1,4 +1,28 @@
 {
+  "盛岡": {
+    "q1": 0.5714285714285714,
+    "q3": 0.8616071428571428,
+    "median": 0.7142857142857143,
+    "sampleSize": 200,
+    "reliable": true,
+    "source": "own"
+  },
+  "浦和": {
+    "q1": 0.8571428571428571,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 131,
+    "reliable": true,
+    "source": "own"
+  },
+  "金沢": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 153,
+    "reliable": true,
+    "source": "own"
+  },
   "札幌": {
     "q1": 0.6666666666666666,
     "q3": 0.8888888888888888,
@@ -8,35 +32,11 @@
     "source": "jra_dirt_pool",
     "ownSampleSize": 24
   },
-  "盛岡": {
-    "q1": 0.5714285714285714,
-    "q3": 0.8571428571428571,
-    "median": 0.7142857142857143,
-    "sampleSize": 191,
-    "reliable": true,
-    "source": "own"
-  },
-  "金沢": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 156,
-    "reliable": true,
-    "source": "own"
-  },
   "佐賀": {
     "q1": 0.7944444444444445,
     "q3": 1,
     "median": 1,
     "sampleSize": 124,
-    "reliable": true,
-    "source": "own"
-  },
-  "浦和": {
-    "q1": 0.8571428571428571,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 122,
     "reliable": true,
     "source": "own"
   },
@@ -50,9 +50,9 @@
   },
   "門別": {
     "q1": 0.6,
-    "q3": 0.9166666666666666,
+    "q3": 1,
     "median": 0.75,
-    "sampleSize": 276,
+    "sampleSize": 265,
     "reliable": true,
     "source": "own"
   },
@@ -92,7 +92,7 @@
     "q1": 0.5714285714285714,
     "q3": 0.8888888888888888,
     "median": 0.75,
-    "sampleSize": 144,
+    "sampleSize": 133,
     "reliable": true,
     "source": "own"
   },
@@ -132,7 +132,7 @@
     "q1": 0.7777777777777778,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 81,
+    "sampleSize": 69,
     "reliable": true,
     "source": "own"
   },
@@ -140,7 +140,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2103,
+    "sampleSize": 2084,
     "reliable": true,
     "source": "pool"
   },
@@ -153,9 +153,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-06-09",
-    "periodEnd": "2026-08-09",
+    "periodStart": "2026-06-10",
+    "periodEnd": "2026-08-10",
     "months": 2,
-    "generatedAt": "2026-08-09T13:50:10.679Z"
+    "generatedAt": "2026-08-10T10:42:25.817Z"
   }
 }

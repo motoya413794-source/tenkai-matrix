@@ -1,9 +1,41 @@
 {
+  "門別": {
+    "q1": 0.6,
+    "q3": 0.8888888888888888,
+    "median": 0.75,
+    "sampleSize": 274,
+    "reliable": true,
+    "source": "own"
+  },
   "盛岡": {
     "q1": 0.5714285714285714,
     "q3": 0.8571428571428571,
     "median": 0.7142857142857143,
-    "sampleSize": 228,
+    "sampleSize": 236,
+    "reliable": true,
+    "source": "own"
+  },
+  "川崎": {
+    "q1": 0.6,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 122,
+    "reliable": true,
+    "source": "own"
+  },
+  "金沢": {
+    "q1": 0.6666666666666666,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 155,
+    "reliable": true,
+    "source": "own"
+  },
+  "名古屋": {
+    "q1": 0.7232142857142857,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 170,
     "reliable": true,
     "source": "own"
   },
@@ -12,14 +44,6 @@
     "q3": 0.8888888888888888,
     "median": 0.75,
     "sampleSize": 146,
-    "reliable": true,
-    "source": "own"
-  },
-  "金沢": {
-    "q1": 0.6666666666666666,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 152,
     "reliable": true,
     "source": "own"
   },
@@ -50,16 +74,8 @@
   "園田": {
     "q1": 0.75,
     "q3": 1,
-    "median": 0.875,
-    "sampleSize": 273,
-    "reliable": true,
-    "source": "own"
-  },
-  "門別": {
-    "q1": 0.6,
-    "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 277,
+    "median": 0.8819444444444444,
+    "sampleSize": 262,
     "reliable": true,
     "source": "own"
   },
@@ -84,22 +100,6 @@
     "q3": 1,
     "median": 0.8819444444444444,
     "sampleSize": 142,
-    "reliable": true,
-    "source": "own"
-  },
-  "川崎": {
-    "q1": 0.6,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 126,
-    "reliable": true,
-    "source": "own"
-  },
-  "名古屋": {
-    "q1": 0.7142857142857143,
-    "q3": 0.9444444444444444,
-    "median": 0.8571428571428571,
-    "sampleSize": 175,
     "reliable": true,
     "source": "own"
   },
@@ -139,7 +139,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2063,
+    "sampleSize": 2051,
     "reliable": true,
     "source": "pool"
   },
@@ -152,9 +152,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-06-17",
-    "periodEnd": "2026-08-17",
+    "periodStart": "2026-06-18",
+    "periodEnd": "2026-08-18",
     "months": 2,
-    "generatedAt": "2026-08-17T13:39:07.223Z"
+    "generatedAt": "2026-08-18T09:57:38.948Z"
   }
 }

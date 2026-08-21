@@ -1,25 +1,17 @@
 {
-  "門別": {
-    "q1": 0.6,
-    "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 289,
-    "reliable": true,
-    "source": "own"
-  },
   "川崎": {
     "q1": 0.6,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 130,
+    "sampleSize": 135,
     "reliable": true,
     "source": "own"
   },
   "名古屋": {
-    "q1": 0.75,
+    "q1": 0.7321428571428572,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 173,
+    "sampleSize": 179,
     "reliable": true,
     "source": "own"
   },
@@ -27,7 +19,15 @@
     "q1": 0.75,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 260,
+    "sampleSize": 265,
+    "reliable": true,
+    "source": "own"
+  },
+  "門別": {
+    "q1": 0.6,
+    "q3": 0.8888888888888888,
+    "median": 0.75,
+    "sampleSize": 289,
     "reliable": true,
     "source": "own"
   },
@@ -67,7 +67,7 @@
     "q1": 0.8,
     "q3": 1,
     "median": 1,
-    "sampleSize": 127,
+    "sampleSize": 115,
     "reliable": true,
     "source": "own"
   },
@@ -98,8 +98,8 @@
   "高知": {
     "q1": 0.75,
     "q3": 1,
-    "median": 0.8819444444444444,
-    "sampleSize": 142,
+    "median": 1,
+    "sampleSize": 131,
     "reliable": true,
     "source": "own"
   },
@@ -120,10 +120,10 @@
     "source": "own"
   },
   "函館": {
-    "q1": 0.7142857142857143,
+    "q1": 0.6666666666666666,
     "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 49,
+    "median": 0.8,
+    "sampleSize": 44,
     "reliable": true,
     "source": "own"
   },
@@ -139,7 +139,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2079,
+    "sampleSize": 2072,
     "reliable": true,
     "source": "pool"
   },
@@ -147,14 +147,14 @@
     "q1": 0.6666666666666666,
     "q3": 0.8888888888888888,
     "median": 0.7777777777777778,
-    "sampleSize": 148,
+    "sampleSize": 143,
     "reliable": true,
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-06-20",
-    "periodEnd": "2026-08-20",
+    "periodStart": "2026-06-21",
+    "periodEnd": "2026-08-21",
     "months": 2,
-    "generatedAt": "2026-08-20T13:45:09.516Z"
+    "generatedAt": "2026-08-21T09:58:39.949Z"
   }
 }

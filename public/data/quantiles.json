@@ -19,7 +19,7 @@
     "q1": 0.8,
     "q3": 1,
     "median": 1,
-    "sampleSize": 127,
+    "sampleSize": 115,
     "reliable": true,
     "source": "own"
   },
@@ -27,7 +27,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 254,
+    "sampleSize": 248,
     "reliable": true,
     "source": "own"
   },
@@ -64,10 +64,10 @@
     "source": "own"
   },
   "佐賀": {
-    "q1": 0.8285714285714285,
+    "q1": 0.8,
     "q3": 1,
     "median": 1,
-    "sampleSize": 111,
+    "sampleSize": 102,
     "reliable": true,
     "source": "own"
   },
@@ -91,39 +91,41 @@
     "q1": 0.8571428571428571,
     "q3": 1,
     "median": 1,
-    "sampleSize": 106,
+    "sampleSize": 95,
     "reliable": true,
     "source": "own"
   },
   "高知": {
     "q1": 0.75,
     "q3": 1,
-    "median": 0.8888888888888888,
-    "sampleSize": 121,
+    "median": 1,
+    "sampleSize": 111,
     "reliable": true,
     "source": "own"
   },
   "福島": {
     "q1": 0.6666666666666666,
-    "q3": 0.8571428571428571,
+    "q3": 0.8888888888888888,
     "median": 0.7777777777777778,
-    "sampleSize": 34,
+    "sampleSize": 133,
     "reliable": true,
-    "source": "own"
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 29
   },
   "小倉": {
     "q1": 0.6666666666666666,
     "q3": 0.8888888888888888,
     "median": 0.7777777777777778,
-    "sampleSize": 31,
+    "sampleSize": 133,
     "reliable": true,
-    "source": "own"
+    "source": "jra_dirt_pool",
+    "ownSampleSize": 27
   },
   "函館": {
     "q1": 0.6666666666666666,
-    "q3": 1,
-    "median": 0.8,
-    "sampleSize": 39,
+    "q3": 0.8888888888888888,
+    "median": 0.775,
+    "sampleSize": 34,
     "reliable": true,
     "source": "own"
   },
@@ -131,7 +133,7 @@
     "q1": 0.625,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 2009,
+    "sampleSize": 1961,
     "reliable": true,
     "source": "pool"
   },
@@ -139,14 +141,14 @@
     "q1": 0.6666666666666666,
     "q3": 0.8888888888888888,
     "median": 0.7777777777777778,
-    "sampleSize": 147,
+    "sampleSize": 133,
     "reliable": true,
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-06-26",
-    "periodEnd": "2026-08-26",
+    "periodStart": "2026-06-28",
+    "periodEnd": "2026-08-28",
     "months": 2,
-    "generatedAt": "2026-08-26T13:54:30.935Z"
+    "generatedAt": "2026-08-27T19:55:47.804Z"
   }
 }

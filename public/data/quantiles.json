@@ -1,9 +1,9 @@
 {
-  "札幌": {
+  "門別": {
     "q1": 0.6,
-    "q3": 0.9166666666666666,
-    "median": 0.7777777777777778,
-    "sampleSize": 60,
+    "q3": 1,
+    "median": 0.75,
+    "sampleSize": 279,
     "reliable": true,
     "source": "own"
   },
@@ -11,16 +11,40 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1777,
+    "sampleSize": 1820,
     "reliable": true,
     "source": "nar_pool",
-    "ownSampleSize": 7
+    "ownSampleSize": 16
+  },
+  "川崎": {
+    "q1": 0.6,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 127,
+    "reliable": true,
+    "source": "own"
   },
   "金沢": {
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 136,
+    "sampleSize": 147,
+    "reliable": true,
+    "source": "own"
+  },
+  "笠松": {
+    "q1": 0.8,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 118,
+    "reliable": true,
+    "source": "own"
+  },
+  "札幌": {
+    "q1": 0.6,
+    "q3": 0.9166666666666666,
+    "median": 0.7777777777777778,
+    "sampleSize": 60,
     "reliable": true,
     "source": "own"
   },
@@ -64,14 +88,6 @@
     "reliable": true,
     "source": "own"
   },
-  "門別": {
-    "q1": 0.6,
-    "q3": 1,
-    "median": 0.75,
-    "sampleSize": 269,
-    "reliable": true,
-    "source": "own"
-  },
   "盛岡": {
     "q1": 0.5714285714285714,
     "q3": 0.875,
@@ -85,22 +101,6 @@
     "q3": 0.8888888888888888,
     "median": 0.75,
     "sampleSize": 74,
-    "reliable": true,
-    "source": "own"
-  },
-  "笠松": {
-    "q1": 0.8,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 115,
-    "reliable": true,
-    "source": "own"
-  },
-  "川崎": {
-    "q1": 0.6,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 117,
     "reliable": true,
     "source": "own"
   },
@@ -143,7 +143,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1777,
+    "sampleSize": 1820,
     "reliable": true,
     "source": "pool"
   },
@@ -159,6 +159,6 @@
     "periodStart": "2026-07-08",
     "periodEnd": "2026-09-08",
     "months": 2,
-    "generatedAt": "2026-09-07T18:07:12.561Z"
+    "generatedAt": "2026-09-08T13:45:57.940Z"
   }
 }

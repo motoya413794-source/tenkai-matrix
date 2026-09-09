@@ -2,16 +2,16 @@
   "門別": {
     "q1": 0.6,
     "q3": 1,
-    "median": 0.75,
-    "sampleSize": 280,
+    "median": 0.7777777777777778,
+    "sampleSize": 268,
     "reliable": true,
     "source": "own"
   },
   "川崎": {
-    "q1": 0.6,
+    "q1": 0.625,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 128,
+    "sampleSize": 116,
     "reliable": true,
     "source": "own"
   },
@@ -19,7 +19,7 @@
     "q1": 0.8,
     "q3": 1,
     "median": 1,
-    "sampleSize": 110,
+    "sampleSize": 98,
     "reliable": true,
     "source": "own"
   },
@@ -27,7 +27,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 238,
+    "sampleSize": 227,
     "reliable": true,
     "source": "own"
   },
@@ -35,7 +35,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1809,
+    "sampleSize": 1762,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 16
@@ -143,7 +143,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1809,
+    "sampleSize": 1762,
     "reliable": true,
     "source": "pool"
   },
@@ -156,9 +156,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-07-09",
-    "periodEnd": "2026-09-09",
+    "periodStart": "2026-07-10",
+    "periodEnd": "2026-09-10",
     "months": 2,
-    "generatedAt": "2026-09-09T13:49:45.019Z"
+    "generatedAt": "2026-09-09T17:03:27.782Z"
   }
 }

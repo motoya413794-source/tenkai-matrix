@@ -35,7 +35,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1788,
+    "sampleSize": 1768,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 16
@@ -59,16 +59,16 @@
   "高知": {
     "q1": 0.75,
     "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 93,
+    "median": 0.875,
+    "sampleSize": 83,
     "reliable": true,
     "source": "own"
   },
   "佐賀": {
-    "q1": 0.8,
+    "q1": 0.8142857142857143,
     "q3": 1,
     "median": 1,
-    "sampleSize": 116,
+    "sampleSize": 106,
     "reliable": true,
     "source": "own"
   },
@@ -113,52 +113,52 @@
     "source": "own"
   },
   "福島": {
-    "q1": 0.61875,
+    "q1": 0.6125,
     "q3": 0.8888888888888888,
-    "median": 0.7638888888888888,
-    "sampleSize": 112,
+    "median": 0.75,
+    "sampleSize": 99,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 16
+    "ownSampleSize": 12
   },
   "小倉": {
-    "q1": 0.61875,
+    "q1": 0.6125,
     "q3": 0.8888888888888888,
-    "median": 0.7638888888888888,
-    "sampleSize": 112,
+    "median": 0.75,
+    "sampleSize": 99,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 16
+    "ownSampleSize": 12
   },
   "函館": {
-    "q1": 0.61875,
+    "q1": 0.6125,
     "q3": 0.8888888888888888,
-    "median": 0.7638888888888888,
-    "sampleSize": 112,
+    "median": 0.75,
+    "sampleSize": 99,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 20
+    "ownSampleSize": 15
   },
   "_nar_pool": {
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1788,
+    "sampleSize": 1768,
     "reliable": true,
     "source": "pool"
   },
   "_jra_dirt_pool": {
-    "q1": 0.61875,
+    "q1": 0.6125,
     "q3": 0.8888888888888888,
-    "median": 0.7638888888888888,
-    "sampleSize": 112,
+    "median": 0.75,
+    "sampleSize": 99,
     "reliable": true,
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-07-11",
-    "periodEnd": "2026-09-11",
+    "periodStart": "2026-07-12",
+    "periodEnd": "2026-09-12",
     "months": 2,
-    "generatedAt": "2026-09-11T13:41:46.089Z"
+    "generatedAt": "2026-09-11T16:56:02.647Z"
   }
 }

@@ -1,9 +1,9 @@
 {
   "高知": {
-    "q1": 0.75,
+    "q1": 0.7321428571428572,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 89,
+    "sampleSize": 79,
     "reliable": true,
     "source": "own"
   },
@@ -51,7 +51,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1781,
+    "sampleSize": 1750,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 16
@@ -60,7 +60,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 147,
+    "sampleSize": 136,
     "reliable": true,
     "source": "own"
   },
@@ -89,10 +89,10 @@
     "source": "own"
   },
   "盛岡": {
-    "q1": 0.5714285714285714,
+    "q1": 0.5785714285714285,
     "q3": 0.875,
     "median": 0.7142857142857143,
-    "sampleSize": 212,
+    "sampleSize": 202,
     "reliable": true,
     "source": "own"
   },
@@ -113,52 +113,52 @@
     "source": "own"
   },
   "福島": {
-    "q1": 0.6125,
+    "q1": 0.60625,
     "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 99,
+    "median": 0.7638888888888888,
+    "sampleSize": 86,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 12
+    "ownSampleSize": 8
   },
   "小倉": {
-    "q1": 0.6125,
+    "q1": 0.60625,
     "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 99,
+    "median": 0.7638888888888888,
+    "sampleSize": 86,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 12
+    "ownSampleSize": 8
   },
   "函館": {
-    "q1": 0.6125,
+    "q1": 0.60625,
     "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 99,
+    "median": 0.7638888888888888,
+    "sampleSize": 86,
     "reliable": true,
     "source": "jra_dirt_pool",
-    "ownSampleSize": 15
+    "ownSampleSize": 10
   },
   "_nar_pool": {
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1781,
+    "sampleSize": 1750,
     "reliable": true,
     "source": "pool"
   },
   "_jra_dirt_pool": {
-    "q1": 0.6125,
+    "q1": 0.60625,
     "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 99,
+    "median": 0.7638888888888888,
+    "sampleSize": 86,
     "reliable": true,
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-07-12",
-    "periodEnd": "2026-09-12",
+    "periodStart": "2026-07-13",
+    "periodEnd": "2026-09-13",
     "months": 2,
-    "generatedAt": "2026-09-12T12:59:51.178Z"
+    "generatedAt": "2026-09-12T16:02:24.783Z"
   }
 }

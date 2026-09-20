@@ -1,9 +1,17 @@
 {
+  "高知": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 73,
+    "reliable": true,
+    "source": "own"
+  },
   "佐賀": {
     "q1": 0.8,
     "q3": 1,
     "median": 1,
-    "sampleSize": 101,
+    "sampleSize": 108,
     "reliable": true,
     "source": "own"
   },
@@ -52,14 +60,6 @@
     "q3": 1,
     "median": 0.8,
     "sampleSize": 133,
-    "reliable": true,
-    "source": "own"
-  },
-  "高知": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 64,
     "reliable": true,
     "source": "own"
   },
@@ -115,7 +115,7 @@
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1678,
+    "sampleSize": 1694,
     "reliable": true,
     "source": "pool"
   },
@@ -131,6 +131,6 @@
     "periodStart": "2026-07-20",
     "periodEnd": "2026-09-20",
     "months": 2,
-    "generatedAt": "2026-09-19T16:15:27.842Z"
+    "generatedAt": "2026-09-20T13:40:26.365Z"
   }
 }

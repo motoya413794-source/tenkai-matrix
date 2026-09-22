@@ -1,9 +1,49 @@
 {
+  "門別": {
+    "q1": 0.625,
+    "q3": 1,
+    "median": 0.7777777777777778,
+    "sampleSize": 282,
+    "reliable": true,
+    "source": "own"
+  },
+  "水沢": {
+    "q1": 0.8571428571428571,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 45,
+    "reliable": true,
+    "source": "own"
+  },
+  "浦和": {
+    "q1": 0.8571428571428571,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 48,
+    "reliable": true,
+    "source": "own"
+  },
+  "金沢": {
+    "q1": 0.625,
+    "q3": 1,
+    "median": 0.8,
+    "sampleSize": 139,
+    "reliable": true,
+    "source": "own"
+  },
+  "笠松": {
+    "q1": 0.75,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 97,
+    "reliable": true,
+    "source": "own"
+  },
   "高知": {
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 73,
+    "sampleSize": 83,
     "reliable": true,
     "source": "own"
   },
@@ -39,43 +79,11 @@
     "reliable": true,
     "source": "own"
   },
-  "門別": {
-    "q1": 0.6,
-    "q3": 1,
-    "median": 0.7777777777777778,
-    "sampleSize": 271,
-    "reliable": true,
-    "source": "own"
-  },
-  "水沢": {
-    "q1": 0.8660714285714286,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 35,
-    "reliable": true,
-    "source": "own"
-  },
-  "金沢": {
-    "q1": 0.625,
-    "q3": 1,
-    "median": 0.8,
-    "sampleSize": 127,
-    "reliable": true,
-    "source": "own"
-  },
   "川崎": {
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
     "sampleSize": 119,
-    "reliable": true,
-    "source": "own"
-  },
-  "笠松": {
-    "q1": 0.8,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 90,
     "reliable": true,
     "source": "own"
   },
@@ -103,19 +111,11 @@
     "reliable": true,
     "source": "own"
   },
-  "浦和": {
-    "q1": 0.8571428571428571,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 38,
-    "reliable": true,
-    "source": "own"
-  },
   "_nar_pool": {
     "q1": 0.6666666666666666,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1630,
+    "sampleSize": 1690,
     "reliable": true,
     "source": "pool"
   },
@@ -131,6 +131,6 @@
     "periodStart": "2026-07-22",
     "periodEnd": "2026-09-22",
     "months": 2,
-    "generatedAt": "2026-09-21T18:31:00.011Z"
+    "generatedAt": "2026-09-22T14:09:48.386Z"
   }
 }

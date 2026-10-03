@@ -58,8 +58,8 @@
   "金沢": {
     "q1": 0.625,
     "q3": 1,
-    "median": 0.8,
-    "sampleSize": 124,
+    "median": 0.8571428571428571,
+    "sampleSize": 117,
     "reliable": true,
     "source": "own"
   },
@@ -99,15 +99,15 @@
     "q1": 0.6,
     "q3": 0.875,
     "median": 0.75,
-    "sampleSize": 117,
+    "sampleSize": 108,
     "reliable": true,
     "source": "own"
   },
   "船橋": {
-    "q1": 0.5,
+    "q1": 0.43333333333333335,
     "q3": 1,
-    "median": 0.7777777777777778,
-    "sampleSize": 63,
+    "median": 0.75,
+    "sampleSize": 52,
     "reliable": true,
     "source": "own"
   },
@@ -115,7 +115,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1510,
+    "sampleSize": 1483,
     "reliable": true,
     "source": "pool"
   },
@@ -128,9 +128,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-08-03",
-    "periodEnd": "2026-10-03",
+    "periodStart": "2026-08-04",
+    "periodEnd": "2026-10-04",
     "months": 2,
-    "generatedAt": "2026-10-03T14:23:54.328Z"
+    "generatedAt": "2026-10-03T17:01:06.094Z"
   }
 }

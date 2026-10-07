@@ -1,0 +1,4589 @@
+{
+  "date": "2026-10-09",
+  "dateDisplay": "10/9",
+  "generatedAt": "2026-10-07T18:22:16.927Z",
+  "venues": {
+    "大井": {
+      "biasByCourse": {
+        "ダート": {
+          "bias": "diff",
+          "source": "recent",
+          "daysUsed": 5,
+          "counts": {
+            "front": 3.575,
+            "flat": 1.0125,
+            "diff": 6.5875
+          }
+        }
+      },
+      "races": [
+        {
+          "race": {
+            "name": "大井2R 10/9",
+            "raceName": "C2三",
+            "course": "ダート",
+            "distance": 1000,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ファビエンヌ",
+                "jockey": "西優哉",
+                "popularity": 4
+              },
+              {
+                "num": "2",
+                "name": "ヴァンクラッセ",
+                "jockey": "谷内貫太",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "サウンドキングダム",
+                "jockey": "高橋優",
+                "popularity": 3
+              },
+              {
+                "num": "4",
+                "name": "ピコピンク",
+                "jockey": "藤田凌",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "ポルタロマーナ",
+                "jockey": "達城龍次",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "グリンバーム",
+                "jockey": "張田昂",
+                "popularity": 5
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ヴァンクラッセ",
+              "jockey": "谷内貫太",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-16",
+                  "venue": "佐賀",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-06-13",
+                  "venue": "佐賀",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-05",
+                  "venue": "佐賀",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井3R 10/9",
+            "raceName": "とき特別競走(2歳)",
+            "course": "ダート",
+            "distance": 1600,
+            "horses": [
+              {
+                "num": "1",
+                "name": "コーミズピエール",
+                "jockey": "和田譲治",
+                "popularity": 6
+              },
+              {
+                "num": "2",
+                "name": "サカベンスピード",
+                "jockey": "中山遥人",
+                "popularity": 5
+              },
+              {
+                "num": "3",
+                "name": "ショウナンハーバー",
+                "jockey": "本田正重",
+                "popularity": 1
+              },
+              {
+                "num": "4",
+                "name": "アドバンスミヤギ",
+                "jockey": "矢野貴之",
+                "popularity": 4
+              },
+              {
+                "num": "5",
+                "name": "ユウユウベンチャー",
+                "jockey": "吉井章",
+                "popularity": 9
+              },
+              {
+                "num": "6",
+                "name": "ケンブラック",
+                "jockey": "藤本現暉",
+                "popularity": 2
+              },
+              {
+                "num": "7",
+                "name": "ストラドル",
+                "jockey": "野畑凌",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "オレンジルシファー",
+                "jockey": "安藤洋一",
+                "popularity": 7
+              },
+              {
+                "num": "9",
+                "name": "リアライズオリオン",
+                "jockey": "笹川翼",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "8",
+              "name": "オレンジルシファー",
+              "jockey": "安藤洋一",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-18",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-06-30",
+                  "venue": "大井",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-11",
+                  "venue": "浦和",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井4R 10/9",
+            "raceName": "C2四五六(C2五)",
+            "course": "ダート",
+            "distance": 1600,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ステイフリー",
+                "jockey": "野畑凌",
+                "popularity": 3
+              },
+              {
+                "num": "2",
+                "name": "リバイブメイラード",
+                "jockey": "西優哉",
+                "popularity": 2
+              },
+              {
+                "num": "3",
+                "name": "セキテイロックス",
+                "jockey": "矢野貴之",
+                "popularity": 1
+              },
+              {
+                "num": "4",
+                "name": "リュウノウィザード",
+                "jockey": "高橋昭平",
+                "popularity": 9
+              },
+              {
+                "num": "5",
+                "name": "フロントドア",
+                "jockey": "佐野遥久",
+                "popularity": 10
+              },
+              {
+                "num": "6",
+                "name": "ファーストフォルテ",
+                "jockey": "藤本現暉",
+                "popularity": 7
+              },
+              {
+                "num": "7",
+                "name": "アダラズプレイヤー",
+                "jockey": "石川駿介",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "ボンヴィアッジョ",
+                "jockey": "福原杏",
+                "popularity": 6
+              },
+              {
+                "num": "9",
+                "name": "シンアルマトゥラ",
+                "jockey": "中村尚平",
+                "popularity": 5
+              },
+              {
+                "num": "10",
+                "name": "ヒンナ",
+                "jockey": "杉山海波",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "セキテイロックス",
+              "jockey": "矢野貴之",
+              "popularity": 1,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-10",
+                  "venue": "東京",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-20",
+                  "venue": "東京",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "5",
+              "name": "フロントドア",
+              "jockey": "佐野遥久",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-29",
+                  "venue": "大井",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-22",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-17",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "アダラズプレイヤー",
+              "jockey": "石川駿介",
+              "popularity": 8,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-09-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井5R 10/9",
+            "raceName": "C2四五六(C2五)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "キャリアラダー",
+                "jockey": "西優哉",
+                "popularity": 8
+              },
+              {
+                "num": "2",
+                "name": "デルバイス",
+                "jockey": "遠藤健太",
+                "popularity": 13
+              },
+              {
+                "num": "3",
+                "name": "ハヤマデイズ",
+                "jockey": "田中洸多",
+                "popularity": 11
+              },
+              {
+                "num": "4",
+                "name": "シャインブラスト",
+                "jockey": "矢野貴之",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "パールペンダント",
+                "jockey": "岡村健司",
+                "popularity": 10
+              },
+              {
+                "num": "6",
+                "name": "メープルピア",
+                "jockey": "和田譲治",
+                "popularity": 5
+              },
+              {
+                "num": "7",
+                "name": "リトルデビル",
+                "jockey": "野畑凌",
+                "popularity": 2
+              },
+              {
+                "num": "8",
+                "name": "ゴーディアンノット",
+                "jockey": "藤本現暉",
+                "popularity": 4
+              },
+              {
+                "num": "9",
+                "name": "クリノエーデル",
+                "jockey": "中山遥人",
+                "popularity": 9
+              },
+              {
+                "num": "10",
+                "name": "オロールシェール",
+                "jockey": "鷹見陸",
+                "popularity": 6
+              },
+              {
+                "num": "11",
+                "name": "サラニキケン",
+                "jockey": "高橋優",
+                "popularity": 12
+              },
+              {
+                "num": "12",
+                "name": "グラスリッキー",
+                "jockey": "笹川翼",
+                "popularity": 3
+              },
+              {
+                "num": "13",
+                "name": "エクラシェール",
+                "jockey": "藤田凌",
+                "popularity": 7
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "デルバイス",
+              "jockey": "遠藤健太",
+              "popularity": 13,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-01",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-17",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "3",
+              "name": "ハヤマデイズ",
+              "jockey": "田中洸多",
+              "popularity": 11,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-17",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "5",
+              "name": "パールペンダント",
+              "jockey": "岡村健司",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-14",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-17",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-03",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "11",
+              "name": "サラニキケン",
+              "jockey": "高橋優",
+              "popularity": 12,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-10",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-15",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井6R 10/9",
+            "raceName": "サンチャゴ賞(C2五)",
+            "course": "ダート",
+            "distance": 1200,
+            "horses": [
+              {
+                "num": "1",
+                "name": "アヤサンジョリーン",
+                "jockey": "西啓太",
+                "popularity": 1
+              },
+              {
+                "num": "2",
+                "name": "ノーブルオーディン",
+                "jockey": "藤田凌",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "リアンリーヴァ",
+                "jockey": "笹川翼",
+                "popularity": 9
+              },
+              {
+                "num": "4",
+                "name": "ジーティーマジカル",
+                "jockey": "野畑凌",
+                "popularity": 4
+              },
+              {
+                "num": "5",
+                "name": "キタノマティーニ",
+                "jockey": "澤田龍哉",
+                "popularity": 6
+              },
+              {
+                "num": "6",
+                "name": "エレレラナキラ",
+                "jockey": "吉井章",
+                "popularity": 11
+              },
+              {
+                "num": "7",
+                "name": "ベイステート",
+                "jockey": "西優哉",
+                "popularity": 13
+              },
+              {
+                "num": "8",
+                "name": "シルバーマック",
+                "jockey": "中山遥人",
+                "popularity": 10
+              },
+              {
+                "num": "9",
+                "name": "ボビー",
+                "jockey": "藤本現暉",
+                "popularity": 12
+              },
+              {
+                "num": "10",
+                "name": "サヴォア",
+                "jockey": "櫻井光輔",
+                "popularity": 14
+              },
+              {
+                "num": "11",
+                "name": "シェーンプリマー",
+                "jockey": "杉山海波",
+                "popularity": 8
+              },
+              {
+                "num": "12",
+                "name": "メズマライズ",
+                "jockey": "和田譲治",
+                "popularity": 2
+              },
+              {
+                "num": "13",
+                "name": "ワイルドノブクン",
+                "jockey": "本田正重",
+                "popularity": 5
+              },
+              {
+                "num": "14",
+                "name": "マインゴールド",
+                "jockey": "岡村健司",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "アヤサンジョリーン",
+              "jockey": "西啓太",
+              "popularity": 1,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-15",
+                  "venue": "門別",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-05-14",
+                  "venue": "門別",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-06-20",
+                  "venue": "函館",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-19",
+                  "venue": "函館",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-19",
+                  "venue": "門別",
+                  "style": "chutan"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "サヴォア",
+              "jockey": "櫻井光輔",
+              "popularity": 14,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-12",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-03",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-15",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井8R 10/9",
+            "raceName": "金風特別競走(C1三)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ブラックタロー",
+                "jockey": "西啓太",
+                "popularity": 2
+              },
+              {
+                "num": "2",
+                "name": "ニンリル",
+                "jockey": "高橋優",
+                "popularity": 8
+              },
+              {
+                "num": "3",
+                "name": "エターナルヴァウ",
+                "jockey": "安藤洋一",
+                "popularity": 5
+              },
+              {
+                "num": "4",
+                "name": "ルガルバンダ",
+                "jockey": "Ｆ．ゴン",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "ミライヘノヒーロー",
+                "jockey": "和田譲治",
+                "popularity": 6
+              },
+              {
+                "num": "6",
+                "name": "ミスタージョン",
+                "jockey": "吉井章",
+                "popularity": 4
+              },
+              {
+                "num": "7",
+                "name": "ディアシンバ",
+                "jockey": "矢野貴之",
+                "popularity": 3
+              },
+              {
+                "num": "8",
+                "name": "ミノコクシュタルク",
+                "jockey": "達城龍次",
+                "popularity": 9
+              },
+              {
+                "num": "9",
+                "name": "エイシンネクタル",
+                "jockey": "中山遥人",
+                "popularity": 7
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ニンリル",
+              "jockey": "高橋優",
+              "popularity": 8,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-01",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-02",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "3",
+              "name": "エターナルヴァウ",
+              "jockey": "安藤洋一",
+              "popularity": 5,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-09-18",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "ディアシンバ",
+              "jockey": "矢野貴之",
+              "popularity": 3,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-13",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-04-29",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-06-12",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "9",
+              "name": "エイシンネクタル",
+              "jockey": "中山遥人",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-01",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-16",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "大井",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "大井10R 10/9",
+            "raceName": "神無月特別競走(C1三)",
+            "course": "ダート",
+            "distance": 1200,
+            "horses": [
+              {
+                "num": "1",
+                "name": "フレンドリーシップ",
+                "jockey": "野畑凌",
+                "popularity": 6
+              },
+              {
+                "num": "2",
+                "name": "ドピエッタ",
+                "jockey": "小野俊斗",
+                "popularity": 11
+              },
+              {
+                "num": "3",
+                "name": "イズジョーヒーロー",
+                "jockey": "西優哉",
+                "popularity": 10
+              },
+              {
+                "num": "4",
+                "name": "アフターレヴュー",
+                "jockey": "杉山海波",
+                "popularity": 5
+              },
+              {
+                "num": "5",
+                "name": "ヤマノウォーリア",
+                "jockey": "江里口裕",
+                "popularity": 7
+              },
+              {
+                "num": "6",
+                "name": "レヴェルトディオ",
+                "jockey": "和田譲治",
+                "popularity": 3
+              },
+              {
+                "num": "7",
+                "name": "サブノリョウマ",
+                "jockey": "石川駿介",
+                "popularity": 9
+              },
+              {
+                "num": "8",
+                "name": "ドナソレイ",
+                "jockey": "櫻井光輔",
+                "popularity": 13
+              },
+              {
+                "num": "9",
+                "name": "エーデルリッター",
+                "jockey": "藤田凌",
+                "popularity": 4
+              },
+              {
+                "num": "10",
+                "name": "ネフェルトゥム",
+                "jockey": "安藤洋一",
+                "popularity": 12
+              },
+              {
+                "num": "11",
+                "name": "マジシャンガール",
+                "jockey": "矢野貴之",
+                "popularity": 1
+              },
+              {
+                "num": "12",
+                "name": "ヴァンビー",
+                "jockey": "Ｆ．ゴン",
+                "popularity": 8
+              },
+              {
+                "num": "13",
+                "name": "ヘイシリン",
+                "jockey": "笹川翼",
+                "popularity": 2
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 3.575,
+              "flat": 1.0125,
+              "diff": 6.5875
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ドピエッタ",
+              "jockey": "小野俊斗",
+              "popularity": 11,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-30",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-21",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-12",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "3",
+              "name": "イズジョーヒーロー",
+              "jockey": "西優哉",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-29",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-12",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-06",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "chutan"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "ドナソレイ",
+              "jockey": "櫻井光輔",
+              "popularity": 13,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-18",
+                  "venue": "川崎",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-09",
+                  "venue": "川崎",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-28",
+                  "venue": "川崎",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "ネフェルトゥム",
+              "jockey": "安藤洋一",
+              "popularity": 12,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-16",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "笠松": {
+      "biasByCourse": {
+        "ダート": {
+          "bias": "front",
+          "source": "recent",
+          "daysUsed": 5,
+          "counts": {
+            "front": 14.149999999999999,
+            "flat": 3.3,
+            "diff": 7.1499999999999995
+          }
+        }
+      },
+      "races": [
+        {
+          "race": {
+            "name": "笠松1R 10/9",
+            "raceName": "C8組",
+            "course": "ダート",
+            "distance": 1580,
+            "horses": [
+              {
+                "num": "1",
+                "name": "トゥレイス",
+                "jockey": "塚本征吾",
+                "popularity": 1
+              },
+              {
+                "num": "2",
+                "name": "スッサンファースト",
+                "jockey": "赤津和希",
+                "popularity": 8
+              },
+              {
+                "num": "3",
+                "name": "エファルジェント",
+                "jockey": "馬渕繁治",
+                "popularity": 7
+              },
+              {
+                "num": "4",
+                "name": "クイーンズグリーン",
+                "jockey": "東川慎",
+                "popularity": 4
+              },
+              {
+                "num": "5",
+                "name": "メイショウトサンコ",
+                "jockey": "藤原幹生",
+                "popularity": 5
+              },
+              {
+                "num": "6",
+                "name": "ホワイトラビット",
+                "jockey": "井口裕貴",
+                "popularity": 3
+              },
+              {
+                "num": "7",
+                "name": "リアルケンチャン",
+                "jockey": "筒井勇介",
+                "popularity": 2
+              },
+              {
+                "num": "8",
+                "name": "ムビュリミュゴボカ",
+                "jockey": "明星晴大",
+                "popularity": 6
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "トゥレイス",
+              "jockey": "塚本征吾",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-26",
+                  "venue": "福島",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-04",
+                  "venue": "福島",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "リアルケンチャン",
+              "jockey": "筒井勇介",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-06-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "笠松",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松2R 10/9",
+            "raceName": "阪口幸治生誕&生還記念杯(C)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ビートウマザンマイ",
+                "jockey": "明星晴大",
+                "popularity": 2
+              },
+              {
+                "num": "2",
+                "name": "アイヴカムバック",
+                "jockey": "松本一心",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "ヴィルナタール",
+                "jockey": "細川智史",
+                "popularity": 7
+              },
+              {
+                "num": "4",
+                "name": "ヤマニンエルファバ",
+                "jockey": "渡辺竜也",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "ビービーラフター",
+                "jockey": "丸野勝虎",
+                "popularity": 4
+              },
+              {
+                "num": "6",
+                "name": "ココロエ",
+                "jockey": "東川慎",
+                "popularity": 5
+              },
+              {
+                "num": "7",
+                "name": "ラーリア",
+                "jockey": "馬渕繁治",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "ユウトザキンパツ",
+                "jockey": "加藤聡一",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "ビートウマザンマイ",
+              "jockey": "明星晴大",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "4",
+              "name": "ヤマニンエルファバ",
+              "jockey": "渡辺竜也",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-04",
+                  "venue": "阪神",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-19",
+                  "venue": "小倉",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-01",
+                  "venue": "中京",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松3R 10/9",
+            "raceName": "神谷美紗都☆誕生6か月記念(C)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ルベライトテソーロ",
+                "jockey": "塚本征吾",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "ツキノコブネ",
+                "jockey": "大原浩司",
+                "popularity": 2
+              },
+              {
+                "num": "3",
+                "name": "リュウセイコウテイ",
+                "jockey": "渡辺竜也",
+                "popularity": 1
+              },
+              {
+                "num": "4",
+                "name": "キタノアンシェル",
+                "jockey": "高木健",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "オメガヒストリー",
+                "jockey": "赤津和希",
+                "popularity": 3
+              },
+              {
+                "num": "6",
+                "name": "モモイロカタオモイ",
+                "jockey": "森島貴之",
+                "popularity": 6
+              },
+              {
+                "num": "7",
+                "name": "マリエンプラッツ",
+                "jockey": "阿部基嗣",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "マーゴットカーラ",
+                "jockey": "藤原幹生",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ツキノコブネ",
+              "jockey": "大原浩司",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-22",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松4R 10/9",
+            "raceName": "令和8年熊本地震被災地支援レース(C)",
+            "course": "ダート",
+            "distance": 1580,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ケンブリッジロス",
+                "jockey": "筒井勇介",
+                "popularity": 2
+              },
+              {
+                "num": "2",
+                "name": "サブノフクムスメ",
+                "jockey": "井口裕貴",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "アーリドラータ",
+                "jockey": "丸野勝虎",
+                "popularity": 4
+              },
+              {
+                "num": "4",
+                "name": "モーニングフジ",
+                "jockey": "東川慎",
+                "popularity": 8
+              },
+              {
+                "num": "5",
+                "name": "ケルティックハーツ",
+                "jockey": "加藤聡一",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "ネバーランドリーム",
+                "jockey": "望月洵輝",
+                "popularity": 6
+              },
+              {
+                "num": "7",
+                "name": "テルケンレングレー",
+                "jockey": "渡辺竜也",
+                "popularity": 5
+              },
+              {
+                "num": "8",
+                "name": "クリチャーシシー",
+                "jockey": "赤津和希",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "5",
+              "name": "ケルティックハーツ",
+              "jockey": "加藤聡一",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "笠松",
+                  "style": "chutan"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "クリチャーシシー",
+              "jockey": "赤津和希",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-22",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松5R 10/9",
+            "raceName": "C4組",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "エースオブスペーズ",
+                "jockey": "井口裕貴",
+                "popularity": 4
+              },
+              {
+                "num": "2",
+                "name": "サイモンカーチス",
+                "jockey": "塚本征吾",
+                "popularity": 1
+              },
+              {
+                "num": "3",
+                "name": "エイシンアザレア",
+                "jockey": "森島貴之",
+                "popularity": 2
+              },
+              {
+                "num": "4",
+                "name": "メイショウナナカゼ",
+                "jockey": "望月洵輝",
+                "popularity": 6
+              },
+              {
+                "num": "5",
+                "name": "キセキノクニ",
+                "jockey": "深澤杏花",
+                "popularity": 5
+              },
+              {
+                "num": "6",
+                "name": "マイクハージュ",
+                "jockey": "赤津和希",
+                "popularity": 7
+              },
+              {
+                "num": "7",
+                "name": "ダングラール",
+                "jockey": "松本一心",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "キタノヒコボシ",
+                "jockey": "筒井勇介",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "エイシンアザレア",
+              "jockey": "森島貴之",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-20",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松6R 10/9",
+            "raceName": "祝!千々和・澤島入籍記念(C)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "オーキッドレディ",
+                "jockey": "筒井勇介",
+                "popularity": 4
+              },
+              {
+                "num": "2",
+                "name": "ヒロノエクスカリバ",
+                "jockey": "加藤聡一",
+                "popularity": 5
+              },
+              {
+                "num": "3",
+                "name": "キョウエイウインド",
+                "jockey": "高木健",
+                "popularity": 9
+              },
+              {
+                "num": "4",
+                "name": "カミガミノウタゲ",
+                "jockey": "明星晴大",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "セブンスリーローズ",
+                "jockey": "森島貴之",
+                "popularity": 6
+              },
+              {
+                "num": "6",
+                "name": "モーモーブラウン",
+                "jockey": "塚本征吾",
+                "popularity": 1
+              },
+              {
+                "num": "7",
+                "name": "メイショウイタマエ",
+                "jockey": "向山牧",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "ホロキキ",
+                "jockey": "望月洵輝",
+                "popularity": 2
+              },
+              {
+                "num": "9",
+                "name": "ルークピオーネ",
+                "jockey": "赤津和希",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "オーキッドレディ",
+              "jockey": "筒井勇介",
+              "popularity": 4,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-01",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-14",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-29",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松7R 10/9",
+            "raceName": "第2回おにぎり270食達成記念(C)",
+            "course": "ダート",
+            "distance": 1580,
+            "horses": [
+              {
+                "num": "1",
+                "name": "チュウワアスコット",
+                "jockey": "望月洵輝",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "グランシャン",
+                "jockey": "渡辺竜也",
+                "popularity": 1
+              },
+              {
+                "num": "3",
+                "name": "ラヴーシュカ",
+                "jockey": "丸野勝虎",
+                "popularity": 6
+              },
+              {
+                "num": "4",
+                "name": "フレンドキング",
+                "jockey": "井口裕貴",
+                "popularity": 9
+              },
+              {
+                "num": "5",
+                "name": "メムエクラ",
+                "jockey": "阿部基嗣",
+                "popularity": 10
+              },
+              {
+                "num": "6",
+                "name": "ブルーエ",
+                "jockey": "塚本征吾",
+                "popularity": 2
+              },
+              {
+                "num": "7",
+                "name": "サンモスクテール",
+                "jockey": "藤原幹生",
+                "popularity": 4
+              },
+              {
+                "num": "8",
+                "name": "ナデシコザクラ",
+                "jockey": "筒井勇介",
+                "popularity": 3
+              },
+              {
+                "num": "9",
+                "name": "チャーミングドール",
+                "jockey": "馬渕繁治",
+                "popularity": 8
+              },
+              {
+                "num": "10",
+                "name": "テーオーライラ",
+                "jockey": "森島貴之",
+                "popularity": 7
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "チュウワアスコット",
+              "jockey": "望月洵輝",
+              "popularity": 5,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-10",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松8R 10/9",
+            "raceName": "B8組",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "エイシンジャンブル",
+                "jockey": "阿部基嗣",
+                "popularity": 1
+              },
+              {
+                "num": "2",
+                "name": "ヒルノセビリア",
+                "jockey": "明星晴大",
+                "popularity": 5
+              },
+              {
+                "num": "3",
+                "name": "マッチャンファイト",
+                "jockey": "東川慎",
+                "popularity": 6
+              },
+              {
+                "num": "4",
+                "name": "カレンアイバーソン",
+                "jockey": "加藤誓二",
+                "popularity": 9
+              },
+              {
+                "num": "5",
+                "name": "ミラクルム",
+                "jockey": "高木健",
+                "popularity": 8
+              },
+              {
+                "num": "6",
+                "name": "カントゥータ",
+                "jockey": "大原浩司",
+                "popularity": 2
+              },
+              {
+                "num": "7",
+                "name": "リックノワール",
+                "jockey": "馬渕繁治",
+                "popularity": 4
+              },
+              {
+                "num": "8",
+                "name": "ギンノアラナミ",
+                "jockey": "松本一心",
+                "popularity": 7
+              },
+              {
+                "num": "9",
+                "name": "モーモーレインボー",
+                "jockey": "井口裕貴",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "6",
+              "name": "カントゥータ",
+              "jockey": "大原浩司",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-10",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松9R 10/9",
+            "raceName": "B7組",
+            "course": "ダート",
+            "distance": 1580,
+            "horses": [
+              {
+                "num": "1",
+                "name": "チュウワギフト",
+                "jockey": "松本一心",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "ウィルソンウェイ",
+                "jockey": "赤津和希",
+                "popularity": 2
+              },
+              {
+                "num": "3",
+                "name": "チュウワジョーダン",
+                "jockey": "望月洵輝",
+                "popularity": 3
+              },
+              {
+                "num": "4",
+                "name": "レッドスウィング",
+                "jockey": "大原浩司",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "フローズンキス",
+                "jockey": "森島貴之",
+                "popularity": 6
+              },
+              {
+                "num": "6",
+                "name": "デアルーチェ",
+                "jockey": "阿部基嗣",
+                "popularity": 1
+              },
+              {
+                "num": "7",
+                "name": "マウンテンピオニー",
+                "jockey": "深澤杏花",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "マーゴットメネス",
+                "jockey": "塚本征吾",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "6",
+              "name": "デアルーチェ",
+              "jockey": "阿部基嗣",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-16",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-13",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-05-28",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-06-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-06-24",
+                  "venue": "笠松",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松10R 10/9",
+            "raceName": "B6組",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "カンナリリー",
+                "jockey": "赤津和希",
+                "popularity": 9
+              },
+              {
+                "num": "2",
+                "name": "ネオアマゾネス",
+                "jockey": "明星晴大",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "ゴーダンシング",
+                "jockey": "東川慎",
+                "popularity": 3
+              },
+              {
+                "num": "4",
+                "name": "ノアブラック",
+                "jockey": "高木健",
+                "popularity": 6
+              },
+              {
+                "num": "5",
+                "name": "スマートジュディ",
+                "jockey": "細川智史",
+                "popularity": 5
+              },
+              {
+                "num": "6",
+                "name": "マリエ",
+                "jockey": "藤原幹生",
+                "popularity": 4
+              },
+              {
+                "num": "7",
+                "name": "セイカユウヒ",
+                "jockey": "筒井勇介",
+                "popularity": 1
+              },
+              {
+                "num": "8",
+                "name": "アルマヘクトール",
+                "jockey": "馬渕繁治",
+                "popularity": 8
+              },
+              {
+                "num": "9",
+                "name": "ツインレイ",
+                "jockey": "塚本征吾",
+                "popularity": 2
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "ゴーダンシング",
+              "jockey": "東川慎",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-09",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松11R 10/9",
+            "raceName": "秋刀魚特別(C)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "グレートジーンズ",
+                "jockey": "細川智史",
+                "popularity": 2
+              },
+              {
+                "num": "2",
+                "name": "ヤナギバネバギバ",
+                "jockey": "森島貴之",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "リアルカイザー",
+                "jockey": "藤原幹生",
+                "popularity": 3
+              },
+              {
+                "num": "4",
+                "name": "マーレイン",
+                "jockey": "馬渕繁治",
+                "popularity": 8
+              },
+              {
+                "num": "5",
+                "name": "パレットフレイバー",
+                "jockey": "大原浩司",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "アースリーブラ",
+                "jockey": "丸野勝虎",
+                "popularity": 5
+              },
+              {
+                "num": "7",
+                "name": "ソルエパトリオット",
+                "jockey": "井口裕貴",
+                "popularity": 9
+              },
+              {
+                "num": "8",
+                "name": "ミミコチャン",
+                "jockey": "加藤聡一",
+                "popularity": 6
+              },
+              {
+                "num": "9",
+                "name": "オールマイタイム",
+                "jockey": "松本一心",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "8",
+              "name": "ミミコチャン",
+              "jockey": "加藤聡一",
+              "popularity": 6,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-09",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "笠松",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "笠松12R 10/9",
+            "raceName": "五平餅特別(C)",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "グッドロマンス",
+                "jockey": "東川慎",
+                "popularity": 8
+              },
+              {
+                "num": "2",
+                "name": "スザンナ",
+                "jockey": "赤津和希",
+                "popularity": 11
+              },
+              {
+                "num": "3",
+                "name": "カーシュジアン",
+                "jockey": "塚本征吾",
+                "popularity": 4
+              },
+              {
+                "num": "4",
+                "name": "メモリーフィルム",
+                "jockey": "加藤誓二",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "キミニメロメロ",
+                "jockey": "井口裕貴",
+                "popularity": 5
+              },
+              {
+                "num": "6",
+                "name": "アイオンザボール",
+                "jockey": "松本一心",
+                "popularity": 2
+              },
+              {
+                "num": "7",
+                "name": "タヤスソーレ",
+                "jockey": "加藤聡一",
+                "popularity": 10
+              },
+              {
+                "num": "8",
+                "name": "シバノテンテン",
+                "jockey": "筒井勇介",
+                "popularity": 6
+              },
+              {
+                "num": "9",
+                "name": "ペッシュプラット",
+                "jockey": "阿部基嗣",
+                "popularity": 9
+              },
+              {
+                "num": "10",
+                "name": "ドロップオブレイ",
+                "jockey": "渡辺竜也",
+                "popularity": 1
+              },
+              {
+                "num": "11",
+                "name": "ドナドナ",
+                "jockey": "望月洵輝",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 14.149999999999999,
+              "flat": 3.3,
+              "diff": 7.1499999999999995
+            }
+          },
+          "horses": [
+            {
+              "num": "4",
+              "name": "メモリーフィルム",
+              "jockey": "加藤誓二",
+              "popularity": 7,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-10",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "6",
+              "name": "アイオンザボール",
+              "jockey": "松本一心",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-09-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "タヤスソーレ",
+              "jockey": "加藤聡一",
+              "popularity": 10,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-14",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "シバノテンテン",
+              "jockey": "筒井勇介",
+              "popularity": 6,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-17",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "ドロップオブレイ",
+              "jockey": "渡辺竜也",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-08-11",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-22",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "11",
+              "name": "ドナドナ",
+              "jockey": "望月洵輝",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-08-25",
+                  "venue": "笠松",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-08",
+                  "venue": "笠松",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "園田": {
+      "biasByCourse": {
+        "ダート": {
+          "bias": "diff",
+          "source": "recent",
+          "daysUsed": 5,
+          "counts": {
+            "front": 1.9874999999999998,
+            "flat": 1.35,
+            "diff": 2.0125
+          }
+        }
+      },
+      "races": [
+        {
+          "race": {
+            "name": "園田1R 10/9",
+            "raceName": "C3三",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "サクセスカノン",
+                "jockey": "川原正一",
+                "popularity": 2
+              },
+              {
+                "num": "2",
+                "name": "ミストレビノ",
+                "jockey": "高畑皓一",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "ナヴィゲイター",
+                "jockey": "長尾翼玖",
+                "popularity": 10
+              },
+              {
+                "num": "4",
+                "name": "ダリ",
+                "jockey": "高橋洸佑",
+                "popularity": 9
+              },
+              {
+                "num": "5",
+                "name": "サバイブドーロ",
+                "jockey": "山本咲希",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "ヤシロスマイリー",
+                "jockey": "南部楓馬",
+                "popularity": 5
+              },
+              {
+                "num": "7",
+                "name": "ペイルブルードット",
+                "jockey": "佐々木世",
+                "popularity": 6
+              },
+              {
+                "num": "8",
+                "name": "ララアンセストラル",
+                "jockey": "杉浦健太",
+                "popularity": 3
+              },
+              {
+                "num": "9",
+                "name": "エイシンシャルマン",
+                "jockey": "塩津璃菜",
+                "popularity": 8
+              },
+              {
+                "num": "10",
+                "name": "タイキクロニクル",
+                "jockey": "廣瀬航",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "サクセスカノン",
+              "jockey": "川原正一",
+              "popularity": 2,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-05",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-19",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-31",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "2",
+              "name": "ミストレビノ",
+              "jockey": "高畑皓一",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-30",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "3",
+              "name": "ナヴィゲイター",
+              "jockey": "長尾翼玖",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-07",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-19",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "4",
+              "name": "ダリ",
+              "jockey": "高橋洸佑",
+              "popularity": 9,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-25",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "ペイルブルードット",
+              "jockey": "佐々木世",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-17",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-06",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-19",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田3R 10/9",
+            "raceName": "C2三",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ランボーリープ",
+                "jockey": "吉村智洋",
+                "popularity": 1
+              },
+              {
+                "num": "2",
+                "name": "ニシノオールマイト",
+                "jockey": "南部楓馬",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "コワモテハマー",
+                "jockey": "田野豊三",
+                "popularity": 4
+              },
+              {
+                "num": "4",
+                "name": "スマートカナートス",
+                "jockey": "井上幹太",
+                "popularity": 5
+              },
+              {
+                "num": "5",
+                "name": "イデアールマッチ",
+                "jockey": "廣瀬航",
+                "popularity": 3
+              },
+              {
+                "num": "6",
+                "name": "クロスノット",
+                "jockey": "永井孝典",
+                "popularity": 7
+              },
+              {
+                "num": "7",
+                "name": "アルリフラ",
+                "jockey": "大山真吾",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "エムザックドリーム",
+                "jockey": "塩津璃菜",
+                "popularity": 2
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "7",
+              "name": "アルリフラ",
+              "jockey": "大山真吾",
+              "popularity": 8,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-04",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-06-25",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-15",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-06",
+                  "venue": "園田",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-17",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田4R 10/9",
+            "raceName": "C1",
+            "course": "ダート",
+            "distance": 1700,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ボンヌーヴェル",
+                "jockey": "田野豊三",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "インオービット",
+                "jockey": "山本咲希",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "ベラジオハルカ",
+                "jockey": "吉村智洋",
+                "popularity": 2
+              },
+              {
+                "num": "4",
+                "name": "マカセナハレ",
+                "jockey": "下原理",
+                "popularity": 4
+              },
+              {
+                "num": "5",
+                "name": "ディザーヴユー",
+                "jockey": "小牧太",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "ファッシネイトパイ",
+                "jockey": "土方颯太",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "インオービット",
+              "jockey": "山本咲希",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-02",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-17",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田5R 10/9",
+            "raceName": "C2二",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "リンガスウォリアー",
+                "jockey": "土方颯太",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "リゴートゥー",
+                "jockey": "廣瀬航",
+                "popularity": 3
+              },
+              {
+                "num": "3",
+                "name": "グランワールド",
+                "jockey": "佐々木世",
+                "popularity": 4
+              },
+              {
+                "num": "4",
+                "name": "サイレントワルツ",
+                "jockey": "高橋洸佑",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "エルヴィオラ",
+                "jockey": "山本咲希",
+                "popularity": 8
+              },
+              {
+                "num": "6",
+                "name": "ヴィオマージュ",
+                "jockey": "山本屋太",
+                "popularity": 6
+              },
+              {
+                "num": "7",
+                "name": "ジャスティンゴッホ",
+                "jockey": "吉村智洋",
+                "popularity": 1
+              },
+              {
+                "num": "8",
+                "name": "テラシエスタ",
+                "jockey": "小牧太",
+                "popularity": 2
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "リンガスウォリアー",
+              "jockey": "土方颯太",
+              "popularity": 5,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-04",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-25",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-16",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-12",
+                  "venue": "園田",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "4",
+              "name": "サイレントワルツ",
+              "jockey": "高橋洸佑",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-19",
+                  "venue": "福島",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "6",
+              "name": "ヴィオマージュ",
+              "jockey": "山本屋太",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "ジャスティンゴッホ",
+              "jockey": "吉村智洋",
+              "popularity": 1,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-21",
+                  "venue": "阪神",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-04",
+                  "venue": "小倉",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "阪神",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田6R 10/9",
+            "raceName": "C2一",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "マイネルゼーロス",
+                "jockey": "廣瀬航",
+                "popularity": 3
+              },
+              {
+                "num": "2",
+                "name": "アイルヴィータ",
+                "jockey": "土方颯太",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "ジーティートゥルー",
+                "jockey": "小牧太",
+                "popularity": 4
+              },
+              {
+                "num": "4",
+                "name": "アーウイン",
+                "jockey": "小谷哲平",
+                "popularity": 8
+              },
+              {
+                "num": "5",
+                "name": "ナツミカンチャン",
+                "jockey": "田野豊三",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "オセアビシャイン",
+                "jockey": "渡瀬和幸",
+                "popularity": 6
+              },
+              {
+                "num": "7",
+                "name": "ベラジオカムイ",
+                "jockey": "竹村達也",
+                "popularity": 9
+              },
+              {
+                "num": "8",
+                "name": "ノリキング",
+                "jockey": "吉村智洋",
+                "popularity": 1
+              },
+              {
+                "num": "9",
+                "name": "レアリゼソンレーヴ",
+                "jockey": "永井孝典",
+                "popularity": 5
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "アイルヴィータ",
+              "jockey": "土方颯太",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "園田",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "6",
+              "name": "オセアビシャイン",
+              "jockey": "渡瀬和幸",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-09",
+                  "venue": "東京",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-09",
+                  "venue": "新潟",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田7R 10/9",
+            "raceName": "C3二",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "シロノクミキョク",
+                "jockey": "佐々木世",
+                "popularity": 8
+              },
+              {
+                "num": "2",
+                "name": "ケンシロウニセイ",
+                "jockey": "長尾翼玖",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "ブロンドエール",
+                "jockey": "塩津璃菜",
+                "popularity": 5
+              },
+              {
+                "num": "4",
+                "name": "セトノダイヤモンド",
+                "jockey": "永井孝典",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "チェリースカヤ",
+                "jockey": "高畑皓一",
+                "popularity": 10
+              },
+              {
+                "num": "6",
+                "name": "マイネルトラキア",
+                "jockey": "竹村達也",
+                "popularity": 3
+              },
+              {
+                "num": "7",
+                "name": "ニシノフォーリーフ",
+                "jockey": "南部楓馬",
+                "popularity": 9
+              },
+              {
+                "num": "8",
+                "name": "ピエスダルジャン",
+                "jockey": "廣瀬航",
+                "popularity": 2
+              },
+              {
+                "num": "9",
+                "name": "ジョイブラック",
+                "jockey": "小谷哲平",
+                "popularity": 4
+              },
+              {
+                "num": "10",
+                "name": "グルーヴグルーヴ",
+                "jockey": "渡瀬和幸",
+                "popularity": 7
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "シロノクミキョク",
+              "jockey": "佐々木世",
+              "popularity": 8,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-03",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-19",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-03",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-15",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-12",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "5",
+              "name": "チェリースカヤ",
+              "jockey": "高畑皓一",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-30",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "ニシノフォーリーフ",
+              "jockey": "南部楓馬",
+              "popularity": 9,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-01",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-17",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-30",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "9",
+              "name": "ジョイブラック",
+              "jockey": "小谷哲平",
+              "popularity": 4,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-17",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-07",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-21",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田8R 10/9",
+            "raceName": "C3一",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ベーディーナ",
+                "jockey": "井上幹太",
+                "popularity": 10
+              },
+              {
+                "num": "2",
+                "name": "シェナスカイ",
+                "jockey": "廣瀬航",
+                "popularity": 4
+              },
+              {
+                "num": "3",
+                "name": "ヴァイスリヒト",
+                "jockey": "田野豊三",
+                "popularity": 6
+              },
+              {
+                "num": "4",
+                "name": "シューペルブリアン",
+                "jockey": "松木大地",
+                "popularity": 5
+              },
+              {
+                "num": "5",
+                "name": "ノリウッドテール",
+                "jockey": "下原理",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "オールザレイジ",
+                "jockey": "山本咲希",
+                "popularity": 3
+              },
+              {
+                "num": "7",
+                "name": "グッドホース",
+                "jockey": "小谷哲平",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "ラムセスノムスメ",
+                "jockey": "小谷周平",
+                "popularity": 9
+              },
+              {
+                "num": "9",
+                "name": "カクヘン",
+                "jockey": "吉村智洋",
+                "popularity": 1
+              },
+              {
+                "num": "10",
+                "name": "フェイスナイン",
+                "jockey": "南部楓馬",
+                "popularity": 7
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "ベーディーナ",
+              "jockey": "井上幹太",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-25",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "笠松",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-14",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-02",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "グッドホース",
+              "jockey": "小谷哲平",
+              "popularity": 8,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-09",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-06",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "ラムセスノムスメ",
+              "jockey": "小谷周平",
+              "popularity": 9,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-25",
+                  "venue": "笠松",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-29",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-21",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-04",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "園田",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "フェイスナイン",
+              "jockey": "南部楓馬",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-22",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-05",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-19",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田9R 10/9",
+            "raceName": "A1A2",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ダイジョバナイ",
+                "jockey": "大山真吾",
+                "popularity": 3
+              },
+              {
+                "num": "2",
+                "name": "ドラゴンゴクウ",
+                "jockey": "廣瀬航",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "マダムホーク",
+                "jockey": "下原理",
+                "popularity": 5
+              },
+              {
+                "num": "4",
+                "name": "ベラジオウマムスコ",
+                "jockey": "永井孝典",
+                "popularity": 7
+              },
+              {
+                "num": "5",
+                "name": "ゼットシルヴィア",
+                "jockey": "小牧太",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "ベラジオソニック",
+                "jockey": "杉浦健太",
+                "popularity": 1
+              },
+              {
+                "num": "7",
+                "name": "タイキエクセロン",
+                "jockey": "田野豊三",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ドラゴンゴクウ",
+              "jockey": "廣瀬航",
+              "popularity": 6,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-03",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-17",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-29",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-20",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "4",
+              "name": "ベラジオウマムスコ",
+              "jockey": "永井孝典",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-07",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-05-04",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "タイキエクセロン",
+              "jockey": "田野豊三",
+              "popularity": 4,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-12",
+                  "venue": "阪神",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-06",
+                  "venue": "東京",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田10R 10/9",
+            "raceName": "シクラメン賞C1",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "クリノチャンプ",
+                "jockey": "佐々木世",
+                "popularity": 6
+              },
+              {
+                "num": "2",
+                "name": "アイトワ",
+                "jockey": "松木大地",
+                "popularity": 2
+              },
+              {
+                "num": "3",
+                "name": "ダイシンアレス",
+                "jockey": "下原理",
+                "popularity": 5
+              },
+              {
+                "num": "4",
+                "name": "ゼウスシルエット",
+                "jockey": "笹田知宏",
+                "popularity": 3
+              },
+              {
+                "num": "5",
+                "name": "ミストラルピンク",
+                "jockey": "小牧太",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "ナムラパピ",
+                "jockey": "塩津璃菜",
+                "popularity": 7
+              },
+              {
+                "num": "7",
+                "name": "ワンノブアス",
+                "jockey": "小谷哲平",
+                "popularity": null
+              },
+              {
+                "num": "8",
+                "name": "グローリアスキング",
+                "jockey": "永井孝典",
+                "popularity": 9
+              },
+              {
+                "num": "9",
+                "name": "グランマイース",
+                "jockey": "吉村智洋",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "6",
+              "name": "ナムラパピ",
+              "jockey": "塩津璃菜",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-24",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-06",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-19",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "ワンノブアス",
+              "jockey": "小谷哲平",
+              "popularity": null,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-25",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-09",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-12",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-09",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "グローリアスキング",
+              "jockey": "永井孝典",
+              "popularity": 9,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-14",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-03",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-06-19",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-02",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-24",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田11R 10/9",
+            "raceName": "尼崎市制110周年記念B1B2",
+            "course": "ダート",
+            "distance": 820,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ギフトバスケット",
+                "jockey": "笹田知宏",
+                "popularity": 3
+              },
+              {
+                "num": "2",
+                "name": "ベラドンナリリー",
+                "jockey": "吉村智洋",
+                "popularity": 2
+              },
+              {
+                "num": "3",
+                "name": "カレンマウラー",
+                "jockey": "小谷周平",
+                "popularity": 12
+              },
+              {
+                "num": "4",
+                "name": "ワンボイス",
+                "jockey": "南部楓馬",
+                "popularity": 10
+              },
+              {
+                "num": "5",
+                "name": "イントゥザフロー",
+                "jockey": "小牧太",
+                "popularity": 1
+              },
+              {
+                "num": "6",
+                "name": "アオイアルザード",
+                "jockey": "塩津璃菜",
+                "popularity": 9
+              },
+              {
+                "num": "7",
+                "name": "トンボ",
+                "jockey": "佐々木世",
+                "popularity": 11
+              },
+              {
+                "num": "8",
+                "name": "スマートビビット",
+                "jockey": "廣瀬航",
+                "popularity": 4
+              },
+              {
+                "num": "9",
+                "name": "ジャンマギアーナ",
+                "jockey": "山本屋太",
+                "popularity": 5
+              },
+              {
+                "num": "10",
+                "name": "スピネーカー",
+                "jockey": "井上幹太",
+                "popularity": 6
+              },
+              {
+                "num": "11",
+                "name": "シリアスヒッター",
+                "jockey": "田野豊三",
+                "popularity": 7
+              },
+              {
+                "num": "12",
+                "name": "カンタウッドテール",
+                "jockey": "竹村達也",
+                "popularity": 8
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "カレンマウラー",
+              "jockey": "小谷周平",
+              "popularity": 12,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-06-30",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-21",
+                  "venue": "大井",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-08-12",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-01",
+                  "venue": "大井",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-16",
+                  "venue": "大井",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "4",
+              "name": "ワンボイス",
+              "jockey": "南部楓馬",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-04-08",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-04-21",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "トンボ",
+              "jockey": "佐々木世",
+              "popularity": 11,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-05-29",
+                  "venue": "浦和",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-06-17",
+                  "venue": "川崎",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-09",
+                  "venue": "川崎",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-29",
+                  "venue": "川崎",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "園田12R 10/9",
+            "raceName": "サンゴ賞C3",
+            "course": "ダート",
+            "distance": 1230,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ラブリーローラー",
+                "jockey": "土方颯太",
+                "popularity": 7
+              },
+              {
+                "num": "2",
+                "name": "カネトシクラッチ",
+                "jockey": "小谷哲平",
+                "popularity": 1
+              },
+              {
+                "num": "3",
+                "name": "ユウバエ",
+                "jockey": "山本咲希",
+                "popularity": 6
+              },
+              {
+                "num": "4",
+                "name": "コアクト",
+                "jockey": "田野豊三",
+                "popularity": 11
+              },
+              {
+                "num": "5",
+                "name": "ハギノヴェルドン",
+                "jockey": "杉浦健太",
+                "popularity": 9
+              },
+              {
+                "num": "6",
+                "name": "ヒーローエフエー",
+                "jockey": "渡瀬和幸",
+                "popularity": 10
+              },
+              {
+                "num": "7",
+                "name": "フェスティヴルキナ",
+                "jockey": "永井孝典",
+                "popularity": 12
+              },
+              {
+                "num": "8",
+                "name": "クオンタムゲート",
+                "jockey": "竹村達也",
+                "popularity": 5
+              },
+              {
+                "num": "9",
+                "name": "ドリームハーモニー",
+                "jockey": "佐々木世",
+                "popularity": 8
+              },
+              {
+                "num": "10",
+                "name": "ナムラデュラン",
+                "jockey": "大山真吾",
+                "popularity": 3
+              },
+              {
+                "num": "11",
+                "name": "ワキノグラス",
+                "jockey": "松木大地",
+                "popularity": 2
+              },
+              {
+                "num": "12",
+                "name": "トライファン",
+                "jockey": "下原理",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "diff",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 1.9874999999999998,
+              "flat": 1.35,
+              "diff": 2.0125
+            }
+          },
+          "horses": [
+            {
+              "num": "1",
+              "name": "ラブリーローラー",
+              "jockey": "土方颯太",
+              "popularity": 7,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-23",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-20",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-25",
+                  "venue": "園田",
+                  "style": "koho"
+                }
+              ]
+            },
+            {
+              "num": "6",
+              "name": "ヒーローエフエー",
+              "jockey": "渡瀬和幸",
+              "popularity": 10,
+              "style": "koho",
+              "recentRaces": [
+                {
+                  "date": "2026-07-31",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-13",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-26",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-10",
+                  "venue": "園田",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-23",
+                  "venue": "園田",
+                  "style": "chutan"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

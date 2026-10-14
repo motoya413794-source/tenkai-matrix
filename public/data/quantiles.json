@@ -1,4 +1,36 @@
 {
+  "門別": {
+    "q1": 0.5928571428571429,
+    "q3": 0.8888888888888888,
+    "median": 0.75,
+    "sampleSize": 196,
+    "reliable": true,
+    "source": "own"
+  },
+  "川崎": {
+    "q1": 0.6666666666666666,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 85,
+    "reliable": true,
+    "source": "own"
+  },
+  "名古屋": {
+    "q1": 0.75,
+    "q3": 1,
+    "median": 0.875,
+    "sampleSize": 137,
+    "reliable": true,
+    "source": "own"
+  },
+  "園田": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.875,
+    "sampleSize": 177,
+    "reliable": true,
+    "source": "own"
+  },
   "盛岡": {
     "q1": 0.6,
     "q3": 0.9375,
@@ -63,38 +95,6 @@
     "reliable": true,
     "source": "own"
   },
-  "園田": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.875,
-    "sampleSize": 167,
-    "reliable": true,
-    "source": "own"
-  },
-  "門別": {
-    "q1": 0.6,
-    "q3": 0.8888888888888888,
-    "median": 0.75,
-    "sampleSize": 186,
-    "reliable": true,
-    "source": "own"
-  },
-  "名古屋": {
-    "q1": 0.75,
-    "q3": 1,
-    "median": 0.875,
-    "sampleSize": 127,
-    "reliable": true,
-    "source": "own"
-  },
-  "川崎": {
-    "q1": 0.6904761904761905,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 75,
-    "reliable": true,
-    "source": "own"
-  },
   "札幌": {
     "q1": 0.65625,
     "q3": 0.8888888888888888,
@@ -107,7 +107,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1233,
+    "sampleSize": 1273,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 28
@@ -116,7 +116,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1233,
+    "sampleSize": 1273,
     "reliable": true,
     "source": "pool"
   },
@@ -132,6 +132,6 @@
     "periodStart": "2026-08-14",
     "periodEnd": "2026-10-14",
     "months": 2,
-    "generatedAt": "2026-10-13T19:46:13.415Z"
+    "generatedAt": "2026-10-14T14:37:15.921Z"
   }
 }

@@ -1,8 +1,934 @@
 {
   "date": "2026-10-18",
   "dateDisplay": "10/18",
-  "generatedAt": "2026-10-16T15:58:41.554Z",
+  "generatedAt": "2026-10-17T14:51:48.305Z",
   "venues": {
+    "京都": {
+      "biasByCourse": {
+        "ダート": {
+          "bias": "front",
+          "source": "recent",
+          "daysUsed": 5,
+          "counts": {
+            "front": 4,
+            "flat": 2,
+            "diff": 1.5
+          }
+        },
+        "芝": {
+          "bias": "flat",
+          "source": "recent",
+          "daysUsed": 5,
+          "counts": {
+            "front": 4.5,
+            "flat": 4.625,
+            "diff": 2.625
+          }
+        }
+      },
+      "races": [
+        {
+          "race": {
+            "name": "京都1R 10/18",
+            "raceName": "2歳未勝利",
+            "course": "ダート",
+            "distance": 1200,
+            "horses": [
+              {
+                "num": "1",
+                "name": "アトランタ",
+                "jockey": "松山",
+                "popularity": 5
+              },
+              {
+                "num": "2",
+                "name": "ピコジャック",
+                "jockey": "吉村",
+                "popularity": 4
+              },
+              {
+                "num": "3",
+                "name": "ランズエンド",
+                "jockey": "富田",
+                "popularity": 6
+              },
+              {
+                "num": "4",
+                "name": "ツイストリフト",
+                "jockey": "西村淳",
+                "popularity": 12
+              },
+              {
+                "num": "5",
+                "name": "サンマルボニータ",
+                "jockey": "田口",
+                "popularity": 10
+              },
+              {
+                "num": "6",
+                "name": "セーズアマゾネス",
+                "jockey": "◇今村",
+                "popularity": 3
+              },
+              {
+                "num": "7",
+                "name": "キュウダイメ",
+                "jockey": "坂井",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "アワードリームス",
+                "jockey": "岩田望",
+                "popularity": 7
+              },
+              {
+                "num": "9",
+                "name": "ベイビーブラザー",
+                "jockey": "幸",
+                "popularity": 11
+              },
+              {
+                "num": "10",
+                "name": "ナイスウーマン",
+                "jockey": "佐々木",
+                "popularity": 9
+              },
+              {
+                "num": "11",
+                "name": "マルモリマイベスト",
+                "jockey": "泉谷",
+                "popularity": 1
+              },
+              {
+                "num": "12",
+                "name": "シャイック",
+                "jockey": "☆田山",
+                "popularity": 13
+              },
+              {
+                "num": "13",
+                "name": "レグルスロウ",
+                "jockey": "浜中",
+                "popularity": 2
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "6",
+              "name": "セーズアマゾネス",
+              "jockey": "◇今村",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-08-23",
+                  "venue": "中京",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "11",
+              "name": "マルモリマイベスト",
+              "jockey": "泉谷",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-04",
+                  "venue": "小倉",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-11",
+                  "venue": "小倉",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-08-15",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "13",
+              "name": "レグルスロウ",
+              "jockey": "浜中",
+              "popularity": 2,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-09-20",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "京都2R 10/18",
+            "raceName": "2歳未勝利",
+            "course": "ダート",
+            "distance": 1800,
+            "horses": [
+              {
+                "num": "1",
+                "name": "アイゼンフォルク",
+                "jockey": "松山",
+                "popularity": 3
+              },
+              {
+                "num": "2",
+                "name": "スナークルーベンス",
+                "jockey": "富田",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "アテンド",
+                "jockey": "中井",
+                "popularity": 7
+              },
+              {
+                "num": "4",
+                "name": "リズムオブサンダー",
+                "jockey": "ルメール",
+                "popularity": 1
+              },
+              {
+                "num": "5",
+                "name": "ダノンチャンピオン",
+                "jockey": "横山和",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "ボードゥロレーヌ",
+                "jockey": "吉村",
+                "popularity": 5
+              },
+              {
+                "num": "7",
+                "name": "アレストラウム",
+                "jockey": "西村淳",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "4",
+              "name": "リズムオブサンダー",
+              "jockey": "ルメール",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-08-23",
+                  "venue": "札幌",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "アレストラウム",
+              "jockey": "西村淳",
+              "popularity": 4,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-08-22",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-26",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "京都4R 10/18",
+            "raceName": "3歳以上1勝クラス",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ジーヴル",
+                "jockey": "藤懸",
+                "popularity": 13
+              },
+              {
+                "num": "2",
+                "name": "パーシャングレー",
+                "jockey": "幸",
+                "popularity": 7
+              },
+              {
+                "num": "3",
+                "name": "シオンダンサー",
+                "jockey": "北村友",
+                "popularity": 12
+              },
+              {
+                "num": "4",
+                "name": "ゴメンネジロー",
+                "jockey": "佐々木",
+                "popularity": 4
+              },
+              {
+                "num": "5",
+                "name": "シークザドリーム",
+                "jockey": "◇今村",
+                "popularity": 8
+              },
+              {
+                "num": "6",
+                "name": "シャインベック",
+                "jockey": "岩田康",
+                "popularity": 15
+              },
+              {
+                "num": "7",
+                "name": "ルージュバロン",
+                "jockey": "ルメール",
+                "popularity": 2
+              },
+              {
+                "num": "8",
+                "name": "キーンセンス",
+                "jockey": "西村淳",
+                "popularity": 9
+              },
+              {
+                "num": "9",
+                "name": "カフジクロミエ",
+                "jockey": "古川吉",
+                "popularity": 14
+              },
+              {
+                "num": "10",
+                "name": "ラブインアクション",
+                "jockey": "戸崎圭",
+                "popularity": 5
+              },
+              {
+                "num": "11",
+                "name": "ナムラティアラ",
+                "jockey": "松若",
+                "popularity": 11
+              },
+              {
+                "num": "12",
+                "name": "ハグレジョー",
+                "jockey": "岩田望",
+                "popularity": 1
+              },
+              {
+                "num": "13",
+                "name": "メティエダール",
+                "jockey": "横山和",
+                "popularity": 6
+              },
+              {
+                "num": "14",
+                "name": "キンダープンシュ",
+                "jockey": "松山",
+                "popularity": 3
+              },
+              {
+                "num": "15",
+                "name": "チリーゴールド",
+                "jockey": "菱田",
+                "popularity": 10
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "シオンダンサー",
+              "jockey": "北村友",
+              "popularity": 12,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-23",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-06-21",
+                  "venue": "東京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-26",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "5",
+              "name": "シークザドリーム",
+              "jockey": "◇今村",
+              "popularity": 8,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-09-27",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "ラブインアクション",
+              "jockey": "戸崎圭",
+              "popularity": 5,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-17",
+                  "venue": "京都",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-07-12",
+                  "venue": "小倉",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-26",
+                  "venue": "中京",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "13",
+              "name": "メティエダール",
+              "jockey": "横山和",
+              "popularity": 6,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-09-27",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "京都7R 10/18",
+            "raceName": "3歳以上1勝クラス",
+            "course": "ダート",
+            "distance": 1800,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ビナハイバン",
+                "jockey": "藤懸",
+                "popularity": 8
+              },
+              {
+                "num": "2",
+                "name": "ジャカルタバオ",
+                "jockey": "浜中",
+                "popularity": 3
+              },
+              {
+                "num": "3",
+                "name": "エイシンマールス",
+                "jockey": "荻野極",
+                "popularity": 1
+              },
+              {
+                "num": "4",
+                "name": "アンクルブラック",
+                "jockey": "◇今村",
+                "popularity": 5
+              },
+              {
+                "num": "5",
+                "name": "ゴールドコット",
+                "jockey": "角田和",
+                "popularity": 7
+              },
+              {
+                "num": "6",
+                "name": "シゲルオトヒメ",
+                "jockey": "幸",
+                "popularity": 9
+              },
+              {
+                "num": "7",
+                "name": "タガノアルトゥーラ",
+                "jockey": "吉村",
+                "popularity": 6
+              },
+              {
+                "num": "8",
+                "name": "バリオス",
+                "jockey": "ルメール",
+                "popularity": 2
+              },
+              {
+                "num": "9",
+                "name": "ゴンタ",
+                "jockey": "松若",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "エイシンマールス",
+              "jockey": "荻野極",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-06-21",
+                  "venue": "阪神",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-15",
+                  "venue": "中京",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "阪神",
+                  "style": "koho"
+                },
+                {
+                  "date": "2026-09-26",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "京都10R 10/18",
+            "raceName": "聚楽第特別",
+            "course": "ダート",
+            "distance": 1800,
+            "horses": [
+              {
+                "num": "1",
+                "name": "アールプロスト",
+                "jockey": "幸",
+                "popularity": 8
+              },
+              {
+                "num": "2",
+                "name": "ビルンバウム",
+                "jockey": "太宰",
+                "popularity": 6
+              },
+              {
+                "num": "3",
+                "name": "ポッドフォルク",
+                "jockey": "中井",
+                "popularity": 5
+              },
+              {
+                "num": "4",
+                "name": "ショーダンサー",
+                "jockey": "国分優",
+                "popularity": 2
+              },
+              {
+                "num": "5",
+                "name": "ヒデノレインボー",
+                "jockey": "藤懸",
+                "popularity": 9
+              },
+              {
+                "num": "6",
+                "name": "エンマ",
+                "jockey": "富田",
+                "popularity": 7
+              },
+              {
+                "num": "7",
+                "name": "フクキタテーラー",
+                "jockey": "菱田",
+                "popularity": 10
+              },
+              {
+                "num": "8",
+                "name": "ジョータルマエ",
+                "jockey": "鮫島良",
+                "popularity": 3
+              },
+              {
+                "num": "9",
+                "name": "ホウショウルクス",
+                "jockey": "松若",
+                "popularity": 1
+              },
+              {
+                "num": "10",
+                "name": "マハートマーベル",
+                "jockey": "吉村",
+                "popularity": 4
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "2",
+              "name": "ビルンバウム",
+              "jockey": "太宰",
+              "popularity": 6,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-04-19",
+                  "venue": "阪神",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-23",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-01",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-22",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-27",
+                  "venue": "阪神",
+                  "style": "chutan"
+                }
+              ]
+            },
+            {
+              "num": "3",
+              "name": "ポッドフォルク",
+              "jockey": "中井",
+              "popularity": 5,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-09-27",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "8",
+              "name": "ジョータルマエ",
+              "jockey": "鮫島良",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-17",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-31",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-26",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-10-03",
+                  "venue": "京都",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "9",
+              "name": "ホウショウルクス",
+              "jockey": "松若",
+              "popularity": 1,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-06-27",
+                  "venue": "小倉",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-07-12",
+                  "venue": "小倉",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "10",
+              "name": "マハートマーベル",
+              "jockey": "吉村",
+              "popularity": 4,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-09",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-05-30",
+                  "venue": "京都",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-06-28",
+                  "venue": "小倉",
+                  "style": "chutan"
+                },
+                {
+                  "date": "2026-07-26",
+                  "venue": "中京",
+                  "style": "koho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "race": {
+            "name": "京都12R 10/18",
+            "raceName": "桂川S",
+            "course": "ダート",
+            "distance": 1400,
+            "horses": [
+              {
+                "num": "1",
+                "name": "ホワイトガーベラ",
+                "jockey": "加藤",
+                "popularity": 12
+              },
+              {
+                "num": "2",
+                "name": "ハクサンアイリス",
+                "jockey": "西村淳",
+                "popularity": 5
+              },
+              {
+                "num": "3",
+                "name": "アスクアイルビゼア",
+                "jockey": "岩田康",
+                "popularity": 7
+              },
+              {
+                "num": "4",
+                "name": "シゲルソロソロ",
+                "jockey": "田口",
+                "popularity": 10
+              },
+              {
+                "num": "5",
+                "name": "モーニングマジック",
+                "jockey": "坂井",
+                "popularity": 2
+              },
+              {
+                "num": "6",
+                "name": "エムズマインド",
+                "jockey": "吉田隼",
+                "popularity": 9
+              },
+              {
+                "num": "7",
+                "name": "クーデール",
+                "jockey": "田山",
+                "popularity": 8
+              },
+              {
+                "num": "8",
+                "name": "ジョディーズマロン",
+                "jockey": "武豊",
+                "popularity": 4
+              },
+              {
+                "num": "9",
+                "name": "キタノソワレ",
+                "jockey": "佐々木",
+                "popularity": 11
+              },
+              {
+                "num": "10",
+                "name": "トゥロン",
+                "jockey": "幸",
+                "popularity": 1
+              },
+              {
+                "num": "11",
+                "name": "マッシャーブルム",
+                "jockey": "鮫島良",
+                "popularity": 6
+              },
+              {
+                "num": "12",
+                "name": "サンダーバース",
+                "jockey": "角田和",
+                "popularity": 3
+              }
+            ]
+          },
+          "bias": {
+            "bias": "front",
+            "source": "recent",
+            "daysUsed": 5,
+            "counts": {
+              "front": 4,
+              "flat": 2,
+              "diff": 1.5
+            }
+          },
+          "horses": [
+            {
+              "num": "3",
+              "name": "アスクアイルビゼア",
+              "jockey": "岩田康",
+              "popularity": 7,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-05-17",
+                  "venue": "東京",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "7",
+              "name": "クーデール",
+              "jockey": "田山",
+              "popularity": 8,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-07-11",
+                  "venue": "小倉",
+                  "style": "senkou"
+                }
+              ]
+            },
+            {
+              "num": "12",
+              "name": "サンダーバース",
+              "jockey": "角田和",
+              "popularity": 3,
+              "style": "senkou",
+              "recentRaces": [
+                {
+                  "date": "2026-06-14",
+                  "venue": "阪神",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-08-22",
+                  "venue": "中京",
+                  "style": "senkou"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "阪神",
+                  "style": "senkou"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "盛岡": {
       "biasByCourse": {
         "ダート": {
@@ -38,31 +964,31 @@
                 "num": "1",
                 "name": "イゲルド",
                 "jockey": "鈴木祐",
-                "popularity": 10
+                "popularity": 7
               },
               {
                 "num": "2",
                 "name": "コンバットベラ",
                 "jockey": "岩本怜",
-                "popularity": 9
+                "popularity": 10
               },
               {
                 "num": "3",
                 "name": "タカイチカレン",
                 "jockey": "南郷家全",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "4",
                 "name": "スティールシャトル",
                 "jockey": "山本聡哉",
-                "popularity": 3
+                "popularity": 2
               },
               {
                 "num": "5",
                 "name": "ターコイズテソーロ",
                 "jockey": "関本玲花",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "6",
@@ -74,7 +1000,7 @@
                 "num": "7",
                 "name": "ジュエルレジーナ",
                 "jockey": "小林凌",
-                "popularity": 4
+                "popularity": 6
               },
               {
                 "num": "8",
@@ -86,19 +1012,19 @@
                 "num": "9",
                 "name": "イヌボウノシオカゼ",
                 "jockey": "大坪慎",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "10",
                 "name": "ワイルドグレイス",
                 "jockey": "佐々木志",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "11",
                 "name": "モンサンジャスミン",
                 "jockey": "塚本涼人",
-                "popularity": 6
+                "popularity": 5
               }
             ]
           },
@@ -117,7 +1043,7 @@
               "num": "3",
               "name": "タカイチカレン",
               "jockey": "南郷家全",
-              "popularity": 7,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -155,7 +1081,7 @@
                 "num": "1",
                 "name": "エナジーイッセイ",
                 "jockey": "高松亮",
-                "popularity": 4
+                "popularity": 2
               },
               {
                 "num": "2",
@@ -173,37 +1099,37 @@
                 "num": "4",
                 "name": "ロジタイガー",
                 "jockey": "塚本涼人",
-                "popularity": 3
+                "popularity": 5
               },
               {
                 "num": "5",
                 "name": "ユウアイ",
                 "jockey": "岩本怜",
-                "popularity": 10
+                "popularity": 11
               },
               {
                 "num": "6",
                 "name": "サツキクローネ",
                 "jockey": "佐々木志",
-                "popularity": 11
+                "popularity": 10
               },
               {
                 "num": "7",
                 "name": "グロー",
                 "jockey": "山本聡紀",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "8",
                 "name": "イコミキマル",
                 "jockey": "高橋悠里",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "9",
                 "name": "オンザギャラクシー",
                 "jockey": "山本政聡",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "10",
@@ -215,7 +1141,7 @@
                 "num": "11",
                 "name": "エリオステモン",
                 "jockey": "菅原辰徳",
-                "popularity": 5
+                "popularity": 4
               }
             ]
           },
@@ -234,7 +1160,7 @@
               "num": "1",
               "name": "エナジーイッセイ",
               "jockey": "高松亮",
-              "popularity": 4,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -289,7 +1215,7 @@
                 "num": "3",
                 "name": "ジャストキュート",
                 "jockey": "山本政聡",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "4",
@@ -301,13 +1227,13 @@
                 "num": "5",
                 "name": "ブラックアピス",
                 "jockey": "坂井瑛音",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "6",
                 "name": "ライヴギムレット",
                 "jockey": "塚本涼人",
-                "popularity": 4
+                "popularity": 5
               },
               {
                 "num": "7",
@@ -331,7 +1257,7 @@
                 "num": "10",
                 "name": "カフラー",
                 "jockey": "大坪慎",
-                "popularity": 3
+                "popularity": 2
               },
               {
                 "num": "11",
@@ -356,7 +1282,7 @@
               "num": "3",
               "name": "ジャストキュート",
               "jockey": "山本政聡",
-              "popularity": 2,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -399,19 +1325,19 @@
                 "num": "1",
                 "name": "ミリオンジュピター",
                 "jockey": "山本政聡",
-                "popularity": 6
+                "popularity": 4
               },
               {
                 "num": "2",
                 "name": "エマーブル",
                 "jockey": "山本聡紀",
-                "popularity": 7
+                "popularity": 6
               },
               {
                 "num": "3",
                 "name": "ヒルダズトルーパー",
                 "jockey": "菅原辰徳",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "4",
@@ -423,13 +1349,13 @@
                 "num": "5",
                 "name": "ユウユウジュレップ",
                 "jockey": "佐々木志",
-                "popularity": 4
+                "popularity": 5
               },
               {
                 "num": "6",
                 "name": "ササキンライラック",
                 "jockey": "山本聡哉",
-                "popularity": 3
+                "popularity": 9
               },
               {
                 "num": "7",
@@ -441,13 +1367,13 @@
                 "num": "8",
                 "name": "キミノスキナアイス",
                 "jockey": "斉藤友香",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "9",
                 "name": "ミズサンウィズダム",
                 "jockey": "村上忍",
-                "popularity": 5
+                "popularity": 3
               },
               {
                 "num": "10",
@@ -472,7 +1398,7 @@
               "num": "1",
               "name": "ミリオンジュピター",
               "jockey": "山本政聡",
-              "popularity": 6,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -506,7 +1432,7 @@
               "num": "3",
               "name": "ヒルダズトルーパー",
               "jockey": "菅原辰徳",
-              "popularity": 8,
+              "popularity": 7,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -520,7 +1446,7 @@
               "num": "8",
               "name": "キミノスキナアイス",
               "jockey": "斉藤友香",
-              "popularity": 9,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -577,13 +1503,13 @@
                 "num": "1",
                 "name": "エマリオンレイ",
                 "jockey": "大坪慎",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "2",
                 "name": "ベルベストランナー",
                 "jockey": "山本聡哉",
-                "popularity": 6
+                "popularity": 7
               },
               {
                 "num": "3",
@@ -619,7 +1545,7 @@
                 "num": "8",
                 "name": "ラルルジェンヌ",
                 "jockey": "高松亮",
-                "popularity": 3
+                "popularity": 5
               },
               {
                 "num": "9",
@@ -631,19 +1557,19 @@
                 "num": "10",
                 "name": "コロッセウム",
                 "jockey": "山本政聡",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "11",
                 "name": "ソランチャン",
                 "jockey": "坂井瑛音",
-                "popularity": 5
+                "popularity": 3
               },
               {
                 "num": "12",
                 "name": "カレンルシェルブル",
                 "jockey": "菅原辰徳",
-                "popularity": 9
+                "popularity": 6
               }
             ]
           },
@@ -662,7 +1588,7 @@
               "num": "1",
               "name": "エマリオンレイ",
               "jockey": "大坪慎",
-              "popularity": 7,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -720,7 +1646,7 @@
               "num": "11",
               "name": "ソランチャン",
               "jockey": "坂井瑛音",
-              "popularity": 5,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -758,7 +1684,7 @@
                 "num": "1",
                 "name": "キタノブリッジ",
                 "jockey": "岩本怜",
-                "popularity": 5
+                "popularity": 8
               },
               {
                 "num": "2",
@@ -770,7 +1696,7 @@
                 "num": "3",
                 "name": "アニマルクィーン",
                 "jockey": "大坪慎",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "4",
@@ -782,7 +1708,7 @@
                 "num": "5",
                 "name": "グランクロワ",
                 "jockey": "阿部英俊",
-                "popularity": 7
+                "popularity": 6
               },
               {
                 "num": "6",
@@ -800,7 +1726,7 @@
                 "num": "8",
                 "name": "パルピタシオン",
                 "jockey": "山本聡紀",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "9",
@@ -818,13 +1744,13 @@
                 "num": "11",
                 "name": "ワイドカイゼリン",
                 "jockey": "坂井瑛音",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "12",
                 "name": "タイキモンストル",
                 "jockey": "佐々木志",
-                "popularity": 4
+                "popularity": 3
               }
             ]
           },
@@ -877,7 +1803,7 @@
               "num": "8",
               "name": "パルピタシオン",
               "jockey": "山本聡紀",
-              "popularity": 3,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -932,13 +1858,13 @@
                 "num": "3",
                 "name": "ビアフォーナウ",
                 "jockey": "小林凌",
-                "popularity": 3
+                "popularity": 6
               },
               {
                 "num": "4",
                 "name": "セイウォリアー",
                 "jockey": "高橋悠里",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "5",
@@ -956,19 +1882,19 @@
                 "num": "7",
                 "name": "カイトリヒト",
                 "jockey": "高松亮",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "8",
                 "name": "サンエイウォリアー",
                 "jockey": "村上忍",
-                "popularity": 5
+                "popularity": 3
               },
               {
                 "num": "9",
                 "name": "サスケベラ",
                 "jockey": "菅原辰徳",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "10",
@@ -993,7 +1919,7 @@
               "num": "8",
               "name": "サンエイウォリアー",
               "jockey": "村上忍",
-              "popularity": 5,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1060,7 +1986,7 @@
                 "num": "1",
                 "name": "ラヴェイ",
                 "jockey": "山本政聡",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "2",
@@ -1072,7 +1998,7 @@
                 "num": "3",
                 "name": "ゼットサンダー",
                 "jockey": "高橋悠里",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "4",
@@ -1090,19 +2016,19 @@
                 "num": "6",
                 "name": "クイーンカード",
                 "jockey": "小林凌",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "7",
                 "name": "ブリスタイム",
                 "jockey": "塚本涼人",
-                "popularity": 4
+                "popularity": 6
               },
               {
                 "num": "8",
                 "name": "スマートフレイヤ",
                 "jockey": "高松亮",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "9",
@@ -1167,7 +2093,7 @@
               "num": "6",
               "name": "クイーンカード",
               "jockey": "小林凌",
-              "popularity": 8,
+              "popularity": 7,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1201,7 +2127,7 @@
               "num": "8",
               "name": "スマートフレイヤ",
               "jockey": "高松亮",
-              "popularity": 7,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1302,7 +2228,7 @@
                 "num": "1",
                 "name": "グローラヴェンコ",
                 "jockey": "石川倭",
-                "popularity": 7
+                "popularity": 5
               },
               {
                 "num": "2",
@@ -1320,13 +2246,13 @@
                 "num": "4",
                 "name": "アドマイヤルプス",
                 "jockey": "山本政聡",
-                "popularity": 9
+                "popularity": 6
               },
               {
                 "num": "5",
                 "name": "ナムラボス",
                 "jockey": "鈴木祐",
-                "popularity": 6
+                "popularity": 10
               },
               {
                 "num": "6",
@@ -1344,7 +2270,7 @@
                 "num": "8",
                 "name": "アンラコル",
                 "jockey": "菅原辰徳",
-                "popularity": 10
+                "popularity": 9
               },
               {
                 "num": "9",
@@ -1356,7 +2282,7 @@
                 "num": "10",
                 "name": "ゲンパチプライド",
                 "jockey": "村上忍",
-                "popularity": 5
+                "popularity": 7
               },
               {
                 "num": "11",
@@ -1381,7 +2307,7 @@
               "num": "1",
               "name": "グローラヴェンコ",
               "jockey": "石川倭",
-              "popularity": 7,
+              "popularity": 5,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1550,31 +2476,31 @@
                 "num": "1",
                 "name": "タカマキナイン",
                 "jockey": "佐々木志",
-                "popularity": 12
+                "popularity": 11
               },
               {
                 "num": "2",
                 "name": "サンエイフローラ",
                 "jockey": "塚本涼人",
-                "popularity": 8
+                "popularity": 6
               },
               {
                 "num": "3",
                 "name": "ニムロッド",
                 "jockey": "山本聡紀",
-                "popularity": 11
+                "popularity": 12
               },
               {
                 "num": "4",
                 "name": "ファイトレーヴ",
                 "jockey": "高松亮",
-                "popularity": 7
+                "popularity": 10
               },
               {
                 "num": "5",
                 "name": "セイテイサウザー",
                 "jockey": "高橋悠里",
-                "popularity": 6
+                "popularity": 7
               },
               {
                 "num": "6",
@@ -1592,7 +2518,7 @@
                 "num": "8",
                 "name": "タカマキエイト",
                 "jockey": "石川倭",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "9",
@@ -1604,19 +2530,19 @@
                 "num": "10",
                 "name": "ゼノグレイス",
                 "jockey": "村上忍",
-                "popularity": 4
+                "popularity": 3
               },
               {
                 "num": "11",
                 "name": "マツリダゲンキマン",
                 "jockey": "阿部英俊",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "12",
                 "name": "ベラジオエヴァンス",
                 "jockey": "鈴木祐",
-                "popularity": 10
+                "popularity": 9
               }
             ]
           },
@@ -1635,7 +2561,7 @@
               "num": "1",
               "name": "タカマキナイン",
               "jockey": "佐々木志",
-              "popularity": 12,
+              "popularity": 11,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1669,7 +2595,7 @@
               "num": "2",
               "name": "サンエイフローラ",
               "jockey": "塚本涼人",
-              "popularity": 8,
+              "popularity": 6,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1761,7 +2687,7 @@
               "num": "10",
               "name": "ゼノグレイス",
               "jockey": "村上忍",
-              "popularity": 4,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1795,7 +2721,7 @@
               "num": "11",
               "name": "マツリダゲンキマン",
               "jockey": "阿部英俊",
-              "popularity": 3,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -1998,7 +2924,7 @@
                 "num": "1",
                 "name": "ティアップファイト",
                 "jockey": "柴田勇真",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "2",
@@ -2010,13 +2936,13 @@
                 "num": "3",
                 "name": "バーニングフレーム",
                 "jockey": "沖静男",
-                "popularity": 2
+                "popularity": 5
               },
               {
                 "num": "4",
                 "name": "ソルセルリ",
                 "jockey": "松戸政也",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "5",
@@ -2040,7 +2966,7 @@
                 "num": "8",
                 "name": "キトゥンズシルバー",
                 "jockey": "米倉知",
-                "popularity": 5
+                "popularity": 2
               },
               {
                 "num": "9",
@@ -2065,7 +2991,7 @@
               "num": "4",
               "name": "ソルセルリ",
               "jockey": "松戸政也",
-              "popularity": 8,
+              "popularity": 9,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2099,7 +3025,7 @@
               "num": "8",
               "name": "キトゥンズシルバー",
               "jockey": "米倉知",
-              "popularity": 5,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2160,7 +3086,7 @@
                 "num": "4",
                 "name": "ウインラブソング",
                 "jockey": "中島龍也",
-                "popularity": 2
+                "popularity": 1
               },
               {
                 "num": "5",
@@ -2172,7 +3098,7 @@
                 "num": "6",
                 "name": "ライツェントライゼ",
                 "jockey": "加藤翔馬",
-                "popularity": 1
+                "popularity": 2
               },
               {
                 "num": "7",
@@ -2286,7 +3212,7 @@
                 "num": "1",
                 "name": "ミナム",
                 "jockey": "柴田勇真",
-                "popularity": 4
+                "popularity": 6
               },
               {
                 "num": "2",
@@ -2304,7 +3230,7 @@
                 "num": "4",
                 "name": "カロヤカ",
                 "jockey": "栗原大河",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "5",
@@ -2316,7 +3242,7 @@
                 "num": "6",
                 "name": "スターワンフジサン",
                 "jockey": "望月洵輝",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "7",
@@ -2341,7 +3267,7 @@
               "num": "1",
               "name": "ミナム",
               "jockey": "柴田勇真",
-              "popularity": 4,
+              "popularity": 6,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2369,7 +3295,7 @@
                 "num": "1",
                 "name": "リンネノハナドケイ",
                 "jockey": "望月洵輝",
-                "popularity": 2
+                "popularity": 1
               },
               {
                 "num": "2",
@@ -2411,7 +3337,7 @@
                 "num": "8",
                 "name": "リケアサルサ",
                 "jockey": "吉原寛人",
-                "popularity": 1
+                "popularity": 2
               }
             ]
           },
@@ -2531,7 +3457,7 @@
               "num": "8",
               "name": "リケアサルサ",
               "jockey": "吉原寛人",
-              "popularity": 1,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2554,13 +3480,13 @@
                 "num": "1",
                 "name": "エースレイジング",
                 "jockey": "田知弘久",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "2",
                 "name": "トップタルマエ",
                 "jockey": "松戸政也",
-                "popularity": 6
+                "popularity": 7
               },
               {
                 "num": "3",
@@ -2584,7 +3510,7 @@
                 "num": "6",
                 "name": "ハガネ",
                 "jockey": "魚住謙心",
-                "popularity": 5
+                "popularity": 6
               },
               {
                 "num": "7",
@@ -2602,7 +3528,7 @@
                 "num": "9",
                 "name": "ベルウッドブラボー",
                 "jockey": "米倉知",
-                "popularity": 8
+                "popularity": 5
               }
             ]
           },
@@ -2664,13 +3590,13 @@
                 "num": "1",
                 "name": "タケウチビー",
                 "jockey": "吉原寛人",
-                "popularity": 4
+                "popularity": 2
               },
               {
                 "num": "2",
                 "name": "イサムダイヤモンド",
                 "jockey": "中島龍也",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "3",
@@ -2688,13 +3614,13 @@
                 "num": "5",
                 "name": "プロスペロ",
                 "jockey": "加藤翔馬",
-                "popularity": 5
+                "popularity": 6
               },
               {
                 "num": "6",
                 "name": "リュウジンオー",
                 "jockey": "吉田晃浩",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "7",
@@ -2706,19 +3632,19 @@
                 "num": "8",
                 "name": "ナックステート",
                 "jockey": "青柳正義",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "9",
                 "name": "ラストヨンマル",
                 "jockey": "魚住謙心",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "10",
                 "name": "モーモークローム",
                 "jockey": "田知弘久",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "11",
@@ -2743,7 +3669,7 @@
               "num": "5",
               "name": "プロスペロ",
               "jockey": "加藤翔馬",
-              "popularity": 5,
+              "popularity": 6,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2777,7 +3703,7 @@
               "num": "6",
               "name": "リュウジンオー",
               "jockey": "吉田晃浩",
-              "popularity": 2,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2811,7 +3737,7 @@
               "num": "9",
               "name": "ラストヨンマル",
               "jockey": "魚住謙心",
-              "popularity": 8,
+              "popularity": 9,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2845,7 +3771,7 @@
               "num": "10",
               "name": "モーモークローム",
               "jockey": "田知弘久",
-              "popularity": 6,
+              "popularity": 5,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2888,61 +3814,61 @@
                 "num": "1",
                 "name": "ヨシノダイセン",
                 "jockey": "栗原大河",
-                "popularity": 1
+                "popularity": 2
               },
               {
                 "num": "2",
                 "name": "ナムラタタ",
                 "jockey": "田野豊三",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "3",
                 "name": "イルミネーター",
                 "jockey": "魚住謙心",
-                "popularity": 10
+                "popularity": 9
               },
               {
                 "num": "4",
                 "name": "サクラトゥジュール",
                 "jockey": "青柳正義",
-                "popularity": 4
+                "popularity": 8
               },
               {
                 "num": "5",
                 "name": "ジャックオレンジ",
                 "jockey": "中島龍也",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "6",
                 "name": "ストライクオン",
                 "jockey": "望月洵輝",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "7",
                 "name": "ジュゲムーン",
                 "jockey": "加藤翔馬",
-                "popularity": 5
+                "popularity": 3
               },
               {
                 "num": "8",
                 "name": "ハクサンパイオニア",
                 "jockey": "吉原寛人",
-                "popularity": 7
+                "popularity": 1
               },
               {
                 "num": "9",
                 "name": "ベルダーイメル",
                 "jockey": "下原理",
-                "popularity": 2
+                "popularity": 6
               },
               {
                 "num": "10",
                 "name": "トゥルーバローズ",
                 "jockey": "米倉知",
-                "popularity": 9
+                "popularity": 10
               }
             ]
           },
@@ -2961,7 +3887,7 @@
               "num": "8",
               "name": "ハクサンパイオニア",
               "jockey": "吉原寛人",
-              "popularity": 7,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -2990,7 +3916,7 @@
               "num": "10",
               "name": "トゥルーバローズ",
               "jockey": "米倉知",
-              "popularity": 9,
+              "popularity": 10,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3189,9 +4115,9 @@
           "source": "recent",
           "daysUsed": 5,
           "counts": {
-            "front": 14.799999999999999,
-            "flat": 0.7,
-            "diff": 4.65
+            "front": 11.2,
+            "flat": 1.8499999999999999,
+            "diff": 3.5000000000000004
           }
         }
       },
@@ -3213,7 +4139,7 @@
                 "num": "2",
                 "name": "ビッグバンド",
                 "jockey": "多田羅誠",
-                "popularity": 4
+                "popularity": 2
               },
               {
                 "num": "3",
@@ -3231,25 +4157,25 @@
                 "num": "5",
                 "name": "メイショウハボマイ",
                 "jockey": "山崎雅由",
-                "popularity": 1
+                "popularity": 3
               },
               {
                 "num": "6",
                 "name": "ダイシンゲキ",
                 "jockey": "上田将司",
-                "popularity": 8
+                "popularity": null
               },
               {
                 "num": "7",
                 "name": "リバティフレイム",
                 "jockey": "郷間勇太",
-                "popularity": 3
+                "popularity": 1
               },
               {
                 "num": "8",
                 "name": "グリントリッター",
                 "jockey": "岡村卓弥",
-                "popularity": 2
+                "popularity": 4
               },
               {
                 "num": "9",
@@ -3264,9 +4190,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -3274,7 +4200,7 @@
               "num": "2",
               "name": "ビッグバンド",
               "jockey": "多田羅誠",
-              "popularity": 4,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3308,7 +4234,7 @@
               "num": "7",
               "name": "リバティフレイム",
               "jockey": "郷間勇太",
-              "popularity": 3,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3342,7 +4268,7 @@
               "num": "8",
               "name": "グリントリッター",
               "jockey": "岡村卓弥",
-              "popularity": 2,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3385,13 +4311,13 @@
                 "num": "1",
                 "name": "グッバイウェーブ",
                 "jockey": "濱尚美",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "2",
                 "name": "マッハレイジング",
                 "jockey": "近藤翔月",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "3",
@@ -3439,13 +4365,13 @@
                 "num": "10",
                 "name": "リライトヒストリー",
                 "jockey": "上田将司",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "11",
                 "name": "バンドネオン",
                 "jockey": "永森大智",
-                "popularity": 4
+                "popularity": 3
               }
             ]
           },
@@ -3454,9 +4380,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -3464,7 +4390,7 @@
               "num": "1",
               "name": "グッバイウェーブ",
               "jockey": "濱尚美",
-              "popularity": 7,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3634,7 +4560,7 @@
                 "num": "2",
                 "name": "ナムラルッコラ",
                 "jockey": "濱尚美",
-                "popularity": 9
+                "popularity": 7
               },
               {
                 "num": "3",
@@ -3646,13 +4572,13 @@
                 "num": "4",
                 "name": "ハピアーザンエバー",
                 "jockey": "永森大智",
-                "popularity": 1
+                "popularity": 2
               },
               {
                 "num": "5",
                 "name": "ダルムシュタット",
                 "jockey": "多田羅誠",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "6",
@@ -3664,25 +4590,25 @@
                 "num": "7",
                 "name": "ターニーノーブル",
                 "jockey": "郷間勇太",
-                "popularity": 4
+                "popularity": 3
               },
               {
                 "num": "8",
                 "name": "キーチデッドミラー",
                 "jockey": "宮川実",
-                "popularity": 3
+                "popularity": 1
               },
               {
                 "num": "9",
                 "name": "ライトスリー",
                 "jockey": "井上瑛太",
-                "popularity": 2
+                "popularity": 4
               },
               {
                 "num": "10",
                 "name": "ドンカルロ",
                 "jockey": "山崎雅由",
-                "popularity": 8
+                "popularity": 9
               }
             ]
           },
@@ -3691,9 +4617,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -3701,7 +4627,7 @@
               "num": "7",
               "name": "ターニーノーブル",
               "jockey": "郷間勇太",
-              "popularity": 4,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3735,7 +4661,7 @@
               "num": "8",
               "name": "キーチデッドミラー",
               "jockey": "宮川実",
-              "popularity": 3,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3784,7 +4710,7 @@
                 "num": "2",
                 "name": "グランパリッシュ",
                 "jockey": "上田将司",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "3",
@@ -3796,7 +4722,7 @@
                 "num": "4",
                 "name": "スノークルーズ",
                 "jockey": "木村直輝",
-                "popularity": 4
+                "popularity": 6
               },
               {
                 "num": "5",
@@ -3808,7 +4734,7 @@
                 "num": "6",
                 "name": "トーアグッドラック",
                 "jockey": "畑中信司",
-                "popularity": 8
+                "popularity": 7
               },
               {
                 "num": "7",
@@ -3832,13 +4758,13 @@
                 "num": "10",
                 "name": "トーケンレナン",
                 "jockey": "近藤翔月",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "11",
                 "name": "アークオブライフ",
                 "jockey": "多田羅誠",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "12",
@@ -3853,9 +4779,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -3897,7 +4823,7 @@
               "num": "4",
               "name": "スノークルーズ",
               "jockey": "木村直輝",
-              "popularity": 4,
+              "popularity": 6,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3965,7 +4891,7 @@
               "num": "10",
               "name": "トーケンレナン",
               "jockey": "近藤翔月",
-              "popularity": 5,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -3999,7 +4925,7 @@
               "num": "11",
               "name": "アークオブライフ",
               "jockey": "多田羅誠",
-              "popularity": 6,
+              "popularity": 5,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -4105,9 +5031,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -4205,7 +5131,7 @@
                 "num": "4",
                 "name": "バシリス",
                 "jockey": "近藤翔月",
-                "popularity": 1
+                "popularity": 3
               },
               {
                 "num": "5",
@@ -4229,7 +5155,7 @@
                 "num": "8",
                 "name": "リコーシーウルフ",
                 "jockey": "宮川実",
-                "popularity": 2
+                "popularity": 1
               },
               {
                 "num": "9",
@@ -4247,7 +5173,7 @@
                 "num": "11",
                 "name": "クリノドラゴン",
                 "jockey": "多田羅誠",
-                "popularity": 3
+                "popularity": 2
               }
             ]
           },
@@ -4256,9 +5182,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -4334,7 +5260,7 @@
               "num": "4",
               "name": "バシリス",
               "jockey": "近藤翔月",
-              "popularity": 1,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -4435,7 +5361,7 @@
                 "num": "5",
                 "name": "テンカハル",
                 "jockey": "多田羅誠",
-                "popularity": 3
+                "popularity": 6
               },
               {
                 "num": "6",
@@ -4447,7 +5373,7 @@
                 "num": "7",
                 "name": "ウォーターハウス",
                 "jockey": "井上瑛太",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "8",
@@ -4471,7 +5397,7 @@
                 "num": "11",
                 "name": "プレジール",
                 "jockey": "宮川実",
-                "popularity": 5
+                "popularity": 3
               },
               {
                 "num": "12",
@@ -4486,9 +5412,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -4554,7 +5480,7 @@
               "num": "11",
               "name": "プレジール",
               "jockey": "宮川実",
-              "popularity": 5,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -4597,13 +5523,13 @@
                 "num": "1",
                 "name": "アリアルブラック",
                 "jockey": "近藤翔月",
-                "popularity": 7
+                "popularity": 8
               },
               {
                 "num": "2",
                 "name": "ノーブルラン",
                 "jockey": "郷間勇太",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "3",
@@ -4615,25 +5541,25 @@
                 "num": "4",
                 "name": "ダノンジャスティス",
                 "jockey": "畑中信司",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "5",
                 "name": "フライヤートゥルー",
                 "jockey": "城野慈尚",
-                "popularity": 4
+                "popularity": 2
               },
               {
                 "num": "6",
                 "name": "ラインメッセージ",
                 "jockey": "濱尚美",
-                "popularity": 9
+                "popularity": 10
               },
               {
                 "num": "7",
                 "name": "イエデゴロゴロ",
                 "jockey": "石本純也",
-                "popularity": 6
+                "popularity": 7
               },
               {
                 "num": "8",
@@ -4651,13 +5577,13 @@
                 "num": "10",
                 "name": "フクノルッカ",
                 "jockey": "井上瑛太",
-                "popularity": 2
+                "popularity": 5
               },
               {
                 "num": "11",
                 "name": "ワクワクドリーム",
                 "jockey": "塚本直之",
-                "popularity": 10
+                "popularity": 6
               }
             ]
           },
@@ -4666,9 +5592,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 14.799999999999999,
-              "flat": 0.7,
-              "diff": 4.65
+              "front": 11.2,
+              "flat": 1.8499999999999999,
+              "diff": 3.5000000000000004
             }
           },
           "horses": [
@@ -4717,9 +5643,9 @@
           "source": "recent",
           "daysUsed": 5,
           "counts": {
-            "front": 4.199999999999999,
+            "front": 3.55,
             "flat": 0,
-            "diff": 0.6
+            "diff": 0
           }
         }
       },
@@ -4741,55 +5667,55 @@
                 "num": "2",
                 "name": "カパラミプ",
                 "jockey": "山口勲",
-                "popularity": 6
+                "popularity": 4
               },
               {
                 "num": "3",
                 "name": "エスケーダンディ",
                 "jockey": "加茂飛翔",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "4",
                 "name": "フェレスアダマス",
                 "jockey": "山下裕貴",
-                "popularity": 4
+                "popularity": 5
               },
               {
                 "num": "5",
                 "name": "サーマル",
                 "jockey": "長田進仁",
-                "popularity": 11
+                "popularity": 9
               },
               {
                 "num": "6",
                 "name": "カシノロイ",
                 "jockey": "出水拓人",
-                "popularity": 8
+                "popularity": 6
               },
               {
                 "num": "7",
                 "name": "ソルトミラクル",
                 "jockey": "中山蓮王",
-                "popularity": 7
+                "popularity": 11
               },
               {
                 "num": "8",
                 "name": "カサミラ",
                 "jockey": "石川慎将",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "9",
                 "name": "ウラチャチャ",
                 "jockey": "田中直人",
-                "popularity": 5
+                "popularity": 7
               },
               {
                 "num": "10",
                 "name": "オカノティアラ",
                 "jockey": "後藤武蔵",
-                "popularity": 3
+                "popularity": 2
               },
               {
                 "num": "11",
@@ -4804,9 +5730,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -4814,7 +5740,7 @@
               "num": "8",
               "name": "カサミラ",
               "jockey": "石川慎将",
-              "popularity": 2,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -4853,13 +5779,13 @@
                 "num": "2",
                 "name": "エボニードール",
                 "jockey": "山田義貴",
-                "popularity": 3
+                "popularity": 4
               },
               {
                 "num": "3",
                 "name": "シルバークラフト",
                 "jockey": "飛田愛斗",
-                "popularity": 4
+                "popularity": 2
               },
               {
                 "num": "4",
@@ -4871,19 +5797,19 @@
                 "num": "5",
                 "name": "ドリフトウッド",
                 "jockey": "小松丈二",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "6",
                 "name": "シーメジャー",
                 "jockey": "出水拓人",
-                "popularity": 9
+                "popularity": 6
               },
               {
                 "num": "7",
                 "name": "エスプラネード",
                 "jockey": "後藤武蔵",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "8",
@@ -4895,7 +5821,7 @@
                 "num": "9",
                 "name": "ニンマリ",
                 "jockey": "長田進仁",
-                "popularity": 5
+                "popularity": 8
               },
               {
                 "num": "10",
@@ -4907,7 +5833,7 @@
                 "num": "11",
                 "name": "フィナルフェリス",
                 "jockey": "竹吉徹",
-                "popularity": 2
+                "popularity": 3
               }
             ]
           },
@@ -4916,9 +5842,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -4950,7 +5876,7 @@
               "num": "3",
               "name": "シルバークラフト",
               "jockey": "飛田愛斗",
-              "popularity": 4,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -4993,13 +5919,13 @@
                 "num": "1",
                 "name": "デルマツリダシ",
                 "jockey": "竹吉徹",
-                "popularity": 3
+                "popularity": 5
               },
               {
                 "num": "2",
                 "name": "トール",
                 "jockey": "山口勲",
-                "popularity": 2
+                "popularity": 1
               },
               {
                 "num": "3",
@@ -5011,55 +5937,55 @@
                 "num": "4",
                 "name": "マテラブルース",
                 "jockey": "長谷川蓮",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "5",
                 "name": "ビザンティーノ",
                 "jockey": "岡村健司",
-                "popularity": 7
+                "popularity": 6
               },
               {
                 "num": "6",
                 "name": "シークレットイスラ",
                 "jockey": "山田義貴",
-                "popularity": 1
+                "popularity": 4
               },
               {
                 "num": "7",
                 "name": "ゴッドテソロ",
                 "jockey": "川島拓",
-                "popularity": 4
+                "popularity": 3
               },
               {
                 "num": "8",
                 "name": "メロディセーラ",
                 "jockey": "出水拓人",
-                "popularity": 5
+                "popularity": 8
               },
               {
                 "num": "9",
                 "name": "パウリノ",
                 "jockey": "飛田愛斗",
-                "popularity": 6
+                "popularity": 2
               },
               {
                 "num": "10",
                 "name": "テクノアップル",
                 "jockey": "青海大樹",
-                "popularity": 10
+                "popularity": 11
               },
               {
                 "num": "11",
                 "name": "コスモサンブライト",
                 "jockey": "長田進仁",
-                "popularity": 9
+                "popularity": 7
               },
               {
                 "num": "12",
                 "name": "ナンゴクトップガン",
                 "jockey": "小松丈二",
-                "popularity": 11
+                "popularity": 10
               }
             ]
           },
@@ -5068,9 +5994,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -5078,7 +6004,7 @@
               "num": "2",
               "name": "トール",
               "jockey": "山口勲",
-              "popularity": 2,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5112,7 +6038,7 @@
               "num": "6",
               "name": "シークレットイスラ",
               "jockey": "山田義貴",
-              "popularity": 1,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5136,7 +6062,7 @@
               "num": "7",
               "name": "ゴッドテソロ",
               "jockey": "川島拓",
-              "popularity": 4,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5170,7 +6096,7 @@
               "num": "8",
               "name": "メロディセーラ",
               "jockey": "出水拓人",
-              "popularity": 5,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5213,31 +6139,31 @@
                 "num": "1",
                 "name": "ガルヴァナイズ",
                 "jockey": "出水拓人",
-                "popularity": 10
+                "popularity": 5
               },
               {
                 "num": "2",
                 "name": "アメストリス",
                 "jockey": "田中直人",
-                "popularity": 8
+                "popularity": 2
               },
               {
                 "num": "3",
                 "name": "マイネルサハラ",
                 "jockey": "山下裕貴",
-                "popularity": 9
+                "popularity": 6
               },
               {
                 "num": "4",
                 "name": "ラディアントホース",
                 "jockey": "山田義貴",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "5",
                 "name": "カルドウェル",
                 "jockey": "岡村健司",
-                "popularity": 1
+                "popularity": 4
               },
               {
                 "num": "6",
@@ -5249,31 +6175,31 @@
                 "num": "7",
                 "name": "ヘルシャフト",
                 "jockey": "長谷川蓮",
-                "popularity": 3
+                "popularity": 8
               },
               {
                 "num": "8",
                 "name": "ベネロングポイント",
                 "jockey": "加茂飛翔",
-                "popularity": 11
+                "popularity": 9
               },
               {
                 "num": "9",
                 "name": "ラウダーティオ",
                 "jockey": "竹吉徹",
-                "popularity": 4
+                "popularity": 10
               },
               {
                 "num": "10",
                 "name": "ページェント",
                 "jockey": "石川慎将",
-                "popularity": 6
+                "popularity": 11
               },
               {
                 "num": "11",
                 "name": "ロードミッドナイト",
                 "jockey": "飛田愛斗",
-                "popularity": 5
+                "popularity": 1
               }
             ]
           },
@@ -5282,9 +6208,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -5292,7 +6218,7 @@
               "num": "4",
               "name": "ラディアントホース",
               "jockey": "山田義貴",
-              "popularity": 2,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5326,7 +6252,7 @@
               "num": "5",
               "name": "カルドウェル",
               "jockey": "岡村健司",
-              "popularity": 1,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5360,7 +6286,7 @@
               "num": "7",
               "name": "ヘルシャフト",
               "jockey": "長谷川蓮",
-              "popularity": 3,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5389,7 +6315,7 @@
               "num": "9",
               "name": "ラウダーティオ",
               "jockey": "竹吉徹",
-              "popularity": 4,
+              "popularity": 10,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5423,7 +6349,7 @@
               "num": "10",
               "name": "ページェント",
               "jockey": "石川慎将",
-              "popularity": 6,
+              "popularity": 11,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5457,7 +6383,7 @@
               "num": "11",
               "name": "ロードミッドナイト",
               "jockey": "飛田愛斗",
-              "popularity": 5,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5500,13 +6426,13 @@
                 "num": "1",
                 "name": "ユウヤケコヤケ",
                 "jockey": "山田義貴",
-                "popularity": 8
+                "popularity": 5
               },
               {
                 "num": "2",
                 "name": "フークミャオリー",
                 "jockey": "石川慎将",
-                "popularity": 5
+                "popularity": 8
               },
               {
                 "num": "3",
@@ -5518,13 +6444,13 @@
                 "num": "4",
                 "name": "ウインティターニア",
                 "jockey": "加茂飛翔",
-                "popularity": 6
+                "popularity": 7
               },
               {
                 "num": "5",
                 "name": "ヴァシーオ",
                 "jockey": "後藤武蔵",
-                "popularity": 7
+                "popularity": 6
               },
               {
                 "num": "6",
@@ -5536,7 +6462,7 @@
                 "num": "7",
                 "name": "ハガクレノハタ",
                 "jockey": "山口勲",
-                "popularity": 2
+                "popularity": 1
               },
               {
                 "num": "8",
@@ -5548,7 +6474,7 @@
                 "num": "9",
                 "name": "ベリルスフィア",
                 "jockey": "飛田愛斗",
-                "popularity": 1
+                "popularity": 2
               },
               {
                 "num": "10",
@@ -5563,9 +6489,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -5573,7 +6499,7 @@
               "num": "2",
               "name": "フークミャオリー",
               "jockey": "石川慎将",
-              "popularity": 5,
+              "popularity": 8,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5607,7 +6533,7 @@
               "num": "7",
               "name": "ハガクレノハタ",
               "jockey": "山口勲",
-              "popularity": 2,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5641,7 +6567,7 @@
               "num": "9",
               "name": "ベリルスフィア",
               "jockey": "飛田愛斗",
-              "popularity": 1,
+              "popularity": 2,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5724,7 +6650,7 @@
                 "num": "2",
                 "name": "ナンゴクキャンドル",
                 "jockey": "田中純",
-                "popularity": 5
+                "popularity": 9
               },
               {
                 "num": "3",
@@ -5736,25 +6662,25 @@
                 "num": "4",
                 "name": "ムコリッタ",
                 "jockey": "飛田愛斗",
-                "popularity": 6
+                "popularity": 4
               },
               {
                 "num": "5",
                 "name": "ホスマニエン",
                 "jockey": "岡村健司",
-                "popularity": 4
+                "popularity": 3
               },
               {
                 "num": "6",
                 "name": "グレイトミッション",
                 "jockey": "青海大樹",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "7",
                 "name": "アンティジャミーラ",
                 "jockey": "石川慎将",
-                "popularity": 3
+                "popularity": 5
               },
               {
                 "num": "8",
@@ -5766,7 +6692,7 @@
                 "num": "9",
                 "name": "タケノツルギ",
                 "jockey": "出水拓人",
-                "popularity": 8
+                "popularity": 6
               },
               {
                 "num": "10",
@@ -5787,9 +6713,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -5797,7 +6723,7 @@
               "num": "4",
               "name": "ムコリッタ",
               "jockey": "飛田愛斗",
-              "popularity": 6,
+              "popularity": 4,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5831,7 +6757,7 @@
               "num": "5",
               "name": "ホスマニエン",
               "jockey": "岡村健司",
-              "popularity": 4,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5865,7 +6791,7 @@
               "num": "7",
               "name": "アンティジャミーラ",
               "jockey": "石川慎将",
-              "popularity": 3,
+              "popularity": 5,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -5937,43 +6863,43 @@
                 "num": "1",
                 "name": "ウインクルキセキ",
                 "jockey": "石川慎将",
-                "popularity": 6
+                "popularity": 5
               },
               {
                 "num": "2",
                 "name": "ノブノリオウ",
                 "jockey": "加茂飛翔",
-                "popularity": 3
+                "popularity": 2
               },
               {
                 "num": "3",
                 "name": "グランプリショット",
                 "jockey": "小松丈二",
-                "popularity": 9
+                "popularity": 8
               },
               {
                 "num": "4",
                 "name": "ラブビーチ",
                 "jockey": "出水拓人",
-                "popularity": 8
+                "popularity": 9
               },
               {
                 "num": "5",
                 "name": "カシノフレックス",
                 "jockey": "田中直人",
-                "popularity": 5
+                "popularity": 7
               },
               {
                 "num": "6",
                 "name": "モズノシアワセ",
                 "jockey": "山田義貴",
-                "popularity": 2
+                "popularity": 3
               },
               {
                 "num": "7",
                 "name": "ノーブルプロセス",
                 "jockey": "竹吉徹",
-                "popularity": 7
+                "popularity": 6
               },
               {
                 "num": "8",
@@ -5994,9 +6920,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -6004,7 +6930,7 @@
               "num": "6",
               "name": "モズノシアワセ",
               "jockey": "山田義貴",
-              "popularity": 2,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -6071,13 +6997,13 @@
                 "num": "1",
                 "name": "オールニッポン",
                 "jockey": "長谷川蓮",
-                "popularity": 5
+                "popularity": 4
               },
               {
                 "num": "2",
                 "name": "ライジングハース",
                 "jockey": "出水拓人",
-                "popularity": 1
+                "popularity": 3
               },
               {
                 "num": "3",
@@ -6101,7 +7027,7 @@
                 "num": "6",
                 "name": "ワンダービジブル",
                 "jockey": "山口勲",
-                "popularity": 4
+                "popularity": 1
               },
               {
                 "num": "7",
@@ -6125,7 +7051,7 @@
                 "num": "10",
                 "name": "クインズモンブラン",
                 "jockey": "後藤武蔵",
-                "popularity": 3
+                "popularity": 5
               }
             ]
           },
@@ -6134,9 +7060,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [
@@ -6144,7 +7070,7 @@
               "num": "2",
               "name": "ライジングハース",
               "jockey": "出水拓人",
-              "popularity": 1,
+              "popularity": 3,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -6178,7 +7104,7 @@
               "num": "6",
               "name": "ワンダービジブル",
               "jockey": "山口勲",
-              "popularity": 4,
+              "popularity": 1,
               "style": "senkou",
               "recentRaces": [
                 {
@@ -6279,19 +7205,19 @@
                 "num": "5",
                 "name": "ディスタービア",
                 "jockey": "石川慎将",
-                "popularity": 9
+                "popularity": 4
               },
               {
                 "num": "6",
                 "name": "ブリージョドラード",
                 "jockey": "中山蓮王",
-                "popularity": 4
+                "popularity": 7
               },
               {
                 "num": "7",
                 "name": "タマモルピナス",
                 "jockey": "田中純",
-                "popularity": 6
+                "popularity": 9
               },
               {
                 "num": "8",
@@ -6303,19 +7229,19 @@
                 "num": "9",
                 "name": "ミラルージュ",
                 "jockey": "小松丈二",
-                "popularity": 12
+                "popularity": 10
               },
               {
                 "num": "10",
                 "name": "ジャスタパーティー",
                 "jockey": "加茂飛翔",
-                "popularity": 7
+                "popularity": 12
               },
               {
                 "num": "11",
                 "name": "サンライズプロミス",
                 "jockey": "長田進仁",
-                "popularity": 8
+                "popularity": 6
               },
               {
                 "num": "12",
@@ -6327,7 +7253,7 @@
                 "num": "13",
                 "name": "スマートピリカ",
                 "jockey": "竹吉徹",
-                "popularity": 10
+                "popularity": 8
               },
               {
                 "num": "14",
@@ -6342,9 +7268,9 @@
             "source": "recent",
             "daysUsed": 5,
             "counts": {
-              "front": 4.199999999999999,
+              "front": 3.55,
               "flat": 0,
-              "diff": 0.6
+              "diff": 0
             }
           },
           "horses": [

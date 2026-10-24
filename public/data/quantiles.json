@@ -1,4 +1,20 @@
 {
+  "高知": {
+    "q1": 0.7142857142857143,
+    "q3": 1,
+    "median": 0.8571428571428571,
+    "sampleSize": 102,
+    "reliable": true,
+    "source": "own"
+  },
+  "佐賀": {
+    "q1": 0.8428571428571429,
+    "q3": 1,
+    "median": 1,
+    "sampleSize": 88,
+    "reliable": true,
+    "source": "own"
+  },
   "浦和": {
     "q1": 0.7777777777777778,
     "q3": 1,
@@ -47,22 +63,6 @@
     "reliable": true,
     "source": "own"
   },
-  "高知": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 93,
-    "reliable": true,
-    "source": "own"
-  },
-  "佐賀": {
-    "q1": 0.8142857142857143,
-    "q3": 1,
-    "median": 1,
-    "sampleSize": 82,
-    "reliable": true,
-    "source": "own"
-  },
   "川崎": {
     "q1": 0.6666666666666666,
     "q3": 0.9722222222222222,
@@ -108,7 +108,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1225,
+    "sampleSize": 1240,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 28
@@ -117,7 +117,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1225,
+    "sampleSize": 1240,
     "reliable": true,
     "source": "pool"
   },
@@ -133,6 +133,6 @@
     "periodStart": "2026-08-24",
     "periodEnd": "2026-10-24",
     "months": 2,
-    "generatedAt": "2026-10-23T17:44:13.277Z"
+    "generatedAt": "2026-10-24T13:28:38.254Z"
   }
 }

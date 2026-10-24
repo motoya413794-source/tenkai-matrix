@@ -11,15 +11,128 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": null,
-        "weather": "曇",
+        "weather": "小雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:25.3",
+        "totalHorses": 14,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スターフラッシュ",
+            "jockey": "ルメー",
+            "popularity": 1,
+            "odds": 1.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "オーケーエース",
+            "jockey": "石川",
+            "popularity": 3,
+            "odds": 10.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "マーゴットパラディ",
+            "jockey": "荻野極",
+            "popularity": 2,
+            "odds": 3.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "レッドアバンドーネ",
+            "jockey": "津村",
+            "popularity": 4,
+            "odds": 18.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "クラオルグジェシダ",
+            "jockey": "戸崎圭",
+            "popularity": 5,
+            "odds": 33.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "タイセイリッター",
+            "jockey": "菅原明",
+            "popularity": 6,
+            "odds": 51.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "エレガントステップ",
+            "jockey": "柴田大",
+            "popularity": 10,
+            "odds": 152.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "8",
+            "name": "ヴィンチェローズ",
+            "jockey": "原",
+            "popularity": 9,
+            "odds": 91.1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "モーモーワン",
+            "jockey": "原田和",
+            "popularity": 14,
+            "odds": 477.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "ムードメーカー",
+            "jockey": "佐々木",
+            "popularity": 13,
+            "odds": 247.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "11",
+            "name": "アルタイルテソーロ",
+            "jockey": "石橋脩",
+            "popularity": 7,
+            "odds": 73.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "12",
+            "name": "エマルタ",
+            "jockey": "◇小林美",
+            "popularity": 12,
+            "odds": 185.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "13",
+            "name": "ナムラマシュー",
+            "jockey": "◇今村",
+            "popularity": 11,
+            "odds": 169,
+            "groupIdx": 9
+          },
+          {
+            "finish": "14",
+            "name": "マインドブレイズ",
+            "jockey": "横山和",
+            "popularity": 8,
+            "odds": 90.4,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "margin3": 2,
+        "_corner4": "(*1,7)(5,8)(2,12)(3,14)6(9,10)13-(4,11)"
       },
       {
         "name": "東京2R 10/24",
@@ -29,15 +142,72 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:48.4",
+        "totalHorses": 7,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "イニシャルポイント",
+            "jockey": "横山武",
+            "popularity": 3,
+            "odds": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "サントシャペル",
+            "jockey": "ルメー",
+            "popularity": 2,
+            "odds": 3.7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ファーストアライヴ",
+            "jockey": "荻野極",
+            "popularity": 1,
+            "odds": 2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ホウオウビースト",
+            "jockey": "坂井",
+            "popularity": 4,
+            "odds": 6.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "エムアイブレイズ",
+            "jockey": "原",
+            "popularity": 6,
+            "odds": 35.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ミツカネリゲル",
+            "jockey": "石橋脩",
+            "popularity": 5,
+            "odds": 16.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ビタークレス",
+            "jockey": "木幡巧",
+            "popularity": 7,
+            "odds": 203.6,
+            "groupIdx": 6
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "1,4,7(3,5)6,2"
       },
       {
         "name": "東京3R 10/24",
@@ -47,15 +217,96 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:36.0",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "タンタフェリチア",
+            "jockey": "横山和",
+            "popularity": 1,
+            "odds": 2.2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "リーベラーリア",
+            "jockey": "荻野極",
+            "popularity": 2,
+            "odds": 2.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "スターマイン",
+            "jockey": "西村淳",
+            "popularity": 5,
+            "odds": 13.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "ディアム",
+            "jockey": "横山武",
+            "popularity": 4,
+            "odds": 7.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "シーズアウルフ",
+            "jockey": "ルメー",
+            "popularity": 3,
+            "odds": 5.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ワールドプラージュ",
+            "jockey": "池添",
+            "popularity": 7,
+            "odds": 113.4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "セールデュクール",
+            "jockey": "木幡巧",
+            "popularity": 10,
+            "odds": 287.3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ミラマルニ",
+            "jockey": "黛",
+            "popularity": 6,
+            "odds": 20.9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "スードランダム",
+            "jockey": "原田和",
+            "popularity": 8,
+            "odds": 191.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "ウマッター",
+            "jockey": "▲土田",
+            "popularity": 9,
+            "odds": 287.3,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 1,
+        "margin3": 2.1,
+        "_corner4": "5,8,9,4(2,7,10)(6,1)-3"
       },
       {
         "name": "東京4R 10/24",
@@ -65,15 +316,136 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:39.7",
+        "totalHorses": 15,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ヘイヴァイタヒチ",
+            "jockey": "西村淳",
+            "popularity": 2,
+            "odds": 3.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "スペシャルブレンド",
+            "jockey": "ルメー",
+            "popularity": 1,
+            "odds": 1.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ナックドリーム",
+            "jockey": "石橋脩",
+            "popularity": 7,
+            "odds": 37.3,
+            "groupIdx": 10
+          },
+          {
+            "finish": "4",
+            "name": "バーンズナイト",
+            "jockey": "内田博",
+            "popularity": 3,
+            "odds": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "コスモスピログラフ",
+            "jockey": "柴田大",
+            "popularity": 12,
+            "odds": 126.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "トラストユウゼン",
+            "jockey": "▲遠藤",
+            "popularity": 14,
+            "odds": 222.3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "7",
+            "name": "ファナウ",
+            "jockey": "津村",
+            "popularity": 6,
+            "odds": 33.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "8",
+            "name": "ウェディングアイル",
+            "jockey": "田辺",
+            "popularity": 8,
+            "odds": 50.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "サマーバドブリッジ",
+            "jockey": "横山典",
+            "popularity": 9,
+            "odds": 63.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "10",
+            "name": "エンドクレジット",
+            "jockey": "坂井",
+            "popularity": 4,
+            "odds": 20.1,
+            "groupIdx": 10
+          },
+          {
+            "finish": "11",
+            "name": "ショーツヨシ",
+            "jockey": "◇小林美",
+            "popularity": 10,
+            "odds": 74.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "トーアテンレイ",
+            "jockey": "吉田豊",
+            "popularity": 13,
+            "odds": 175.4,
+            "groupIdx": 8
+          },
+          {
+            "finish": "13",
+            "name": "サターンテソーロ",
+            "jockey": "吉村",
+            "popularity": 5,
+            "odds": 27.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "14",
+            "name": "ヤマタケゲジオー",
+            "jockey": "原田和",
+            "popularity": 16,
+            "odds": 459.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "15",
+            "name": "シツライ",
+            "jockey": "伊藤",
+            "popularity": 15,
+            "odds": 344.8,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 3.1,
+        "margin3": 5.1,
+        "_corner4": "16(3,8,11)(12,10)6(9,7)(4,15)-(14,13)-2=15"
       },
       {
         "name": "東京5R 10/24",
@@ -83,15 +455,160 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:36.8",
+        "totalHorses": 18,
+        "totalGroups": 14,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "リラノヴァ",
+            "jockey": "横山和",
+            "popularity": 3,
+            "odds": 5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "2",
+            "name": "マハルキタ",
+            "jockey": "黛",
+            "popularity": 12,
+            "odds": 76.1,
+            "groupIdx": 8
+          },
+          {
+            "finish": "3",
+            "name": "ムーンキャスト",
+            "jockey": "横山武",
+            "popularity": 2,
+            "odds": 3.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "フェニックスロール",
+            "jockey": "ルメー",
+            "popularity": 1,
+            "odds": 2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "マルターズゴラッソ",
+            "jockey": "田辺",
+            "popularity": 9,
+            "odds": 52.3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "プラティナライヴァ",
+            "jockey": "津村",
+            "popularity": 8,
+            "odds": 43.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "グレータードリーム",
+            "jockey": "西村淳",
+            "popularity": 14,
+            "odds": 159.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "8",
+            "name": "ノーズライダー",
+            "jockey": "吉村",
+            "popularity": 7,
+            "odds": 29.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "エフェソス",
+            "jockey": "大野",
+            "popularity": 16,
+            "odds": 175.2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "プレイヤ",
+            "jockey": "坂井",
+            "popularity": 6,
+            "odds": 28.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "11",
+            "name": "ラヴレヴァルール",
+            "jockey": "原",
+            "popularity": 10,
+            "odds": 65.5,
+            "groupIdx": 14
+          },
+          {
+            "finish": "12",
+            "name": "ロジダンス",
+            "jockey": "戸崎圭",
+            "popularity": 5,
+            "odds": 19.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "13",
+            "name": "デスタンドレ",
+            "jockey": "◇小林美",
+            "popularity": 13,
+            "odds": 137.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "14",
+            "name": "トウシンシーザー",
+            "jockey": "石川",
+            "popularity": 17,
+            "odds": 187.4,
+            "groupIdx": 10
+          },
+          {
+            "finish": "15",
+            "name": "ソウルスピアー",
+            "jockey": "石橋脩",
+            "popularity": 18,
+            "odds": 293.7,
+            "groupIdx": 11
+          },
+          {
+            "finish": "16",
+            "name": "ウォークレイズ",
+            "jockey": "佐々木",
+            "popularity": 4,
+            "odds": 19.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "17",
+            "name": "ユースフルゼスト",
+            "jockey": "菅原明",
+            "popularity": 11,
+            "odds": 67.9,
+            "groupIdx": 12
+          },
+          {
+            "finish": "18",
+            "name": "スミダコンジャク",
+            "jockey": "◇今村",
+            "popularity": 15,
+            "odds": 162.7,
+            "groupIdx": 11
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 0,
+        "_corner4": "7(9,10)11,8,14(6,12)(2,18)16,15,17(3,4,13)1-5"
       },
       {
         "name": "東京6R 10/24",
@@ -99,17 +616,146 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:25.2",
+        "totalHorses": 16,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アメリカンフレンズ",
+            "jockey": "津村",
+            "popularity": 3,
+            "odds": 4.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ダノンアイコニック",
+            "jockey": "横山和",
+            "popularity": 2,
+            "odds": 3.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "リーズメイリー",
+            "jockey": "田辺",
+            "popularity": 1,
+            "odds": 2.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "コスモツクヨミ",
+            "jockey": "柴田大",
+            "popularity": 7,
+            "odds": 33.6,
+            "groupIdx": 12
+          },
+          {
+            "finish": "5",
+            "name": "ケッパレ",
+            "jockey": "横山典",
+            "popularity": 4,
+            "odds": 9.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "トラストヨシノブ",
+            "jockey": "大野",
+            "popularity": 8,
+            "odds": 40.7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ニューイヤーズベル",
+            "jockey": "池添",
+            "popularity": 11,
+            "odds": 52.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ココビスケット",
+            "jockey": "小林脩",
+            "popularity": 14,
+            "odds": 174.1,
+            "groupIdx": 11
+          },
+          {
+            "finish": "9",
+            "name": "クインズピサ",
+            "jockey": "小沢",
+            "popularity": 9,
+            "odds": 46.2,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "キーチパティーナ",
+            "jockey": "原",
+            "popularity": 10,
+            "odds": 50.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "ソウルミュージック",
+            "jockey": "内田博",
+            "popularity": 5,
+            "odds": 17.6,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "ポッドスカイ",
+            "jockey": "石川",
+            "popularity": 13,
+            "odds": 81.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "13",
+            "name": "ナムラクリスティ",
+            "jockey": "黛",
+            "popularity": 15,
+            "odds": 205.8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "14",
+            "name": "スルーインアード",
+            "jockey": "菅原明",
+            "popularity": 12,
+            "odds": 65.5,
+            "groupIdx": 10
+          },
+          {
+            "finish": "15",
+            "name": "ゲンバウマ",
+            "jockey": "▲土田",
+            "popularity": 16,
+            "odds": 266.4,
+            "groupIdx": 12
+          },
+          {
+            "finish": "16",
+            "name": "ハヤブサナイン",
+            "jockey": "◇今村",
+            "popularity": 6,
+            "odds": 20.9,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "margin3": 5,
+        "_corner4": "11-7(3,14)(5,8,12)-6-4(2,10)(1,13,15)9=16"
       },
       {
         "name": "東京7R 10/24",
@@ -117,17 +763,114 @@
         "course": "ダート",
         "distance": 1600,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:38.6",
+        "totalHorses": 12,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ラヴアンドライク",
+            "jockey": "原",
+            "popularity": 1,
+            "odds": 2.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "グロリアス",
+            "jockey": "◇小林美",
+            "popularity": 5,
+            "odds": 11.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "3",
+            "name": "ディペンダブル",
+            "jockey": "菅原明",
+            "popularity": 2,
+            "odds": 4.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "オーケーリアン",
+            "jockey": "吉村",
+            "popularity": 8,
+            "odds": 43.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "イージーブリージー",
+            "jockey": "西村淳",
+            "popularity": 7,
+            "odds": 13.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "6",
+            "name": "ブルーサーマル",
+            "jockey": "横山和",
+            "popularity": 4,
+            "odds": 9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "サイモンセレーノ",
+            "jockey": "佐々木",
+            "popularity": 3,
+            "odds": 6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "8",
+            "name": "コルヴィル",
+            "jockey": "木幡巧",
+            "popularity": 9,
+            "odds": 47.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "ブエナディオサ",
+            "jockey": "山本政",
+            "popularity": 12,
+            "odds": 292.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "タイヨウノユビワ",
+            "jockey": "▲遠藤",
+            "popularity": 11,
+            "odds": 271.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "ガンバレベアー",
+            "jockey": "大野",
+            "popularity": 10,
+            "odds": 53.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "サンクレゾン",
+            "jockey": "荻野極",
+            "popularity": 6,
+            "odds": 13.1,
+            "groupIdx": 2
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "(*3,11)8(4,10)12(1,7,9)(2,6,5)"
       },
       {
         "name": "東京8R 10/24",
@@ -135,17 +878,122 @@
         "course": "芝",
         "distance": 2000,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "2:02.6",
+        "totalHorses": 13,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "コスモアチーブ",
+            "jockey": "坂井",
+            "popularity": 4,
+            "odds": 13.7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "マテンロウオリジン",
+            "jockey": "横山典",
+            "popularity": 3,
+            "odds": 3.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "アートバーゼル",
+            "jockey": "ルメー",
+            "popularity": 1,
+            "odds": 2.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ダノンテムズ",
+            "jockey": "◇今村",
+            "popularity": 5,
+            "odds": 23.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "サンセットビュー",
+            "jockey": "吉村",
+            "popularity": 6,
+            "odds": 24.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ノンブルドール",
+            "jockey": "西村淳",
+            "popularity": 2,
+            "odds": 3.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "ニシノマルガリート",
+            "jockey": "横山武",
+            "popularity": 8,
+            "odds": 32.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "ウィンスタンリー",
+            "jockey": "木幡巧",
+            "popularity": 9,
+            "odds": 46.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ウインファヴォリ",
+            "jockey": "原田和",
+            "popularity": 10,
+            "odds": 51,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "セイウンラピス",
+            "jockey": "江田照",
+            "popularity": 11,
+            "odds": 200.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "11",
+            "name": "バルドル",
+            "jockey": "横山和",
+            "popularity": 7,
+            "odds": 27.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "12",
+            "name": "ウーバーストロング",
+            "jockey": "黛",
+            "popularity": 13,
+            "odds": 359.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "13",
+            "name": "グランフルス",
+            "jockey": "原",
+            "popularity": 12,
+            "odds": 226.4,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 1,
+        "margin3": 2,
+        "_corner4": "11(13,5)(3,4,10)(2,8)(1,6,7,12)-9"
       },
       {
         "name": "東京9R 10/24",
@@ -153,17 +1001,122 @@
         "course": "芝",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:22.0",
+        "totalHorses": 13,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "レオアジャイル",
+            "jockey": "大野",
+            "popularity": 3,
+            "odds": 7.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "2",
+            "name": "ダガーリング",
+            "jockey": "坂井",
+            "popularity": 1,
+            "odds": 2.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "ウインイザナミ",
+            "jockey": "田辺",
+            "popularity": 6,
+            "odds": 12.7,
+            "groupIdx": 9
+          },
+          {
+            "finish": "4",
+            "name": "アドマイヤジェイ",
+            "jockey": "佐々木",
+            "popularity": 9,
+            "odds": 27.8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "レイユール",
+            "jockey": "津村",
+            "popularity": 4,
+            "odds": 8.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "レイククレセント",
+            "jockey": "荻野極",
+            "popularity": 2,
+            "odds": 5.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ハクサンイーグル",
+            "jockey": "横山武",
+            "popularity": 5,
+            "odds": 10.7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "8",
+            "name": "アジュマン",
+            "jockey": "吉村",
+            "popularity": 8,
+            "odds": 23.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "エールトゥヘヴン",
+            "jockey": "吉田豊",
+            "popularity": 13,
+            "odds": 82.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "タナスーペルノーバ",
+            "jockey": "今村",
+            "popularity": 7,
+            "odds": 18.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "11",
+            "name": "メイケイバートン",
+            "jockey": "戸崎圭",
+            "popularity": 10,
+            "odds": 29.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "12",
+            "name": "ギフテッド",
+            "jockey": "木幡巧",
+            "popularity": 12,
+            "odds": 78.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "13",
+            "name": "ブルーサンセット",
+            "jockey": "西村淳",
+            "popularity": 11,
+            "odds": 60.8,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 3,
+        "margin3": 5,
+        "_corner4": "2-(3,5)(4,10)(6,12)(7,13)1(8,11)9"
       },
       {
         "name": "東京10R 10/24",
@@ -171,17 +1124,146 @@
         "course": "ダート",
         "distance": 1600,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:36.1",
+        "totalHorses": 16,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "サムシャイン",
+            "jockey": "横山和",
+            "popularity": 1,
+            "odds": 2.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "2",
+            "name": "ジェイエルマスター",
+            "jockey": "田辺",
+            "popularity": 4,
+            "odds": 10.7,
+            "groupIdx": 13
+          },
+          {
+            "finish": "3",
+            "name": "リバートゥルー",
+            "jockey": "吉田豊",
+            "popularity": 8,
+            "odds": 16.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "パフ",
+            "jockey": "菅原明",
+            "popularity": 11,
+            "odds": 54.3,
+            "groupIdx": 10
+          },
+          {
+            "finish": "5",
+            "name": "リフレックス",
+            "jockey": "津村",
+            "popularity": 3,
+            "odds": 9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ラッキーキッド",
+            "jockey": "西村淳",
+            "popularity": 6,
+            "odds": 13.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ダンツファイター",
+            "jockey": "佐々木",
+            "popularity": 10,
+            "odds": 24.1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "8",
+            "name": "ロカヒ",
+            "jockey": "坂井",
+            "popularity": 2,
+            "odds": 6.4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "トルショー",
+            "jockey": "黛",
+            "popularity": 14,
+            "odds": 75.9,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "サノノワンダー",
+            "jockey": "戸崎圭",
+            "popularity": 5,
+            "odds": 11.8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "テリフィックプラン",
+            "jockey": "吉村",
+            "popularity": 9,
+            "odds": 22.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "デコラシオン",
+            "jockey": "ルメー",
+            "popularity": 7,
+            "odds": 14.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "13",
+            "name": "アデランテ",
+            "jockey": "木幡巧",
+            "popularity": 12,
+            "odds": 62.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "14",
+            "name": "ワイドクリーガー",
+            "jockey": "小沢",
+            "popularity": 13,
+            "odds": 64.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "15",
+            "name": "パルデンス",
+            "jockey": "江田照",
+            "popularity": 16,
+            "odds": 321.8,
+            "groupIdx": 12
+          },
+          {
+            "finish": "16",
+            "name": "ルシフェル",
+            "jockey": "石川",
+            "popularity": 15,
+            "odds": 126.7,
+            "groupIdx": 3
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 2.1,
+        "_corner4": "8,5(2,10)(3,9,11)6,12(4,14)-1,16,13,15,7"
       },
       {
         "name": "東京11R 10/24",
@@ -189,17 +1271,122 @@
         "course": "芝",
         "distance": 1600,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:35.8",
+        "totalHorses": 13,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "プルヴィナル",
+            "jockey": "ルメー",
+            "popularity": 1,
+            "odds": 2.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ローズサルーテ",
+            "jockey": "小林美",
+            "popularity": 10,
+            "odds": 33.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "シティオブドリーム",
+            "jockey": "横山典",
+            "popularity": 3,
+            "odds": 6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ファミーリエ",
+            "jockey": "吉村",
+            "popularity": 9,
+            "odds": 25.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "タプティ",
+            "jockey": "小沢",
+            "popularity": 8,
+            "odds": 22.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "マリアンデール",
+            "jockey": "横山武",
+            "popularity": 7,
+            "odds": 20.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "サトノスプレマシー",
+            "jockey": "田辺",
+            "popularity": 11,
+            "odds": 37.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "リスグロワール",
+            "jockey": "坂井",
+            "popularity": 2,
+            "odds": 3.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "ホウオウプレマ",
+            "jockey": "池添",
+            "popularity": 4,
+            "odds": 7.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "10",
+            "name": "ジーティーキャリー",
+            "jockey": "西村淳",
+            "popularity": 6,
+            "odds": 18.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "ピコベリー",
+            "jockey": "津村",
+            "popularity": 5,
+            "odds": 15.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "カナデルペガサス",
+            "jockey": "今村",
+            "popularity": 12,
+            "odds": 61.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "13",
+            "name": "ベストプラージュ",
+            "jockey": "山本政",
+            "popularity": 13,
+            "odds": 272.6,
+            "groupIdx": 10
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 2.2,
+        "_corner4": "(*10,9)-6(5,3,7)(2,4,12,13)1-11-8"
       },
       {
         "name": "東京12R 10/24",
@@ -207,17 +1394,106 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:24.0",
+        "totalHorses": 11,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "トヨサカエ",
+            "jockey": "吉田豊",
+            "popularity": 1,
+            "odds": 2.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "2",
+            "name": "トラヴェリンバンド",
+            "jockey": "坂井",
+            "popularity": 2,
+            "odds": 5.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "レーティッシュ",
+            "jockey": "西村淳",
+            "popularity": 3,
+            "odds": 6.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "マサノユニコーン",
+            "jockey": "菅原明",
+            "popularity": 5,
+            "odds": 8.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "メッエフアパラ",
+            "jockey": "大野",
+            "popularity": 11,
+            "odds": 219.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "キタノライブリー",
+            "jockey": "山本政",
+            "popularity": 10,
+            "odds": 185,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ショコラキュイ",
+            "jockey": "戸崎圭",
+            "popularity": 6,
+            "odds": 9.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "チームユートピア",
+            "jockey": "佐々木",
+            "popularity": 7,
+            "odds": 9.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "9",
+            "name": "セントラルヴァレー",
+            "jockey": "横山武",
+            "popularity": 4,
+            "odds": 7.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "ジェミート",
+            "jockey": "小沢",
+            "popularity": 8,
+            "odds": 33.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "11",
+            "name": "ハッピーウィズユー",
+            "jockey": "吉村",
+            "popularity": 9,
+            "odds": 78.2,
+            "groupIdx": 1
+          }
+        ],
+        "margin": 3,
+        "margin3": 5,
+        "_corner4": "2(3,8,9)1(5,7)(10,4,6)11"
       }
     ],
     "京都": [
@@ -227,17 +1503,106 @@
         "course": "ダート",
         "distance": 1800,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "小雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:52.0",
+        "totalHorses": 11,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ロードグレイル",
+            "jockey": "松若",
+            "popularity": 3,
+            "odds": 9.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "アメリカンステラ",
+            "jockey": "川田",
+            "popularity": 1,
+            "odds": 1.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "マーノマエストロ",
+            "jockey": "☆田山",
+            "popularity": 5,
+            "odds": 13.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ドリームアムニス",
+            "jockey": "石川倭",
+            "popularity": 6,
+            "odds": 19.2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "タガノクレーキング",
+            "jockey": "古川吉",
+            "popularity": 9,
+            "odds": 186.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "アントラヴァースト",
+            "jockey": "角田和",
+            "popularity": 10,
+            "odds": 225.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "タンバゲッコー",
+            "jockey": "藤懸",
+            "popularity": 8,
+            "odds": 99.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "オーラムミーティア",
+            "jockey": "Ｍデム",
+            "popularity": 7,
+            "odds": 45.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "9",
+            "name": "ベンゲル",
+            "jockey": "田口",
+            "popularity": 11,
+            "odds": 233.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "マーゴットバサラ",
+            "jockey": "北村友",
+            "popularity": 2,
+            "odds": 3.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "メイショウリベロ",
+            "jockey": "幸",
+            "popularity": 4,
+            "odds": 11.8,
+            "groupIdx": 7
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 7,
+        "_corner4": "(*3,7,9)(5,10)(4,11)8(2,1)-6"
       },
       {
         "name": "京都2R 10/24",
@@ -245,17 +1610,98 @@
         "course": "芝",
         "distance": 2000,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "小雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "2:02.6",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アーケントレイル",
+            "jockey": "岩田望",
+            "popularity": 1,
+            "odds": 2.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "ナリタトップライト",
+            "jockey": "田口",
+            "popularity": 7,
+            "odds": 66.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "アンバーライト",
+            "jockey": "☆田山",
+            "popularity": 3,
+            "odds": 4.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "エーテルワーム",
+            "jockey": "松山",
+            "popularity": 4,
+            "odds": 10.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "コルソヴェローチェ",
+            "jockey": "鮫島駿",
+            "popularity": 6,
+            "odds": 17,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ドナズエクリプス",
+            "jockey": "川田",
+            "popularity": 2,
+            "odds": 2.9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ドマ",
+            "jockey": "国分優",
+            "popularity": 9,
+            "odds": 169,
+            "groupIdx": 1
+          },
+          {
+            "finish": "8",
+            "name": "ディープナイト",
+            "jockey": "幸",
+            "popularity": 5,
+            "odds": 16.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "テムルーラー",
+            "jockey": "石川倭",
+            "popularity": 8,
+            "odds": 78.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "リバティサンライズ",
+            "jockey": "▲森田",
+            "popularity": 10,
+            "odds": 188.4,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "3,5(4,6)(1,2,8)(7,10)-9"
       },
       {
         "name": "京都3R 10/24",
@@ -263,17 +1709,146 @@
         "course": "ダート",
         "distance": 1800,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": "曇",
+        "weather": "雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:52.0",
+        "totalHorses": 16,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ハメドスタイル",
+            "jockey": "☆田山",
+            "popularity": 5,
+            "odds": 8.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "ポアサムシュガー",
+            "jockey": "松若",
+            "popularity": 3,
+            "odds": 6.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ケーリュケイオン",
+            "jockey": "幸",
+            "popularity": 4,
+            "odds": 7.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "4",
+            "name": "アメリカンヴェガ",
+            "jockey": "菱田",
+            "popularity": 9,
+            "odds": 25,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ジューンジャムズ",
+            "jockey": "酒井",
+            "popularity": 1,
+            "odds": 4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "カネトシブレイン",
+            "jockey": "田口",
+            "popularity": 7,
+            "odds": 11.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "スリーアイアトラス",
+            "jockey": "武豊",
+            "popularity": 6,
+            "odds": 10.7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "ヴァンダローム",
+            "jockey": "加藤",
+            "popularity": 15,
+            "odds": 126.3,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "モハラ",
+            "jockey": "北村友",
+            "popularity": 11,
+            "odds": 36.6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "ドラゴンアンセム",
+            "jockey": "Ｍデム",
+            "popularity": 10,
+            "odds": 29.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "シグナルカード",
+            "jockey": "角田和",
+            "popularity": 13,
+            "odds": 106.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "12",
+            "name": "ヤマカツファイア",
+            "jockey": "川又",
+            "popularity": 12,
+            "odds": 59.4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "13",
+            "name": "シウラナ",
+            "jockey": "松山",
+            "popularity": 8,
+            "odds": 16.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "14",
+            "name": "ノーブルセプター",
+            "jockey": "高杉",
+            "popularity": 2,
+            "odds": 4.6,
+            "groupIdx": 11
+          },
+          {
+            "finish": "15",
+            "name": "サンフォルティス",
+            "jockey": "荻野琢",
+            "popularity": 16,
+            "odds": 158.8,
+            "groupIdx": 12
+          },
+          {
+            "finish": "16",
+            "name": "バンペイユ",
+            "jockey": "鮫島駿",
+            "popularity": 14,
+            "odds": 120.2,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 5,
+        "margin3": 5,
+        "_corner4": "5(9,16)-14(3,6)(4,1)-7(2,12)8(10,13)15,11"
       },
       {
         "name": "京都5R 10/24",
@@ -281,17 +1856,122 @@
         "course": "芝",
         "distance": 1600,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "曇",
+        "weather": "小雨",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:35.4",
+        "totalHorses": 13,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スマートピナクル",
+            "jockey": "武豊",
+            "popularity": 1,
+            "odds": 2.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "マイヴェール",
+            "jockey": "高杉",
+            "popularity": 6,
+            "odds": 11.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "3",
+            "name": "ダブルインバース",
+            "jockey": "松山",
+            "popularity": 5,
+            "odds": 10.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "カガセレーネ",
+            "jockey": "☆田山",
+            "popularity": 10,
+            "odds": 33.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "ウォーターアケビ",
+            "jockey": "太宰",
+            "popularity": 12,
+            "odds": 166.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ルナヴェリタス",
+            "jockey": "松若",
+            "popularity": 9,
+            "odds": 26.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "7",
+            "name": "レイティス",
+            "jockey": "浜中",
+            "popularity": 2,
+            "odds": 4.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "オールインアスク",
+            "jockey": "岩田康",
+            "popularity": 3,
+            "odds": 6.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ディスクレタメンテ",
+            "jockey": "幸",
+            "popularity": 8,
+            "odds": 25.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "アサクサロマンス",
+            "jockey": "菱田",
+            "popularity": 11,
+            "odds": 61.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "11",
+            "name": "ブリングインラック",
+            "jockey": "鮫島駿",
+            "popularity": 7,
+            "odds": 22.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "12",
+            "name": "セレナード",
+            "jockey": "川田",
+            "popularity": 4,
+            "odds": 7.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "13",
+            "name": "ナムラポピー",
+            "jockey": "田口",
+            "popularity": 13,
+            "odds": 170.9,
+            "groupIdx": 1
+          }
+        ],
+        "margin": 1,
+        "margin3": 1,
+        "_corner4": "(4,*6)(7,10)(3,8,11)13(1,12,5)(2,9)"
       },
       {
         "name": "京都6R 10/24",
@@ -299,17 +1979,114 @@
         "course": "ダート",
         "distance": 1200,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "不良",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:10.9",
+        "totalHorses": 12,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "リアルアルバ",
+            "jockey": "田口",
+            "popularity": 8,
+            "odds": 17.9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "2",
+            "name": "ブルーレース",
+            "jockey": "酒井",
+            "popularity": 1,
+            "odds": 3.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ヴィエントデコラ",
+            "jockey": "石川倭",
+            "popularity": 7,
+            "odds": 15.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "サヨノパララックス",
+            "jockey": "菱田",
+            "popularity": 6,
+            "odds": 14.3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "ラッキーバック",
+            "jockey": "幸",
+            "popularity": 9,
+            "odds": 21.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ダイヤモンド",
+            "jockey": "武豊",
+            "popularity": 2,
+            "odds": 4.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "7",
+            "name": "アイファーファイト",
+            "jockey": "藤懸",
+            "popularity": 12,
+            "odds": 286.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ゼットスパンキー",
+            "jockey": "▲森田",
+            "popularity": 11,
+            "odds": 24.9,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ビサーロ",
+            "jockey": "川須",
+            "popularity": 4,
+            "odds": 7.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "10",
+            "name": "クレマチス",
+            "jockey": "川又",
+            "popularity": 10,
+            "odds": 24.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "11",
+            "name": "ジーティームッシュ",
+            "jockey": "松山",
+            "popularity": 5,
+            "odds": 10,
+            "groupIdx": 4
+          },
+          {
+            "finish": "12",
+            "name": "カネコメファミリー",
+            "jockey": "鮫島駿",
+            "popularity": 3,
+            "odds": 4.8,
+            "groupIdx": 2
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 0,
+        "_corner4": "(*1,3)12(10,11)(9,8)(5,6)4,2,7"
       },
       {
         "name": "京都7R 10/24",
@@ -317,17 +2094,98 @@
         "course": "ダート",
         "distance": 1800,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "不良",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:50.1",
+        "totalHorses": 10,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "エイコーンドリーム",
+            "jockey": "鮫島良",
+            "popularity": 1,
+            "odds": 2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "アンリーベイビー",
+            "jockey": "田口",
+            "popularity": 5,
+            "odds": 14.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ペトリコール",
+            "jockey": "北村友",
+            "popularity": 2,
+            "odds": 4.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "ティエラレイナ",
+            "jockey": "角田和",
+            "popularity": 7,
+            "odds": 16.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "エレーデサンライズ",
+            "jockey": "幸",
+            "popularity": 9,
+            "odds": 19.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "キタノサリスカ",
+            "jockey": "▲森田",
+            "popularity": 8,
+            "odds": 17,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "アリストクラシア",
+            "jockey": "松若",
+            "popularity": 10,
+            "odds": 26.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "オヤツノジカン",
+            "jockey": "Ｍデム",
+            "popularity": 6,
+            "odds": 16.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "デルマサクラサク",
+            "jockey": "岩田康",
+            "popularity": 3,
+            "odds": 8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "オブシディアーナ",
+            "jockey": "鮫島駿",
+            "popularity": 4,
+            "odds": 11.5,
+            "groupIdx": 2
+          }
+        ],
+        "margin": 2,
+        "margin3": 2,
+        "_corner4": "(*11,6)(5,4,10)2,9,1,3,87"
       },
       {
         "name": "京都8R 10/24",
@@ -335,17 +2193,82 @@
         "course": "芝",
         "distance": 1800,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:46.7",
+        "totalHorses": 8,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "オリバナム",
+            "jockey": "石川倭",
+            "popularity": 3,
+            "odds": 5.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "アーリーハーベスト",
+            "jockey": "北村友",
+            "popularity": 1,
+            "odds": 1.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "キーウェーブ",
+            "jockey": "藤懸",
+            "popularity": 8,
+            "odds": 72,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ウインリベラシオン",
+            "jockey": "田口",
+            "popularity": 2,
+            "odds": 4.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ユメハハテシナク",
+            "jockey": "幸",
+            "popularity": 6,
+            "odds": 14.7,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "バークシャーシチー",
+            "jockey": "松若",
+            "popularity": 5,
+            "odds": 12.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ホウオウトランプ",
+            "jockey": "松山",
+            "popularity": 4,
+            "odds": 9.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "リアド",
+            "jockey": "岩田康",
+            "popularity": 7,
+            "odds": 26.2,
+            "groupIdx": 3
+          }
+        ],
+        "margin": 3.1,
+        "margin3": 6.2,
+        "_corner4": "8(4,7)(1,6)3,5,2"
       },
       {
         "name": "京都9R 10/24",
@@ -353,17 +2276,90 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "不良",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:22.9",
+        "totalHorses": 9,
+        "totalGroups": 5,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スカイメテオ",
+            "jockey": "菱田",
+            "popularity": 2,
+            "odds": 4.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ペアスターロード",
+            "jockey": "高杉",
+            "popularity": 5,
+            "odds": 11.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "タケルレジェンド",
+            "jockey": "川田",
+            "popularity": 4,
+            "odds": 6.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "フィリップヴィル",
+            "jockey": "岩田望",
+            "popularity": 6,
+            "odds": 22.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "ユウライクスター",
+            "jockey": "松山",
+            "popularity": 1,
+            "odds": 2.2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "ムーンベリル",
+            "jockey": "岩田康",
+            "popularity": 7,
+            "odds": 34.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ポッドビート",
+            "jockey": "武豊",
+            "popularity": 3,
+            "odds": 4.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "クラウスーラ",
+            "jockey": "田山",
+            "popularity": 8,
+            "odds": 68.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "ラピッドテソーロ",
+            "jockey": "鮫島駿",
+            "popularity": 9,
+            "odds": 97.5,
+            "groupIdx": 2
+          }
+        ],
+        "margin": 3,
+        "margin3": 3,
+        "_corner4": "(*5,6)(3,9)(4,7)(2,8)1"
       },
       {
         "name": "京都10R 10/24",
@@ -371,17 +2367,138 @@
         "course": "芝",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:20.5",
+        "totalHorses": 15,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アスミル",
+            "jockey": "松山",
+            "popularity": 2,
+            "odds": 3.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "アンダースコア",
+            "jockey": "田口",
+            "popularity": 4,
+            "odds": 6.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "サンタンカ",
+            "jockey": "武豊",
+            "popularity": 5,
+            "odds": 7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "4",
+            "name": "コスモアディラート",
+            "jockey": "国分優",
+            "popularity": 15,
+            "odds": 233.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "スカイハイ",
+            "jockey": "川田",
+            "popularity": 1,
+            "odds": 3.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "フライングブレード",
+            "jockey": "浜中",
+            "popularity": 11,
+            "odds": 92.5,
+            "groupIdx": 9
+          },
+          {
+            "finish": "7",
+            "name": "トーホウディアス",
+            "jockey": "松若",
+            "popularity": 14,
+            "odds": 171.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ヨウシタンレイ",
+            "jockey": "Ｍデム",
+            "popularity": 7,
+            "odds": 22.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ユハンヌス",
+            "jockey": "角田和",
+            "popularity": 9,
+            "odds": 47.9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "ガンマジーティーピ",
+            "jockey": "岩田望",
+            "popularity": 3,
+            "odds": 5.2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "ハンデンドレイク",
+            "jockey": "酒井",
+            "popularity": 10,
+            "odds": 81.7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "12",
+            "name": "アンビバレント",
+            "jockey": "幸",
+            "popularity": 8,
+            "odds": 41.9,
+            "groupIdx": 8
+          },
+          {
+            "finish": "13",
+            "name": "エイムフォーエース",
+            "jockey": "岩田康",
+            "popularity": 12,
+            "odds": 117,
+            "groupIdx": 10
+          },
+          {
+            "finish": "14",
+            "name": "モーデン",
+            "jockey": "鮫島駿",
+            "popularity": 6,
+            "odds": 16.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "15",
+            "name": "ウィルオレオール",
+            "jockey": "石川倭",
+            "popularity": 13,
+            "odds": 142.8,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "margin3": 4,
+        "_corner4": "6,9(2,10)12,8,3(14,11)(1,4)(7,15)(5,13)"
       },
       {
         "name": "京都11R 10/24",
@@ -389,17 +2506,146 @@
         "course": "芝",
         "distance": 1800,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:45.1",
+        "totalHorses": 16,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ディールメーカー",
+            "jockey": "川田",
+            "popularity": 3,
+            "odds": 6.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "ジーティーアダマン",
+            "jockey": "岩田望",
+            "popularity": 1,
+            "odds": 2.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "タガノエルピーダ",
+            "jockey": "古川吉",
+            "popularity": 4,
+            "odds": 13.7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "レディーヴァリュー",
+            "jockey": "田山",
+            "popularity": 6,
+            "odds": 17.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "オーロラエックス",
+            "jockey": "松山",
+            "popularity": 9,
+            "odds": 24.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ガイアメンテ",
+            "jockey": "武豊",
+            "popularity": 2,
+            "odds": 4.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "アスクカムオンモア",
+            "jockey": "鮫島駿",
+            "popularity": 11,
+            "odds": 37.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ゼンダンハヤブサ",
+            "jockey": "酒井",
+            "popularity": 10,
+            "odds": 26.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "サブマリーナ",
+            "jockey": "浜中",
+            "popularity": 5,
+            "odds": 14.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "エラトー",
+            "jockey": "国分優",
+            "popularity": 14,
+            "odds": 72.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "11",
+            "name": "バレエマスター",
+            "jockey": "松若",
+            "popularity": 13,
+            "odds": 72.1,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "コルレオニス",
+            "jockey": "Ｍデム",
+            "popularity": 7,
+            "odds": 17.5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "13",
+            "name": "ナムラエイハブ",
+            "jockey": "菱田",
+            "popularity": 8,
+            "odds": 21.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "14",
+            "name": "アンリーロード",
+            "jockey": "田口",
+            "popularity": 15,
+            "odds": 107,
+            "groupIdx": 6
+          },
+          {
+            "finish": "15",
+            "name": "オールナット",
+            "jockey": "北村友",
+            "popularity": 12,
+            "odds": 50.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "16",
+            "name": "アスクドゥポルテ",
+            "jockey": "川須",
+            "popularity": 16,
+            "odds": 175,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "margin3": 1,
+        "_corner4": "15(5,12,16)(4,11)1(6,7)(9,13)(14,3)2(8,10)"
       },
       {
         "name": "京都12R 10/24",
@@ -407,17 +2653,114 @@
         "course": "ダート",
         "distance": 1900,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "不良",
         "courseType": null,
         "weather": "曇",
         "kaisaiDay": 8,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:55.2",
+        "totalHorses": 12,
+        "totalGroups": 6,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "タガノアニマシオン",
+            "jockey": "岩田望",
+            "popularity": 6,
+            "odds": 21.7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "セイントホース",
+            "jockey": "菱田",
+            "popularity": 5,
+            "odds": 17.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "エアアルチーナ",
+            "jockey": "松山",
+            "popularity": 1,
+            "odds": 1.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "スターシップ",
+            "jockey": "松若",
+            "popularity": 3,
+            "odds": 9.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ソウルアンドジャズ",
+            "jockey": "川須",
+            "popularity": 2,
+            "odds": 4.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "トモジャザーン",
+            "jockey": "幸",
+            "popularity": 7,
+            "odds": 28.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ダブルジャッジ",
+            "jockey": "Ｍデム",
+            "popularity": 9,
+            "odds": 67.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "8",
+            "name": "コーリンカルベラ",
+            "jockey": "酒井",
+            "popularity": 10,
+            "odds": 81.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "フェイトライン",
+            "jockey": "石川倭",
+            "popularity": 11,
+            "odds": 115.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "サルタール",
+            "jockey": "鮫島駿",
+            "popularity": 8,
+            "odds": 34.8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "キタノファーンヒル",
+            "jockey": "荻野琢",
+            "popularity": 12,
+            "odds": 288.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "12",
+            "name": "オデット",
+            "jockey": "田口",
+            "popularity": 4,
+            "odds": 14.4,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 3,
+        "margin3": 4.1,
+        "_corner4": "(3,*7)(1,11,6,4)(2,12)(5,10,9)-8"
       }
     ],
     "新潟": [
@@ -429,15 +2772,112 @@
         "grade": "",
         "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:55.3",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ピュアノーブル",
+            "jockey": "吉田隼",
+            "popularity": 1,
+            "odds": 3.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ピュアティアラ",
+            "jockey": "丹内",
+            "popularity": 3,
+            "odds": 4.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "アリアニコ",
+            "jockey": "亀田",
+            "popularity": 7,
+            "odds": 13.1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "ツーエムマドンナ",
+            "jockey": "★河原田",
+            "popularity": 11,
+            "odds": 55.7,
+            "groupIdx": 9
+          },
+          {
+            "finish": "5",
+            "name": "コウユーキミガイテ",
+            "jockey": "木幡初",
+            "popularity": 4,
+            "odds": 7.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ゴールドバーニング",
+            "jockey": "△石神道",
+            "popularity": 8,
+            "odds": 14.9,
+            "groupIdx": 12
+          },
+          {
+            "finish": "7",
+            "name": "リオフラウス",
+            "jockey": "△石田",
+            "popularity": 5,
+            "odds": 12,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "ブルーグラビティ",
+            "jockey": "菊沢",
+            "popularity": 2,
+            "odds": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "コトダマスティール",
+            "jockey": "小崎",
+            "popularity": 10,
+            "odds": 43.8,
+            "groupIdx": 12
+          },
+          {
+            "finish": "10",
+            "name": "ダブルブロッサム",
+            "jockey": "西塚",
+            "popularity": 9,
+            "odds": 27.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "11",
+            "name": "ワンコール",
+            "jockey": "野中",
+            "popularity": 12,
+            "odds": 93.9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "12",
+            "name": "ギョニソ",
+            "jockey": "富田",
+            "popularity": 6,
+            "odds": 12.1,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 9,
+        "margin3": 13,
+        "_corner4": "2,8-6,1,11,4,5,3(10,7)-(9,12)"
       },
       {
         "name": "新潟2R 10/24",
@@ -447,15 +2887,160 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": "A",
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:22.3",
+        "totalHorses": 18,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "サノノキセキ",
+            "jockey": "丹内",
+            "popularity": 2,
+            "odds": 4.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "ディーヴァソラーレ",
+            "jockey": "横山琉",
+            "popularity": 5,
+            "odds": 7.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "エコログレイス",
+            "jockey": "松本",
+            "popularity": 4,
+            "odds": 6.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ドミナートル",
+            "jockey": "△石田",
+            "popularity": 3,
+            "odds": 4.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "スリーエンジェル",
+            "jockey": "▲大久保",
+            "popularity": 15,
+            "odds": 183.3,
+            "groupIdx": 9
+          },
+          {
+            "finish": "6",
+            "name": "マッセート",
+            "jockey": "斎藤",
+            "popularity": 8,
+            "odds": 20,
+            "groupIdx": 1
+          },
+          {
+            "finish": "7",
+            "name": "アイデアルカット",
+            "jockey": "嶋田",
+            "popularity": 9,
+            "odds": 51.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ルギッドドランジュ",
+            "jockey": "菊沢",
+            "popularity": 6,
+            "odds": 12.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "リーゼントエース",
+            "jockey": "◇古川奈",
+            "popularity": 13,
+            "odds": 101.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "10",
+            "name": "ヨドノプレミアム",
+            "jockey": "三浦",
+            "popularity": 1,
+            "odds": 4.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "11",
+            "name": "コスモルミナ",
+            "jockey": "松岡",
+            "popularity": 7,
+            "odds": 17.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "スゴイジャン",
+            "jockey": "西塚",
+            "popularity": 12,
+            "odds": 93.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "13",
+            "name": "ニシノタカオ",
+            "jockey": "野中",
+            "popularity": 14,
+            "odds": 143.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "14",
+            "name": "ワンキャンパス",
+            "jockey": "長岡",
+            "popularity": 10,
+            "odds": 76.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "15",
+            "name": "ポケットブック",
+            "jockey": "杉原",
+            "popularity": 18,
+            "odds": 456.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "16",
+            "name": "テイクケア",
+            "jockey": "△石神道",
+            "popularity": 16,
+            "odds": 327.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "17",
+            "name": "デルマモガミ",
+            "jockey": "菅原隆",
+            "popularity": 17,
+            "odds": 362.9,
+            "groupIdx": 10
+          },
+          {
+            "finish": "18",
+            "name": "ガーシュウィン",
+            "jockey": "★河原田",
+            "popularity": 11,
+            "odds": 81.5,
+            "groupIdx": 12
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1.1,
+        "_corner4": "(*1,4)10(2,8)13(7,15,18)12(5,11,17)(16,6)3,9-14"
       },
       {
         "name": "新潟3R 10/24",
@@ -465,15 +3050,128 @@
         "grade": "",
         "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:13.1",
+        "totalHorses": 14,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "リコルディオーロ",
+            "jockey": "▲佐藤",
+            "popularity": 7,
+            "odds": 15.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "エコロメジャー",
+            "jockey": "丹内",
+            "popularity": 2,
+            "odds": 4.3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "エイダンバローズ",
+            "jockey": "富田",
+            "popularity": 1,
+            "odds": 2.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ビーテリオス",
+            "jockey": "斎藤",
+            "popularity": 4,
+            "odds": 7.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "5",
+            "name": "アーバーバイティ",
+            "jockey": "嶋田",
+            "popularity": 9,
+            "odds": 59.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "カムトゥルー",
+            "jockey": "吉田隼",
+            "popularity": 3,
+            "odds": 4.9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ワイドウィンザー",
+            "jockey": "横山琉",
+            "popularity": 8,
+            "odds": 17.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "8",
+            "name": "ローズガーデン",
+            "jockey": "菊沢",
+            "popularity": 10,
+            "odds": 64.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "ユイノジカンカセギ",
+            "jockey": "長岡",
+            "popularity": 6,
+            "odds": 14.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "コパノキャンペーン",
+            "jockey": "★河原田",
+            "popularity": 5,
+            "odds": 9.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "11",
+            "name": "タッケンエリカ",
+            "jockey": "△石田",
+            "popularity": 12,
+            "odds": 223.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "イチザサンダー",
+            "jockey": "木幡育",
+            "popularity": 14,
+            "odds": 289,
+            "groupIdx": 2
+          },
+          {
+            "finish": "13",
+            "name": "ワイプユアアイズ",
+            "jockey": "松岡",
+            "popularity": 11,
+            "odds": 190,
+            "groupIdx": 7
+          },
+          {
+            "finish": "14",
+            "name": "チョウサクラ",
+            "jockey": "◇古川奈",
+            "popularity": 13,
+            "odds": 274.3,
+            "groupIdx": 5
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 0,
+        "_corner4": "(*10,11,13)(7,6,14)(4,9)(2,12)(3,5)-8,1"
       },
       {
         "name": "新潟4R 10/24",
@@ -483,15 +3181,112 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "2:00.7",
+        "totalHorses": 12,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "カーヴドヴァン",
+            "jockey": "☆長浜",
+            "popularity": 9,
+            "odds": 25.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ウィンターガーデン",
+            "jockey": "丸山",
+            "popularity": 10,
+            "odds": 42.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "3",
+            "name": "オリーボーレン",
+            "jockey": "◇永島",
+            "popularity": 8,
+            "odds": 22,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "フレキシブル",
+            "jockey": "斎藤",
+            "popularity": 6,
+            "odds": 17.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ビクスバイト",
+            "jockey": "亀田",
+            "popularity": 3,
+            "odds": 5.1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "アグレイビューティ",
+            "jockey": "富田",
+            "popularity": 2,
+            "odds": 3.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ミッキーテネシー",
+            "jockey": "中井",
+            "popularity": 1,
+            "odds": 3.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "エトワールブーケ",
+            "jockey": "岩部",
+            "popularity": 11,
+            "odds": 61.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "エバーシャンティ",
+            "jockey": "丹内",
+            "popularity": 7,
+            "odds": 20.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "10",
+            "name": "レーヌマロン",
+            "jockey": "★河原田",
+            "popularity": 5,
+            "odds": 7.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "ルージュカエラ",
+            "jockey": "小崎",
+            "popularity": 12,
+            "odds": 151.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "12",
+            "name": "シェーンシュティア",
+            "jockey": "杉原",
+            "popularity": 4,
+            "odds": 7.2,
+            "groupIdx": 7
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1,
+        "_corner4": "(*7,10)(2,6)12,5(1,11)(13,9,8)34"
       },
       {
         "name": "新潟5R 10/24",
@@ -501,15 +3296,128 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": "A",
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "2:02.2",
+        "totalHorses": 14,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アフェクト",
+            "jockey": "菊沢",
+            "popularity": 4,
+            "odds": 11.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "タピオラン",
+            "jockey": "富田",
+            "popularity": 7,
+            "odds": 16.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "ジオロジー",
+            "jockey": "嶋田",
+            "popularity": 13,
+            "odds": 58,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ゾンネシュトラール",
+            "jockey": "松本",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ライフオンマーズ",
+            "jockey": "丸山",
+            "popularity": 10,
+            "odds": 32.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ルージュプルート",
+            "jockey": "丹内",
+            "popularity": 5,
+            "odds": 13.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ガンサルート",
+            "jockey": "武藤",
+            "popularity": 3,
+            "odds": 9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "8",
+            "name": "コスモディプロマ",
+            "jockey": "△石神道",
+            "popularity": 11,
+            "odds": 33.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ペルフェクト",
+            "jockey": "☆長浜",
+            "popularity": 9,
+            "odds": 31.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "サンライズオルフェ",
+            "jockey": "吉田隼",
+            "popularity": 8,
+            "odds": 24.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "11",
+            "name": "ノーワンノーズ",
+            "jockey": "△石田",
+            "popularity": 6,
+            "odds": 15.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "12",
+            "name": "スイートハーモニー",
+            "jockey": "横山琉",
+            "popularity": 2,
+            "odds": 6.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "13",
+            "name": "クリムゾンペタル",
+            "jockey": "杉原",
+            "popularity": 14,
+            "odds": 88.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "14",
+            "name": "レイズドオンロック",
+            "jockey": "西塚",
+            "popularity": 12,
+            "odds": 56.7,
+            "groupIdx": 7
+          }
+        ],
+        "margin": 1,
+        "margin3": 1,
+        "_corner4": "(*7,14,2)(8,9,6)-10,3(4,11)(1,5,13,12)"
       },
       {
         "name": "新潟6R 10/24",
@@ -519,15 +3427,112 @@
         "grade": "",
         "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:11.9",
+        "totalHorses": 12,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "マダックス",
+            "jockey": "三浦",
+            "popularity": 3,
+            "odds": 5.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "2",
+            "name": "ヴァカンツァ",
+            "jockey": "◇永島",
+            "popularity": 4,
+            "odds": 5.2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "3",
+            "name": "シスター",
+            "jockey": "菊沢",
+            "popularity": 5,
+            "odds": 9.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "リトセア",
+            "jockey": "△柴田裕",
+            "popularity": 7,
+            "odds": 25.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "アパレイユ",
+            "jockey": "斎藤",
+            "popularity": 1,
+            "odds": 3.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "6",
+            "name": "メリフルアス",
+            "jockey": "★河原田",
+            "popularity": 2,
+            "odds": 3.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "7",
+            "name": "ジャーナーリア",
+            "jockey": "丸山",
+            "popularity": 10,
+            "odds": 69.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "セヴェンヌ",
+            "jockey": "丹内",
+            "popularity": 6,
+            "odds": 16.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "9",
+            "name": "マジンタクシー",
+            "jockey": "吉田隼",
+            "popularity": 8,
+            "odds": 37.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "10",
+            "name": "チュラヴェール",
+            "jockey": "▲上里",
+            "popularity": 9,
+            "odds": 55.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "11",
+            "name": "ソードマスター",
+            "jockey": "☆長浜",
+            "popularity": 11,
+            "odds": 104.3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "12",
+            "name": "カセノソレイユ",
+            "jockey": "▲佐藤",
+            "popularity": 12,
+            "odds": 186.8,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "7(11,12)(2,8)9,5(6,10)(3,4)=1"
       },
       {
         "name": "新潟7R 10/24",
@@ -537,15 +3542,112 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:47.1",
+        "totalHorses": 12,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "グランセゾン",
+            "jockey": "斎藤",
+            "popularity": 3,
+            "odds": 5.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "レッドシュトラール",
+            "jockey": "小崎",
+            "popularity": 7,
+            "odds": 21.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "メイショウハンター",
+            "jockey": "横山琉",
+            "popularity": 4,
+            "odds": 10.7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "アドマイヤウルトラ",
+            "jockey": "丹内",
+            "popularity": 2,
+            "odds": 4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "マイリトルヒーロー",
+            "jockey": "◇永島",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "グランツローゼ",
+            "jockey": "△石神道",
+            "popularity": 11,
+            "odds": 117.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "メイショウタクボク",
+            "jockey": "長岡",
+            "popularity": 9,
+            "odds": 71.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ラヴエナストロ",
+            "jockey": "松本",
+            "popularity": 10,
+            "odds": 101,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "アームアンフルール",
+            "jockey": "木幡初",
+            "popularity": 12,
+            "odds": 166.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "10",
+            "name": "マイコンチェルト",
+            "jockey": "★河原田",
+            "popularity": 5,
+            "odds": 15.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "11",
+            "name": "ワールドブレイヴ",
+            "jockey": "菊沢",
+            "popularity": 6,
+            "odds": 21.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "ヤマメライズ",
+            "jockey": "野中",
+            "popularity": 8,
+            "odds": 42.1,
+            "groupIdx": 3
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1,
+        "_corner4": "1(2,12)(3,8)(4,5)9(7,6)(11,10)"
       },
       {
         "name": "新潟8R 10/24",
@@ -555,15 +3657,96 @@
         "grade": "",
         "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:52.8",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "リアライズオーラム",
+            "jockey": "松本",
+            "popularity": 1,
+            "odds": 3.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "ビービーバザーク",
+            "jockey": "西塚",
+            "popularity": 3,
+            "odds": 3.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "エマージェンス",
+            "jockey": "△石田",
+            "popularity": 8,
+            "odds": 33.7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "4",
+            "name": "タイセイデクスター",
+            "jockey": "▲佐藤",
+            "popularity": 5,
+            "odds": 13.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "サトノシャムロック",
+            "jockey": "◇永島",
+            "popularity": 10,
+            "odds": 51.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "トルネードアイル",
+            "jockey": "☆長浜",
+            "popularity": 2,
+            "odds": 3.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "カシノスパーク",
+            "jockey": "△石神道",
+            "popularity": 6,
+            "odds": 16,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ハルノアラシ",
+            "jockey": "横山琉",
+            "popularity": 9,
+            "odds": 37.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "クラッチプレイヤー",
+            "jockey": "★河原田",
+            "popularity": 7,
+            "odds": 28.5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "アイビーチーキー",
+            "jockey": "▲上里",
+            "popularity": 4,
+            "odds": 6.5,
+            "groupIdx": 2
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "3(7,6)10,9(2,4)-(1,8)5"
       },
       {
         "name": "新潟9R 10/24",
@@ -573,14 +3756,143 @@
         "grade": "",
         "trackCondition": "良",
         "courseType": null,
-        "weather": "晴",
+        "weather": "小雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
+        "winTime": "0:56.0",
+        "totalHorses": 16,
         "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アカウフリューゲル",
+            "jockey": "富田",
+            "popularity": 1,
+            "odds": 1.5,
+            "groupIdx": null
+          },
+          {
+            "finish": "2",
+            "name": "オタルイーグル",
+            "jockey": "亀田",
+            "popularity": 10,
+            "odds": 60.6,
+            "groupIdx": null
+          },
+          {
+            "finish": "3",
+            "name": "イングラム",
+            "jockey": "丹内",
+            "popularity": 6,
+            "odds": 19.7,
+            "groupIdx": null
+          },
+          {
+            "finish": "4",
+            "name": "ブライティアブーケ",
+            "jockey": "丸山",
+            "popularity": 2,
+            "odds": 6.9,
+            "groupIdx": null
+          },
+          {
+            "finish": "5",
+            "name": "ラブアイミー",
+            "jockey": "吉田隼",
+            "popularity": 12,
+            "odds": 83.9,
+            "groupIdx": null
+          },
+          {
+            "finish": "6",
+            "name": "サツキレジーナ",
+            "jockey": "丸田",
+            "popularity": 4,
+            "odds": 14.4,
+            "groupIdx": null
+          },
+          {
+            "finish": "7",
+            "name": "ラブカムーン",
+            "jockey": "古川奈",
+            "popularity": 8,
+            "odds": 33.7,
+            "groupIdx": null
+          },
+          {
+            "finish": "8",
+            "name": "セレブトーチ",
+            "jockey": "西塚",
+            "popularity": 5,
+            "odds": 17.5,
+            "groupIdx": null
+          },
+          {
+            "finish": "9",
+            "name": "シャンクス",
+            "jockey": "杉原",
+            "popularity": 3,
+            "odds": 7.8,
+            "groupIdx": null
+          },
+          {
+            "finish": "10",
+            "name": "ピリカサンライズ",
+            "jockey": "国分恭",
+            "popularity": 9,
+            "odds": 48.2,
+            "groupIdx": null
+          },
+          {
+            "finish": "11",
+            "name": "ベルタソ",
+            "jockey": "小崎",
+            "popularity": 11,
+            "odds": 79.6,
+            "groupIdx": null
+          },
+          {
+            "finish": "12",
+            "name": "ゲンテン",
+            "jockey": "菊沢",
+            "popularity": 7,
+            "odds": 20.1,
+            "groupIdx": null
+          },
+          {
+            "finish": "13",
+            "name": "ブラヴィーノ",
+            "jockey": "斎藤",
+            "popularity": 13,
+            "odds": 133.3,
+            "groupIdx": null
+          },
+          {
+            "finish": "14",
+            "name": "ハッピーサプライズ",
+            "jockey": "嶋田",
+            "popularity": 16,
+            "odds": 264,
+            "groupIdx": null
+          },
+          {
+            "finish": "15",
+            "name": "テンペストヒロイン",
+            "jockey": "木幡初",
+            "popularity": 14,
+            "odds": 158.3,
+            "groupIdx": null
+          },
+          {
+            "finish": "16",
+            "name": "ディープスリー",
+            "jockey": "武藤",
+            "popularity": 15,
+            "odds": 188.2,
+            "groupIdx": null
+          }
+        ],
+        "margin": 1.3,
+        "margin3": 4.3,
         "_corner4": ""
       },
       {
@@ -591,15 +3903,136 @@
         "grade": "",
         "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:52.6",
+        "totalHorses": 15,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ケーヴァラ",
+            "jockey": "柴田裕",
+            "popularity": 9,
+            "odds": 27.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ルーナディサングエ",
+            "jockey": "菅原隆",
+            "popularity": 1,
+            "odds": 1.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ディアウス",
+            "jockey": "吉田隼",
+            "popularity": 2,
+            "odds": 7.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "リバースザトレンド",
+            "jockey": "丹内",
+            "popularity": 6,
+            "odds": 14.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "ファルコンミノル",
+            "jockey": "三浦",
+            "popularity": 5,
+            "odds": 13.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ベルイストワール",
+            "jockey": "杉原",
+            "popularity": 3,
+            "odds": 7.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "メイショウクーガー",
+            "jockey": "中井",
+            "popularity": 8,
+            "odds": 24.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "フクチャントウメイ",
+            "jockey": "松岡",
+            "popularity": 12,
+            "odds": 91.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ジェーケーボンバー",
+            "jockey": "長浜",
+            "popularity": 11,
+            "odds": 59,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "ヴァイヴァーイ",
+            "jockey": "小崎",
+            "popularity": 4,
+            "odds": 8.4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "クロドラバール",
+            "jockey": "西塚",
+            "popularity": 10,
+            "odds": 35.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "12",
+            "name": "サイモンコーラル",
+            "jockey": "松本",
+            "popularity": 15,
+            "odds": 287.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "13",
+            "name": "アンドリーナ",
+            "jockey": "菊沢",
+            "popularity": 7,
+            "odds": 22.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "14",
+            "name": "エンプレスフレーム",
+            "jockey": "武藤",
+            "popularity": 13,
+            "odds": 165.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "15",
+            "name": "セザンワールド",
+            "jockey": "横山琉",
+            "popularity": 14,
+            "odds": 193.6,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1.3,
+        "margin3": 2.4000000000000004,
+        "_corner4": "(*1,5)13(4,9,15)3(12,10)6(8,11,2)14=7"
       },
       {
         "name": "新潟11R 10/24",
@@ -607,17 +4040,114 @@
         "course": "芝",
         "distance": 2000,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": null,
-        "weather": "晴",
+        "weather": "雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:58.3",
+        "totalHorses": 12,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "アラタマフェーヴル",
+            "jockey": "菊沢",
+            "popularity": 5,
+            "odds": 11.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミュージシャン",
+            "jockey": "斎藤",
+            "popularity": 1,
+            "odds": 3.1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "シンゼンカガ",
+            "jockey": "吉田隼",
+            "popularity": 11,
+            "odds": 52.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "4",
+            "name": "フクノブルーレイク",
+            "jockey": "松岡",
+            "popularity": 3,
+            "odds": 5.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ワイドアラジン",
+            "jockey": "小崎",
+            "popularity": 12,
+            "odds": 79.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "マイネルフーガ",
+            "jockey": "長浜",
+            "popularity": 6,
+            "odds": 14.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "タイキラフター",
+            "jockey": "杉原",
+            "popularity": 10,
+            "odds": 33.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ハニーコム",
+            "jockey": "丹内",
+            "popularity": 8,
+            "odds": 19.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "9",
+            "name": "ユキワリザクラ",
+            "jockey": "三浦",
+            "popularity": 2,
+            "odds": 3.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "マイネルブリックス",
+            "jockey": "丸山",
+            "popularity": 7,
+            "odds": 18.4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "ドラゴンヘッド",
+            "jockey": "武藤",
+            "popularity": 9,
+            "odds": 25.1,
+            "groupIdx": 10
+          },
+          {
+            "finish": "12",
+            "name": "フィオレストラーダ",
+            "jockey": "横山琉",
+            "popularity": 4,
+            "odds": 9.3,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 2,
+        "margin3": 4,
+        "_corner4": "5,10(4,11)7(1,9)8(2,3)6-12"
       },
       {
         "name": "新潟12R 10/24",
@@ -625,17 +4155,162 @@
         "course": "芝",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "良",
+        "trackCondition": "稍重",
         "courseType": "A",
-        "weather": "晴",
+        "weather": "雨",
         "kaisaiDay": 3,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:21.1",
+        "totalHorses": 18,
+        "totalGroups": 15,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スピリットサージ",
+            "jockey": "嶋田",
+            "popularity": 4,
+            "odds": 7.2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "リアライズブラーヴ",
+            "jockey": "斎藤",
+            "popularity": 2,
+            "odds": 4.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "リアライズリバティ",
+            "jockey": "三浦",
+            "popularity": 1,
+            "odds": 4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ベルフラム",
+            "jockey": "富田",
+            "popularity": 9,
+            "odds": 26.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ペアレンツギフト",
+            "jockey": "中井",
+            "popularity": 7,
+            "odds": 22.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "サンデースマッシュ",
+            "jockey": "杉原",
+            "popularity": 10,
+            "odds": 29.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "7",
+            "name": "レインオンミー",
+            "jockey": "丸田",
+            "popularity": 14,
+            "odds": 73.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "アイアムアヒーロー",
+            "jockey": "丹内",
+            "popularity": 8,
+            "odds": 23.5,
+            "groupIdx": 11
+          },
+          {
+            "finish": "9",
+            "name": "マイオウンウェイ",
+            "jockey": "△石神道",
+            "popularity": 18,
+            "odds": 250.2,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "ノアールビーナス",
+            "jockey": "丸山",
+            "popularity": 5,
+            "odds": 8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "11",
+            "name": "アルスマグナ",
+            "jockey": "横山琉",
+            "popularity": 13,
+            "odds": 66.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "ザバルガド",
+            "jockey": "☆長浜",
+            "popularity": 11,
+            "odds": 37.6,
+            "groupIdx": 8
+          },
+          {
+            "finish": "13",
+            "name": "オタルグリーン",
+            "jockey": "△柴田裕",
+            "popularity": 15,
+            "odds": 104.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "14",
+            "name": "フクシマコウヨウ",
+            "jockey": "★河原田",
+            "popularity": 17,
+            "odds": 223.6,
+            "groupIdx": 11
+          },
+          {
+            "finish": "15",
+            "name": "エクヴァータル",
+            "jockey": "△石田",
+            "popularity": 16,
+            "odds": 117.7,
+            "groupIdx": 13
+          },
+          {
+            "finish": "16",
+            "name": "サリーチェ",
+            "jockey": "亀田",
+            "popularity": 12,
+            "odds": 57,
+            "groupIdx": 10
+          },
+          {
+            "finish": "17",
+            "name": "ジョワイユノエル",
+            "jockey": "小崎",
+            "popularity": 3,
+            "odds": 5.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "18",
+            "name": "シャルトル",
+            "jockey": "西塚",
+            "popularity": 6,
+            "odds": 12,
+            "groupIdx": 15
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 1.1,
+        "_corner4": "6,8(1,16)2(5,12)(4,9)-(7,15)17,14(11,10,18)-3-13"
       }
     ],
     "高知": [
@@ -645,17 +4320,90 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:32.5",
+        "totalHorses": 9,
+        "totalGroups": 7,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ランツェンライター",
+            "jockey": "岡村卓弥",
+            "popularity": 1,
+            "odds": 1.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ソレユケカツコ",
+            "jockey": "新庄海誠",
+            "popularity": 7,
+            "odds": 84.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ファーストシーン",
+            "jockey": "岡遼太郎",
+            "popularity": 4,
+            "odds": 17.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "メイショウゴウケツ",
+            "jockey": "畑中信司",
+            "popularity": 3,
+            "odds": 7.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ナムラコハル",
+            "jockey": "多田羅誠",
+            "popularity": 2,
+            "odds": 2.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "6",
+            "name": "ミアソレイユ",
+            "jockey": "濱尚美",
+            "popularity": 5,
+            "odds": 25.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "リコーリュウセイ",
+            "jockey": "木村直輝",
+            "popularity": 8,
+            "odds": 135.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "アラタマファルクス",
+            "jockey": "▲塚本直之",
+            "popularity": 9,
+            "odds": 178.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "スノープリンス",
+            "jockey": "郷間勇太",
+            "popularity": 6,
+            "odds": 79.2,
+            "groupIdx": 5
+          }
+        ],
+        "margin": 3,
+        "margin3": 4,
+        "_corner4": "(9,2),7,(3,8),6=4,5-1"
       },
       {
         "name": "高知2R 10/24",
@@ -663,17 +4411,90 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:31.2",
+        "totalHorses": 9,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "エナジーアユ",
+            "jockey": "木村直輝",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ロードベルファスト",
+            "jockey": "井上瑛太",
+            "popularity": 2,
+            "odds": 4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "バスターコール",
+            "jockey": "城野慈尚",
+            "popularity": 6,
+            "odds": 19.8,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "リアルパラダイス",
+            "jockey": "多田羅誠",
+            "popularity": 7,
+            "odds": 20.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "フランジパーヌ",
+            "jockey": "岡村卓弥",
+            "popularity": 5,
+            "odds": 14.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "パーセルペーパー",
+            "jockey": "新庄海誠",
+            "popularity": 4,
+            "odds": 7.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "フルフィルメント",
+            "jockey": "宮川実",
+            "popularity": 3,
+            "odds": 5.7,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "クラールス",
+            "jockey": "石本純也",
+            "popularity": 9,
+            "odds": 335.7,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "パウラメロディーア",
+            "jockey": "大澤誠志",
+            "popularity": 8,
+            "odds": 293,
+            "groupIdx": 7
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1,
+        "_corner4": "6,5,(3,9),(1,8),2-7-4"
       },
       {
         "name": "高知3R 10/24",
@@ -681,17 +4502,98 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:30.9",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ビップマリク",
+            "jockey": "永森大智",
+            "popularity": 1,
+            "odds": 1.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "サンライズジャッジ",
+            "jockey": "城野慈尚",
+            "popularity": 3,
+            "odds": 5.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ウイントッペン",
+            "jockey": "新庄海誠",
+            "popularity": 2,
+            "odds": 4.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "プルメリアクヒオ",
+            "jockey": "山崎雅由",
+            "popularity": 4,
+            "odds": 8.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "エリジブル",
+            "jockey": "大澤誠志",
+            "popularity": 9,
+            "odds": 137.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "コントリビュート",
+            "jockey": "多田羅誠",
+            "popularity": 7,
+            "odds": 113.4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "カジバノウマヂカラ",
+            "jockey": "郷間勇太",
+            "popularity": 5,
+            "odds": 52.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "アキヤン",
+            "jockey": "畑中信司",
+            "popularity": 10,
+            "odds": 145.9,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "エアロノート",
+            "jockey": "西森将司",
+            "popularity": 6,
+            "odds": 59.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "ビビットピンク",
+            "jockey": "木村直輝",
+            "popularity": 8,
+            "odds": 116.7,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "margin3": 3.1,
+        "_corner4": "8,4,5,10,(2,9),11=3,7,1"
       },
       {
         "name": "高知4R 10/24",
@@ -699,17 +4601,114 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:30.5",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ロードオルデン",
+            "jockey": "井上瑛太",
+            "popularity": 1,
+            "odds": 1.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "エンファサイズ",
+            "jockey": "西森将司",
+            "popularity": 2,
+            "odds": 2.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ホークレア",
+            "jockey": "城野慈尚",
+            "popularity": 4,
+            "odds": 10.2,
+            "groupIdx": 9
+          },
+          {
+            "finish": "4",
+            "name": "エンドレスバンカー",
+            "jockey": "木村直輝",
+            "popularity": 7,
+            "odds": 64.3,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "ジョウショーブリエ",
+            "jockey": "岡村卓弥",
+            "popularity": 5,
+            "odds": 34.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "バリキング",
+            "jockey": "新庄海誠",
+            "popularity": 3,
+            "odds": 8.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "シーザソング",
+            "jockey": "郷間勇太",
+            "popularity": 9,
+            "odds": 91.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ブロードグリン",
+            "jockey": "▲塚本直之",
+            "popularity": 10,
+            "odds": 146.2,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "ケイベエ",
+            "jockey": "上田将司",
+            "popularity": 11,
+            "odds": 245.1,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "セージブラッシュ",
+            "jockey": "畑中信司",
+            "popularity": 8,
+            "odds": 90.6,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "ヴィビーム",
+            "jockey": "山崎雅由",
+            "popularity": 6,
+            "odds": 40,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "アキロック",
+            "jockey": "石本純也",
+            "popularity": 12,
+            "odds": 329.3,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 4,
+        "margin3": 10,
+        "_corner4": "3,7-5-(2,8),9,12,(11,10)-(1,6)=4"
       },
       {
         "name": "高知5R 10/24",
@@ -717,17 +4716,106 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:31.8",
+        "totalHorses": 11,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "マイネルトレマーズ",
+            "jockey": "宮川実",
+            "popularity": 1,
+            "odds": 1.3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "スクーバー",
+            "jockey": "永森大智",
+            "popularity": 2,
+            "odds": 5.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "モトサン",
+            "jockey": "岡遼太郎",
+            "popularity": 7,
+            "odds": 24.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ペイシャプレイ",
+            "jockey": "岡村卓弥",
+            "popularity": 5,
+            "odds": 15.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "ローメット",
+            "jockey": "井上瑛太",
+            "popularity": 6,
+            "odds": 20.5,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "グリエールキック",
+            "jockey": "多田羅誠",
+            "popularity": 3,
+            "odds": 9.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "7",
+            "name": "リゼレインボー",
+            "jockey": "城野慈尚",
+            "popularity": 4,
+            "odds": 15.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "サイモンソーラン",
+            "jockey": "上田将司",
+            "popularity": 8,
+            "odds": 42.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "マサハヤアン",
+            "jockey": "畑中信司",
+            "popularity": 10,
+            "odds": 415.2,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "チュラウェーブ",
+            "jockey": "郷間勇太",
+            "popularity": 9,
+            "odds": 96.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "エムティパブロ",
+            "jockey": "石本純也",
+            "popularity": 11,
+            "odds": 610.5,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 3.1,
+        "_corner4": "5,(8,3)-11,(7,2),4,6,10,1-9"
       },
       {
         "name": "高知6R 10/24",
@@ -735,17 +4823,98 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:30.5",
+        "totalHorses": 10,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "サンブル",
+            "jockey": "永森大智",
+            "popularity": 3,
+            "odds": 6.9,
+            "groupIdx": 2
+          },
+          {
+            "finish": "2",
+            "name": "メイショウクリフト",
+            "jockey": "新庄海誠",
+            "popularity": 1,
+            "odds": 1.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "スマイルガーデン",
+            "jockey": "宮川実",
+            "popularity": 2,
+            "odds": 3.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "パルメリータ",
+            "jockey": "大澤誠志",
+            "popularity": 9,
+            "odds": 134.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "ヨシュア",
+            "jockey": "上田将司",
+            "popularity": 5,
+            "odds": 63.7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "フランフィズ",
+            "jockey": "石本純也",
+            "popularity": 8,
+            "odds": 110.4,
+            "groupIdx": 10
+          },
+          {
+            "finish": "7",
+            "name": "ペイシャニット",
+            "jockey": "郷間勇太",
+            "popularity": 4,
+            "odds": 46,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "クラウンクーロン",
+            "jockey": "濱尚美",
+            "popularity": 6,
+            "odds": 103.8,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "エターナルライズ",
+            "jockey": "山崎雅由",
+            "popularity": 10,
+            "odds": 149.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "シンゼンシャイン",
+            "jockey": "▲塚本直之",
+            "popularity": 7,
+            "odds": 108.1,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 6,
+        "margin3": 9,
+        "_corner4": "5,10=4-8-9,3,(1,7)-6-2"
       },
       {
         "name": "高知7R 10/24",
@@ -753,17 +4922,114 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:30.4",
+        "totalHorses": 12,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ビステル",
+            "jockey": "宮川実",
+            "popularity": 2,
+            "odds": 3.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "アースライザー",
+            "jockey": "岡遼太郎",
+            "popularity": 6,
+            "odds": 19.6,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "フォルテローザ",
+            "jockey": "城野慈尚",
+            "popularity": 3,
+            "odds": 4.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "セイウンガレオン",
+            "jockey": "岡村卓弥",
+            "popularity": 7,
+            "odds": 31.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "ゴーマックス",
+            "jockey": "井上瑛太",
+            "popularity": 1,
+            "odds": 3.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "ダノンダンサー",
+            "jockey": "西森将司",
+            "popularity": 9,
+            "odds": 37.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "7",
+            "name": "ヒマワリクン",
+            "jockey": "郷間勇太",
+            "popularity": 11,
+            "odds": 92.4,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ソッコータルマカ",
+            "jockey": "永森大智",
+            "popularity": 4,
+            "odds": 4.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "ビックス",
+            "jockey": "畑中信司",
+            "popularity": 10,
+            "odds": 88,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ヒビキ",
+            "jockey": "新庄海誠",
+            "popularity": 8,
+            "odds": 33.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "ロイズピーク",
+            "jockey": "多田羅誠",
+            "popularity": 12,
+            "odds": 141.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "12",
+            "name": "モルフェウス",
+            "jockey": "▲塚本直之",
+            "popularity": 5,
+            "odds": 15.4,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 3,
+        "margin3": 3,
+        "_corner4": "3,4,(2,12),10,(9,5,11)-(7,6)-8-1"
       },
       {
         "name": "高知8R 10/24",
@@ -771,17 +5037,106 @@
         "course": "ダート",
         "distance": 1600,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:47.6",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ロイヤルタイム",
+            "jockey": "岡遼太郎",
+            "popularity": 2,
+            "odds": 4.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "クリュメノス",
+            "jockey": "井上瑛太",
+            "popularity": 6,
+            "odds": 44.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "タマモアマルフィ",
+            "jockey": "多田羅誠",
+            "popularity": 4,
+            "odds": 6.1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "エメヴィベール",
+            "jockey": "城野慈尚",
+            "popularity": 5,
+            "odds": 18.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "コスモアミュレット",
+            "jockey": "岡村卓弥",
+            "popularity": 8,
+            "odds": 96.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ペイシャマイデイズ",
+            "jockey": "西森将司",
+            "popularity": 3,
+            "odds": 4.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "ベンガルボダイジュ",
+            "jockey": "山崎雅由",
+            "popularity": 7,
+            "odds": 92.2,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "キープインマインド",
+            "jockey": "濱尚美",
+            "popularity": 9,
+            "odds": 278.7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "シェルブールレイン",
+            "jockey": "▲塚本直之",
+            "popularity": 10,
+            "odds": 309,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "ゲクウ",
+            "jockey": "新庄海誠",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 5
+          },
+          {
+            "finish": "11",
+            "name": "スマイル",
+            "jockey": "木村直輝",
+            "popularity": 11,
+            "odds": 577.7,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 3,
+        "margin3": 6,
+        "_corner4": "10,11,(5,3),9,(1,8),4-(6,2)=7"
       },
       {
         "name": "高知9R 10/24",
@@ -789,17 +5144,98 @@
         "course": "ダート",
         "distance": 1300,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:23.6",
+        "totalHorses": 10,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "トップアメリカン",
+            "jockey": "永森大智",
+            "popularity": 4,
+            "odds": 5.9,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ボンジュールゼン",
+            "jockey": "上田将司",
+            "popularity": 3,
+            "odds": 3.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "メイショウカズサ",
+            "jockey": "岡遼太郎",
+            "popularity": 1,
+            "odds": 2.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ブラッティーキッド",
+            "jockey": "多田羅誠",
+            "popularity": 2,
+            "odds": 3.1,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "シンデレラスマイル",
+            "jockey": "宮川実",
+            "popularity": 5,
+            "odds": 29.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "ゲンパチレオニダス",
+            "jockey": "山崎雅由",
+            "popularity": 6,
+            "odds": 43.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "7",
+            "name": "メイショウオキビ",
+            "jockey": "畑中信司",
+            "popularity": 10,
+            "odds": 222.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "エイシンオッティモ",
+            "jockey": "岡村卓弥",
+            "popularity": 7,
+            "odds": 151.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ハルノサムソン",
+            "jockey": "濱尚美",
+            "popularity": 9,
+            "odds": 220.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "10",
+            "name": "ディープギルドン",
+            "jockey": "城野慈尚",
+            "popularity": 11,
+            "odds": 256.8,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "margin3": 2.1,
+        "_corner4": "(3,6),2,(8,9),(10,11)-7=1-5=4"
       },
       {
         "name": "高知10R 10/24",
@@ -807,17 +5243,106 @@
         "course": "ダート",
         "distance": 1300,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:23.3",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ベストディシジョン",
+            "jockey": "宮川実",
+            "popularity": 2,
+            "odds": 5.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミラクルドリーム",
+            "jockey": "岡遼太郎",
+            "popularity": 3,
+            "odds": 14.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ウォーターレモン",
+            "jockey": "井上瑛太",
+            "popularity": 10,
+            "odds": 141.5,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "ショウサンキズナ",
+            "jockey": "山崎雅由",
+            "popularity": 6,
+            "odds": 27.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "5",
+            "name": "ユキノマリア",
+            "jockey": "▲塚本直之",
+            "popularity": 5,
+            "odds": 23,
+            "groupIdx": 9
+          },
+          {
+            "finish": "6",
+            "name": "アプサラー",
+            "jockey": "大澤誠志",
+            "popularity": 9,
+            "odds": 82.5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "ダノンフロイデ",
+            "jockey": "畑中信司",
+            "popularity": 4,
+            "odds": 15.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "コパノハンプトン",
+            "jockey": "新庄海誠",
+            "popularity": 1,
+            "odds": 1.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "9",
+            "name": "ムサシフウジン",
+            "jockey": "濱尚美",
+            "popularity": 8,
+            "odds": 78.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "10",
+            "name": "クラックオブドーン",
+            "jockey": "木村直輝",
+            "popularity": 7,
+            "odds": 50.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "11",
+            "name": "ディベルティール",
+            "jockey": "城野慈尚",
+            "popularity": 11,
+            "odds": 176.1,
+            "groupIdx": 4
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 4.1,
+        "_corner4": "11,(4,5),9,(1,3),6-(10,8),7,2"
       },
       {
         "name": "高知11R 10/24",
@@ -825,17 +5350,90 @@
         "course": "ダート",
         "distance": 1300,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:22.5",
+        "totalHorses": 9,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "モズリッキー",
+            "jockey": "永森大智",
+            "popularity": 1,
+            "odds": 1.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ストーミーデイ",
+            "jockey": "畑中信司",
+            "popularity": 8,
+            "odds": 77.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "スピードイエロー",
+            "jockey": "多田羅誠",
+            "popularity": 3,
+            "odds": 10.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "コスモシーウルフ",
+            "jockey": "▲塚本直之",
+            "popularity": 7,
+            "odds": 56.7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "5",
+            "name": "ブルグミューラー",
+            "jockey": "城野慈尚",
+            "popularity": 2,
+            "odds": 5.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "ステラマテュティナ",
+            "jockey": "井上瑛太",
+            "popularity": 5,
+            "odds": 18.5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "ウィズユアドリーム",
+            "jockey": "郷間勇太",
+            "popularity": 6,
+            "odds": 33.5,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "サーブルミラージュ",
+            "jockey": "上田将司",
+            "popularity": 9,
+            "odds": 80.7,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "サノノスピード",
+            "jockey": "岡村卓弥",
+            "popularity": 4,
+            "odds": 15.7,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 4,
+        "margin3": 7,
+        "_corner4": "7,4,6-(5,9),3,(1,2)-8"
       },
       {
         "name": "高知12R 10/24",
@@ -843,17 +5441,114 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "不良",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:32.4",
+        "totalHorses": 12,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "クワッドマリニン",
+            "jockey": "郷間勇太",
+            "popularity": 2,
+            "odds": 5.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ボールドステート",
+            "jockey": "永森大智",
+            "popularity": 5,
+            "odds": 7.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ソックス",
+            "jockey": "多田羅誠",
+            "popularity": 4,
+            "odds": 6.7,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "シデンイッセン",
+            "jockey": "畑中信司",
+            "popularity": 1,
+            "odds": 4.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "チュウワロンドン",
+            "jockey": "井上瑛太",
+            "popularity": 3,
+            "odds": 5.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "6",
+            "name": "フウリンカザン",
+            "jockey": "岡村卓弥",
+            "popularity": 6,
+            "odds": 8.7,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "キヨスリョウマ",
+            "jockey": "木村直輝",
+            "popularity": 7,
+            "odds": 15.2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "ショウナンアンバー",
+            "jockey": "新庄海誠",
+            "popularity": 9,
+            "odds": 16.8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "チョットヤバイヨネ",
+            "jockey": "山崎雅由",
+            "popularity": 10,
+            "odds": 25,
+            "groupIdx": 4
+          },
+          {
+            "finish": "10",
+            "name": "ワイドアルバ",
+            "jockey": "大澤誠志",
+            "popularity": 12,
+            "odds": 74.4,
+            "groupIdx": 9
+          },
+          {
+            "finish": "11",
+            "name": "トーケンタカハール",
+            "jockey": "石本純也",
+            "popularity": 8,
+            "odds": 16,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "セントキルダ",
+            "jockey": "▲塚本直之",
+            "popularity": 11,
+            "odds": 51.3,
+            "groupIdx": 9
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1.1,
+        "_corner4": "(8,12),11,7,(9,6),1,10,3-(5,2)-4"
       }
     ],
     "佐賀": [
@@ -863,17 +5558,82 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:33.0",
+        "totalHorses": 8,
+        "totalGroups": 8,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ミヤノグッドリー",
+            "jockey": "山口勲",
+            "popularity": 2,
+            "odds": 3.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ハクアイレーヴ",
+            "jockey": "石川慎将",
+            "popularity": 1,
+            "odds": 1.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "3",
+            "name": "タンバーテソーロ",
+            "jockey": "長田進仁",
+            "popularity": 4,
+            "odds": 17.3,
+            "groupIdx": 2
+          },
+          {
+            "finish": "4",
+            "name": "クラーケン",
+            "jockey": "竹吉徹",
+            "popularity": 3,
+            "odds": 10.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "ダバイスピーディ",
+            "jockey": "加茂飛翔",
+            "popularity": 7,
+            "odds": 105.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "アオイイト",
+            "jockey": "田中直人",
+            "popularity": 8,
+            "odds": 170.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "プレアボンド",
+            "jockey": "田中純",
+            "popularity": 5,
+            "odds": 21.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "8",
+            "name": "ブルーミストラル",
+            "jockey": "山下裕貴",
+            "popularity": 6,
+            "odds": 75.7,
+            "groupIdx": 8
+          }
+        ],
+        "margin": 1,
+        "margin3": 3,
+        "_corner4": "(5,8),4,1,6-2,7,3"
       },
       {
         "name": "佐賀2R 10/24",
@@ -881,17 +5641,106 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:31.8",
+        "totalHorses": 11,
+        "totalGroups": 14,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "デュードロップ",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "シエルブリエ",
+            "jockey": "山口勲",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "アッシュグレイス",
+            "jockey": "中山蓮王",
+            "popularity": 3,
+            "odds": 5.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "キタノローマン",
+            "jockey": "川島拓",
+            "popularity": 4,
+            "odds": 52.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "バチェラーパーティ",
+            "jockey": "長田進仁",
+            "popularity": 11,
+            "odds": 321.6,
+            "groupIdx": 8
+          },
+          {
+            "finish": "6",
+            "name": "ケイツーコルーニ",
+            "jockey": "青海大樹",
+            "popularity": 7,
+            "odds": 248.8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "7",
+            "name": "フリーリターン",
+            "jockey": "山下裕貴",
+            "popularity": 6,
+            "odds": 129.3,
+            "groupIdx": 13
+          },
+          {
+            "finish": "8",
+            "name": "アユツリムスメ",
+            "jockey": "田中純",
+            "popularity": 8,
+            "odds": 248.8,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "ウサギ",
+            "jockey": "出水拓人",
+            "popularity": 9,
+            "odds": 263.7,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "マイネルガンナー",
+            "jockey": "小松丈二",
+            "popularity": 5,
+            "odds": 63.1,
+            "groupIdx": 14
+          },
+          {
+            "finish": "11",
+            "name": "リケアカッペリーニ",
+            "jockey": "田中直人",
+            "popularity": 10,
+            "odds": 286.7,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 1.1,
+        "margin3": 9.1,
+        "_corner4": "1-5-6-8,10,11,9,2,3,7,4"
       },
       {
         "name": "佐賀3R 10/24",
@@ -899,17 +5748,98 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:32.4",
+        "totalHorses": 10,
+        "totalGroups": 11,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "トリエンナーレ",
+            "jockey": "山口勲",
+            "popularity": 1,
+            "odds": 1.3,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "テイエムファントム",
+            "jockey": "山田義貴",
+            "popularity": 3,
+            "odds": 6.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "ハヤブサブロー",
+            "jockey": "加茂飛翔",
+            "popularity": 4,
+            "odds": 22.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "クラックアスマイル",
+            "jockey": "長田進仁",
+            "popularity": 10,
+            "odds": 404.4,
+            "groupIdx": 9
+          },
+          {
+            "finish": "5",
+            "name": "マハーギータ",
+            "jockey": "青海大樹",
+            "popularity": 5,
+            "odds": 34.5,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ピースオブライツ",
+            "jockey": "▲後藤武蔵",
+            "popularity": 7,
+            "odds": 65.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "フィールライクユー",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 4.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "アリーワーク",
+            "jockey": "田中直人",
+            "popularity": 8,
+            "odds": 231,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "ゼットクイン",
+            "jockey": "川島拓",
+            "popularity": 6,
+            "odds": 54.7,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "ウイングラフトン",
+            "jockey": "山下裕貴",
+            "popularity": 9,
+            "odds": 323.5,
+            "groupIdx": 11
+          }
+        ],
+        "margin": 3,
+        "margin3": 9,
+        "_corner4": "8-7,1,9,(2,10),3-6-(5,4)"
       },
       {
         "name": "佐賀4R 10/24",
@@ -917,17 +5847,98 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:31.4",
+        "totalHorses": 10,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "モズナツノジン",
+            "jockey": "山口勲",
+            "popularity": 1,
+            "odds": 2.1,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ワカワカ",
+            "jockey": "山田義貴",
+            "popularity": 4,
+            "odds": 8.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "ウマナミカイドウ",
+            "jockey": "小松丈二",
+            "popularity": 6,
+            "odds": 35,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "ポジターノ",
+            "jockey": "出水拓人",
+            "popularity": 3,
+            "odds": 4.9,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "タイショウロマン",
+            "jockey": "青海大樹",
+            "popularity": 9,
+            "odds": 62,
+            "groupIdx": 5
+          },
+          {
+            "finish": "6",
+            "name": "キタノガイヤール",
+            "jockey": "山下裕貴",
+            "popularity": 8,
+            "odds": 40,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "アオイサンギュリエ",
+            "jockey": "田中直人",
+            "popularity": 7,
+            "odds": 38.2,
+            "groupIdx": 9
+          },
+          {
+            "finish": "8",
+            "name": "アレキサンダーサン",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 3.2,
+            "groupIdx": 10
+          },
+          {
+            "finish": "9",
+            "name": "ウメボシ",
+            "jockey": "長谷川蓮",
+            "popularity": 5,
+            "odds": 18.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "10",
+            "name": "ダイメイハマダ",
+            "jockey": "中山蓮王",
+            "popularity": 10,
+            "odds": 174.2,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 6,
+        "margin3": 8,
+        "_corner4": "5-8,(9,6),1-2-4,3,7-10"
       },
       {
         "name": "佐賀5R 10/24",
@@ -935,17 +5946,114 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:30.2",
+        "totalHorses": 12,
+        "totalGroups": 10,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ダバイシュクレ",
+            "jockey": "山田義貴",
+            "popularity": 1,
+            "odds": 2.7,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "タガノテツ",
+            "jockey": "田中純",
+            "popularity": 4,
+            "odds": 8.8,
+            "groupIdx": 2
+          },
+          {
+            "finish": "3",
+            "name": "ラインアンジェラ",
+            "jockey": "山口勲",
+            "popularity": 6,
+            "odds": 14.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "テーオースミス",
+            "jockey": "加茂飛翔",
+            "popularity": 7,
+            "odds": 14.6,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "ニフェーデービル",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 3.2,
+            "groupIdx": 3
+          },
+          {
+            "finish": "6",
+            "name": "マツリダマスラオ",
+            "jockey": "長田進仁",
+            "popularity": 11,
+            "odds": 156.6,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "エムティピース",
+            "jockey": "竹吉徹",
+            "popularity": 8,
+            "odds": 87.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "8",
+            "name": "ポピュラーソング",
+            "jockey": "田中直人",
+            "popularity": 9,
+            "odds": 96.5,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "ゴイゴイスー",
+            "jockey": "石川慎将",
+            "popularity": 5,
+            "odds": 9.1,
+            "groupIdx": 5
+          },
+          {
+            "finish": "10",
+            "name": "ツモ",
+            "jockey": "長谷川蓮",
+            "popularity": 3,
+            "odds": 5.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "チャールストン",
+            "jockey": "出水拓人",
+            "popularity": 10,
+            "odds": 156.3,
+            "groupIdx": 8
+          },
+          {
+            "finish": "12",
+            "name": "ナニーピオニー",
+            "jockey": "中山蓮王",
+            "popularity": 12,
+            "odds": 251.8,
+            "groupIdx": 10
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 1,
+        "_corner4": "(2,12),1,8,4,(11,7),10,9,(5,3)-6"
       },
       {
         "name": "佐賀6R 10/24",
@@ -953,17 +6061,114 @@
         "course": "ダート",
         "distance": 1300,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:24.2",
+        "totalHorses": 12,
+        "totalGroups": 12,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ディアーモルタル",
+            "jockey": "出水拓人",
+            "popularity": 2,
+            "odds": 3.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "カンフージョン",
+            "jockey": "石川慎将",
+            "popularity": 3,
+            "odds": 3.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "クボウサマ",
+            "jockey": "飛田愛斗",
+            "popularity": 1,
+            "odds": 2.3,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "ソナタムーンライト",
+            "jockey": "中山蓮王",
+            "popularity": 9,
+            "odds": 45.4,
+            "groupIdx": 6
+          },
+          {
+            "finish": "5",
+            "name": "ダリアフレイバー",
+            "jockey": "竹吉徹",
+            "popularity": 5,
+            "odds": 12.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "6",
+            "name": "ジュンヴァッテッド",
+            "jockey": "田中純",
+            "popularity": 6,
+            "odds": 21.1,
+            "groupIdx": 10
+          },
+          {
+            "finish": "7",
+            "name": "シカゴキャッツ",
+            "jockey": "山口勲",
+            "popularity": 8,
+            "odds": 39.3,
+            "groupIdx": 4
+          },
+          {
+            "finish": "8",
+            "name": "レレリオーナ",
+            "jockey": "長田進仁",
+            "popularity": 11,
+            "odds": 370.1,
+            "groupIdx": 9
+          },
+          {
+            "finish": "9",
+            "name": "メドウセージ",
+            "jockey": "青海大樹",
+            "popularity": 12,
+            "odds": 594.5,
+            "groupIdx": 10
+          },
+          {
+            "finish": "10",
+            "name": "トーアアグネス",
+            "jockey": "小松丈二",
+            "popularity": 10,
+            "odds": 188.8,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "キトゥンズラスター",
+            "jockey": "長谷川蓮",
+            "popularity": 4,
+            "odds": 12.1,
+            "groupIdx": 11
+          },
+          {
+            "finish": "12",
+            "name": "タマモマリアージュ",
+            "jockey": "加茂飛翔",
+            "popularity": 7,
+            "odds": 22.1,
+            "groupIdx": 12
+          }
+        ],
+        "margin": 6,
+        "margin3": 7,
+        "_corner4": "3-9,7,11,10,4-12,(8,5),(1,2),6"
       },
       {
         "name": "佐賀7R 10/24",
@@ -971,17 +6176,106 @@
         "course": "ダート",
         "distance": 1300,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:24.8",
+        "totalHorses": 11,
+        "totalGroups": 15,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ヴァイスウィッチ",
+            "jockey": "中山蓮王",
+            "popularity": 4,
+            "odds": 7.8,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミッキージェントル",
+            "jockey": "山口勲",
+            "popularity": 5,
+            "odds": 10.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "3",
+            "name": "アーチーテソーロ",
+            "jockey": "山下裕貴",
+            "popularity": 3,
+            "odds": 5.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "4",
+            "name": "アニラ",
+            "jockey": "小松丈二",
+            "popularity": 6,
+            "odds": 39.6,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "フェブリノ",
+            "jockey": "加茂飛翔",
+            "popularity": 1,
+            "odds": 1.8,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "ロベルタインパクト",
+            "jockey": "石川慎将",
+            "popularity": 2,
+            "odds": 4.1,
+            "groupIdx": 11
+          },
+          {
+            "finish": "7",
+            "name": "ジーティースピカ",
+            "jockey": "竹吉徹",
+            "popularity": 7,
+            "odds": 75.4,
+            "groupIdx": 8
+          },
+          {
+            "finish": "8",
+            "name": "コースタルタウン",
+            "jockey": "川島拓",
+            "popularity": 9,
+            "odds": 305,
+            "groupIdx": 10
+          },
+          {
+            "finish": "9",
+            "name": "タケノエイコウ",
+            "jockey": "田中純",
+            "popularity": 10,
+            "odds": 551,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ファインギフト",
+            "jockey": "長田進仁",
+            "popularity": 11,
+            "odds": 999.9,
+            "groupIdx": 13
+          },
+          {
+            "finish": "11",
+            "name": "スーパーフルール",
+            "jockey": "長谷川蓮",
+            "popularity": 8,
+            "odds": 216.2,
+            "groupIdx": 15
+          }
+        ],
+        "margin": 1,
+        "margin3": 5,
+        "_corner4": "8-9,10-7,6,1,5,11,3-4-2"
       },
       {
         "name": "佐賀8R 10/24",
@@ -989,17 +6283,106 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
+        "winTime": "1:32.1",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "スマイルフォレスト",
+            "jockey": "石川慎将",
+            "popularity": 2,
+            "odds": 3.6,
+            "groupIdx": 3
+          },
+          {
+            "finish": "2",
+            "name": "フクノエヴリー",
+            "jockey": "田中直人",
+            "popularity": 8,
+            "odds": 44.8,
+            "groupIdx": 5
+          },
+          {
+            "finish": "3",
+            "name": "クライミーアリバー",
+            "jockey": "竹吉徹",
+            "popularity": 3,
+            "odds": 6.1,
+            "groupIdx": 4
+          },
+          {
+            "finish": "4",
+            "name": "クラウンライジング",
+            "jockey": "中山蓮王",
+            "popularity": 1,
+            "odds": 1.9,
+            "groupIdx": 3
+          },
+          {
+            "finish": "5",
+            "name": "タケノライコウ",
+            "jockey": "青海大樹",
+            "popularity": 10,
+            "odds": 522.2,
+            "groupIdx": 2
+          },
+          {
+            "finish": "6",
+            "name": "サンサンタイヨウ",
+            "jockey": "長田進仁",
+            "popularity": 7,
+            "odds": 26.6,
+            "groupIdx": 1
+          },
+          {
+            "finish": "7",
+            "name": "タッセル",
+            "jockey": "▲後藤武蔵",
+            "popularity": 5,
+            "odds": 15.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "8",
+            "name": "キングオリヴァー",
+            "jockey": "山田義貴",
+            "popularity": 6,
+            "odds": 17.1,
+            "groupIdx": 7
+          },
+          {
+            "finish": "9",
+            "name": "グレイストーム",
+            "jockey": "飛田愛斗",
+            "popularity": 4,
+            "odds": 9.7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "10",
+            "name": "ニューホライゾン",
+            "jockey": "小松丈二",
+            "popularity": 11,
+            "odds": 547.7,
+            "groupIdx": 8
+          },
+          {
+            "finish": "11",
+            "name": "ヒロニャン",
+            "jockey": "長谷川蓮",
+            "popularity": 9,
+            "odds": 50,
+            "groupIdx": 9
+          }
+        ],
         "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "margin3": 3,
+        "_corner4": "1,5,(8,6,9),10,11-4,(2,3),7"
       },
       {
         "name": "佐賀9R 10/24",
@@ -1007,17 +6390,106 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:29.3",
+        "totalHorses": 11,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ジーティーレイナ",
+            "jockey": "石川慎将",
+            "popularity": 1,
+            "odds": 2.2,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "テイエムタワードン",
+            "jockey": "山口勲",
+            "popularity": 4,
+            "odds": 10.1,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "オレノアイバ",
+            "jockey": "長谷川蓮",
+            "popularity": 5,
+            "odds": 13.4,
+            "groupIdx": 5
+          },
+          {
+            "finish": "4",
+            "name": "ダノンリュラ",
+            "jockey": "飛田愛斗",
+            "popularity": 3,
+            "odds": 5.4,
+            "groupIdx": 8
+          },
+          {
+            "finish": "5",
+            "name": "フェルサイト",
+            "jockey": "山下裕貴",
+            "popularity": 6,
+            "odds": 23.9,
+            "groupIdx": 6
+          },
+          {
+            "finish": "6",
+            "name": "オーケーエンジェル",
+            "jockey": "出水拓人",
+            "popularity": 2,
+            "odds": 2.5,
+            "groupIdx": 7
+          },
+          {
+            "finish": "7",
+            "name": "サヨノハッピー",
+            "jockey": "山田義貴",
+            "popularity": 8,
+            "odds": 121.1,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "サムシンググレート",
+            "jockey": "中山蓮王",
+            "popularity": 9,
+            "odds": 285.4,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "タケノオーカン",
+            "jockey": "加茂飛翔",
+            "popularity": 7,
+            "odds": 118.4,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "コマゼロワン",
+            "jockey": "竹吉徹",
+            "popularity": 10,
+            "odds": 292.5,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "コワン",
+            "jockey": "青海大樹",
+            "popularity": 11,
+            "odds": 394.8,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 4,
+        "margin3": 8,
+        "_corner4": "6-5-3,11,9,(4,8),7,10,2-1"
       },
       {
         "name": "佐賀10R 10/24",
@@ -1025,17 +6497,106 @@
         "course": "ダート",
         "distance": 1750,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:58.1",
+        "totalHorses": 11,
+        "totalGroups": 9,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "デルマタモン",
+            "jockey": "竹吉徹",
+            "popularity": 6,
+            "odds": 14.4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "サーリアル",
+            "jockey": "加茂飛翔",
+            "popularity": 3,
+            "odds": 6.4,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "リヴァイデント",
+            "jockey": "山下裕貴",
+            "popularity": 5,
+            "odds": 11,
+            "groupIdx": 1
+          },
+          {
+            "finish": "4",
+            "name": "ウインクルキセキ",
+            "jockey": "石川慎将",
+            "popularity": 4,
+            "odds": 10.2,
+            "groupIdx": 4
+          },
+          {
+            "finish": "5",
+            "name": "タガノラヴズワン",
+            "jockey": "田中純",
+            "popularity": 1,
+            "odds": 2.4,
+            "groupIdx": 4
+          },
+          {
+            "finish": "6",
+            "name": "ジーティージン",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 3.1,
+            "groupIdx": 6
+          },
+          {
+            "finish": "7",
+            "name": "ジューンナデシコ",
+            "jockey": "長谷川蓮",
+            "popularity": 7,
+            "odds": 27.4,
+            "groupIdx": 2
+          },
+          {
+            "finish": "8",
+            "name": "ウイニングザソウル",
+            "jockey": "▲後藤武蔵",
+            "popularity": 10,
+            "odds": 60,
+            "groupIdx": 6
+          },
+          {
+            "finish": "9",
+            "name": "リーフアクアリウム",
+            "jockey": "田中直人",
+            "popularity": 8,
+            "odds": 31.6,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "ミスレモン",
+            "jockey": "出水拓人",
+            "popularity": 11,
+            "odds": 82.3,
+            "groupIdx": 7
+          },
+          {
+            "finish": "11",
+            "name": "ムーンパスゴールド",
+            "jockey": "川島拓",
+            "popularity": 9,
+            "odds": 42.4,
+            "groupIdx": 9
+          }
+        ],
+        "margin": 1,
+        "margin3": 1,
+        "_corner4": "(2,7),3,1,(11,10)-(6,5),8-(4,9)"
       },
       {
         "name": "佐賀11R 10/24",
@@ -1043,17 +6604,114 @@
         "course": "ダート",
         "distance": 900,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "0:55.3",
+        "totalHorses": 12,
+        "totalGroups": 15,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "ダノンクラウディア",
+            "jockey": "出水拓人",
+            "popularity": 1,
+            "odds": 2.5,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "コスモチャンティ",
+            "jockey": "飛田愛斗",
+            "popularity": 2,
+            "odds": 2.8,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "クラリスヒメ",
+            "jockey": "青海大樹",
+            "popularity": 4,
+            "odds": 16.2,
+            "groupIdx": 8
+          },
+          {
+            "finish": "4",
+            "name": "スワイメイク",
+            "jockey": "山下裕貴",
+            "popularity": 3,
+            "odds": 4.2,
+            "groupIdx": 7
+          },
+          {
+            "finish": "5",
+            "name": "カゼノハゴロモ",
+            "jockey": "田中純",
+            "popularity": 7,
+            "odds": 20,
+            "groupIdx": 9
+          },
+          {
+            "finish": "6",
+            "name": "アエノホープ",
+            "jockey": "▲後藤武蔵",
+            "popularity": 5,
+            "odds": 18.6,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "エイシンコラソン",
+            "jockey": "長田進仁",
+            "popularity": 10,
+            "odds": 124.3,
+            "groupIdx": 10
+          },
+          {
+            "finish": "8",
+            "name": "ビーチボール",
+            "jockey": "竹吉徹",
+            "popularity": 9,
+            "odds": 74.9,
+            "groupIdx": 8
+          },
+          {
+            "finish": "9",
+            "name": "テムホウサク",
+            "jockey": "長谷川蓮",
+            "popularity": 8,
+            "odds": 43.6,
+            "groupIdx": 9
+          },
+          {
+            "finish": "10",
+            "name": "テイエムリチャード",
+            "jockey": "中山蓮王",
+            "popularity": 6,
+            "odds": 19.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "パワーレイヤー",
+            "jockey": "川島拓",
+            "popularity": 11,
+            "odds": 135.3,
+            "groupIdx": 13
+          },
+          {
+            "finish": "12",
+            "name": "パドマーワト",
+            "jockey": "小松丈二",
+            "popularity": 12,
+            "odds": 205,
+            "groupIdx": 15
+          }
+        ],
+        "margin": 8,
+        "margin3": 12,
+        "_corner4": "6-1-3-9,(7,11),(5,4),8,2-12-10"
       },
       {
         "name": "佐賀12R 10/24",
@@ -1061,17 +6719,130 @@
         "course": "ダート",
         "distance": 1400,
         "grade": "",
-        "trackCondition": "",
+        "trackCondition": "重",
         "courseType": null,
-        "weather": null,
+        "weather": "曇",
         "kaisaiDay": null,
-        "winTime": "",
-        "totalHorses": 0,
-        "totalGroups": 0,
-        "horses": [],
-        "margin": null,
-        "margin3": null,
-        "_corner4": ""
+        "winTime": "1:33.1",
+        "totalHorses": 14,
+        "totalGroups": 13,
+        "horses": [
+          {
+            "finish": "1",
+            "name": "イントゥゴールデン",
+            "jockey": "石川慎将",
+            "popularity": 3,
+            "odds": 4,
+            "groupIdx": 1
+          },
+          {
+            "finish": "2",
+            "name": "ミラクルスパート",
+            "jockey": "田中直人",
+            "popularity": 13,
+            "odds": 327.5,
+            "groupIdx": 3
+          },
+          {
+            "finish": "3",
+            "name": "レディホークダイヤ",
+            "jockey": "山口勲",
+            "popularity": 1,
+            "odds": 1.8,
+            "groupIdx": 7
+          },
+          {
+            "finish": "4",
+            "name": "ヴィアツァ",
+            "jockey": "▲後藤武蔵",
+            "popularity": 6,
+            "odds": 62,
+            "groupIdx": 8
+          },
+          {
+            "finish": "5",
+            "name": "ナデシコ",
+            "jockey": "小松丈二",
+            "popularity": 9,
+            "odds": 139.2,
+            "groupIdx": 9
+          },
+          {
+            "finish": "6",
+            "name": "ウインポラリス",
+            "jockey": "加茂飛翔",
+            "popularity": 4,
+            "odds": 8.3,
+            "groupIdx": 5
+          },
+          {
+            "finish": "7",
+            "name": "ウタカタ",
+            "jockey": "竹吉徹",
+            "popularity": 7,
+            "odds": 67.7,
+            "groupIdx": 7
+          },
+          {
+            "finish": "8",
+            "name": "テイエムロングダン",
+            "jockey": "山田義貴",
+            "popularity": 10,
+            "odds": 208.6,
+            "groupIdx": 10
+          },
+          {
+            "finish": "9",
+            "name": "キャッチミークライ",
+            "jockey": "出水拓人",
+            "popularity": 8,
+            "odds": 133.6,
+            "groupIdx": 12
+          },
+          {
+            "finish": "10",
+            "name": "エバーステイ",
+            "jockey": "長田進仁",
+            "popularity": 11,
+            "odds": 232.4,
+            "groupIdx": 11
+          },
+          {
+            "finish": "11",
+            "name": "アシャカルー",
+            "jockey": "川島拓",
+            "popularity": 12,
+            "odds": 262.3,
+            "groupIdx": 10
+          },
+          {
+            "finish": "12",
+            "name": "イケノエナガチャン",
+            "jockey": "長谷川蓮",
+            "popularity": 5,
+            "odds": 39.5,
+            "groupIdx": 10
+          },
+          {
+            "finish": "13",
+            "name": "エールヴェガ",
+            "jockey": "青海大樹",
+            "popularity": 14,
+            "odds": 651.7,
+            "groupIdx": 12
+          },
+          {
+            "finish": "14",
+            "name": "ウラノステソーロ",
+            "jockey": "山下裕貴",
+            "popularity": 2,
+            "odds": 3.7,
+            "groupIdx": 13
+          }
+        ],
+        "margin": 2.1,
+        "margin3": 4.2,
+        "_corner4": "8-10-7-(2,13),5,11,(9,1,3),4,(14,12),6"
       }
     ]
   }

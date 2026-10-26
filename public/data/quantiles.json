@@ -43,23 +43,23 @@
     "q1": 0.75,
     "q3": 1,
     "median": 1,
-    "sampleSize": 82,
+    "sampleSize": 75,
     "reliable": true,
     "source": "own"
   },
   "園田": {
-    "q1": 0.7410714285714286,
+    "q1": 0.75,
     "q3": 1,
     "median": 0.8888888888888888,
-    "sampleSize": 176,
+    "sampleSize": 167,
     "reliable": true,
     "source": "own"
   },
   "門別": {
-    "q1": 0.6,
+    "q1": 0.625,
     "q3": 0.8888888888888888,
     "median": 0.75,
-    "sampleSize": 188,
+    "sampleSize": 176,
     "reliable": true,
     "source": "own"
   },
@@ -104,20 +104,11 @@
     "source": "jra_dirt_pool",
     "ownSampleSize": 17
   },
-  "船橋": {
-    "q1": 0.7142857142857143,
-    "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 1184,
-    "reliable": true,
-    "source": "nar_pool",
-    "ownSampleSize": 9
-  },
   "_nar_pool": {
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 1184,
+    "sampleSize": 1147,
     "reliable": true,
     "source": "pool"
   },
@@ -130,9 +121,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-08-26",
-    "periodEnd": "2026-10-26",
+    "periodStart": "2026-08-27",
+    "periodEnd": "2026-10-27",
     "months": 2,
-    "generatedAt": "2026-10-25T16:59:57.104Z"
+    "generatedAt": "2026-10-26T16:16:24.699Z"
   }
 }

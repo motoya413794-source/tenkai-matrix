@@ -42,8 +42,8 @@
   "笠松": {
     "q1": 0.7142857142857143,
     "q3": 1,
-    "median": 1,
-    "sampleSize": 61,
+    "median": 0.9444444444444444,
+    "sampleSize": 54,
     "reliable": true,
     "source": "own"
   },
@@ -51,7 +51,7 @@
     "q1": 0.75,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 121,
+    "sampleSize": 110,
     "reliable": true,
     "source": "own"
   },
@@ -64,10 +64,10 @@
     "source": "own"
   },
   "川崎": {
-    "q1": 0.6354166666666666,
+    "q1": 0.61875,
     "q3": 0.8888888888888888,
-    "median": 0.8285714285714285,
-    "sampleSize": 38,
+    "median": 0.7321428571428572,
+    "sampleSize": 32,
     "reliable": true,
     "source": "own"
   },
@@ -99,7 +99,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 802,
+    "sampleSize": 778,
     "reliable": true,
     "source": "pool"
   },
@@ -112,9 +112,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-09-11",
-    "periodEnd": "2026-11-11",
+    "periodStart": "2026-09-12",
+    "periodEnd": "2026-11-12",
     "months": 2,
-    "generatedAt": "2026-11-10T20:14:05.423Z"
+    "generatedAt": "2026-11-11T17:19:35.513Z"
   }
 }

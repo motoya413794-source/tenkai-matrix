@@ -51,7 +51,7 @@
     "q1": 0.75,
     "q3": 1,
     "median": 0.875,
-    "sampleSize": 90,
+    "sampleSize": 79,
     "reliable": true,
     "source": "own"
   },
@@ -72,21 +72,22 @@
     "source": "own"
   },
   "名古屋": {
-    "q1": 0.75,
+    "q1": 0.7142857142857143,
     "q3": 1,
-    "median": 0.8660714285714286,
-    "sampleSize": 38,
+    "median": 0.8571428571428571,
+    "sampleSize": 587,
     "reliable": true,
-    "source": "own"
+    "source": "nar_pool",
+    "ownSampleSize": 29
   },
   "大井": {
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 616,
+    "sampleSize": 587,
     "reliable": true,
     "source": "nar_pool",
-    "ownSampleSize": 14
+    "ownSampleSize": 5
   },
   "水沢": {
     "q1": 0.8142857142857143,
@@ -100,7 +101,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 616,
+    "sampleSize": 587,
     "reliable": true,
     "source": "pool"
   },
@@ -113,9 +114,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-09-18",
-    "periodEnd": "2026-11-18",
+    "periodStart": "2026-09-19",
+    "periodEnd": "2026-11-19",
     "months": 2,
-    "generatedAt": "2026-11-17T21:31:22.996Z"
+    "generatedAt": "2026-11-18T18:16:11.277Z"
   }
 }

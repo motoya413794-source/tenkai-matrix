@@ -18,16 +18,16 @@
   "高知": {
     "q1": 0.7142857142857143,
     "q3": 1,
-    "median": 0.8571428571428571,
-    "sampleSize": 63,
+    "median": 0.8660714285714286,
+    "sampleSize": 58,
     "reliable": true,
     "source": "own"
   },
   "佐賀": {
-    "q1": 0.7625,
+    "q1": 0.75,
     "q3": 1,
     "median": 1,
-    "sampleSize": 42,
+    "sampleSize": 35,
     "reliable": true,
     "source": "own"
   },
@@ -43,7 +43,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 384,
+    "sampleSize": 372,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 19
@@ -76,7 +76,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 384,
+    "sampleSize": 372,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 29
@@ -85,7 +85,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 384,
+    "sampleSize": 372,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 5
@@ -94,7 +94,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 384,
+    "sampleSize": 372,
     "reliable": true,
     "source": "nar_pool",
     "ownSampleSize": 9
@@ -103,7 +103,7 @@
     "q1": 0.7142857142857143,
     "q3": 1,
     "median": 0.8571428571428571,
-    "sampleSize": 384,
+    "sampleSize": 372,
     "reliable": true,
     "source": "pool"
   },
@@ -116,9 +116,9 @@
     "source": "pool"
   },
   "_meta": {
-    "periodStart": "2026-09-26",
-    "periodEnd": "2026-11-26",
+    "periodStart": "2026-09-27",
+    "periodEnd": "2026-11-27",
     "months": 2,
-    "generatedAt": "2026-11-25T22:09:31.499Z"
+    "generatedAt": "2026-11-26T19:11:32.583Z"
   }
 }
